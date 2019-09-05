@@ -40,6 +40,7 @@
           padding-top: 8px;
           width: 44px;
           height: 44px;
+          display: inline-flex;
         }
         .title-row{
           padding-bottom: 7px;
@@ -70,7 +71,7 @@
           width: 84px;
           bottom:6px;
         
-          font-family: MicrosoftJhengHei;
+          font-family: $font-family;
           font-size: 16px;
           font-weight: bold;
           text-decoration:none;
@@ -90,7 +91,7 @@
           width: 100%;
           bottom:6px;
         
-          font-family: MicrosoftJhengHei;
+          font-family: $font-family;
           font-size: 16px;
           font-weight: bold;
           text-decoration:none;
@@ -114,7 +115,7 @@
           background: red;
           width: 12px;
           height: 12px;
-          font-family: MicrosoftJhengHei;
+          font-family: $font-family;
           font-size: 7px;
           font-weight: bold;
           text-align: center;
@@ -125,7 +126,7 @@
           width: 90px;
           bottom:6px;
           padding-left: 15px;
-          font-family: MicrosoftJhengHei;
+          font-family: $font-family;
           font-size: 16px;
           font-weight: bold;
          
@@ -194,7 +195,7 @@
           padding-left: 10px;
 
       
-          font-family: MicrosoftJhengHei;
+          font-family: $font-family;
           font-size: 16px;
           font-weight: bold;
           text-align: left;
@@ -205,7 +206,7 @@
           bottom: 8px;
           height: 21px;
           right: 0px;
-          font-family: MicrosoftJhengHei;
+          font-family: $font-family;
           font-size: 16px;
           font-weight: bold;
           text-align: left;
