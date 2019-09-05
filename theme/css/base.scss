@@ -1,7 +1,18 @@
 @charset "UTF-8";
 
+
+//select{
+//  appearance: none;
+//  -moz-appearance: none;
+//  -webkit-appearance: none;
+//}
+///*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+//select::-ms-expand {
+//  display: none;
+//}
+
 //导航样式
-.navigation_bar{
+.navigation_bar {
   width: 1920px;
   height: 54px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -9,14 +20,15 @@
   display: flex;
   align-items: center;
 
-  .bar-btn{
+  .bar-btn {
     width: 120px;
     height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 18.6px;
-    .bar-btn-txt{
+
+    .bar-btn-txt {
       width: 64px;
       height: 21px;
       font-family: $font-family;
@@ -26,14 +38,15 @@
       color: #ffffff;
     }
   }
-  .bar-active{
+
+  .bar-active {
     width: 120px;
     height: 54px;
     background-color: #308769;
   }
 }
 
-.nav-btn{
+.nav-btn {
   width: 64px;
   height: 21px;
   font-family: $font-family;
@@ -41,10 +54,12 @@
   text-align: right;
   color: #b4b4b4;
 }
-.nav-active{
+
+.nav-active {
   color: #308769
 }
-.nav-active::after{
+
+.nav-active::after {
   content: "";
   display: block;
   width: 100%;
@@ -53,13 +68,273 @@
   margin-top: 9.5px;
 }
 
-.nav-text{
+.nav-text {
   font-size: 16px;
   font-weight: bold;
   color: #333333;
-  font-family:$font-family;
+  font-family: $font-family;
 }
-.nav-text-active{
+
+.nav-text-active {
   font-size: 16px;
   color: #0099ff;
+}
+
+.tab-btn-bar {
+  display: flex;
+  align-items: flex-end;
+}
+
+.tab-btn {
+  display: flex;
+  width: 100px;
+  height: 45px;
+  background-color: #eeeeee;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 5px 0 0;
+
+  .tab-btn-text {
+    width: 100%;
+    height: 21px;
+    font-family: $font-family;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.tab-btn-active {
+  width: 100px;
+  height: 50px;
+  background-color: #308769;
+  color: #ffffff !important;
+}
+
+//分页
+.page-content {
+  width: 626px;
+  display: flex;
+  height: 25.7px;
+  align-items: center;
+  .page-number {
+    display: flex;
+    margin-right: 10px;
+
+    .page-sel {
+      width: 61.8px;
+      height: 25.7px;
+      border-radius: 2px;
+      border: solid 1px #d8d8d8;
+      font-size: 14px;
+      font-family: $font-family;
+      color: #666666;
+      background: #ffffff;
+    }
+  }
+
+  .page-left {
+    display: flex;
+    width: 80px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    .page-left-first{
+      width: 17.2px;
+      height: 17.2px;
+    }
+    .page-left-polygon{
+      width: 17.2px;
+      height: 19.7px;
+    }
+  }
+
+  .page-center{
+    display: flex;
+    position: relative;
+    width: 160px;
+    height: 100%;
+    margin-left: 13px;
+    align-items: center;
+
+    span{
+      width: 36px;
+      height: 20px;
+      font-family: $font-family;
+      font-size: 15px;
+      text-align: left;
+      color: #666666;
+    }
+    input{
+      width: 42.9px;
+      height: 25.7px;
+      border-radius: 2px;
+      border: solid 1px #d8d8d8;
+      background-color: #ffffff;
+      font-size: 14px;
+      margin-right: 8.6px;
+      margin-left: 11.2px;
+      font-family: $font-family;
+      text-align: center;
+    }
+    .of-page{
+      display: flex;
+      justify-content: space-between;
+      width: 48px;
+      height: 20px;
+      font-family: $font-family;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+      color: #666666;
+    }
+  }
+
+  .page-right {
+    display: flex;
+    width: 80px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    .page-right-first{
+      width: 17.2px;
+      height: 17.2px;
+      filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    .page-right-polygon{
+      width: 17.2px;
+      height: 19.7px;
+      filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+
+  .ico-refresh{
+    width: 17px;
+    height: 17px;
+    margin-left: 10.7px;
+    img{
+      width: 17px;
+      height: 17px;
+    }
+  }
+  .page-text{
+    width: 201px;
+    height: 20px;
+    font-family: $font-family;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    color: #666666;
+    margin-left: 10.5px;
+  }
+  .page-left::after{
+    content: '';
+    border-left: 1px solid #d8d8d8;
+    position: relative;
+    height: 100%;
+  }
+  .page-left::before{
+    content: '';
+    border-right: 1px solid #d8d8d8;
+    position: relative;
+    height: 100%;
+  }
+  .page-right::after{
+    content: '';
+    border-left: 1px solid #d8d8d8;
+    position: relative;
+    height: 100%;
+  }
+  .page-right::before{
+    content: '';
+    border-right: 1px solid #d8d8d8;
+    position: relative;
+    height: 100%;
+  }
+}
+
+//开关按钮
+.btn-switch{
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 30px;
+  border:1px solid #989898;;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+
+  .btn-open{
+    display: flex;
+    width: 35px;
+    height: 30px;
+    border-radius: 2px;
+    background-image: linear-gradient(to top, #14c587, #137855);
+    font-family: $font-family;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .btn-off{
+    display: flex;
+    width: 35px;
+    height: 30px;
+    border-radius: 1px;
+    background-image: linear-gradient(to bottom, #9a9a9a, #f2f2f2);
+    font-size: 14px;
+    font-family: $font-family;
+    color: #7e7e7e;
+    justify-content: center;
+    align-items: center;
+  }
+  span{
+    width: 28px;
+    height: 19px;
+    font-family: $font-family;
+    font-size: 14px;
+    text-align: center;
+    z-index: 1;
+  }
+}
+
+.switch-active{
+  width: 35px;
+  height: 30px;
+  border-radius: 2px;
+  border: solid 1px #989898;
+  background-image: linear-gradient(to bottom, #ffffff, #d8d8d8)!important;
+  background: rgb(255, 255, 255,1);
+  z-index: 10;
+  span{
+    display:  none;
+  }
+}
+
+//设定按钮
+.btn-setup{
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #19495b;
+  span{
+    width: 32px;
+    height: 21px;
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+  }
 }

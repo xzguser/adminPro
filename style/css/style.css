@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/**基础样式集合*/
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
   margin: 0;
   padding: 0;
@@ -120,6 +122,310 @@ a {
 .nav-text-active {
   font-size: 16px;
   color: #0099ff;
+}
+
+.tab-btn-bar {
+  display: flex;
+  align-items: flex-end;
+}
+
+.tab-btn {
+  display: flex;
+  width: 100px;
+  height: 45px;
+  background-color: #eeeeee;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 5px 0 0;
+}
+.tab-btn .tab-btn-text {
+  width: 100%;
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tab-btn-active {
+  width: 100px;
+  height: 50px;
+  background-color: #308769;
+  color: #ffffff !important;
+}
+
+.page-content {
+  width: 626px;
+  display: flex;
+  height: 25.7px;
+  align-items: center;
+}
+.page-content .page-number {
+  display: flex;
+  margin-right: 10px;
+}
+.page-content .page-number .page-sel {
+  width: 61.8px;
+  height: 25.7px;
+  border-radius: 2px;
+  border: solid 1px #d8d8d8;
+  font-size: 14px;
+  font-family: MicrosoftJhengHei;
+  color: #666666;
+  background: #ffffff;
+}
+.page-content .page-left {
+  display: flex;
+  width: 80px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-content .page-left .page-left-first {
+  width: 17.2px;
+  height: 17.2px;
+}
+.page-content .page-left .page-left-polygon {
+  width: 17.2px;
+  height: 19.7px;
+}
+.page-content .page-center {
+  display: flex;
+  position: relative;
+  width: 160px;
+  height: 100%;
+  margin-left: 13px;
+  align-items: center;
+}
+.page-content .page-center span {
+  width: 36px;
+  height: 20px;
+  font-family: MicrosoftJhengHei;
+  font-size: 15px;
+  text-align: left;
+  color: #666666;
+}
+.page-content .page-center input {
+  width: 42.9px;
+  height: 25.7px;
+  border-radius: 2px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  font-size: 14px;
+  margin-right: 8.6px;
+  margin-left: 11.2px;
+  font-family: MicrosoftJhengHei;
+  text-align: center;
+}
+.page-content .page-center .of-page {
+  display: flex;
+  justify-content: space-between;
+  width: 48px;
+  height: 20px;
+  font-family: MicrosoftJhengHei;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  color: #666666;
+}
+.page-content .page-right {
+  display: flex;
+  width: 80px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-content .page-right .page-right-first {
+  width: 17.2px;
+  height: 17.2px;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.page-content .page-right .page-right-polygon {
+  width: 17.2px;
+  height: 19.7px;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.page-content .ico-refresh {
+  width: 17px;
+  height: 17px;
+  margin-left: 10.7px;
+}
+.page-content .ico-refresh img {
+  width: 17px;
+  height: 17px;
+}
+.page-content .page-text {
+  width: 201px;
+  height: 20px;
+  font-family: MicrosoftJhengHei;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  color: #666666;
+  margin-left: 10.5px;
+}
+.page-content .page-left::after {
+  content: "";
+  border-left: 1px solid #d8d8d8;
+  position: relative;
+  height: 100%;
+}
+.page-content .page-left::before {
+  content: "";
+  border-right: 1px solid #d8d8d8;
+  position: relative;
+  height: 100%;
+}
+.page-content .page-right::after {
+  content: "";
+  border-left: 1px solid #d8d8d8;
+  position: relative;
+  height: 100%;
+}
+.page-content .page-right::before {
+  content: "";
+  border-right: 1px solid #d8d8d8;
+  position: relative;
+  height: 100%;
+}
+
+.btn-switch {
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 30px;
+  border: 1px solid #989898;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+}
+.btn-switch .btn-open {
+  display: flex;
+  width: 35px;
+  height: 30px;
+  border-radius: 2px;
+  background-image: linear-gradient(to top, #14c587, #137855);
+  font-family: MicrosoftJhengHei;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.btn-switch .btn-off {
+  display: flex;
+  width: 35px;
+  height: 30px;
+  border-radius: 1px;
+  background-image: linear-gradient(to bottom, #9a9a9a, #f2f2f2);
+  font-size: 14px;
+  font-family: MicrosoftJhengHei;
+  color: #7e7e7e;
+  justify-content: center;
+  align-items: center;
+}
+.btn-switch span {
+  width: 28px;
+  height: 19px;
+  font-family: MicrosoftJhengHei;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1;
+}
+
+.switch-active {
+  width: 35px;
+  height: 30px;
+  border-radius: 2px;
+  border: solid 1px #989898;
+  background-image: linear-gradient(to bottom, #ffffff, #d8d8d8) !important;
+  background: white;
+  z-index: 10;
+}
+.switch-active span {
+  display: none;
+}
+
+.btn-setup {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #19495b;
+}
+.btn-setup span {
+  width: 32px;
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+.color_01 {
+  color: #308769 !important;
+}
+
+.table-list {
+  width: 1438px;
+  position: absolute;
+}
+.table-list .table-01 {
+  position: absolute;
+  width: 1438px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+.table-list .table-head {
+  width: 100%;
+  height: 50px;
+  background-color: #66c7a5;
+}
+.table-list .table-head td div {
+  width: 100%;
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 13px;
+}
+.table-list .table-content {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+}
+.table-list .table-content td .td-div {
+  display: flex;
+  width: 100%;
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: left;
+  color: #333333;
+  margin-left: 13.5px;
+  align-items: center;
+}
+.table-list .table-content td .td-div .btn-input input {
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid 1px #dbdbdb;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
 }
 
 .affiche-page {

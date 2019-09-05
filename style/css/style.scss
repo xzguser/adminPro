@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
 $font-family:MicrosoftJhengHei;
-
+/**基础样式集合*/
 @import "../../theme/css/rewrite.scss";
-
+//选中样式
 @import "../../theme/css/base.scss";
+//字体样式
+@import "../../theme/css/font.scss";
 
-
-
+//表格样式
+@import "../../theme/css/table";
+//公告
 @import "../../theme/css/affiche.scss";
 
-
-
 @import "../../theme/css/head_module.scss";
-
 
 @import "../../theme/css/agent_query.scss";
 
