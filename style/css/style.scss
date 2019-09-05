@@ -2,6 +2,8 @@
 
 $font-family:MicrosoftJhengHei;
 /**基础样式集合*/
+
+//基础样式
 @import "../../theme/css/rewrite.scss";
 //选中样式
 @import "../../theme/css/base.scss";
@@ -13,9 +15,16 @@ $font-family:MicrosoftJhengHei;
 //公告
 @import "../../theme/css/affiche.scss";
 
+
+//头部--公共
 @import "../../theme/css/head_module.scss";
 
+//会员代理商-查询
 @import "../../theme/css/agent_query.scss";
+
+
+//登录
+@import "../../theme/css/user_login.scss";
 
 
 

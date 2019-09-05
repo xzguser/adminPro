@@ -1,0 +1,177 @@
+.login-page{
+    width: 1920px;
+    height: 1035px;
+    background-color: #f9f9f9;
+    position: relative;
+    .main-content{
+        margin-left: 560px;
+        width: 800px;
+ 
+        padding-top: 292px;
+       
+        .middle-con{
+            height: 500px;
+            background: #ffffff;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+            width: 100%;
+            .middle-top{
+                height:115px;
+                width:600px;
+                margin-left: 100px;
+
+                border-bottom: 1px solid #308769;
+                display: flex;
+                justify-content: center;
+               
+                .middle-top-logo{
+                    padding-top: 40px;
+                    width: 221.2px;
+                    height: 52.8px;
+                }
+            }
+            .middle-username-con{
+                height: 144.5px;
+                width: 100%;
+              
+                .user-title{
+                    height: 64px;
+                    padding-left: 121px;
+                    display: flex;
+                    align-items: center;
+            
+                    font-family: $font-family;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #11513d;
+                }
+                .user-input{
+                    height: 50px;
+                    margin-left: 115px;
+                    border-radius: 10px;
+                    width: 570px;
+                    border: solid 1px #707070;
+                    background-color: #ffffff;
+                }
+            }
+            .middle-userpwd-con{
+                height: 113px;
+                width: 100%;
+              
+                .pwd-title{
+                    height: 27px;
+                    padding-left: 121px;
+                    font-family: $font-family;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #11513d;
+                }
+                .pwd-input{
+                    height: 50px;
+                    margin-top: 18px;
+                    margin-left: 115px;
+                    border-radius: 10px;
+                    width: 570px;
+                    border: solid 1px #707070;
+                    background-color: #ffffff;
+                }
+            }
+            .midele-another{
+                height: 127.5px;
+                width: 100%;
+               
+                .another-con{
+                    height: 67px;
+                    margin-left: 233.5px;
+                    
+                    display: flex;
+                
+                  
+                    .module-login{
+                        width: 117px;
+                        height: 100%;
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+
+                        font-family: $font-family;
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #0099ff;
+                        // border-right: 1px solid #0099ff;
+                    }
+                    .long{
+                        width: 1px;
+                        height: 27px;
+                        margin:20px 0;
+                        background: #0099ff;
+                    }
+                }
+                .bottom-main{
+                    height: 60.5px;
+                    width: 100%;
+       
+                    display: flex;
+                    justify-content:center;
+                    .btn-bg{
+                        width: 100px;
+                        height: 40px;
+                        border-radius: 10px;
+                        background-color: #308769;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        font-family: $font-family;
+                        font-size:18px;
+                        font-weight: bold;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: normal;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .bottom-con{
+            height: 243px;
+          
+            width: 100%;
+            
+            .address-con{
+               width: 100%;
+          
+               display: flex;
+               justify-content: center;
+               padding-top: 25px;
+           
+               font-family: $font-family;
+               font-size: 16px;
+               font-weight: normal;
+               font-style: normal;
+               font-stretch: normal;
+               letter-spacing: normal;
+               color: #308769;
+            }
+        }
+    }
+    .bg-img{
+        position: absolute;
+        right: 0px;
+        width: 661.2px;
+        height: 100%;
+        top: 0px;
+        opacity: 0.5;
+    }
+}
