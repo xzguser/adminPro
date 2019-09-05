@@ -1,0 +1,721 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+img {
+  display: block;
+}
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: MicrosoftJhengHei;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+select, input {
+  vertical-align: middle;
+}
+
+select, input, textarea {
+  font-size: 12px;
+  margin: 0;
+}
+
+input[type=text], input[type=password], textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+
+textarea {
+  resize: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation_bar {
+  width: 1920px;
+  height: 54px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #66c7a5;
+  display: flex;
+  align-items: center;
+}
+.navigation_bar .bar-btn {
+  width: 120px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 18.6px;
+}
+.navigation_bar .bar-btn .bar-btn-txt {
+  width: 64px;
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+}
+.navigation_bar .bar-active {
+  width: 120px;
+  height: 54px;
+  background-color: #308769;
+}
+
+.nav-btn {
+  width: 64px;
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: right;
+  color: #b4b4b4;
+}
+
+.nav-active {
+  color: #308769;
+}
+
+.nav-active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  border: 1.5px solid #308769;
+  margin-top: 9.5px;
+}
+
+.nav-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  font-family: MicrosoftJhengHei;
+}
+
+.nav-text-active {
+  font-size: 16px;
+  color: #0099ff;
+}
+
+.affiche-page {
+  width: 1920px;
+  height: 956px;
+  border: 1px solid green;
+  background: #eeeeee;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.affiche-page-head {
+  width: 1900px;
+  height: 76px;
+}
+.affiche-page-head .affiche-page-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.affiche-page-head .affiche-page-content .affiche-page-left {
+  width: 36px;
+  height: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  font-family: MicrosoftJhengHei;
+  color: #333333;
+  margin-left: 30px;
+}
+.affiche-page-head .affiche-page-content .affiche-page-right {
+  display: flex;
+  width: 388px;
+  height: 21px;
+  margin-right: 49px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.affiche-page-head .affiche-page-content .affiche-page-right .right-icon {
+  width: 22px;
+  height: 14px;
+  margin-right: 5px;
+}
+.affiche-page-head .affiche-page-content .affiche-page-right .right-icon .ic_group_24px {
+  width: 100%;
+  height: 100%;
+}
+.affiche-page-head .affiche-page-content .affiche-page-right .right-number {
+  width: 19px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #ff5454;
+  margin-right: 10px;
+}
+.affiche-page-head .affiche-page-content .affiche-page-right .right-text {
+  width: 29px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+  margin-right: 12.2px;
+}
+.affiche-page-head .affiche-page-content .affiche-page-right .right-time-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4.8px;
+}
+.affiche-page-head .affiche-page-content .affiche-page-right .right-time-icon .ic_time {
+  width: 100%;
+  height: 100%;
+}
+.affiche-page-head .affiche-page-content .affiche-page-right .right-time {
+  width: 268px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.affiche-page .affiche-content {
+  width: 1900px;
+  height: 880px;
+  border: 1px solid blue;
+}
+.affiche-page .affiche-content .content-title .nav-btn {
+  width: 64px;
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: right;
+  color: #b4b4b4;
+}
+
+.head-page {
+  width: 1920px;
+  height: 80px;
+}
+.head-page .head-content {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  border: 2px solid #f2f2f2;
+  display: flex;
+  position: relative;
+}
+.head-page .head-content .head-Path {
+  height: 100%;
+  width: 180px;
+  position: relative;
+}
+.head-page .head-content .head-Path .logo-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 40px;
+}
+.head-page .head-content .head-option {
+  display: flex;
+  height: 100%;
+  width: 700px;
+}
+.head-page .head-content .head-option .option-row {
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.head-page .head-content .head-option .option-row .img-row {
+  padding-top: 8px;
+  width: 44px;
+  height: 44px;
+}
+.head-page .head-content .head-option .option-row .title-row {
+  padding-bottom: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #66c7a5;
+}
+.head-page .head-content .right-title {
+  position: absolute;
+  right: 45px;
+  height: 100%;
+  width: 652px;
+  display: flex;
+}
+.head-page .head-content .right-title .dis-con {
+  width: 84px;
+  height: 100%;
+  position: relative;
+}
+.head-page .head-content .right-title .dis-con .dis-con-a {
+  position: absolute;
+  width: 84px;
+  bottom: 6px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #66c7a5;
+  border-right: 1px solid #66c7a5;
+}
+.head-page .head-content .right-title .dis-con-min {
+  width: 52px;
+  height: 100%;
+  position: relative;
+}
+.head-page .head-content .right-title .dis-con-min .dis-con-a {
+  position: absolute;
+  width: 100%;
+  bottom: 6px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #66c7a5;
+  border-right: 1px solid #66c7a5;
+}
+.head-page .head-content .right-title .dis-con-max {
+  width: 110px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  padding-left: 10px;
+}
+.head-page .head-content .right-title .dis-con-max .message-count {
+  position: absolute;
+  bottom: 10px;
+  border-radius: 50%;
+  background: red;
+  width: 12px;
+  height: 12px;
+  font-family: MicrosoftJhengHei;
+  font-size: 7px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+.head-page .head-content .right-title .dis-con-max .dis-con-a {
+  position: absolute;
+  width: 90px;
+  bottom: 6px;
+  padding-left: 15px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  color: #66c7a5;
+  border-right: 1px solid #66c7a5;
+}
+.head-page .head-content .right-title .dis-state {
+  width: 54px;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+.head-page .head-content .right-title .dis-state .symbol {
+  position: absolute;
+  bottom: 6px;
+  height: 21px;
+  color: #66c7a5;
+  width: 6px;
+}
+.head-page .head-content .right-title .dis-state .china-ves {
+  width: 48px;
+  height: 21px;
+  border-right: 1px solid #66c7a5;
+  position: absolute;
+  bottom: 6px;
+}
+.head-page .head-content .right-title .dis-state .china-ves .china-logo {
+  height: 20px;
+  width: 20px;
+  padding-left: 20px;
+}
+.head-page .head-content .right-title .dis-greet {
+  width: 90px;
+  height: 100%;
+  position: relative;
+}
+.head-page .head-content .right-title .dis-greet .btn-swicth {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  width: 80px;
+  font-size: 14px;
+  height: 30px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+  background-color: #308769;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+.head-page .head-content .right-title .dis-greet .call-con {
+  position: absolute;
+  bottom: 6px;
+  height: 21px;
+  padding-left: 10px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #66c7a5;
+}
+.head-page .head-content .right-title .dis-greet .arrows {
+  position: absolute;
+  bottom: 8px;
+  height: 21px;
+  right: 0px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #66c7a5;
+  transform: rotate(180deg);
+}
+
+.agent-page {
+  width: 1920px;
+}
+.agent-page .title-bar {
+  width: 100%;
+  height: 54px;
+  background: #66c7a5;
+  display: flex;
+}
+.agent-page .title-bar .user-sel {
+  width: 120px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #308769;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.agent-page .title-bar .user-data {
+  width: 238px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.agent-page .title-bar .user-bank {
+  width: 168px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.agent-page .title-bar .user-commission {
+  width: 158px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.agent-page .scrool-content {
+  height: 901px;
+  width: 100%;
+  background: #eeeeee;
+}
+.agent-page .scrool-content .title-modules {
+  height: 62px;
+  width: 100%;
+  display: flex;
+}
+.agent-page .scrool-content .title-modules .agent-module {
+  width: 90px;
+  padding-left: 30px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.agent-page .scrool-content .title-modules .arrows-module {
+  width: 27px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  color: #333333;
+}
+.agent-page .scrool-content .title-modules .query-module {
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.agent-page .scrool-content .form-content {
+  margin: 9px 10px;
+  background: #ffffff;
+  width: 1900px;
+  height: 821px;
+}
+.agent-page .scrool-content .form-content .top-query {
+  width: 100%;
+  height: 45px;
+  display: flex;
+}
+.agent-page .scrool-content .form-content .top-query .member-query {
+  margin-left: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #b4b4b4;
+}
+.agent-page .scrool-content .form-content .top-query .agent-query {
+  margin-left: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #b4b4b4;
+}
+.agent-page .scrool-content .form-content .insert-user {
+  height: 77px;
+  width: 100%;
+  display: flex;
+}
+.agent-page .scrool-content .form-content .insert-user .insert-con {
+  margin-left: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  text-align: left;
+  color: #66c7a5;
+}
+.agent-page .scrool-content .form-content .datum-title {
+  height: 73px;
+  width: 100%;
+  display: flex;
+}
+.agent-page .scrool-content .form-content .datum-title .basic-con {
+  margin-left: 21px;
+  margin-top: 23px;
+  width: 130px;
+  height: 50px;
+  background: #308769;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-weight: bold;
+  display: flex;
+  color: #ffffff;
+}
+.agent-page .scrool-content .form-content .datum-title .basic-con .basic-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  font-size: 16px;
+  font-weight: normal;
+}
+.agent-page .scrool-content .form-content .datum-title .detail-con {
+  margin-top: 28px;
+  width: 130px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  height: 45px;
+  background: #eeeeee;
+  font-weight: bold;
+  display: flex;
+  color: #ffffff;
+}
+.agent-page .scrool-content .form-content .datum-title .detail-con .detail-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  font-weight: normal;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #308769;
+}
+.agent-page .scrool-content .form-content .datum-title .ip-con {
+  margin-top: 28px;
+  width: 80px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  height: 45px;
+  background: #eeeeee;
+  display: flex;
+  color: #ffffff;
+}
+.agent-page .scrool-content .form-content .datum-title .ip-con .ip-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-stretch: normal;
+  color: #308769;
+}
+.agent-page .scrool-content .form-content .datum-title .sync-con {
+  margin-top: 28px;
+  width: 100px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  height: 45px;
+  background: #eeeeee;
+  display: flex;
+  color: #ffffff;
+}
+.agent-page .scrool-content .form-content .datum-title .sync-con .sync-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  color: #308769;
+}
+.agent-page .scrool-content .form-content .form-main-content {
+  padding-left: 21px;
+  width: 100%;
+  display: flex;
+}
+.agent-page .scrool-content .form-content .form-main-content .table1-con {
+  height: 83px;
+  width: 100%;
+  display: flex;
+}
+.agent-page .scrool-content .form-content .form-main-content .table1-con .row-vel {
+  height: 100%;
+  width: 280px;
+  position: relative;
+}
+.agent-page .scrool-content .form-content .form-main-content .table1-con .row-vel .form-top-title {
+  position: absolute;
+  bottom: 30px;
+  height: 43px;
+  width: 230px;
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  color: #333333;
+}
+.agent-page .scrool-content .form-content .form-main-content .table1-con .row-vel .form-bottom-account {
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
+  width: 230px;
+  border: solid 1px #d8d8d8;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  color: #333333;
+  border-radius: 5px;
+  background: #e2e2e2;
+}
+.agent-page .scrool-content .form-content .form-main-content .table1-con .row-vel .form-bottom-name {
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
+  width: 230px;
+  border: solid 1px #d8d8d8;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  color: #333333;
+  border-radius: 5px;
+}
+.agent-page .scrool-content .form-content .form-main-content .table1-con .row-vel .form-bottom-paw {
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
+  width: 230px;
+  border: solid 1px #d8d8d8;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  color: #333333;
+  border-radius: 5px;
+}
+.agent-page .scrool-content .form-content .form-main-content .table1-con .row-vel .form-bottom-paw1 {
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
+  width: 230px;
+  border: solid 1px #d8d8d8;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  color: #333333;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
