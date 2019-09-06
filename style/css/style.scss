@@ -2,21 +2,26 @@
 
 $font-family:MicrosoftJhengHei;
 
+$indent-5:5px;
+/**基础样式集合*/
 
 //基础样式
 @import "../../theme/css/rewrite.scss";
-
-//基础样式
+//选中样式
 @import "../../theme/css/base.scss";
+//字体样式
+@import "../../theme/css/font.scss";
 
-
+//input样式
+@import "../../theme/css/input";
+//表格样式
+@import "../../theme/css/table";
 //公告
 @import "../../theme/css/affiche.scss";
 
 
 //头部--公共
 @import "../../theme/css/head_module.scss";
-
 
 //会员代理商-查询
 @import "../../theme/css/agent_query.scss";
