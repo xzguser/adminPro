@@ -1,6 +1,6 @@
 .agent-page{
     width: 1920px;
-    
+    height:1035px;
     .title-bar{
         width: 100%;
         height: 54px;
@@ -12,7 +12,7 @@
             justify-content: center;
             align-items: center;
             display: flex;
-            background-color: #308769;
+       
             font-family: $font-family;
             font-size: 16px;
             font-weight: bold;
@@ -53,6 +53,9 @@
             font-size: 16px;
             font-weight: bold;
             color: #ffffff;
+        }
+        .user-sel.active0,.user-data.active0,.user-bank.active0,.user-commission.active0,.checked{
+            background-color: #308769;
         }
     }
 

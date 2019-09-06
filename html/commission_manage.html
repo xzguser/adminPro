@@ -3,9 +3,188 @@
 	<head>
 		<meta charset="utf-8">
 		<title>佣金管理</title>
+		<link rel="stylesheet" href="../style/css/style.css">
 	</head>
 	
 	<body>
-	
+		<div class="commission-page">
+				<!-- 头部模块 -->
+				<div class="head-page">
+						<div class="head-content">
+							<div class="head-Path">
+								<img src="../style/img/logo.png" alt="" class="logo-img">
+							</div>
+							<div class="head-option">
+								<div class="option-row">
+									<img src="../style/img/agent-2x-bg.png" alt="" class="img-row">
+									<div class="title-row">会员代理商</div>
+								</div>
+								<div class="option-row">
+									<img src="../style/img/system-2x.png" alt="" class="img-row">
+									<div class="title-row">系统管理</div>
+								</div>
+								<div class="option-row">
+									<img src="../style/img/discounts-2x.png" alt="" class="img-row">
+									<div class="title-row">优惠管理</div>
+								</div>
+								<div class="option-row">
+									<img src="../style/img/financial-2x.png" alt="" class="img-row">
+									<div class="title-row">财务管理</div>
+								</div>
+								<div class="option-row">
+									<img src="../style/img/statement-2x.png" alt="" class="img-row">
+									<div class="title-row">报表汇出</div>
+								</div>
+								<div class="option-row">
+									<img src="../style/img/game-2x.png" alt="" class="img-row">
+									<div class="title-row">游戏管理</div>
+								</div>
+								<div class="option-row">
+									<img src="../style/img/backstage-2x.png" alt="" class="img-row">
+									<div class="title-row">后台管理</div>
+								</div>
+							</div>
+							<div class="right-title">
+								<!-- <span class="icon-con">^</span> -->
+								<div class="dis-con">
+									<a href="#" class="dis-con-a">优惠上传</a>
+								</div>
+								<div class="dis-con">
+										<a href="#" class="dis-con-a">在线客服</a>
+								</div>
+								<div class="dis-con-min">
+										<a href="#" class="dis-con-a">公告</a>
+								</div>
+								<div class="dis-con">
+										<a href="#" class="dis-con-a">数据分析</a>
+								</div>
+								<div class="dis-con">
+										<a href="#" class="dis-con-a">风格切换</a>
+								</div>
+								<div class="dis-con-max">
+									<div class="message-count">12</div>
+									<a href="#" class="dis-con-a">GT NEW+</a>
+								</div>
+								<div class="dis-state">
+									<span class="symbol">&lt;</span>
+									<div class="china-ves">
+										<img src="../style/img/china-2x.png" class="china-logo" alt="">
+									</div>
+								</div>
+								<div class="dis-greet">
+										<div class="btn-swicth">切回旧版</div>
+										<div class="call-con">Hi，YUI</div>
+										<div class="arrows">^</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="title-bar">
+						<div class="user-sel">会员查询</div>
+						<div class="user-data">会员资料查询与汇入</div>
+						<div class="user-bank">会员银行卡管理</div>
+						<div class="user-commission active0">佣金管理</div>
+				</div>
+				<div class="scrool-content">
+						<div class="title-modules">
+							<span class="agent-module">会员代理商</span>
+							<span class="arrows-module">&gt;</span>
+							<span class="query-module">佣金管理</span>
+							<div class="affiche-page-right">
+									<div class="right-icon">
+										<img src="../style/img/ic_group_24px.png"
+												srcset="../style/img/ic_group_24px@2x.png 2x,
+												../style/img/ic_group_24px@3x.png 3x"
+												class="ic_group_24px">
+									</div>
+									<div class="right-number">20</div>
+									<div class="right-text">人 /</div>
+									<div class="right-time-icon">
+										<img src="../style/img/ic_time.png"
+												srcset="../style/img/ic_time@2x.png 2x,
+											../style/img/ic_time@3x.png 3x"
+												class="ic_time">
+									</div>
+									<div class="right-time">北京2017/12/01（五）01：16：28</div>
+							</div>
+						
+						
+						</div>
+						<div class="form-content">
+							<div class="top-query">
+									<div class="member-query">退佣设定</div>
+									<div class="agent-query">退佣计算</div>
+							</div>
+							
+							<div class="datum-title">
+								<div class="basic-con active1">
+									<div class="basic-set">代理默认退佣设定</div>
+								</div>
+								<div class="basic-con">
+										<div class="basic-set">次代理默认退佣设定</div>
+								</div>
+							</div>
+							
+							<div class="platform-content">
+								<div class="platform-module-con">
+									<div class="platform-left-title">站台名称&nbsp;:</div>
+									<select class="platform-right-title">
+										<option value="0">A100-测试站-DEMO</option>
+										<option value="1">A100-测试站-DEMO</option>
+									</select>
+								</div>
+
+								<div class="platform-module-con">
+									<div class="platform-left-title">佣金名称&nbsp;:</div>
+									<input type="text" class="platform-right-title" />
+								</div>
+								
+								<div class="platform-module-con">
+										<div class="platform-left-title">状态&nbsp;:</div>
+										<select class="platform-right-title">
+											<option value="0">启用中</option>
+											<option value="1">禁用中</option>
+										</select>
+								</div>
+								<div class="platform-module-con">
+										<div class="platform-left-title">佣金计算方式&nbsp;:</div>
+										<div class="platform-right-con">
+											<input type="checkbox"  class="platform-checkbox">
+											<span class="platform-sel">退水制</span>
+											<input type="checkbox"  class="platform-checkbox">
+											<span class="platform-sel">退佣制</span>
+										</div>
+								</div>
+								<div class="platform-module-con">
+										<div class="platform-left-title">站台有效会员设定&nbsp;:</div>
+										<input type="text" class="platform-right-title" />
+										<span class="hint-con">RMB以上，设"0"则表示不限制下注量</span>
+								</div>
+								<div class="platform-module-con">
+										<div class="platform-left-title">是否同步所有帐号&nbsp;:</div>
+										<div class="platform-right-con">
+											<input type="checkbox"  class="platform-checkbox">
+											<span class="platform-sel">是</span>
+											<input type="checkbox"  class="platform-checkbox">
+											<span class="platform-sel">否</span>
+										</div>
+								</div>
+							</div>
+							<div class="select-con">
+								<img class="select-img" src="../style/img/Group828@2x.png" alt="">
+							</div>
+							<div class="platform-table">
+								表格
+							</div>
+							<div class="insert-vel">
+								<div class="insert-bg">+&nbsp;新增欄</div>
+							</div>
+							<div class="btn-vel">
+								<img class="save-img" src="../style/img/save-2x.png" alt="">
+								<img class="cancel-img" src="../style/img/cancel-2x.png" alt="">
+							</div>
+						</div>
+					</div>
+		</div>
 	</body>
 </html>
