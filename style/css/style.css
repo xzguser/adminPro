@@ -752,7 +752,6 @@ table tr td.lastCol {
   height: 80px;
 }
 .head-page .head-content {
-  width: 100%;
   height: 80px;
   background-color: #ffffff;
   border: 2px solid #f2f2f2;
@@ -942,6 +941,7 @@ table tr td.lastCol {
 
 .agent-page {
   width: 1920px;
+  height: 1035px;
 }
 .agent-page .title-bar {
   width: 100%;
@@ -955,7 +955,6 @@ table tr td.lastCol {
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: #308769;
   font-family: MicrosoftJhengHei;
   font-size: 16px;
   font-weight: bold;
@@ -993,6 +992,9 @@ table tr td.lastCol {
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
+}
+.agent-page .title-bar .user-sel.active0, .agent-page .title-bar .user-data.active0, .agent-page .title-bar .user-bank.active0, .agent-page .title-bar .user-commission.active0, .agent-page .title-bar .checked {
+  background-color: #308769;
 }
 .agent-page .scrool-content {
   height: 901px;
@@ -1597,6 +1599,863 @@ table tr td.lastCol {
   height: 100%;
   top: 0px;
   opacity: 0.5;
+}
+
+.commission-page {
+  width: 1920px;
+  height: 1300px;
+}
+.commission-page .title-bar {
+  width: 100%;
+  height: 54px;
+  background: #66c7a5;
+  display: flex;
+}
+.commission-page .title-bar .user-sel {
+  width: 120px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.commission-page .title-bar .user-data {
+  width: 238px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.commission-page .title-bar .user-bank {
+  width: 168px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.commission-page .title-bar .user-commission {
+  width: 158px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.commission-page .title-bar .user-sel.active0, .commission-page .title-bar .user-data.active0, .commission-page .title-bar .user-bank.active0, .commission-page .title-bar .user-commission.active0, .commission-page .title-bar .checked {
+  background-color: #308769;
+}
+.commission-page .scrool-content {
+  height: 901px;
+  width: 100%;
+  background: #eeeeee;
+}
+.commission-page .scrool-content .title-modules {
+  height: 62px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.commission-page .scrool-content .title-modules .agent-module {
+  width: 90px;
+  padding-left: 30px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.commission-page .scrool-content .title-modules .arrows-module {
+  width: 27px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  color: #333333;
+}
+.commission-page .scrool-content .title-modules .query-module {
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.commission-page .scrool-content .title-modules .affiche-page-right {
+  display: flex;
+  width: 388px;
+  height: 21px;
+  margin-right: 49px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  padding-top: 19px;
+}
+.commission-page .scrool-content .title-modules .affiche-page-right .right-icon {
+  width: 22px;
+  height: 14px;
+  margin-right: 5px;
+}
+.commission-page .scrool-content .title-modules .affiche-page-right .right-icon .ic_group_24px {
+  width: 100%;
+  height: 100%;
+}
+.commission-page .scrool-content .title-modules .affiche-page-right .right-number {
+  width: 19px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #ff5454;
+  margin-right: 10px;
+}
+.commission-page .scrool-content .title-modules .affiche-page-right .right-text {
+  width: 29px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+  margin-right: 12.2px;
+}
+.commission-page .scrool-content .title-modules .affiche-page-right .right-time-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4.8px;
+}
+.commission-page .scrool-content .title-modules .affiche-page-right .right-time-icon .ic_time {
+  width: 100%;
+  height: 100%;
+}
+.commission-page .scrool-content .title-modules .affiche-page-right .right-time {
+  width: 268px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.commission-page .scrool-content .form-content {
+  margin: 9px 10px;
+  background: #ffffff;
+  width: 1900px;
+  height: 821px;
+}
+.commission-page .scrool-content .form-content .top-query {
+  width: 100%;
+  height: 45px;
+  display: flex;
+}
+.commission-page .scrool-content .form-content .top-query .member-query {
+  margin-left: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #b4b4b4;
+}
+.commission-page .scrool-content .form-content .top-query .agent-query {
+  margin-left: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #b4b4b4;
+}
+.commission-page .scrool-content .form-content .datum-title {
+  height: 73px;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 21px;
+}
+.commission-page .scrool-content .form-content .datum-title .basic-con {
+  width: 160px;
+  height: 45px;
+  background: #eeeeee;
+  color: #308769;
+  margin-top: 28px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-weight: bold;
+  display: flex;
+}
+.commission-page .scrool-content .form-content .datum-title .basic-con .basic-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: normal;
+}
+.commission-page .scrool-content .form-content .datum-title .basic-con.active1, .commission-page .scrool-content .form-content .datum-title .checked {
+  height: 50px;
+  margin-top: 23px;
+  background: #308769;
+  color: #eeeeee;
+}
+.commission-page .scrool-content .form-content .platform-content {
+  height: 320px;
+  padding-left: 27px;
+  padding-top: 20px;
+  width: 100%;
+}
+.commission-page .scrool-content .form-content .platform-content .platform-module-con {
+  height: 54px;
+  width: 100%;
+  display: flex;
+}
+.commission-page .scrool-content .form-content .platform-content .platform-module-con .platform-left-title {
+  width: 156px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #333333;
+}
+.commission-page .scrool-content .form-content .platform-content .platform-module-con .platform-right-title {
+  width: 230px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #666666;
+}
+.commission-page .scrool-content .form-content .platform-content .platform-module-con .platform-right-con {
+  width: 230px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.commission-page .scrool-content .form-content .platform-content .platform-module-con .platform-right-con .platform-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  background: #ffffff;
+}
+.commission-page .scrool-content .form-content .platform-content .platform-module-con .platform-right-con .platform-sel {
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  margin-right: 22px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #666666;
+}
+.commission-page .scrool-content .form-content .platform-content .platform-module-con .hint-con {
+  height: 30px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+.commission-page .scrool-content .form-content .select-con {
+  height: 50px;
+  width: 100%;
+  padding-left: 21px;
+}
+.commission-page .scrool-content .form-content .select-con .select-img {
+  width: 80px;
+  height: 30px;
+}
+.commission-page .scrool-content .form-content .platform-table {
+  height: 417px;
+  width: 951px;
+  background: #66c7a5;
+}
+.commission-page .scrool-content .form-content .insert-vel {
+  height: 70px;
+  width: 100%;
+  padding-left: 21px;
+  display: flex;
+  align-items: center;
+}
+.commission-page .scrool-content .form-content .insert-vel .insert-bg {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #fcae00;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.commission-page .scrool-content .form-content .btn-vel {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  padding-left: 21px;
+  align-items: center;
+}
+.commission-page .scrool-content .form-content .btn-vel .save-img {
+  width: 80px;
+  height: 30px;
+}
+.commission-page .scrool-content .form-content .btn-vel .cancel-img {
+  margin-left: 25px;
+  width: 80px;
+  height: 30px;
+}
+
+.systemCom-page {
+  width: 1920px;
+  height: 1035px;
+  background-color: #eeeeee;
+}
+.systemCom-page .title-bar {
+  width: 100%;
+  height: 54px;
+  background: #66c7a5;
+  display: flex;
+}
+.systemCom-page .title-bar .sys-value {
+  width: 140px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.systemCom-page .title-bar .sys-set {
+  width: 150px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.systemCom-page .title-bar .sys-mes {
+  width: 150px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.systemCom-page .title-bar .sys-value.active0, .systemCom-page .title-bar .sys-set.active0, .systemCom-page .title-bar .sys-mes.active0, .systemCom-page .title-bar .checked {
+  background-color: #308769;
+}
+.systemCom-page .scrool-content {
+  height: 901px;
+  width: 100%;
+  background: #eeeeee;
+}
+.systemCom-page .scrool-content .title-modules {
+  height: 62px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-left: 30px;
+}
+.systemCom-page .scrool-content .title-modules .title-max {
+  width: 72px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.systemCom-page .scrool-content .title-modules .arrows-module {
+  width: 27px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  color: #333333;
+}
+.systemCom-page .scrool-content .title-modules .title-first {
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.systemCom-page .scrool-content .title-modules .affiche-page-right {
+  display: flex;
+  width: 388px;
+  height: 21px;
+  margin-right: 49px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  padding-top: 19px;
+}
+.systemCom-page .scrool-content .title-modules .affiche-page-right .right-icon {
+  width: 22px;
+  height: 14px;
+  margin-right: 5px;
+}
+.systemCom-page .scrool-content .title-modules .affiche-page-right .right-icon .ic_group_24px {
+  width: 100%;
+  height: 100%;
+}
+.systemCom-page .scrool-content .title-modules .affiche-page-right .right-number {
+  width: 19px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #ff5454;
+  margin-right: 10px;
+}
+.systemCom-page .scrool-content .title-modules .affiche-page-right .right-text {
+  width: 29px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+  margin-right: 12.2px;
+}
+.systemCom-page .scrool-content .title-modules .affiche-page-right .right-time-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4.8px;
+}
+.systemCom-page .scrool-content .title-modules .affiche-page-right .right-time-icon .ic_time {
+  width: 100%;
+  height: 100%;
+}
+.systemCom-page .scrool-content .title-modules .affiche-page-right .right-time {
+  width: 268px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.systemCom-page .scrool-content .form-content {
+  margin: 9px 10px;
+  background: #ffffff;
+  width: 1900px;
+  height: 821px;
+}
+.systemCom-page .scrool-content .form-content .top-module-row {
+  width: 100%;
+  height: 45px;
+  display: flex;
+}
+.systemCom-page .scrool-content .form-content .top-module-row .select-module {
+  margin-left: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #b4b4b4;
+}
+.systemCom-page .scrool-content .form-content .top-module-row .select-module.tar, .systemCom-page .scrool-content .form-content .top-module-row .checked {
+  border-bottom: solid 3px #308769;
+  color: #308769;
+}
+.systemCom-page .scrool-content .form-content .date-time {
+  width: 100%;
+  height: 63.5px;
+  margin-left: 21px;
+}
+.systemCom-page .scrool-content .form-content .date-time .date-con {
+  padding-top: 28px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #66c7a5;
+}
+.systemCom-page .scrool-content .form-content .create-message {
+  height: 34px;
+  margin-left: 39px;
+  border-bottom: 2px solid #66c7a5;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+.systemCom-page .scrool-content .form-content .website-set {
+  padding-top: 26px;
+  margin-left: 21px;
+  height: 51px;
+  width: 100%;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #11513d;
+}
+.systemCom-page .scrool-content .form-content .form-website {
+  width: 100%;
+}
+.systemCom-page .scrool-content .form-content .form-website .website-number {
+  height: 30px;
+  margin-left: 39px;
+  display: flex;
+  padding-bottom: 16px;
+}
+.systemCom-page .scrool-content .form-content .form-website .website-number .left-title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  padding-right: 12px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+.systemCom-page .scrool-content .form-content .form-website .website-number .right-con {
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #e2e2e2;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  padding-left: 14px;
+  width: 230px;
+  margin-right: 50px;
+  color: #666666;
+}
+.systemCom-page .scrool-content .form-content .form-website .website-number .left-title1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  padding-right: 12px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+.systemCom-page .scrool-content .form-content .form-website .website-number .right-con1 {
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  padding-left: 14px;
+  letter-spacing: normal;
+  width: 230px;
+  margin-right: 50px;
+  color: #666666;
+}
+.systemCom-page .scrool-content .form-content .form-website .domain-module {
+  height: 130px;
+  width: 100%;
+  margin-left: 39px;
+  display: flex;
+}
+.systemCom-page .scrool-content .form-content .form-website .domain-module .left-domain-title {
+  width: 90px;
+  padding-top: 4px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+.systemCom-page .scrool-content .form-content .form-website .domain-module .right-domain-select {
+  width: 230px;
+  padding-left: 14px;
+  padding-top: 4px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  overflow-x: hidden;
+  text-align: left;
+  color: #666666;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+}
+.systemCom-page .scrool-content .form-content .form-website .hint-content {
+  height: 41px;
+  padding-top: 6px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  margin-left: 129px;
+  text-align: left;
+  color: #ff3b3b;
+}
+.systemCom-page .scrool-content .form-content .form-website .select-count-sum {
+  height: 30px;
+  padding-bottom: 19px;
+  margin-left: 50px;
+  display: flex;
+}
+.systemCom-page .scrool-content .form-content .form-website .select-count-sum .count-title {
+  width: 80px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+.systemCom-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules {
+  display: flex;
+  width: 155px;
+  align-items: center;
+}
+.systemCom-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules .checkbox-state {
+  width: 17px;
+  height: 17px;
+}
+.systemCom-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules .type-sel {
+  padding-left: 5.4px;
+  width: 33px;
+  font-size: 14px;
+  color: #666666;
+}
+.systemCom-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules .count-select {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  padding-left: 10px;
+  color: #666666;
+}
+.systemCom-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules .several-title {
+  margin-left: 3px;
+  font-size: 14px;
+  text-align: left;
+  color: #666666;
+}
+.systemCom-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules .count-select.select {
+  background-color: #e2e2e2;
+}
+.systemCom-page .scrool-content .form-content .form-website .beyond-vel {
+  height: 21px;
+  margin-left: 40px;
+  display: flex;
+  padding-bottom: 17px;
+}
+.systemCom-page .scrool-content .form-content .form-website .beyond-vel .beyond-left-title {
+  width: 240px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.systemCom-page .scrool-content .form-content .form-website .beyond-vel .select-state-con {
+  width: 75px;
+  display: flex;
+  align-items: center;
+}
+.systemCom-page .scrool-content .form-content .form-website .beyond-vel .select-state-con .checkbox-check {
+  margin-left: 30px;
+  height: 17px;
+  width: 17px;
+}
+.systemCom-page .scrool-content .form-content .form-website .beyond-vel .select-state-con .state-name {
+  margin-left: 10px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: left;
+  color: #666666;
+}
+.systemCom-page .scrool-content .form-content .form-website .parameter-module {
+  height: 119px;
+  display: flex;
+  margin-left: 40px;
+}
+.systemCom-page .scrool-content .form-content .form-website .parameter-module .parameter-left-title {
+  width: 134px;
+  padding-bottom: 89px;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  color: #333333;
+  font-size: 16px;
+  font-family: MicrosoftJhengHei;
+}
+.systemCom-page .scrool-content .form-content .form-website .parameter-module .parameter-right-con {
+  width: 250px;
+}
+.systemCom-page .scrool-content .form-content .form-website .parameter-module .parameter-right-con .public-modules {
+  height: 30px;
+  padding-bottom: 13px;
+  display: flex;
+}
+.systemCom-page .scrool-content .form-content .form-website .parameter-module .parameter-right-con .public-modules .public-left-title {
+  width: 95px;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #333333;
+}
+.systemCom-page .scrool-content .form-content .form-website .parameter-module .parameter-right-con .public-modules .public-right-input {
+  width: 80px;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  padding-left: 10px;
+  text-align: left;
+  color: #666666;
+}
+.systemCom-page .scrool-content .form-content .form-website .parameter-module .parameter-right-con .public-modules .publiic-right-unit {
+  margin-left: 5px;
+  font-family: MicrosoftJhengHei;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #666666;
+}
+.systemCom-page .scrool-content .form-content .form-website .popup-vel {
+  height: 47px;
+  width: 100%;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+.systemCom-page .scrool-content .form-content .form-website .popup-vel .popup-left {
+  width: 224px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.systemCom-page .scrool-content .form-content .form-website .popup-vel .popup-right {
+  display: flex;
+}
+.systemCom-page .scrool-content .form-content .form-website .popup-vel .popup-right .select-state-con {
+  width: 75px;
+  display: flex;
+  align-items: center;
+}
+.systemCom-page .scrool-content .form-content .form-website .popup-vel .popup-right .select-state-con .checkbox-check {
+  margin-left: 30px;
+  height: 17px;
+  width: 17px;
+}
+.systemCom-page .scrool-content .form-content .form-website .popup-vel .popup-right .select-state-con .state-name {
+  margin-left: 10px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: left;
+  color: #666666;
+}
+.systemCom-page .scrool-content .form-content .form-website .btn-vel {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  margin-left: 40px;
+  align-items: center;
+}
+.systemCom-page .scrool-content .form-content .form-website .btn-vel .save-img {
+  width: 80px;
+  height: 30px;
+}
+.systemCom-page .scrool-content .form-content .form-website .btn-vel .cancel-img {
+  margin-left: 25px;
+  width: 80px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

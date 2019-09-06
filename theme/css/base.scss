@@ -10,16 +10,70 @@
 //select::-ms-expand {
 //  display: none;
 //}
-.blue-bg{
+
+.green-bg{
   background-color: #66c7a5 !important;
-  width: 150px;
+  color: #ffffff;
   div:first-child{
     color: #ffffff !important;
   }
 }
 
+.green-btn{
+  background-color: #66c7a5 !important;
+  font-style: normal;
+  font-stretch: normal;
+  color: #ffffff;
+}
 
+.orange-btn{
+  background-color: #ff6a3b !important;
+  font-style: normal;
+  font-stretch: normal;
+  color: #ffffff;
+}
+.orange-bg{
+  background-color: #ff6a3b !important;
+  color: #ffffff;
+  div:first-child{
+    color: #ffffff !important;
+  }
+}
 
+.blue-bg{
+  background-color: #1b65db !important;
+  color: #ffffff;
+  div:first-child{
+    color: #ffffff !important;
+  }
+}
+
+.blue-btn{
+  background-color: #1b65db !important;
+  font-style: normal;
+  font-stretch: normal;
+  color: #ffffff;
+}
+
+//按钮
+.btn-general{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #d8d8d8;
+  span{
+    height: 21px;
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+  }
+}
 
 //导航样式
 .navigation_bar {
