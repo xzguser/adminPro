@@ -10,6 +10,16 @@
 //select::-ms-expand {
 //  display: none;
 //}
+.blue-bg{
+  background-color: #66c7a5 !important;
+  width: 150px;
+  div:first-child{
+    color: #ffffff !important;
+  }
+}
+
+
+
 
 //导航样式
 .navigation_bar {
@@ -339,3 +349,4 @@
     color: #ffffff;
   }
 }
+

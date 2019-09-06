@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 $font-family:MicrosoftJhengHei;
+
+$indent-5:5px;
 /**基础样式集合*/
 
 //基础样式
@@ -10,6 +12,8 @@ $font-family:MicrosoftJhengHei;
 //字体样式
 @import "../../theme/css/font.scss";
 
+//input样式
+@import "../../theme/css/input";
 //表格样式
 @import "../../theme/css/table";
 //公告

@@ -1,70 +1,124 @@
 @charset "UTF-8";
 
-.table-list {
-  width: 1438px;
-  position: absolute;
+table{
+  border-collapse: collapse;
+  border: 0px solid #cccccc;;
+}
 
-  .table-01 {
-    position: absolute;
-    width: 1438px;
-    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
+table td {
+  border-top: 0;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-left: 0;
+}
+table tr td.firstRow  {
+  border-top: 1px solid #cccccc;
+}
+
+table tr.lastrow td {
+  border-bottom: 0;
+}
+
+table tr td.lastCol {
+  border-right: 0;
+}
+
+.table-head {
+  width: 100%;
+  height: 50.5px;
+
+  td {
+    div {
+      width: 100%;
+      height: 21px;
+      font-family: $font-family;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: left;
+      color: #333333;
+      margin-left: 13px;
+    }
   }
+}
 
-  .table-head {
-    width: 100%;
-    height: 50px;
-    background-color: #66c7a5;
+.table-content {
+  width: 100%;
+  height: 50px;
+  background: #fff;
 
-    td {
-      div {
-        width: 100%;
-        height: 21px;
+  td {
+    .td-div {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 21px;
+      font-family: $font-family;
+      font-size: 16px;
+      text-align: left;
+      color: #333333;
+      margin-left: 13.5px;
+      align-items: center;
+      justify-content: space-between;
+      .btn-input {
+        position: relative;
+        right: 24px;
+        input {
+          width: 90px;
+          height: 30px;
+          border-radius: 10px;
+          border: solid 1px #dbdbdb;
+          font-family: $font-family;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: left;
+          color: #333333;
+          text-indent: 12px
+        }
+      }
+      .td-text{
+        position: relative;
         font-family: $font-family;
         font-size: 16px;
         text-align: left;
         color: #ffffff;
-        margin-left: 13px;
       }
-    }
-  }
 
-  .table-content {
-    width: 100%;
-    height: 50px;
-    background: #fff;
-
-    td {
-      .td-div {
-        position:relative;
-        display: flex;
-        width: 100%;
+      .td-sel{
+        position: relative;
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+        border: solid 1px #d8d8d8;
+        background-color: #ffffff;
+        right: 17px;
+        font-family: $font-family;
+        font-size: 16px;
+        text-align: left;
+        color: #666666;
+      }
+      .span-del{
+        width: 50px;
         height: 21px;
         font-family: $font-family;
         font-size: 16px;
         text-align: left;
-        color: #333333;
-        margin-left: 13.5px;
-        align-items: center;
-
-        .btn-input {
-          position: relative;
-          left: 36px;
-          input {
-
-            width: 90px;
-            height: 30px;
-            border-radius: 10px;
-            border: solid 1px #dbdbdb;
-            font-family: $font-family;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: left;
-            color: #333333;
-
-          }
-        }
+        color: #ff3b3b;
       }
+
     }
   }
+
 }
+  .table-01 {
+    position: relative;
+    width: 1438px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+
+  }
+
+  .table-02{
+    width: 599px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+  }
