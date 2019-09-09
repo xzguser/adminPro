@@ -2,6 +2,7 @@
 .head-page{
   width: 1920px;
   height: 80px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   .head-content{
    
     height: 80px;
@@ -35,21 +36,64 @@
         height: 100%;
         text-align: center;
         position: relative;
-    
         .img-row{
-          padding-top: 8px;
+          margin-top: 8px;
+          margin-left: 28px;
+          background-repeat: no-repeat;
+          background-size: 100%;
           width: 44px;
           height: 44px;
-          display: inline-flex;
+        }
+        .img-agent{
+          background-image: url("../../style/img/agent-2x.png");
+        }
+        .img-system{
+          background-image: url("../../style/img/system-2x.png");
+        }
+        .img-discounts{
+          background-image: url("../../style/img/discounts-2x.png");
+        }
+        .img-financial{
+          background-image: url("../../style/img/financial-2x.png");
+        }
+        .img-statement{
+          background-image: url("../../style/img/statement-2x.png");
+        }
+        .img-game{
+          background-image: url("../../style/img/game-2x.png");
+        }
+        .img-backstage{
+          background-image: url("../../style/img/backstage-2x.png");
+        }
+        .img-agent.sel-img{
+          background-image: url("../../style/img/agent-2x-bg.png");
+        }
+        .img-system.sel-img{
+          background-image: url("../../style/img/system-2x-bg.png");
+        }
+        .img-discounts.sel-img{
+          background-image: url("../../style/img/discounts-2x-bg.png");
+        }
+        .img-financial.sel-img{
+          background-image: url("../../style/img/financial-2x-bg.png");
+        }
+        .img-statement.sel-img{
+          background-image: url("../../style/img/statement-2x-bg.png");
+        }
+        .img-game.sel-img{
+          background-image: url("../../style/img/game-2x-bg.png");
+        }
+        .img-backstage.sel-img{
+          background-image: url("../../style/img/backstage-2x-bg.png");
         }
         .title-row{
-          padding-bottom: 7px;
-          
-        
+          position: absolute;
+          bottom: 7px;
+          width: 100%;
           font-size: 16px;
           font-weight: bold;
           text-align: center;
-          color: #66c7a5;
+       
         }
       }
     }
@@ -76,8 +120,7 @@
           font-weight: bold;
           text-decoration:none;
           text-align: center;
-          color: #66c7a5;
-          border-right: 1px solid #66c7a5;
+          border-right: 1px solid #eeeeee;
         }
       }
 
@@ -96,8 +139,8 @@
           font-weight: bold;
           text-decoration:none;
           text-align: center;
-          color: #66c7a5;
-          border-right: 1px solid #66c7a5;
+          
+          border-right: 1px solid #eeeeee;
         }
       }
       .dis-con-max{
@@ -109,12 +152,12 @@
         
         .message-count{
           position: absolute;
-          bottom: 10px;
+          bottom: 8px;
           border-radius: 50%;
         
           background: red;
-          width: 12px;
-          height: 12px;
+          width: 16px;
+          height: 16px;
           font-family: $font-family;
           font-size: 7px;
           font-weight: bold;
@@ -132,8 +175,8 @@
          
           text-decoration:none;
           text-align: left;
-          color: #66c7a5;
-          border-right: 1px solid #66c7a5;
+         
+          border-right: 1px solid #eeeeee;
         }
       }
       .dis-state{
@@ -147,13 +190,13 @@
           position: absolute;
           bottom: 6px;
           height: 21px;
-          color: #66c7a5;
+       
           width: 6px;
         }
         .china-ves{
           width: 48px;
           height: 21px;
-          border-right: 1px solid #66c7a5;
+          border-right: 1px solid #eeeeee;
           position: absolute;
           bottom: 6px;
           .china-logo{
@@ -181,11 +224,11 @@
           height: 30px;
           border-radius: 25px;
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
-          background-color: #308769;
+          background-color: #eeeeee;
           display: inline-flex;
           justify-content: center;
           align-items: center;
-          color: #ffffff;
+     
           font-weight: bold;
         }
         .call-con{
@@ -199,7 +242,7 @@
           font-size: 16px;
           font-weight: bold;
           text-align: left;
-          color: #66c7a5;
+     
         }
         .arrows{
           position: absolute;
@@ -210,7 +253,7 @@
           font-size: 16px;
           font-weight: bold;
           text-align: left;
-          color: #66c7a5;
+   
           transform: rotate(180deg);
         }
       }
