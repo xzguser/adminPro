@@ -1,0 +1,70 @@
+/**
+ * @切换风格
+ * @time:19-9-9
+ */
+
+(function (win, doc, $) {
+    const data_btn = '[data-btn="data-btn"]';
+    const data_btnAll='[data-btnAll="data-btnAll"]';
+    const tab_switch = '[data-tab-switch="data-tab-switch"]';
+    const ache = {
+        init: function () {
+            const that = this;
+            return (function () {
+                ache.defaultFun();
+                ache.clickBtn();
+            })();
+        }
+        //默认事件
+        , defaultFun: function () {
+           return (function () {
+               //显示弹出层 加上样式 hide
+               $('[data-style="data-style"]').click(function () {
+                   $('[data-cashap-id="pop-content"]').removeClass('hide')
+               });
+               //隐藏弹出层 加上样式 hide
+               $('[data-close="data-close"]').click(function () {
+                   $('[data-cashap-id="pop-content"]').addClass('hide');
+               });
+               $($(data_btn)[0]).addClass("white-btn");
+               $($(tab_switch)[1]).addClass("hide");
+               $($(tab_switch)[2]).addClass("hide")
+           })();
+        }
+        //切换事件
+        , clickBtn: function () {
+            return (function () {
+                $(data_btnAll).delegate(data_btn,"click",function (e) {
+                   if(e) e.preventDefault();
+                    ache.setStyle(e.currentTarget);
+                    ache.setTable(e.currentTarget.classList);
+                });
+            })();
+        }
+        ,setStyle:function (tpl) {
+            return (function () {
+                $(data_btn).removeClass("white-btn");
+                $(tpl).addClass("white-btn");
+            })();
+        }
+        ,setTable:function (str) {
+            return (function () {
+                if(str[1]==="green-btn"){
+                    $($(tab_switch)[0]).removeClass("hide");
+                    $($(tab_switch)[1]).addClass("hide");
+                    $($(tab_switch)[2]).addClass("hide")
+                }else if(str[1]==="blue-btn"){
+                    $($(tab_switch)[0]).addClass("hide");
+                    $($(tab_switch)[1]).removeClass("hide");
+                    $($(tab_switch)[2]).addClass("hide")
+                }else if(str[1]==="orange-btn"){
+                    $($(tab_switch)[0]).addClass("hide");
+                    $($(tab_switch)[1]).addClass("hide");
+                    $($(tab_switch)[2]).removeClass("hide")
+                }
+            })();
+        }
+    };
+    //引用加载事件
+    ache.init()
+})(window, document, jQuery);

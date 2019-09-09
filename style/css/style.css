@@ -59,6 +59,12 @@ a {
   text-decoration: none;
 }
 
+.hide {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
 .bg1 {
   background-color: #eeeeee;
 }
@@ -87,7 +93,9 @@ a {
   background-color: #66c7a5 !important;
   font-style: normal;
   font-stretch: normal;
-  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff !important;
 }
 
 .green-open {
@@ -175,6 +183,28 @@ a {
   height: 50px !important;
   background-color: #1b65db !important;
   color: #ffffff !important;
+}
+
+.white-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2.5px solid #fff;
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.16);
+}
+
+.btn-submit {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #dbdbdb;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #122640;
+  line-height: 30px;
+  font-family: MicrosoftJhengHei;
+  margin-right: 25px;
 }
 
 .btn-general {
@@ -498,6 +528,103 @@ a {
   color: #ffffff;
 }
 
+.pop-content {
+  position: absolute;
+  width: 1920px;
+  height: 1035px;
+  z-index: 2;
+}
+
+.mask {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(127, 127, 127, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-style {
+  position: relative;
+  width: 630px;
+  height: 500px;
+  background: #ffffff;
+  margin-top: 9.5px;
+  display: flex;
+  justify-content: center;
+}
+.pop-style .content {
+  height: 100%;
+  width: 95%;
+}
+.pop-style .content .pop-title {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+}
+.pop-style .content .pop-title span {
+  width: 80px;
+  height: 27px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  font-family: MicrosoftJhengHei;
+}
+.pop-style .content .pop-active {
+  display: flex;
+  height: 70px;
+  width: 100%;
+}
+.pop-style .content .pop-active .pop-btn {
+  width: 40px;
+  height: 40px;
+  margin-right: 25px;
+  border-radius: 20px;
+  z-index: 1;
+}
+.pop-style .content .pop-img {
+  width: 599.7px;
+  height: 286px;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #e4e4e4;
+}
+.pop-style .content .pop-img .green-switch {
+  width: 599.7px;
+  height: 286px;
+  background-image: url("../img/green-switch.png");
+  background-repeat: no-repeat;
+  background-size: 599.7px 286px;
+}
+.pop-style .content .pop-img .blue-switch {
+  width: 599.7px;
+  height: 286px;
+  background-image: url("../img/blue-switch.png");
+  background-repeat: no-repeat;
+  background-size: 599.7px 286px;
+}
+.pop-style .content .pop-img .orange-switch {
+  width: 599.7px;
+  height: 286px;
+  background-image: url("../img/orange-switch.png");
+  background-repeat: no-repeat;
+  background-size: 599.7px 286px;
+}
+.pop-style .content .pop-event {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  align-items: center;
+}
+.pop-style .pop-close {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  right: -16px;
+  top: -20px;
+}
+
 .input-w60 {
   width: 60px;
   height: 30px;
@@ -807,6 +934,7 @@ table tr td.lastCol {
 .head-page {
   width: 1920px;
   height: 80px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
 .head-page .head-content {
   height: 80px;
@@ -840,17 +968,62 @@ table tr td.lastCol {
   position: relative;
 }
 .head-page .head-content .head-option .option-row .img-row {
-  padding-top: 8px;
+  margin-top: 8px;
+  margin-left: 28px;
+  background-repeat: no-repeat;
+  background-size: 100%;
   width: 44px;
   height: 44px;
-  display: inline-flex;
+}
+.head-page .head-content .head-option .option-row .img-agent {
+  background-image: url("../../style/img/agent-2x.png");
+}
+.head-page .head-content .head-option .option-row .img-system {
+  background-image: url("../../style/img/system-2x.png");
+}
+.head-page .head-content .head-option .option-row .img-discounts {
+  background-image: url("../../style/img/discounts-2x.png");
+}
+.head-page .head-content .head-option .option-row .img-financial {
+  background-image: url("../../style/img/financial-2x.png");
+}
+.head-page .head-content .head-option .option-row .img-statement {
+  background-image: url("../../style/img/statement-2x.png");
+}
+.head-page .head-content .head-option .option-row .img-game {
+  background-image: url("../../style/img/game-2x.png");
+}
+.head-page .head-content .head-option .option-row .img-backstage {
+  background-image: url("../../style/img/backstage-2x.png");
+}
+.head-page .head-content .head-option .option-row .img-agent.sel-img {
+  background-image: url("../../style/img/agent-2x-bg.png");
+}
+.head-page .head-content .head-option .option-row .img-system.sel-img {
+  background-image: url("../../style/img/system-2x-bg.png");
+}
+.head-page .head-content .head-option .option-row .img-discounts.sel-img {
+  background-image: url("../../style/img/discounts-2x-bg.png");
+}
+.head-page .head-content .head-option .option-row .img-financial.sel-img {
+  background-image: url("../../style/img/financial-2x-bg.png");
+}
+.head-page .head-content .head-option .option-row .img-statement.sel-img {
+  background-image: url("../../style/img/statement-2x-bg.png");
+}
+.head-page .head-content .head-option .option-row .img-game.sel-img {
+  background-image: url("../../style/img/game-2x-bg.png");
+}
+.head-page .head-content .head-option .option-row .img-backstage.sel-img {
+  background-image: url("../../style/img/backstage-2x-bg.png");
 }
 .head-page .head-content .head-option .option-row .title-row {
-  padding-bottom: 7px;
+  position: absolute;
+  bottom: 7px;
+  width: 100%;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  color: #66c7a5;
 }
 .head-page .head-content .right-title {
   position: absolute;
@@ -873,8 +1046,7 @@ table tr td.lastCol {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  color: #66c7a5;
-  border-right: 1px solid #66c7a5;
+  border-right: 1px solid #eeeeee;
 }
 .head-page .head-content .right-title .dis-con-min {
   width: 52px;
@@ -890,8 +1062,7 @@ table tr td.lastCol {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  color: #66c7a5;
-  border-right: 1px solid #66c7a5;
+  border-right: 1px solid #eeeeee;
 }
 .head-page .head-content .right-title .dis-con-max {
   width: 110px;
@@ -902,11 +1073,11 @@ table tr td.lastCol {
 }
 .head-page .head-content .right-title .dis-con-max .message-count {
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   border-radius: 50%;
   background: red;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   font-family: MicrosoftJhengHei;
   font-size: 7px;
   font-weight: bold;
@@ -923,8 +1094,7 @@ table tr td.lastCol {
   font-weight: bold;
   text-decoration: none;
   text-align: left;
-  color: #66c7a5;
-  border-right: 1px solid #66c7a5;
+  border-right: 1px solid #eeeeee;
 }
 .head-page .head-content .right-title .dis-state {
   width: 54px;
@@ -936,13 +1106,12 @@ table tr td.lastCol {
   position: absolute;
   bottom: 6px;
   height: 21px;
-  color: #66c7a5;
   width: 6px;
 }
 .head-page .head-content .right-title .dis-state .china-ves {
   width: 48px;
   height: 21px;
-  border-right: 1px solid #66c7a5;
+  border-right: 1px solid #eeeeee;
   position: absolute;
   bottom: 6px;
 }
@@ -965,11 +1134,10 @@ table tr td.lastCol {
   height: 30px;
   border-radius: 25px;
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
-  background-color: #308769;
+  background-color: #eeeeee;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
   font-weight: bold;
 }
 .head-page .head-content .right-title .dis-greet .call-con {
@@ -981,7 +1149,6 @@ table tr td.lastCol {
   font-size: 16px;
   font-weight: bold;
   text-align: left;
-  color: #66c7a5;
 }
 .head-page .head-content .right-title .dis-greet .arrows {
   position: absolute;
@@ -992,7 +1159,6 @@ table tr td.lastCol {
   font-size: 16px;
   font-weight: bold;
   text-align: left;
-  color: #66c7a5;
   transform: rotate(180deg);
 }
 
@@ -1003,7 +1169,6 @@ table tr td.lastCol {
 .agent-page .title-bar {
   width: 100%;
   height: 54px;
-  background: #66c7a5;
   display: flex;
 }
 .agent-page .title-bar .user-sel {
@@ -1056,7 +1221,6 @@ table tr td.lastCol {
 .agent-page .scrool-content {
   height: 901px;
   width: 100%;
-  background: #eeeeee;
 }
 .agent-page .scrool-content .title-modules {
   height: 62px;
@@ -1157,12 +1321,12 @@ table tr td.lastCol {
   width: 1900px;
   height: 821px;
 }
-.agent-page .scrool-content .form-content .top-query {
+.agent-page .scrool-content .form-content .top-module-row {
   width: 100%;
   height: 45px;
   display: flex;
 }
-.agent-page .scrool-content .form-content .top-query .member-query {
+.agent-page .scrool-content .form-content .top-module-row .select-module {
   margin-left: 21px;
   font-family: MicrosoftJhengHei;
   font-size: 16px;
@@ -1171,14 +1335,9 @@ table tr td.lastCol {
   text-align: left;
   color: #b4b4b4;
 }
-.agent-page .scrool-content .form-content .top-query .agent-query {
-  margin-left: 21px;
-  font-family: MicrosoftJhengHei;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  text-align: left;
-  color: #b4b4b4;
+.agent-page .scrool-content .form-content .top-module-row .select-module.tar, .agent-page .scrool-content .form-content .top-module-row .checked {
+  border-bottom: solid 3px #308769;
+  color: #308769;
 }
 .agent-page .scrool-content .form-content .insert-user {
   height: 77px;
@@ -1193,7 +1352,6 @@ table tr td.lastCol {
   align-items: center;
   display: flex;
   text-align: left;
-  color: #66c7a5;
 }
 .agent-page .scrool-content .form-content .datum-title {
   height: 73px;
@@ -1205,7 +1363,6 @@ table tr td.lastCol {
   width: 130px;
   height: 45px;
   background: #eeeeee;
-  color: #308769;
   margin-top: 28px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -1229,7 +1386,6 @@ table tr td.lastCol {
   background: #eeeeee;
   font-weight: bold;
   display: flex;
-  color: #308769;
 }
 .agent-page .scrool-content .form-content .datum-title .detail-con .detail-set {
   display: flex;
@@ -1251,7 +1407,6 @@ table tr td.lastCol {
   height: 45px;
   background: #eeeeee;
   display: flex;
-  color: #308769;
 }
 .agent-page .scrool-content .form-content .datum-title .ip-con .ip-set {
   display: flex;
@@ -1270,7 +1425,6 @@ table tr td.lastCol {
   height: 45px;
   background: #eeeeee;
   display: flex;
-  color: #308769;
 }
 .agent-page .scrool-content .form-content .datum-title .sync-con .sync-set {
   display: flex;
@@ -1494,9 +1648,25 @@ table tr td.lastCol {
   display: flex;
   text-align: left;
 }
-.agent-page .scrool-content .form-content .form-main-content .btn-con .btn-module .module-img {
+.agent-page .scrool-content .form-content .form-main-content .btn-con .btn-module .module-img-save {
   width: 80px;
   height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.agent-page .scrool-content .form-content .form-main-content .btn-con .btn-module .module-img-cancel {
+  width: 80px;
+  height: 30px;
+  color: #122640;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .login-page {
@@ -1658,6 +1828,34 @@ table tr td.lastCol {
   opacity: 0.5;
 }
 
+th {
+  border-top: 0;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-left: 0;
+}
+
+th div {
+  width: 100%;
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold;
+  margin-left: 13px;
+  color: #ffffff;
+}
+
+td div {
+  width: 100%;
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: left;
+  color: #333333;
+  margin-left: 13px;
+}
+
 .commission-page {
   width: 1920px;
   height: 1300px;
@@ -1718,7 +1916,6 @@ table tr td.lastCol {
 .commission-page .scrool-content {
   height: 901px;
   width: 100%;
-  background: #eeeeee;
 }
 .commission-page .scrool-content .title-modules {
   height: 62px;
@@ -1817,14 +2014,14 @@ table tr td.lastCol {
   margin: 9px 10px;
   background: #ffffff;
   width: 1900px;
-  height: 821px;
+  height: 1090px;
 }
-.commission-page .scrool-content .form-content .top-query {
+.commission-page .scrool-content .form-content .top-module-row {
   width: 100%;
   height: 45px;
   display: flex;
 }
-.commission-page .scrool-content .form-content .top-query .member-query {
+.commission-page .scrool-content .form-content .top-module-row .select-module {
   margin-left: 21px;
   font-family: MicrosoftJhengHei;
   font-size: 16px;
@@ -1833,14 +2030,9 @@ table tr td.lastCol {
   text-align: left;
   color: #b4b4b4;
 }
-.commission-page .scrool-content .form-content .top-query .agent-query {
-  margin-left: 21px;
-  font-family: MicrosoftJhengHei;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  text-align: left;
-  color: #b4b4b4;
+.commission-page .scrool-content .form-content .top-module-row .select-module.tar, .commission-page .scrool-content .form-content .top-module-row .checked {
+  border-bottom: solid 3px #308769;
+  color: #308769;
 }
 .commission-page .scrool-content .form-content .datum-title {
   height: 73px;
@@ -1954,14 +2146,97 @@ table tr td.lastCol {
   width: 100%;
   padding-left: 21px;
 }
-.commission-page .scrool-content .form-content .select-con .select-img {
+.commission-page .scrool-content .form-content .select-con .select-btn {
   width: 80px;
   height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .commission-page .scrool-content .form-content .platform-table {
-  height: 417px;
+  margin-left: 21px;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new {
   width: 951px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-th {
+  width: 100%;
   background: #66c7a5;
+  height: 50px;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-th th:nth-child(1) {
+  width: 371px;
+  border-right: 1px solid #ffffff;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-th th:nth-child(2), .commission-page .scrool-content .form-content .platform-table .table-01-new .table-th th:nth-child(3), .commission-page .scrool-content .form-content .platform-table .table-01-new .table-th th:nth-child(4) {
+  width: 100px;
+  border-right: 1px solid #ffffff;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-th th:nth-child(5) {
+  width: 110px;
+  border-right: 1px solid #ffffff;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-th th:nth-child(6) .div-select {
+  width: 170px;
+  height: 50px;
+  margin-left: 0px;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-th th:nth-child(6) .div-select .select-con {
+  width: 140px;
+  height: 36px;
+  margin-top: 7px;
+  margin-left: 13px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 16px;
+  font-family: MicrosoftJhengHei;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-tr {
+  width: 100%;
+  background: #ffffff;
+  height: 50px;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-tr td:nth-child(1) {
+  width: 70px;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-tr td:nth-child(2) {
+  width: 200px;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-tr td:nth-child(3), .commission-page .scrool-content .form-content .platform-table .table-01-new .table-tr tr:nth-child(4), .commission-page .scrool-content .form-content .platform-table .table-01-new .table-tr tr:nth-child(5), .commission-page .scrool-content .form-content .platform-table .table-01-new .table-tr tr:nth-child(6) {
+  width: 100px;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-tr td:nth-child(7) {
+  width: 110px;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-tr td:nth-child(8) .div-select {
+  width: 170px;
+  margin-left: 0px;
+  height: 50px;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-tr td:nth-child(8) .div-select .select-con {
+  width: 140px;
+  height: 36px;
+  margin-top: 7px;
+  margin-left: 13px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 16px;
+  font-family: MicrosoftJhengHei;
+}
+.commission-page .scrool-content .form-content .platform-table .table-01-new .table-tr .td-first {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: -56px;
 }
 .commission-page .scrool-content .form-content .insert-vel {
   height: 70px;
@@ -1986,21 +2261,39 @@ table tr td.lastCol {
   letter-spacing: normal;
   color: #ffffff;
 }
-.commission-page .scrool-content .form-content .btn-vel {
-  height: 50px;
+.commission-page .scrool-content .form-content .btn-con {
   width: 100%;
-  display: flex;
   padding-left: 21px;
+  display: flex;
+  margin-top: 10px;
+}
+.commission-page .scrool-content .form-content .btn-con .btn-module {
+  width: 104px;
+  height: 100%;
   align-items: center;
+  display: flex;
+  text-align: left;
 }
-.commission-page .scrool-content .form-content .btn-vel .save-img {
+.commission-page .scrool-content .form-content .btn-con .btn-module .module-img-save {
   width: 80px;
   height: 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.commission-page .scrool-content .form-content .btn-vel .cancel-img {
-  margin-left: 25px;
+.commission-page .scrool-content .form-content .btn-con .btn-module .module-img-cancel {
   width: 80px;
   height: 30px;
+  color: #122640;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .systemCom-page {
@@ -2011,7 +2304,6 @@ table tr td.lastCol {
 .systemCom-page .title-bar {
   width: 100%;
   height: 54px;
-  background: #66c7a5;
   display: flex;
 }
 .systemCom-page .title-bar .sys-value {
@@ -2053,7 +2345,6 @@ table tr td.lastCol {
 .systemCom-page .scrool-content {
   height: 901px;
   width: 100%;
-  background: #eeeeee;
 }
 .systemCom-page .scrool-content .title-modules {
   height: 62px;
@@ -2186,7 +2477,6 @@ table tr td.lastCol {
   font-stretch: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #66c7a5;
 }
 .systemCom-page .scrool-content .form-content .create-message {
   height: 34px;
@@ -2510,6 +2800,1116 @@ table tr td.lastCol {
   height: 30px;
 }
 .systemCom-page .scrool-content .form-content .form-website .btn-vel .cancel-img {
+  margin-left: 25px;
+  width: 80px;
+  height: 30px;
+}
+
+th {
+  border-top: 0;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-left: 0;
+}
+
+th div {
+  width: 100%;
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 0px;
+  color: #ffffff;
+}
+
+td div {
+  text-align: center;
+  margin-left: 0px;
+}
+
+.loginAffiche-page {
+  position: absolute;
+  width: 1920px;
+  height: 1035px;
+}
+.loginAffiche-page .scrool-content {
+  width: 100%;
+  height: 955px;
+}
+.loginAffiche-page .scrool-content .title-modules {
+  height: 62px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.loginAffiche-page .scrool-content .title-modules .agent-module {
+  width: 90px;
+  padding-left: 30px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.loginAffiche-page .scrool-content .title-modules .arrows-module {
+  width: 27px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  color: #333333;
+}
+.loginAffiche-page .scrool-content .title-modules .query-module {
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.loginAffiche-page .scrool-content .title-modules .affiche-page-right {
+  display: flex;
+  width: 388px;
+  height: 21px;
+  margin-right: 49px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  padding-top: 19px;
+}
+.loginAffiche-page .scrool-content .title-modules .affiche-page-right .right-icon {
+  width: 22px;
+  height: 14px;
+  margin-right: 5px;
+}
+.loginAffiche-page .scrool-content .title-modules .affiche-page-right .right-icon .ic_group_24px {
+  width: 100%;
+  height: 100%;
+}
+.loginAffiche-page .scrool-content .title-modules .affiche-page-right .right-number {
+  width: 19px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #ff5454;
+  margin-right: 10px;
+}
+.loginAffiche-page .scrool-content .title-modules .affiche-page-right .right-text {
+  width: 29px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+  margin-right: 12.2px;
+}
+.loginAffiche-page .scrool-content .title-modules .affiche-page-right .right-time-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4.8px;
+}
+.loginAffiche-page .scrool-content .title-modules .affiche-page-right .right-time-icon .ic_time {
+  width: 100%;
+  height: 100%;
+}
+.loginAffiche-page .scrool-content .title-modules .affiche-page-right .right-time {
+  width: 268px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.loginAffiche-page .scrool-content .form-content {
+  margin: 9px 10px;
+  background: #ffffff;
+  width: 1900px;
+  height: 875px;
+}
+.loginAffiche-page .scrool-content .form-content .top-module-row {
+  width: 100%;
+  height: 45px;
+  display: flex;
+}
+.loginAffiche-page .scrool-content .form-content .top-module-row .select-module {
+  margin-left: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #b4b4b4;
+}
+.loginAffiche-page .scrool-content .form-content .top-module-row .select-module.tar, .loginAffiche-page .scrool-content .form-content .top-module-row .checked {
+  border-bottom: solid 3px #308769;
+  color: #308769;
+}
+.loginAffiche-page .scrool-content .form-content .datum-title {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  margin-left: 17px;
+  margin-top: 21px;
+}
+.loginAffiche-page .scrool-content .form-content .datum-title .basic-con {
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-right: 1.5px;
+  display: flex;
+  box-shadow: 3px 0 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  color: #aeaeae;
+}
+.loginAffiche-page .scrool-content .form-content .datum-title .basic-con .basic-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  font-weight: normal;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  letter-spacing: normal;
+  text-align: center;
+}
+.loginAffiche-page .scrool-content .form-content .datum-title .basic-con.active1, .loginAffiche-page .scrool-content .form-content .datum-title .checked {
+  height: 50px;
+  margin-top: 0px;
+  color: #308769;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche {
+  margin-left: 17px;
+  display: flex;
+  margin-right: 17px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #e4e4e4;
+  background-color: #ffffff;
+  width: 1866px;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche .table-affiche-left {
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche .table-affiche-left .left-icon {
+  width: 30px;
+  height: 30px;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche .table-affiche-right {
+  width: 1821px;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche .table-affiche-right .table-main {
+  margin-top: 16px;
+  margin-bottom: 18px;
+  width: 100%;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche .table-affiche-right .table-main .table-tr-header {
+  width: 100%;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche .table-affiche-right .table-main .table-tr-header th:nth-child(1) {
+  width: 196px;
+  height: 50px;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche .table-affiche-right .table-main .table-tr-header th:nth-child(2) {
+  width: 186px;
+  height: 50px;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche .table-affiche-right .table-main .table-tr-header th:nth-child(3) {
+  width: 1404px;
+  height: 50px;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche .table-affiche-right .table-main .table-tr-content {
+  width: 100%;
+  border-left: 1.5px solid #308769;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche .table-affiche-right .table-main .table-tr-content td {
+  border-right: 1.5px solid #308769;
+  border-bottom: 1.5px solid #308769;
+}
+.loginAffiche-page .scrool-content .form-content .table-affiche .table-affiche-right .table-main .table-tr-content td .td-content {
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.userInsert-page {
+  width: 1920px;
+  height: 1035px;
+}
+.userInsert-page .title-bar {
+  width: 100%;
+  height: 54px;
+  display: flex;
+}
+.userInsert-page .title-bar .user-sel {
+  width: 120px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.userInsert-page .title-bar .user-data {
+  width: 238px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.userInsert-page .title-bar .user-bank {
+  width: 168px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.userInsert-page .title-bar .user-commission {
+  width: 158px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.userInsert-page .title-bar .user-sel.active0, .userInsert-page .title-bar .user-data.active0, .userInsert-page .title-bar .user-bank.active0, .userInsert-page .title-bar .user-commission.active0, .userInsert-page .title-bar .checked {
+  background-color: #308769;
+}
+.userInsert-page .scrool-content {
+  height: 901px;
+  width: 100%;
+}
+.userInsert-page .scrool-content .title-modules {
+  height: 62px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.userInsert-page .scrool-content .title-modules .agent-module {
+  width: 90px;
+  padding-left: 30px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.userInsert-page .scrool-content .title-modules .arrows-module {
+  width: 27px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  color: #333333;
+}
+.userInsert-page .scrool-content .title-modules .query-module {
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.userInsert-page .scrool-content .title-modules .affiche-page-right {
+  display: flex;
+  width: 388px;
+  height: 21px;
+  margin-right: 49px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  padding-top: 19px;
+}
+.userInsert-page .scrool-content .title-modules .affiche-page-right .right-icon {
+  width: 22px;
+  height: 14px;
+  margin-right: 5px;
+}
+.userInsert-page .scrool-content .title-modules .affiche-page-right .right-icon .ic_group_24px {
+  width: 100%;
+  height: 100%;
+}
+.userInsert-page .scrool-content .title-modules .affiche-page-right .right-number {
+  width: 19px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #ff5454;
+  margin-right: 10px;
+}
+.userInsert-page .scrool-content .title-modules .affiche-page-right .right-text {
+  width: 29px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+  margin-right: 12.2px;
+}
+.userInsert-page .scrool-content .title-modules .affiche-page-right .right-time-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4.8px;
+}
+.userInsert-page .scrool-content .title-modules .affiche-page-right .right-time-icon .ic_time {
+  width: 100%;
+  height: 100%;
+}
+.userInsert-page .scrool-content .title-modules .affiche-page-right .right-time {
+  width: 268px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.userInsert-page .scrool-content .form-content {
+  margin: 9px 10px;
+  background: #ffffff;
+  width: 1900px;
+  height: 821px;
+}
+.userInsert-page .scrool-content .form-content .top-module-row {
+  width: 100%;
+  height: 45px;
+  display: flex;
+}
+.userInsert-page .scrool-content .form-content .top-module-row .select-module {
+  margin-left: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #b4b4b4;
+}
+.userInsert-page .scrool-content .form-content .top-module-row .select-module.tar, .userInsert-page .scrool-content .form-content .top-module-row .checked {
+  border-bottom: solid 3px #308769;
+  color: #308769;
+}
+.userInsert-page .scrool-content .form-content .insert-user {
+  height: 77px;
+  width: 100%;
+  display: flex;
+}
+.userInsert-page .scrool-content .form-content .insert-user .insert-con {
+  margin-left: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  text-align: left;
+}
+.userInsert-page .scrool-content .form-content .insert-form {
+  padding-left: 21px;
+}
+.userInsert-page .scrool-content .form-content .insert-form .insert-content {
+  height: 73px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 28px;
+}
+.userInsert-page .scrool-content .form-content .insert-form .insert-content .module-vel {
+  width: 230px;
+  height: 100%;
+}
+.userInsert-page .scrool-content .form-content .insert-form .insert-content .module-vel .insert-title {
+  height: 43px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.userInsert-page .scrool-content .form-content .insert-form .insert-content .module-vel .insert-title .symbol {
+  color: #ff4747;
+  font-size: 18px;
+  width: 13px;
+}
+.userInsert-page .scrool-content .form-content .insert-form .insert-content .module-vel .insert-title .title-name {
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  color: #333333;
+}
+.userInsert-page .scrool-content .form-content .insert-form .insert-content .module-vel .insert-vel {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.userInsert-page .scrool-content .form-content .insert-form .insert-content .module-vel .insert-vel .insert-input-con {
+  width: 170px;
+  height: 100%;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  padding-left: 10px;
+  color: #666666;
+}
+.userInsert-page .scrool-content .form-content .insert-form .insert-content .module-vel .insert-vel .insert-select-con {
+  width: 180px;
+  height: 100%;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  padding-left: 10px;
+  color: #666666;
+}
+.userInsert-page .scrool-content .form-content .insert-form .insert-content .module-vel .insert-vel .insert-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.userInsert-page .scrool-content .form-content .insert-form .insert-content .module-vel .insert-vel .insert-sel {
+  width: 16px;
+  height: 21px;
+  margin-right: 22px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #666666;
+}
+.userInsert-page .scrool-content .form-content .insert-form .describe-vel {
+  margin-top: 32px;
+  height: 172px;
+  display: flex;
+}
+.userInsert-page .scrool-content .form-content .insert-form .describe-vel .describe-module {
+  width: 410px;
+  height: 100%;
+  margin-right: 51px;
+}
+.userInsert-page .scrool-content .form-content .insert-form .describe-vel .describe-module .describe-name {
+  height: 32px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  color: #333333;
+}
+.userInsert-page .scrool-content .form-content .insert-form .describe-vel .describe-module .describe-content {
+  height: 140px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+}
+.userInsert-page .scrool-content .form-content .insert-form .describe-vel .describe-module .describe-content .text-con {
+  margin: 2px;
+  border: none;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 394px;
+  height: 130px;
+}
+.userInsert-page .scrool-content .form-content .insert-form .vip-vel {
+  margin-top: 28px;
+  height: 21px;
+  font-weight: bold;
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  color: #11513d;
+}
+.userInsert-page .scrool-content .form-content .insert-form .class-vel {
+  margin-top: 29px;
+  height: 67px;
+  display: flex;
+}
+.userInsert-page .scrool-content .form-content .insert-form .class-vel .class-module {
+  width: 231px;
+  height: 100%;
+}
+.userInsert-page .scrool-content .form-content .insert-form .class-vel .class-module .class-title {
+  height: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  color: #333333;
+}
+.userInsert-page .scrool-content .form-content .insert-form .class-vel .class-module .class-select-vel {
+  height: 46px;
+  width: 100%;
+  position: relative;
+}
+.userInsert-page .scrool-content .form-content .insert-form .class-vel .class-module .class-select-vel .class-select-con {
+  position: absolute;
+  bottom: 0px;
+  width: 179px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  padding-left: 12px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  color: #666666;
+}
+.userInsert-page .scrool-content .form-content .insert-form .btn-con {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.userInsert-page .scrool-content .form-content .insert-form .btn-con .btn-module {
+  width: 104px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  text-align: left;
+}
+.userInsert-page .scrool-content .form-content .insert-form .btn-con .btn-module .module-img-save {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.userInsert-page .scrool-content .form-content .insert-form .btn-con .btn-module .module-img-cancel {
+  width: 80px;
+  height: 30px;
+  color: #122640;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discountsVip-page {
+  width: 1920px;
+  height: 1035px;
+}
+.discountsVip-page .title-bar {
+  width: 100%;
+  height: 54px;
+  display: flex;
+}
+.discountsVip-page .title-bar .sys-activity {
+  width: 120px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.discountsVip-page .title-bar .sys-turn {
+  width: 164px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.discountsVip-page .title-bar .sys-activity.active0, .discountsVip-page .title-bar .sys-turn.active0, .discountsVip-page .title-bar .checked {
+  background-color: #308769;
+}
+.discountsVip-page .scrool-content {
+  height: 901px;
+  width: 100%;
+}
+.discountsVip-page .scrool-content .title-modules {
+  height: 62px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-left: 30px;
+}
+.discountsVip-page .scrool-content .title-modules .title-max {
+  width: 72px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .title-modules .arrows-module {
+  width: 27px;
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .title-modules .title-first {
+  align-items: center;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .title-modules .affiche-page-right {
+  display: flex;
+  width: 388px;
+  height: 21px;
+  margin-right: 49px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  padding-top: 19px;
+}
+.discountsVip-page .scrool-content .title-modules .affiche-page-right .right-icon {
+  width: 22px;
+  height: 14px;
+  margin-right: 5px;
+}
+.discountsVip-page .scrool-content .title-modules .affiche-page-right .right-icon .ic_group_24px {
+  width: 100%;
+  height: 100%;
+}
+.discountsVip-page .scrool-content .title-modules .affiche-page-right .right-number {
+  width: 19px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #ff5454;
+  margin-right: 10px;
+}
+.discountsVip-page .scrool-content .title-modules .affiche-page-right .right-text {
+  width: 29px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+  margin-right: 12.2px;
+}
+.discountsVip-page .scrool-content .title-modules .affiche-page-right .right-time-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4.8px;
+}
+.discountsVip-page .scrool-content .title-modules .affiche-page-right .right-time-icon .ic_time {
+  width: 100%;
+  height: 100%;
+}
+.discountsVip-page .scrool-content .title-modules .affiche-page-right .right-time {
+  width: 268px;
+  height: 100%;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .form-content {
+  margin: 9px 10px;
+  background: #ffffff;
+  width: 1900px;
+  height: 821px;
+}
+.discountsVip-page .scrool-content .form-content .top-module-row {
+  width: 100%;
+  height: 45px;
+  display: flex;
+}
+.discountsVip-page .scrool-content .form-content .top-module-row .select-module {
+  margin-left: 21px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #b4b4b4;
+}
+.discountsVip-page .scrool-content .form-content .top-module-row .select-module.tar, .discountsVip-page .scrool-content .form-content .top-module-row .checked {
+  border-bottom: solid 3px #308769;
+  color: #308769;
+}
+.discountsVip-page .scrool-content .form-content .date-time {
+  width: 100%;
+  height: 63.5px;
+  margin-left: 21px;
+}
+.discountsVip-page .scrool-content .form-content .date-time .date-con {
+  padding-top: 28px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+.discountsVip-page .scrool-content .form-content .create-message {
+  height: 34px;
+  margin-left: 39px;
+  border-bottom: 2px solid #66c7a5;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .form-content .website-set {
+  padding-top: 26px;
+  margin-left: 21px;
+  height: 51px;
+  width: 100%;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #11513d;
+}
+.discountsVip-page .scrool-content .form-content .form-website {
+  width: 100%;
+}
+.discountsVip-page .scrool-content .form-content .form-website .website-number {
+  height: 30px;
+  margin-left: 39px;
+  display: flex;
+  padding-bottom: 16px;
+}
+.discountsVip-page .scrool-content .form-content .form-website .website-number .left-title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  padding-right: 12px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .form-content .form-website .website-number .right-con {
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #e2e2e2;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  padding-left: 14px;
+  width: 230px;
+  margin-right: 50px;
+  color: #666666;
+}
+.discountsVip-page .scrool-content .form-content .form-website .website-number .left-title1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  padding-right: 12px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .form-content .form-website .website-number .right-con1 {
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  padding-left: 14px;
+  letter-spacing: normal;
+  width: 230px;
+  margin-right: 50px;
+  color: #666666;
+}
+.discountsVip-page .scrool-content .form-content .form-website .domain-module {
+  height: 130px;
+  width: 100%;
+  margin-left: 39px;
+  display: flex;
+}
+.discountsVip-page .scrool-content .form-content .form-website .domain-module .left-domain-title {
+  width: 90px;
+  padding-top: 4px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .form-content .form-website .domain-module .right-domain-select {
+  width: 230px;
+  padding-left: 14px;
+  padding-top: 4px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  overflow-x: hidden;
+  text-align: left;
+  color: #666666;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+}
+.discountsVip-page .scrool-content .form-content .form-website .hint-content {
+  height: 41px;
+  padding-top: 6px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  margin-left: 129px;
+  text-align: left;
+  color: #ff3b3b;
+}
+.discountsVip-page .scrool-content .form-content .form-website .select-count-sum {
+  height: 30px;
+  padding-bottom: 19px;
+  margin-left: 50px;
+  display: flex;
+}
+.discountsVip-page .scrool-content .form-content .form-website .select-count-sum .count-title {
+  width: 80px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules {
+  display: flex;
+  width: 155px;
+  align-items: center;
+}
+.discountsVip-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules .checkbox-state {
+  width: 17px;
+  height: 17px;
+}
+.discountsVip-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules .type-sel {
+  padding-left: 5.4px;
+  width: 33px;
+  font-size: 14px;
+  color: #666666;
+}
+.discountsVip-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules .count-select {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  padding-left: 10px;
+  color: #666666;
+}
+.discountsVip-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules .several-title {
+  margin-left: 3px;
+  font-size: 14px;
+  text-align: left;
+  color: #666666;
+}
+.discountsVip-page .scrool-content .form-content .form-website .select-count-sum .max-select-modules .count-select.select {
+  background-color: #e2e2e2;
+}
+.discountsVip-page .scrool-content .form-content .form-website .beyond-vel {
+  height: 21px;
+  margin-left: 40px;
+  display: flex;
+  padding-bottom: 17px;
+}
+.discountsVip-page .scrool-content .form-content .form-website .beyond-vel .beyond-left-title {
+  width: 240px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .form-content .form-website .beyond-vel .select-state-con {
+  width: 75px;
+  display: flex;
+  align-items: center;
+}
+.discountsVip-page .scrool-content .form-content .form-website .beyond-vel .select-state-con .checkbox-check {
+  margin-left: 30px;
+  height: 17px;
+  width: 17px;
+}
+.discountsVip-page .scrool-content .form-content .form-website .beyond-vel .select-state-con .state-name {
+  margin-left: 10px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: left;
+  color: #666666;
+}
+.discountsVip-page .scrool-content .form-content .form-website .parameter-module {
+  height: 119px;
+  display: flex;
+  margin-left: 40px;
+}
+.discountsVip-page .scrool-content .form-content .form-website .parameter-module .parameter-left-title {
+  width: 134px;
+  padding-bottom: 89px;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  color: #333333;
+  font-size: 16px;
+  font-family: MicrosoftJhengHei;
+}
+.discountsVip-page .scrool-content .form-content .form-website .parameter-module .parameter-right-con {
+  width: 250px;
+}
+.discountsVip-page .scrool-content .form-content .form-website .parameter-module .parameter-right-con .public-modules {
+  height: 30px;
+  padding-bottom: 13px;
+  display: flex;
+}
+.discountsVip-page .scrool-content .form-content .form-website .parameter-module .parameter-right-con .public-modules .public-left-title {
+  width: 95px;
+  font-family: MicrosoftJhengHei;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .form-content .form-website .parameter-module .parameter-right-con .public-modules .public-right-input {
+  width: 80px;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  padding-left: 10px;
+  text-align: left;
+  color: #666666;
+}
+.discountsVip-page .scrool-content .form-content .form-website .parameter-module .parameter-right-con .public-modules .publiic-right-unit {
+  margin-left: 5px;
+  font-family: MicrosoftJhengHei;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #666666;
+}
+.discountsVip-page .scrool-content .form-content .form-website .popup-vel {
+  height: 47px;
+  width: 100%;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+.discountsVip-page .scrool-content .form-content .form-website .popup-vel .popup-left {
+  width: 224px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+.discountsVip-page .scrool-content .form-content .form-website .popup-vel .popup-right {
+  display: flex;
+}
+.discountsVip-page .scrool-content .form-content .form-website .popup-vel .popup-right .select-state-con {
+  width: 75px;
+  display: flex;
+  align-items: center;
+}
+.discountsVip-page .scrool-content .form-content .form-website .popup-vel .popup-right .select-state-con .checkbox-check {
+  margin-left: 30px;
+  height: 17px;
+  width: 17px;
+}
+.discountsVip-page .scrool-content .form-content .form-website .popup-vel .popup-right .select-state-con .state-name {
+  margin-left: 10px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: left;
+  color: #666666;
+}
+.discountsVip-page .scrool-content .form-content .form-website .btn-vel {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  margin-left: 40px;
+  align-items: center;
+}
+.discountsVip-page .scrool-content .form-content .form-website .btn-vel .save-img {
+  width: 80px;
+  height: 30px;
+}
+.discountsVip-page .scrool-content .form-content .form-website .btn-vel .cancel-img {
   margin-left: 25px;
   width: 80px;
   height: 30px;

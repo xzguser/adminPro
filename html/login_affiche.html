@@ -4,193 +4,194 @@
     <meta charset="utf-8">
     <title>登入—显示公告页面</title>
     <link rel="stylesheet" href="../style/css/style.css">
+    <script src="../js/jquery/jquery-1.8.3.js"></script>
+
 </head>
-
 <body>
-    <div class="loginAffiche-page">
-        <!-- 头部管理模块 -->
-        <div class="head-page green-text">
-                <div class="head-content">
-                    <div class="head-Path">
-                        <img src="../style/img/logo.png" alt="" class="logo-img">
-                    </div>
-                    <div class="head-option ">
-                        <div class="option-row">
-                            <div class="img-row img-agent "></div>
-                            <div class="title-row">会员代理商</div>
-                        </div>
-                        <div class="option-row">
-                            <div class="img-row img-system"></div>
-                            <div class="title-row">系统管理</div>
-                        </div>
-                        <div class="option-row">
-                            <div class="img-row img-discounts"></div>
-                            <div class="title-row">优惠管理</div>
-                        </div>
-                        <div class="option-row">
-                            <div class="img-row img-financial"></div>
-                            <div class="title-row">财务管理</div>
-                        </div>
-                        <div class="option-row">
-                            <div class="img-row img-statement"></div>
-                            
-                            <div class="title-row">报表汇出</div>
-                        </div>
-                        <div class="option-row">
-                            <div class="img-row img-game"></div>
-                            <div class="title-row">游戏管理</div>
-                        </div>
-                        <div class="option-row">
-                            <div class="img-row img-backstage"></div>
-                        
-                            <div class="title-row">后台管理</div>
-                        </div>
-                    </div>
-                    <div class="right-title">
-                
-                        <div class="dis-con">
-                            <div href="#" class="dis-con-a">优惠上传</div>
-                        </div>
-                        <div class="dis-con">
-                                <div href="#" class="dis-con-a">在线客服</div>
-                        </div>
-                        <div class="dis-con-min">
-                                <div href="#" class="dis-con-a">公告</div>
-                        </div>
-                        <div class="dis-con">
-                                <div href="#" class="dis-con-a">数据分析</div>
-                        </div>
-                        <div class="dis-con">
-                                <div href="#" class="dis-con-a">风格切换</div>
-                        </div>
-                        <div class="dis-con-max">
-                            <div class="message-count">12</div>
-                            <div href="#" class="dis-con-a">GT NEW+</div>
-                        </div>
-                        <div class="dis-state">
-                            <span class="symbol">&lt;</span>
-                            <div class="china-ves">
-                                <img src="../style/img/china-2x.png" class="china-logo" alt="">
-                            </div>
-                        </div>
-                        <div class="dis-greet">
-                                <div class="btn-swicth green-bg">切回旧版</div>
-                                <div class="call-con">Hi，YUI</div>
-                                <div class="arrows">^</div>
-                        </div>
+<div class="loginAffiche-page">
+    <!-- 头部管理模块 -->
+    <div class="head-page green-text">
+        <div class="head-content">
+            <div class="head-Path">
+                <img src="../style/img/logo.png" alt="" class="logo-img">
+            </div>
+            <div class="head-option ">
+                <div class="option-row">
+                    <div class="img-row img-agent"></div>
+                    <div class="title-row">会员代理商</div>
+                </div>
+                <div class="option-row">
+                    <div class="img-row img-system"></div>
+                    <div class="title-row">系统管理</div>
+                </div>
+                <div class="option-row">
+                    <div class="img-row img-discounts"></div>
+                    <div class="title-row">优惠管理</div>
+                </div>
+                <div class="option-row">
+                    <div class="img-row img-financial"></div>
+                    <div class="title-row">财务管理</div>
+                </div>
+                <div class="option-row">
+                    <div class="img-row img-statement"></div>
+
+                    <div class="title-row">报表汇出</div>
+                </div>
+                <div class="option-row">
+                    <div class="img-row img-game"></div>
+                    <div class="title-row">游戏管理</div>
+                </div>
+                <div class="option-row">
+                    <div class="img-row img-backstage"></div>
+
+                    <div class="title-row">后台管理</div>
+                </div>
+            </div>
+            <div class="right-title">
+
+                <div class="dis-con">
+                    <div class="dis-con-a">优惠上传</div>
+                </div>
+                <div class="dis-con">
+                    <div class="dis-con-a">在线客服</div>
+                </div>
+                <div class="dis-con-min">
+                    <div class="dis-con-a">公告</div>
+                </div>
+                <div class="dis-con">
+                    <div class="dis-con-a">数据分析</div>
+                </div>
+                <div class="dis-con">
+                    <div data-style="data-style" class="dis-con-a">风格切换</div>
+                </div>
+                <div class="dis-con-max">
+                    <div class="message-count">12</div>
+                    <div class="dis-con-a">GT NEW+</div>
+                </div>
+                <div class="dis-state">
+                    <span class="symbol">&lt;</span>
+                    <div class="china-ves">
+                        <img src="../style/img/china-2x.png" class="china-logo" alt="">
                     </div>
                 </div>
+                <div class="dis-greet">
+                    <div class="btn-swicth green-bg">切回旧版</div>
+                    <div class="call-con">Hi，YUI</div>
+                    <div class="arrows">^</div>
+                </div>
+            </div>
         </div>
-        <div class="scrool-content bg1">
-				<div class="title-modules">
-					<span class="agent-module">公告</span>
-					<div class="affiche-page-right">
-							<div class="right-icon">
-								<img src="../style/img/ic_group_24px.png"
-										srcset="../style/img/ic_group_24px@2x.png 2x,
-										../style/img/ic_group_24px@3x.png 3x"
-										class="ic_group_24px">
-							</div>
-							<div class="right-number">20</div>
-							<div class="right-text">人 /</div>
-							<div class="right-time-icon">
-								<img src="../style/img/ic_time.png"
-										srcset="../style/img/ic_time@2x.png 2x,
-									../style/img/ic_time@3x.png 3x"
-										class="ic_time">
-							</div>
-							<div class="right-time">北京2017/12/01（五）01：16：28</div>
-					</div>
-               
-
-				
-				</div>
-                <div class="form-content">
-                        <div class="top-module-row">
-                                <div class="select-module">系統公告</div>
-                                <div class="select-module tar">站內公告</div>
-                        </div>
-                        <div class="datum-title ">
-                                <div class="basic-con active1">
-                                    <div class="basic-set">全部</div>
-                                </div>
-                                <div class="basic-con">
-                                        <div class="basic-set">弹出讯息</div>
-                                </div>
-                                <div class="basic-con">
-                                        <div class="basic-set">一般讯息</div>
-                                </div>
-                        </div>
-
-                        <div class="table-affiche">
-                            <div class="table-affiche-left">
-                                <img  class="left-icon" src="../style/img/lock-2x.png" alt="">
-                            </div>
-                            <div class="table-affiche-right">
-                                <table class="table-main">
-                                    <tr class="table-tr-header green-bg">
-                                        <th>
-                                            <div>时间</div>
-                                        </th>
-                                        <th>
-                                            <div>类别</div>
-                                        </th>
-                                        <th>
-                                            <div>公告内容</div>
-                                        </th>    
-                                    </tr>
-                                    <tr class="table-tr-content">
-                                       
-                                            <td>
-                                                <div>2019-07-09</div>
-                                            </td>
-                                            <td>
-                                                <div>弹出讯息</div>
-                                            </td>
-                                            <td>
-                                                <div class="td-content">
-                                                        【新产品位置摆放通知】
-                                                        亲爱的站长您好，近其将上架【LEG棋牌】、【WM电子】游戏，其中LED棋牌游戏规则如下:　
-                                                        1.可以独立桌、混桌
-                                                </div>
-                                            </td>
-                                       
-                                    </tr>
-                                    <tr class="table-tr-content">
-                                       
-                                            <td>
-                                                <div>2019-07-02</div>
-                                            </td>
-                                            <td>
-                                                <div>弹出讯息</div>
-                                            </td>
-                                            <td>
-                                                <div class="td-content">
-                                                        亲爱的站长您好，近其将上架【LEG棋牌】、【WM电子】游戏，其中LED棋牌游戏规则如下:　1.可以独立桌、混桌　2.不抽水游戏
-                                                </div>
-                                            </td>
-                                       
-                                    </tr>
-                                    <tr class="table-tr-content">
-                                       
-                                            <td>
-                                                <div>2019-06-26</div>
-                                            </td>
-                                            <td>
-                                                <div>弹出讯息</div>
-                                            </td>
-                                            <td>
-                                                <div class="td-content">
-                                                        亲爱的站长您好，近其将上架【LEG棋牌】、【WM电子】游戏，其中LED棋牌游戏规则如下:　1.可以独立桌、混桌　2.不抽水游戏
-                                                </div>
-                                            </td>
-                                       
-                                    </tr>
-                                </table> 
-                            </div>
-                        </div>
-                </div>
-			</div>
     </div>
+    <div class="scrool-content bg1">
+        <div class="title-modules">
+            <span class="agent-module">公告</span>
+            <div class="affiche-page-right">
+                <div class="right-icon">
+                    <img src="../style/img/ic_group_24px.png"
+                         srcset="../style/img/ic_group_24px@2x.png 2x,
+										../style/img/ic_group_24px@3x.png 3x"
+                         class="ic_group_24px">
+                </div>
+                <div class="right-number">20</div>
+                <div class="right-text">人 /</div>
+                <div class="right-time-icon">
+                    <img src="../style/img/ic_time.png"
+                         srcset="../style/img/ic_time@2x.png 2x,
+									../style/img/ic_time@3x.png 3x"
+                         class="ic_time">
+                </div>
+                <div class="right-time">北京2017/12/01（五）01：16：28</div>
+            </div>
+
+        </div>
+        <div class="form-content">
+            <div class="top-module-row">
+                <div class="select-module">系統公告</div>
+                <div class="select-module tar">站內公告</div>
+            </div>
+            <div class="datum-title ">
+                <div class="basic-con active1">
+                    <div class="basic-set">全部</div>
+                </div>
+                <div class="basic-con">
+                    <div class="basic-set">弹出讯息</div>
+                </div>
+                <div class="basic-con">
+                    <div class="basic-set">一般讯息</div>
+                </div>
+            </div>
+
+            <div class="table-affiche">
+                <div class="table-affiche-left">
+                    <img class="left-icon" src="../style/img/lock-2x.png" alt="">
+                </div>
+                <div class="table-affiche-right">
+                    <table class="table-main">
+                        <tr class="table-tr-header green-bg">
+                            <th>
+                                <div>时间</div>
+                            </th>
+                            <th>
+                                <div>类别</div>
+                            </th>
+                            <th>
+                                <div>公告内容</div>
+                            </th>
+                        </tr>
+                        <tr class="table-tr-content">
+
+                            <td>
+                                <div>2019-07-09</div>
+                            </td>
+                            <td>
+                                <div>弹出讯息</div>
+                            </td>
+                            <td>
+                                <div class="td-content">
+                                    【新产品位置摆放通知】
+                                    亲爱的站长您好，近其将上架【LEG棋牌】、【WM电子】游戏，其中LED棋牌游戏规则如下:　
+                                    1.可以独立桌、混桌
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr class="table-tr-content">
+
+                            <td>
+                                <div>2019-07-02</div>
+                            </td>
+                            <td>
+                                <div>弹出讯息</div>
+                            </td>
+                            <td>
+                                <div class="td-content">
+                                    亲爱的站长您好，近其将上架【LEG棋牌】、【WM电子】游戏，其中LED棋牌游戏规则如下:　1.可以独立桌、混桌　2.不抽水游戏
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr class="table-tr-content">
+
+                            <td>
+                                <div>2019-06-26</div>
+                            </td>
+                            <td>
+                                <div>弹出讯息</div>
+                            </td>
+                            <td>
+                                <div class="td-content">
+                                    亲爱的站长您好，近其将上架【LEG棋牌】、【WM电子】游戏，其中LED棋牌游戏规则如下:　1.可以独立桌、混桌　2.不抽水游戏
+                                </div>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery/winHtml.js"></script>
 </body>
 </html>
+<script src="../js/jquery/setStyle.js"></script>
