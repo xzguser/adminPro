@@ -49,7 +49,6 @@
         }
         ,setTable:function (str) {
             return (function () {
-                console.log(s)
                 if(str[1]==="green-btn"){
                     $($(tab_switch)[0]).removeClass("hide");
                     $($(tab_switch)[1]).addClass("hide");
@@ -68,8 +67,4 @@
     };
     //引用加载事件
     ache.init()
-})(window, document, jQuery);
-//iife
-(function (win,doc,$) {
-
 })(window, document, jQuery);
