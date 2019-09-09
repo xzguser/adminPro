@@ -10,6 +10,13 @@
 //select::-ms-expand {
 //  display: none;
 //}
+
+.hide {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
 .bg1{
   background-color: #eeeeee;
 }
@@ -35,7 +42,9 @@
   background-color: #66c7a5 !important;
   font-style: normal;
   font-stretch: normal;
-  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff !important;
 }
 
 .green-open{
@@ -116,6 +125,28 @@
   color: #ffffff !important;
 }
 
+//白色按钮
+.white-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2.5px solid #fff;
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.16);
+}
+
+.btn-submit{
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #dbdbdb;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #122640;
+  line-height: 30px;
+  font-family: $font-family;
+  margin-right: 25px;
+}
 //按钮
 .btn-general{
   position: relative;
@@ -456,3 +487,102 @@
   }
 }
 
+//弹出风格
+.pop-content{
+  position: absolute;
+  width: 1920px;
+  height: 1035px;
+  z-index: 2;
+}
+.mask{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(127,127,127,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pop-style{
+  position: relative;
+  width: 630px;
+  height: 500px;
+  background: #ffffff;
+  margin-top: 9.5px;
+  display: flex;
+  justify-content: center;
+  .content{
+    height: 100%;
+    width: 95%;
+    .pop-title{
+      display: flex;
+      height: 80px;
+      width: 100%;
+      align-items: center;
+      span{
+        width: 80px;
+        height: 27px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        font-family: $font-family;
+      }
+    }
+
+    .pop-active{
+      display: flex;
+      height: 70px;
+      width: 100%;
+      .pop-btn{
+        width: 40px;
+        height: 40px;
+        margin-right: 25px;
+        border-radius: 20px;
+        z-index: 1;
+      }
+    }
+    .pop-img{
+      width: 599.7px;
+      height: 286px;
+      box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);
+      background-color: #e4e4e4;
+      .green-switch{
+        width: 599.7px;
+        height: 286px;
+        background-image: url($Image-url +"green-switch.png");
+        background-repeat: no-repeat;
+        background-size: 599.7px 286px;
+      }
+      .blue-switch{
+        width: 599.7px;
+        height: 286px;
+        background-image: url($Image-url +"blue-switch.png");
+        background-repeat: no-repeat;
+        background-size: 599.7px 286px;
+      }
+      .orange-switch{
+        width: 599.7px;
+        height: 286px;
+        background-image: url($Image-url +"orange-switch.png");
+        background-repeat: no-repeat;
+        background-size: 599.7px 286px;
+      }
+    }
+
+    .pop-event{
+      display: flex;
+      width: 100%;
+      height: 64px;
+      align-items: center;
+    }
+  }
+  .pop-close{
+    position:absolute;
+    width: 36px;
+    height: 36px;
+    right: -16px;
+    top: -20px;
+  }
+}
