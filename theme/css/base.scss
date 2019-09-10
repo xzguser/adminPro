@@ -47,6 +47,14 @@
   color: #ffffff !important;
 }
 
+.green-btn1{
+  background-color: #308769 !important;;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff !important;
+}
 .green-open{
   background-image: linear-gradient(to top, #14c587, #137855) !important;;
 }
@@ -177,7 +185,9 @@
   align-items: center;
 
   .bar-btn {
-    width: 120px;
+    // width: 120px;
+    padding-left: 27px;
+    padding-right: 27px;
     height: 54px;
     display: flex;
     align-items: center;
@@ -185,7 +195,7 @@
     margin-right: 18.6px;
 
     .bar-btn-txt {
-      width: 64px;
+      // width: 64px;
       height: 21px;
       font-family: $font-family;
       font-size: 16px;
@@ -586,3 +596,22 @@
     top: -20px;
   }
 }
+
+
+.red-text{
+  color:#ff3b3b;
+}
+
+//checkbox按钮
+.che-standard{
+  width: 18px;
+  height: 18px;
+  background-color: #999999;
+}
+
+.bar-green-sel{
+  background-color: #308769;
+}
+
+
+

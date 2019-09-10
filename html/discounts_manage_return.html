@@ -2,10 +2,535 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>优惠管理-返水</title>
+		<title>优惠管理-返水管理-返水查询</title>
+
+		<link rel="stylesheet" href="../style/css/style.css">
 	</head>
 	
 	<body>
-	
+		<div class="discountsReturn-page">
+			<!-- 头部 -->
+			<div class="head-page">
+					<div class="head-content">
+						<div class="head-Path">
+							<img src="../style/img/logo.png" alt="" class="logo-img">
+						</div>
+						<div class="head-option green-text">
+							<div class="option-row">
+								<div class="img-row img-agent"></div>
+								<div class="title-row">会员代理商</div>
+							</div>
+							<div class="option-row">
+								<div class="img-row img-system"></div>
+								<div class="title-row">系统管理</div>
+							</div>
+							<div class="option-row">
+								<div class="img-row img-discounts sel-img"></div>
+								<div class="title-row">优惠管理</div>
+							</div>
+							<div class="option-row">
+								<div class="img-row img-financial"></div>
+								<div class="title-row">财务管理</div>
+							</div>
+							<div class="option-row">
+								<div class="img-row img-statement"></div>
+								
+								<div class="title-row">报表汇出</div>
+							</div>
+							<div class="option-row">
+								<div class="img-row img-game"></div>
+								<div class="title-row">游戏管理</div>
+							</div>
+							<div class="option-row">
+								<div class="img-row img-backstage"></div>
+							
+								<div class="title-row">后台管理</div>
+							</div>
+						</div>
+						<div class="right-title green-text">
+					
+							<div class="dis-con">
+								<div href="#" class="dis-con-a">优惠上传</div>
+							</div>
+							<div class="dis-con">
+									<div href="#" class="dis-con-a">在线客服</div>
+							</div>
+							<div class="dis-con-min">
+									<div href="#" class="dis-con-a">公告</div>
+							</div>
+							<div class="dis-con">
+									<div href="#" class="dis-con-a">数据分析</div>
+							</div>
+							<div class="dis-con">
+									<div href="#" class="dis-con-a">风格切换</div>
+							</div>
+							<div class="dis-con-max">
+								<div class="message-count">12</div>
+								<div href="#" class="dis-con-a">GT NEW+</div>
+							</div>
+							<div class="dis-state">
+								<span class="symbol">&lt;</span>
+								<div class="china-ves">
+									<img src="../style/img/china-2x.png" class="china-logo" alt="">
+								</div>
+							</div>
+							<div class="dis-greet">
+									<div class="btn-swicth green-bg">切回旧版</div>
+									<div class="call-con">Hi，YUI</div>
+									<div class="arrows">^</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<!-- 标题栏 -->
+			<div class="title-bar green-bg">
+					<div class="sys-activity">活动管理</div>
+					<div class="sys-turn active0">返水管理</div>
+			</div>
+
+			<div class="scrool-content bg1">
+					<!-- 当前页 -->
+					<div class="title-modules">
+						<span class="title-max">优惠管理</span>
+						<span class="arrows-module">&gt;</span>
+						<span class="title-first">返水管理</span>
+						<!-- 栏位筛选 -->
+						<div class="filtrate-btn">
+								栏位筛选
+						</div>
+						<div class="affiche-page-right">
+								<div class="right-icon">
+									<img src="../style/img/ic_group_24px.png"
+											srcset="../style/img/ic_group_24px@2x.png 2x,
+											../style/img/ic_group_24px@3x.png 3x"
+											class="ic_group_24px">
+								</div>
+								<div class="right-number">20</div>
+								<div class="right-text">人 /</div>
+								<div class="right-time-icon">
+									<img src="../style/img/ic_time.png"
+											srcset="../style/img/ic_time@2x.png 2x,
+										../style/img/ic_time@3x.png 3x"
+											class="ic_time">
+								</div>
+								<div class="right-time">北京2017/12/01（五）01：16：28</div>
+						</div>
+					
+						
+					</div>
+					<div class="form-content">
+							<div class="top-module-row">
+								<div class="select-module">一般活动</div>
+								<div class="select-module tar">即时返水查询</div>
+								<div class="select-module">会员返水查询</div>
+								<div class="select-module">代理返水层级</div>
+								<div class="select-module">会员返水层级</div>
+								<div class="select-module">会员返水次数设定</div>
+								<div class="select-module">返水计算</div>
+							</div>
+							<div class="backwater-vel">
+								<div class="backwater-set">返水设定</div>
+								<div class="insert-set">+ 新增设定</div>
+							</div>
+							<div class="table-vel">
+								<table class="table-01 platform-table-new">
+										<tbody><tr class="table-head">
+											<td>
+												<div>序号</div>
+											</td>
+											<td>
+												<div>站台名称</div>
+											</td>
+											<td>
+												<div>返水名称</div>
+											</td>
+											<td>
+												<div>状态</div>
+											</td>
+											<td>
+												<div>建立时间</div>
+											</td>
+											<td>
+												<div>最近修改时间</div>
+											</td>
+											<td>
+												<div>修改帐号</div>
+											</td>
+											<td >
+												<div>备注</div>
+											</td>
+											<td >
+												<div>操作</div>
+											</td>
+											
+										</tr>
+										</tbody><tbody>
+										<tr class="table-content lastrow">
+											<td>
+												<div class="td-div">1</div>
+											</td>
+											<td>
+												<div class="td-div">测试站</div>
+											</td>
+											<td>
+												<div class="td-div topo-color-blue">一般返水</div>
+											</td>
+											<td>
+													<div class="td-div">进行中</div>
+											</td>
+											<td>
+													<div class="td-div">2016-07-11 12:19:58</div>
+											</td>
+											<td>
+													<div class="td-div">2016-07-11 12:19:58</div>
+											</td>
+											<td>
+													<div class="td-div">ALIN623</div>
+											</td>
+											<td>
+													<div class="td-div">挑战业界最高返水</div>
+											</td>
+											<td>
+												<div class="td-div new-div">
+													<span class="operation-state">开始</span>
+													<span class="operation-state">结束</span>
+													<span class="operation-state">删除</span>
+													<span class="operation-state">返水明细</span>
+													<span class="operation-state">绑定代理</span>
+												</div>
+											</td>
+										</tr>
+									
+										</tbody>
+									</table>
+							</div>
+
+							<div class="query-vel">
+								<div class="con-module-vel">
+										<div class="left-con">返水查询&nbsp;:</div>
+										<div class="right-con">
+											<select class="right-con-select">
+											</select>
+										</div>
+								</div>
+								<div class="con-module-vel">
+										<div class="left-con">站台名称&nbsp;:</div>
+										<div class="right-con">
+											<select class="right-con-select">
+											</select>
+										</div>
+								</div>
+								<div class="date-module-vel">
+										<div class="date-title">日期查询&nbsp;:</div>
+										<input class="date-input" type="date" value="2015-09-24">
+										<span class="scope">~</span>
+										<input class="date-input" type="date" value="2015-09-24">
+										<span class="hint-con">北京时间:2018-09-24 12:00:00到2018-10-01 12:00:00</span>
+								</div>
+								<div class="btn-vel">
+									<div class="btn-general green-btn1" data-color="data-color">
+										<span>今天</span>
+									</div>
+									<div class="btn-general " data-color="data-color">
+										<span>昨天</span>
+									</div>
+									<div class="btn-general " data-color="data-color">
+										<span>上周</span>
+									</div>
+									<div class="btn-general " data-color="data-color">
+										<span>本周</span>
+									</div>
+									<div class="btn-general " data-color="data-color">
+										<span>上月</span>
+									</div>
+									<div class="btn-general " data-color="data-color">
+										<span>本月</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="query-vel query-admin-vel">
+								<div class="con-module-vel">
+										<div class="left-con">会员帐号&nbsp;:</div>
+										<div class="right-con">
+											<select class="right-con-select">
+											</select>
+										</div>
+								</div>
+							</div>
+
+							<div class="query-btn-vel">
+								<div class="query-btn">查询</div>
+							</div>
+							<div class="table-header ">
+								<div class="top-btn green-bg">查询结果</div>
+								<div class="bot-con">
+									<span class="red-text">会员账号&nbsp;:</span>
+									<span>&nbsp;进入查询本次返水会员明细</span>
+								</div>
+							</div>
+							
+							<div class="table-max-vel">
+									<table class="table-01 table-01-new">
+											<tbody><tr class="table-head">
+												<td>
+													<div>
+														#
+													</div>
+												</td>
+												<td>
+													<div>会员帐号</div>
+												</td>
+												<td>
+													<div>返水开始时间</div>
+												</td>
+												<td>
+													<div>返水结束时间</div>
+												</td>
+												<td>
+													<div>会员端返水</div>
+												</td>
+												<td>
+													<div>有效金额</div>
+												</td>
+												<td>
+													<div>返水金额</div>
+												</td>
+												<td>
+													<div>查询时间</div>
+												</td>
+												<td>
+													<div>执行帐号</div>
+												</td>
+												<td class="lastCol">
+													<div>执行时间</div>
+												</td>
+											</tr>
+											</tbody>
+											<tbody>
+											<tr class="table-content ">
+													<td>
+														<div class="td-div">
+															<input class="che-standard" type="checkbox">
+														</div>
+													</td>
+													<td>
+														<div class="td-div">ROCK07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-29 12:00:01</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:16:18</div>
+													</td>
+													<td>
+														<div class="td-div">已完成</div>
+													</td>
+													<td>
+														<div class="td-div">206.65</div>
+													</td>
+													<td>
+														<div class="td-div">2.07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:15:58</div>
+													</td>
+													<td>
+														<div class="td-div">ROCK07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:15:58</div>
+													</td>
+											</tr>
+											<tr class="table-content ">
+													<td>
+														<div class="td-div">
+															<input class="che-standard" type="checkbox">
+														</div>
+													</td>
+													<td>
+														<div class="td-div">ROCK07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-29 12:00:01</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:16:18</div>
+													</td>
+													<td>
+														<div class="td-div">已完成</div>
+													</td>
+													<td>
+														<div class="td-div">206.65</div>
+													</td>
+													<td>
+														<div class="td-div">2.07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:15:58</div>
+													</td>
+													<td>
+														<div class="td-div">ROCK07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:15:58</div>
+													</td>
+											</tr>
+											<tr class="table-content ">
+													<td>
+														<div class="td-div">
+															<input class="che-standard" type="checkbox">
+														</div>
+													</td>
+													<td>
+														<div class="td-div">ROCK07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-29 12:00:01</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:16:18</div>
+													</td>
+													<td>
+														<div class="td-div">已完成</div>
+													</td>
+													<td>
+														<div class="td-div">206.65</div>
+													</td>
+													<td>
+														<div class="td-div">2.07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:15:58</div>
+													</td>
+													<td>
+														<div class="td-div">ROCK07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:15:58</div>
+													</td>
+											</tr>
+											<tr class="table-content ">
+													<td>
+														<div class="td-div">
+															<input class="che-standard" type="checkbox">
+														</div>
+													</td>
+													<td>
+														<div class="td-div">ROCK07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-29 12:00:01</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:16:18</div>
+													</td>
+													<td>
+														<div class="td-div">已完成</div>
+													</td>
+													<td>
+														<div class="td-div">206.65</div>
+													</td>
+													<td>
+														<div class="td-div">2.07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:15:58</div>
+													</td>
+													<td>
+														<div class="td-div">ROCK07</div>
+													</td>
+													<td>
+														<div class="td-div">2018-10-30 11:15:58</div>
+													</td>
+											</tr>
+											<tr class="table-content ">
+													<td>
+														
+													</td>
+													<td>
+														
+													</td>
+													<td>
+													
+													</td>
+													<td>
+														
+													</td>
+													<td>
+														<div class="td-div">汇总</div>
+													</td>
+													<td>
+														<div class="td-div">826.6</div>
+													</td>
+													<td>
+														<div class="td-div">8.28</div>
+													</td>
+													<td>
+														
+													</td>
+													<td>
+										
+													</td>
+													<td>
+														
+													</td>
+											</tr>
+											</tbody>
+										</table>
+							</div>
+							<div class="paging-vel">
+								<div class="page-content">
+										<div class="page-number">
+											<select class="page-sel">
+												<option>10</option>
+											</select>
+										</div>
+										<!--    左边-->
+										<div class="page-left">
+											<div class="page-left-first">
+												<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+													../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
+											</div>
+											<div class="page-left-polygon">
+												<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+													../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+											</div>
+										</div>
+										<!--    中间-->
+										<div class="page-center">
+											<span>Page</span>
+											<input value="10">
+											<div class="of-page">
+												<sapn>of</sapn>
+												<sapn>41</sapn>
+											</div>
+										</div>
+										<!--    右边-->
+										<div class="page-right">
+											<div class="page-right-polygon">
+												<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+													../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+											</div>
+											<div class="page-right-first">
+												<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+													../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
+											</div>
+									
+										</div>
+										<!--    刷新-->
+										<div class="ico-refresh">
+											<img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
+													../style/img/ic_refresh_24px@3x.png">
+										</div>
+										<div class="page-text">
+											<span>总单数406，当前专案1到10</span>
+										</div>
+									</div>
+							</div>
+
+					</div>
+			</div>
+		</div>
 	</body>
 </html>

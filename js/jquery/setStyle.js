@@ -37,6 +37,7 @@
                 $(data_btnAll).delegate(data_btn,"click",function (e) {
                    if(e) e.preventDefault();
                     ache.setStyle(e.currentTarget);
+                    console.log(e.currentTarget)
                     ache.setTable(e.currentTarget.classList);
                 });
             })();

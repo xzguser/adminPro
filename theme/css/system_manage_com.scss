@@ -543,23 +543,42 @@
               
               }
 
-              .btn-vel{
-                height: 45px;
+              .btn-con{
                 width: 100%;
-                display: flex;
+                height: 30px;
+                margin-top: 7px;
                 margin-left: 40px;
-             
-                align-items: center;
-                .save-img{
-                    width: 80px;
-                    height: 30px;
+                display: flex;
+                .btn-module{
+                    width: 104px;
+                    height: 100%;
+                 
+                    align-items: center;
+                    display: flex;
+                    text-align: left;
+                    .module-img-save{
+                        width: 80px;
+                        height: 30px;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .module-img-cancel{
+                        width: 80px;
+                        height: 30px;
+                        color: #122640;
+                        font-family:$font-family;
+                        font-size: 16px;
+                        border-radius: 10px;
+                        background-color: #dbdbdb;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
-                .cancel-img{
-                    margin-left: 25px;
-                    width: 80px;
-                    height: 30px;
-                }
-              }
+               
+            }
             }
         }
 
