@@ -1,0 +1,174 @@
+.queryVip-page{
+    width: 1920px;
+    height: 1035px;
+    .scrool-content{
+        height: 901px;
+        width: 100%;
+
+        .form-content{
+            margin:9px 10px;
+            background: #ffffff;
+            width: 1900px;
+            height: 821px;
+            .import-vel{
+                margin-top: 20px;
+                margin-left: 21px;
+                height: 30px;
+                display: flex;
+                .outside-module{
+                    width: 360px;
+                    display: flex;
+                    align-items: center;
+                    .modu-left{
+                        width: 80px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $font-family;
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-align: left;
+                        color: #333333;
+                        margin-right: 10px;
+                    }
+                }
+                .scope-module{
+                    width: 720px;
+                    display: flex;
+                    align-items: center;
+                    .title-left{
+                        width: 80px;
+                        font-family: $font-family;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-align: left;
+                        color: #333333;
+                        margin-right: 10px;
+                    }
+                    .scope-symbol{
+                        width: 25px;
+                        height: 30px;
+                        font-family: $font-family;
+                        font-size: 18px;
+                        font-weight: bold;
+                      
+                        display: flex;
+                        justify-content: center;
+
+                        color: #666666;
+                    }
+                }
+            }
+            .new-distance{
+                margin-top: 20px;
+            }
+
+            .query-vel{
+                margin-top: 17px;
+                margin-left: 21px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                .a-text{
+                    width: 64px;
+                    height: 21px;
+                    font-family:$font-family;
+                    font-size: 16px;
+                  
+                    text-align: right;
+                    margin-right: 20px;
+                }
+            }
+            .state-vel{
+                margin-top: 35px;
+                height: 60px;
+                margin-left: 21px;
+                width: 1861px;
+                background-color: #cccccc;
+                padding-left: 12px;
+                display: flex;
+                .state-module{
+                    margin-right: 20px;
+                    display: flex;
+                    align-items: center;
+                    font-family: $font-family;
+                    font-size: 16px;
+                    font-weight: bold;
+                    height: 60px;
+                    text-align: left;
+                    color: #333333;
+                    .img-icon{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            .table-header{
+             
+                margin-left: 21px;
+                width: 1861px;
+                height: 50px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                .left-btn{
+                    width: 88px;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    height: 50px;
+                }
+                .right-btn{
+                    position: absolute;
+                    right: 20px;
+                    top: 10px;
+                    height:30px;
+                    width: 120px;
+                    border-radius: 10px;
+                    background-color: #fcae00;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftJhengHei;
+                    font-size: 16px;
+                    color: #ffffff;
+                }
+            }
+
+            .table-state-vel{
+                margin-left: 21px;
+                width: 1861px;
+                .new-width{
+                    width: 1861px;
+                    td div{
+                        font-weight: normal;
+                        
+                    }
+                    td .finally-div{
+                        width: 690px;
+                        .img-con{
+                            width: 170px;
+                            display: flex;
+                            .logo-con{
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 10px;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+
+            .paging-vel{
+                margin-top: 16px;
+                margin-left: 21px;
+            }
+        }
+
+    }
+}

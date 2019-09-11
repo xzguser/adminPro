@@ -1,7 +1,7 @@
 @charset "UTF-8";
 //input 样式
 
-
+//用于表格
 .input-w60{
   width: 60px;
   height: 30px;
@@ -103,6 +103,198 @@
   text-indent: $indent-5;
   margin-left: -6.5px;
 }
+.input-w160{
+  width: 160px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  color: #666666;
+  text-indent: $indent-5;
+  margin-left: -6.5px;
+}
 
 
+//表单-select
+.form-w70{
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  background: #ffffff;
+  color: #666666;
+  padding-left: 14px;
+}
+.form-w85{
+  width: 85px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  background: #ffffff;
+  color: #666666;
+  padding-left: 14px;
+}
+.form-w100{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  background: #ffffff;
+  color: #666666;
+  padding-left: 14px;
+}
+.form-w140{
+  width: 140px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  background: #ffffff;
+  color: #666666;
+  padding-left: 14px;
+}
+.form-w150{
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  background: #ffffff;
+  color: #666666;
+  padding-left: 14px;
+}
+.form-w160{
+  width: 160px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  background: #ffffff;
+  color: #666666;
+  padding-left: 14px;
+}
+.form-w190{
+  width: 190px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  background: #ffffff;
+  color: #666666;
+  padding-left: 14px;
+}
+.form-w192{
+  width: 192px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  background: #ffffff;
+  color: #666666;
+  padding-left: 14px;
+}
+.form-w205{
+  width: 205px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  background: #ffffff;
+  color: #666666;
+  padding-left: 14px;
+}
+.form-w220{
+  width: 220px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  background: #ffffff;
+  color: #666666;
+  padding-left: 14px;
+}
+.form-w230{
+  width: 230px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  text-align: left;
+  background: #ffffff;
+  color: #666666;
+  padding-left: 14px;
+}
+
+
+//表单-input-01
+.inp-w160{
+  width: 144px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  padding-left: 14px;
+  text-align: left;
+  color: #666666;
+}
+.inp-w140{
+  width: 124px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  padding-left: 14px;
+  text-align: left;
+  color: #666666;
+}
+.inp-w190{
+  width: 174px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  padding-left: 14px;
+  text-align: left;
+  color: #666666;
+}
+.inp-w220{
+  width: 204px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  font-family: $font-family;
+  font-size: 16px;
+  padding-left: 14px;
+  text-align: left;
+  color: #666666;
+}
 
