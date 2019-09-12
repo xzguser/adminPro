@@ -20,7 +20,7 @@ var html='<div class="pop-content hide" data-cashap-id="pop-content">' +
     '                </div>' +
     '                <div class="pop-event">' +
     '                    <div class="btn-submit green-btn">存储</div>' +
-    '                    <div class="btn-submit">取消</div>' +
+    '                    <div class="btn-submit" data-close="data-close">取消</div>' +
     '                </div>' +
     '            </div>' +
     '        </div>' +

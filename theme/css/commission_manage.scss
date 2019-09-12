@@ -9,7 +9,6 @@ th div{
     width: 100%;
     height: 21px;
     font-family: $font-family;
- 
     font-size: 16px;
     text-align: left;
     font-weight: bold;
@@ -30,232 +29,25 @@ td div{
 
     width: 1920px;
     height:1300px;
-    .title-bar{
-        width: 100%;
-        height: 54px;
-        background:#66c7a5;
-        display: flex;
-        .user-sel{
-            width: 120px;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-           
-            font-family: $font-family;
-            font-size: 16px;
-            font-weight: bold;
-            color: #ffffff;
-        }
-        .user-data{
-            width: 238px;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-
-            font-family: $font-family;
-            font-size: 16px;
-            font-weight: bold;
-            color: #ffffff;
-        }
-        .user-bank{
-            width: 168px;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-
-            font-family: $font-family;
-            font-size: 16px;
-            font-weight: bold;
-            color: #ffffff;
-        }
-        .user-commission{
-            width: 158px;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-
-            font-family: $font-family;
-            font-size: 16px;
-            font-weight: bold;
-            color: #ffffff;
-        }
-        .user-sel.active0,.user-data.active0,.user-bank.active0,.user-commission.active0,.checked{
-            background-color: #308769;
-        }
-
-
-    }
+   
 
     .scrool-content{
-        height: 901px;
+        height: 1170px;
         width: 100%;
         
-        .title-modules{
-            height: 62px;
-            width: 100%;
-            display: flex;
-            position: relative;
-            .agent-module{
-                width: 90px;
-                padding-left: 30px;
-                
-                align-items: center;
-                display: flex;
-
- 
-                font-family: $font-family;
-                font-size: 18px;
-                font-weight: bold;
-                text-align: left;
-                color: #333333;
-            }
-            .arrows-module{
-                width: 27px;
-                align-items: center;
-                display: flex;
-                font-family: $font-family;
-                font-size: 18px;
-                font-weight: bold;
-                justify-content: center;
-                color: #333333; 
-            }
-            .query-module{
-               
-                align-items: center;
-                display: flex;
-                font-family: $font-family;
-                font-size: 18px;
-                font-weight: bold;
-                text-align: left;
-                color: #333333; 
-            }
-
-            .affiche-page-right{
-                display: flex;
-                width: 388px;
-                height: 21px;
-                margin-right: 49px;
-                font-size: 16px;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                right: 0;
-                padding-top: 19px;
-                .right-icon{
-                  width: 22px;
-                  height: 14px;
-                  margin-right: 5px;
-        
-                  .ic_group_24px{
-                    width: 100%;
-                    height: 100%;
-                  }
-                }
-                .right-number{
-                  width: 19px;
-                  height: 100%;
-                  font-family:$font-family;
-                  font-weight: bold;
-                  text-align: left;
-                  color: #ff5454;
-                  margin-right: 10px;
-                }
-                .right-text{
-                  width: 29px;
-                  height: 100%;
-                  font-family: $font-family;
-                  font-weight: bold;
-                  text-align: left;
-                  color: #333333;
-                  margin-right: 12.2px;
-                }
-                .right-time-icon{
-                  width: 20px;
-                  height: 20px;
-                  margin-right: 4.8px;
-                  .ic_time {
-                    width: 100%;
-                    height: 100%;
-                  }
-                }
-                .right-time{
-                  width: 268px;
-                  height: 100%;
-                  font-family: $font-family;
-                  font-size: 16px;
-                  font-weight: bold;
-                  text-align: left;
-                  color: #333333;
-                }
-              }
-        }
-       
-           
-          
         .form-content{
             margin:9px 10px;
             background: #ffffff;
             width: 1900px;
             height: 1090px;
             
-            .top-module-row{
-                width: 100%;
-                height: 45px;
-                display: flex;
-                .select-module{
-                    margin-left: 21px;
-            
-                    font-family: $font-family;
-                    font-size: 16px;
-                    display: flex;
-                    align-items: center;
-                    text-align: left;
-                    color: #b4b4b4;
-                }
-                .select-module.tar,.checked{
-                    border-bottom: solid 3px #308769;
-                    color: #308769;
-                }
-            }
+          
             .datum-title{
                 height: 73px;
                // width: 100%;
                 display: flex;
                 margin-top:15px;
                 margin-left: 21px;
-                .basic-con{
-                    width: 160px;
-                    height: 45px;
-                    background: #eeeeee;
-                    color: #308769;
-                    margin-top: 28px;
-                    border-top-left-radius: 3px;
-                    border-top-right-radius: 3px;
-          
-                    font-weight: bold;
-                    display: flex;
-                    
-                    .basic-set{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 100%;
-                        font-size: 16px;
-                        font-weight: normal;
-                   
-                    }
-                }
-   
-                .basic-con.active1,.checked{
-                    height: 50px;
-                    margin-top: 23px;
-                    background: #308769;
-                    color: #eeeeee;
-                }
 
             }
 
@@ -263,12 +55,11 @@ td div{
                 height: 320px;
                 padding-left: 27px;
                 padding-top: 20px;
-                width: 100%;
-                // background: red;
+              
                 .platform-module-con{
                     height: 54px;
                     width: 100%;
-                    // background: red;
+                 
                     display: flex;
                     .platform-left-title{
                         width: 156px;
@@ -347,7 +138,7 @@ td div{
             
             .select-con{
                 height: 50px;
-                width: 100%;
+                
        
                 padding-left: 21px;
                 .select-btn{
@@ -371,7 +162,7 @@ td div{
                     border: 1px solid #cccccc;
                     .table-th{
                         width: 100%;
-                        background: #66c7a5;
+                       
                         height: 50px;
                       
                         th:nth-child(1){
@@ -453,7 +244,7 @@ td div{
 
             .insert-vel{
                 height: 70px;
-                width: 100%;
+               
                 
                 padding-left: 21px;
                 display: flex;
@@ -476,8 +267,7 @@ td div{
                 }
             }
             .btn-con{
-                width: 100%;
-                // height: 76px;
+              
                 padding-left: 21px;
                 display: flex;
                 margin-top: 10px;

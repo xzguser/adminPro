@@ -169,10 +169,31 @@
             .table-vel{
                 margin-left: 21px;
                 height: 266px;
+                overflow: scroll;
+                width: 1780px;
                 .table-width{
                     width: 1780px;
-                  
+                    td{
+                        padding-top: 15px;
+                        padding-bottom: 20px;
+                    }
+                    .new-div{
+                        justify-content: end;
+                    }
                 }
+            }
+
+            .table-vel::-webkit-scrollbar {/*滚动条整体样式*/
+                width: 3px;     /*高宽分别对应横竖滚动条的尺寸*/
+                height: 0px;
+            }
+            .table-vel::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+                border-radius: 10px;
+                background-color: #66c7a5;
+            }
+            .table-vel::-webkit-scrollbar-track {/*滚动条里面轨道*/
+                border-radius: 10px;
+                background: #EDEDED;
             }
             .paging-vel{
                 margin-top: 17px;

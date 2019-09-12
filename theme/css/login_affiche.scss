@@ -28,132 +28,15 @@ td div{
     .scrool-content{
         width: 100%;
         height: 955px;
-        .title-modules{
-            height: 62px;
-            width: 100%;
-            display: flex;
-            position: relative;
-            .agent-module{
-                width: 90px;
-                padding-left: 30px;
-                
-                align-items: center;
-                display: flex;
-
- 
-                font-family: $font-family;
-                font-size: 18px;
-                font-weight: bold;
-                text-align: left;
-                color: #333333;
-            }
-            .arrows-module{
-                width: 27px;
-                align-items: center;
-                display: flex;
-                font-family: $font-family;
-                font-size: 18px;
-                font-weight: bold;
-                justify-content: center;
-                color: #333333; 
-            }
-            .query-module{
-               
-                align-items: center;
-                display: flex;
-                font-family: $font-family;
-                font-size: 18px;
-                font-weight: bold;
-                text-align: left;
-                color: #333333; 
-            }
-
-            .affiche-page-right{
-                display: flex;
-                width: 388px;
-                height: 21px;
-                margin-right: 49px;
-                font-size: 16px;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                right: 0;
-                padding-top: 19px;
-                .right-icon{
-                  width: 22px;
-                  height: 14px;
-                  margin-right: 5px;
-        
-                  .ic_group_24px{
-                    width: 100%;
-                    height: 100%;
-                  }
-                }
-                .right-number{
-                  width: 19px;
-                  height: 100%;
-                  font-family:$font-family;
-                  font-weight: bold;
-                  text-align: left;
-                  color: #ff5454;
-                  margin-right: 10px;
-                }
-                .right-text{
-                  width: 29px;
-                  height: 100%;
-                  font-family: $font-family;
-                  font-weight: bold;
-                  text-align: left;
-                  color: #333333;
-                  margin-right: 12.2px;
-                }
-                .right-time-icon{
-                  width: 20px;
-                  height: 20px;
-                  margin-right: 4.8px;
-                  .ic_time {
-                    width: 100%;
-                    height: 100%;
-                  }
-                }
-                .right-time{
-                  width: 268px;
-                  height: 100%;
-                  font-family: $font-family;
-                  font-size: 16px;
-                  font-weight: bold;
-                  text-align: left;
-                  color: #333333;
-                }
-              }
-        }
         .form-content{
           margin:9px 10px;
           background: #ffffff;
           width: 1900px;
           height: 875px;
-          .top-module-row{
-            width: 100%;
-            height: 45px;
-            display: flex;
-            .select-module{
-                margin-left: 21px;
-        
-                font-family: $font-family;
-                font-size: 16px;
-                display: flex;
-                align-items: center;
-                text-align: left;
-                color: #b4b4b4;
-            }
-            .select-module.tar,.checked{
-                border-bottom: solid 3px #308769;
-                color: #308769;
-            }
-          }
+    
           .datum-title{
             height: 50px;
-            width: 100%;
+           
             display: flex;
             margin-left: 17px;
             margin-top: 21px;
@@ -258,4 +141,72 @@ td div{
     }
 
 
+}
+
+// 邮箱
+.pop-style-eamil{
+  position: relative;
+  width: 620px;
+  height: 270px;
+  background: #ffffff;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  .top-email{
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    .left-img{
+      margin-left: 10px;
+      width: 18px;
+      height: 18px;
+    }
+    .right-hint{
+      margin-left: 4px;
+      font-family: $font-family;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+
+  .email-vel{
+    margin-top: 26px;
+    display: flex;
+    .email-left{
+      width: 161px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 14px;
+      font-family:$font-family;
+      font-size: 18px;
+      font-weight: bold;
+    
+      color: #111111;
+      .email-icon{
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .email-right{
+      width: 400px;
+      height: 30px;
+      .del-border{
+        border: none;
+        color: #999999;
+      }
+    }
+  }
+
+  .submit-vel{
+    margin-top: 20px;
+    margin-left: 175px;
+    display: flex;
+  }
 }
