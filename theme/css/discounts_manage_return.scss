@@ -1,7 +1,6 @@
 .discountsReturn-page{
     width: 1920px;
     height: 1035px;
-    background-color: #eeeeee;
 
     .scrool-content{
         height: 901px;
@@ -9,9 +8,10 @@
        
         .form-content{
             margin:9px 10px;
+            margin-top: 0px;
             background: #ffffff;
             width: 1900px;
-            height: 821px;
+            height: 830px;
 
             .backwater-vel{
                 margin-top: 20px;
@@ -200,10 +200,11 @@
                 }
                 .bot-con{
                     color: #333333;
-                    height: 50px;
+                    height: 48px;
                     padding-left: 12.7px;
                     display: flex;
                     align-items: center;
+                    border: 1px solid #eeeeee;
                 }
             }
 
@@ -212,10 +213,11 @@
                 margin-left: 21px;
                 .table-01-new{
                     width: 1860px;
+                    border-left: 1px solid #eeeeee;
                     .table-content{
-                        td:nth-child(2) div{
-                            color: #0099ff;
-                        }
+                        // td:nth-child(2) div{
+                        //     color: #0099ff;
+                        // }
                         td:last-child{
                             width: 630px;
                         }

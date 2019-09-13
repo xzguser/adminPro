@@ -7,9 +7,10 @@
 
         .form-content{
             margin:9px 10px;
+            margin-top: 0px;
             background: #ffffff;
             width: 1900px;
-            height: 821px;
+            height: 830px;
             .import-vel{
                 margin-top: 20px;
                 margin-left: 21px;
@@ -20,7 +21,7 @@
                     display: flex;
                     align-items: center;
                     .modu-left{
-                        width: 80px;
+                        width: 90px;
                         height: 30px;
                         display: flex;
                         align-items: center;
@@ -29,7 +30,7 @@
                         font-weight: bold;
                         text-align: left;
                         color: #333333;
-                        margin-right: 10px;
+                       
                     }
                 }
                 .scope-module{
@@ -37,7 +38,7 @@
                     display: flex;
                     align-items: center;
                     .title-left{
-                        width: 80px;
+                        width: 90px;
                         font-family: $font-family;
                         height: 30px;
                         display: flex;
@@ -46,7 +47,7 @@
                         font-weight: bold;
                         text-align: left;
                         color: #333333;
-                        margin-right: 10px;
+                      
                     }
                     .scope-symbol{
                         width: 25px;
