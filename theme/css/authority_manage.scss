@@ -6,7 +6,7 @@
     .scrool-content{
         height: 901px;
         width: 100%;
-
+        box-shadow: 0px 4px 5px #ccc inset;
         .form-content{
             margin:9px 10px;
             margin-top: 0px;
@@ -51,9 +51,18 @@
             }
             .table-tier-vel{
                 margin-left: 21px;
+              
                 
                 .new-width{
                     width: 1000px;
+                    border: 1px solid #cccccc;
+                    .table-head td{
+                      border-right: 1px solid #ffffff;
+                    }
+                    .update-icon{
+                      width: 20px;
+                      height: 20px;
+                    }
                 }
             }
         }

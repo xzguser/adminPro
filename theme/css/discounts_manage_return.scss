@@ -5,7 +5,7 @@
     .scrool-content{
         height: 901px;
         width: 100%;
-       
+        box-shadow: 0px 4px 5px #ccc inset;
         .form-content{
             margin:9px 10px;
             margin-top: 0px;
@@ -205,6 +205,7 @@
                     display: flex;
                     align-items: center;
                     border: 1px solid #eeeeee;
+                    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
                 }
             }
 

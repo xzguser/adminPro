@@ -10,7 +10,7 @@
     .scrool-content{
         height: 901px;
         width: 100%;
-      
+        box-shadow: 0px 4px 5px #ccc inset;
           
         .form-content{
 
@@ -200,7 +200,7 @@
                 .table-01-new{
                    
                     width: 1860px;
-                    border-left: 1px solid #eeeeee;
+                    border-left: 1px solid #ccc;
                    tr{
 
                     td:nth-child(1){
@@ -220,8 +220,8 @@
                         width: 100px;
                     }
                     td:nth-child(6){
-                        width: 185px;
-                        padding-right: 15px;
+                        width: 160px;
+                        padding-right: 40px;
                     }
                     td:nth-child(7){
                         width: 260px;

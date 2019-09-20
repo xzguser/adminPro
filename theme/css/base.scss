@@ -206,8 +206,8 @@
 .navigation_bar {
   width: 1920px;
   height: 54px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #66c7a5;
+  box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.16) inset;
+  // background-color: #66c7a5;
   display: flex;
   align-items: center;
 
@@ -301,6 +301,7 @@
     font-family: $font-family;
     font-size: 16px;
     text-align: center;
+    font-weight: bold;
     // color: #ff6a3b;
   }
 }
@@ -472,7 +473,7 @@
     display: flex;
     width: 35px;
     height: 30px;
-    border-radius: 2px;
+    // border-radius: 2px;
     background-image: linear-gradient(to top, #14c587, #137855);
     font-family: $font-family;
     font-size: 14px;
@@ -484,7 +485,7 @@
     display: flex;
     width: 35px;
     height: 30px;
-    border-radius: 1px;
+    // border-radius: 1px;
     background-image: linear-gradient(to bottom, #9a9a9a, #f2f2f2);
     font-size: 14px;
     font-family: $font-family;
@@ -526,7 +527,7 @@
   border-radius: 10px;
   background-color: #19495b;
   span{
-    width: 32px;
+    // width: 32px;
     height: 21px;
     font-family: $font-family;
     font-size: 16px;
@@ -674,6 +675,10 @@
       font-weight: bold;
       justify-content: center;
       color: #333333; 
+      .icon-right{
+        width: 12px;
+        height: 12px;
+      }
   }
   .title-first{
       align-items: center;
@@ -766,6 +771,7 @@
   width: 100%;
   height: 45px;
   display: flex;
+  font-weight: bold;
   .select-module{
       margin-left: 21px;
       font-family: $font-family;
@@ -799,6 +805,10 @@
 .red-color{
   color: #ff3b3b !important;
 }
+//浅绿色
+.green-color{
+  color:#1fb25f !important;
+}
 
 
 .check-box{
@@ -814,4 +824,34 @@
 }
 .blue-bor-right{
   border-right:1px solid #1b65db !important;
+}
+
+.date-vel{
+  width: 160px;
+  height: 30px;
+  border-radius: 5px;
+ 
+  background-color: #ffffff;
+  position: relative;
+  .date-input{
+  
+    height: 100%;
+    width: 144px;
+    height: 28px;
+    border-radius: 5px;
+    border: solid 1px #d8d8d8;
+    font-family: Microsoft JhengHei;
+    font-size: 16px;
+    padding-left: 14px;
+    text-align: left;
+    color: #666666;
+  }
+  .date-icon{
+    position: absolute;
+    right: 9px;
+    margin-top: 5px;
+    width: 18px;
+    height: 20px;
+    top: 0px;
+  }
 }

@@ -20,8 +20,13 @@ table tr.lastrow td {
 }
 
 table tr td.lastCol {
-  border-right: 0;
+  border-right: 0 !important;
 }
+
+.first-td-border{
+    border-bottom: 1px solid #fff;
+}
+
 
 .table-head {
   width: 100%;

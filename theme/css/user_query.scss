@@ -4,7 +4,7 @@
     .scrool-content{
         height: 901px;
         width: 100%;
-
+        box-shadow: 0px 4px 5px #ccc inset;
         .form-content{
             margin:9px 10px;
             margin-top: 0px;
@@ -21,7 +21,8 @@
                     display: flex;
                     align-items: center;
                     .modu-left{
-                        width: 90px;
+                        // width: 90px;
+                        margin-right: 10px;
                         height: 30px;
                         display: flex;
                         align-items: center;
@@ -38,7 +39,8 @@
                     display: flex;
                     align-items: center;
                     .title-left{
-                        width: 90px;
+                        // width: 90px;
+                        margin-right: 10px;
                         font-family: $font-family;
                         height: 30px;
                         display: flex;
@@ -78,9 +80,9 @@
                     height: 21px;
                     font-family:$font-family;
                     font-size: 16px;
-                  
                     text-align: right;
                     margin-right: 20px;
+                    text-decoration: underline;
                 }
             }
             .state-vel{
@@ -145,9 +147,15 @@
                 width: 1861px;
                 .new-width{
                     width: 1861px;
+                    border-left: 1px solid #ccc;
                     td div{
                         font-weight: normal;
                         
+                    }
+                    td{
+                        .reseda-color{
+                            color: #4ba231;
+                        }
                     }
                     td .finally-div{
                         width: 690px;

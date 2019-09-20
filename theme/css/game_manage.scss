@@ -5,7 +5,7 @@
     .scrool-content{
         height: 902px;
         // width: 100%;
-      
+        box-shadow: 0px 4px 5px #ccc inset;
         .form-content{
             margin:9px 10px;
             margin-top: 0px;
@@ -197,6 +197,16 @@
             .table-vel{
                 margin-top: 9px;
                 margin-left: 21px;
+                .table-01{
+                    border-left: 1px solid #ccc;
+                    .table-head{
+                        td{
+                            border-right: 1px solid #fff;
+                        }
+                    }
+                }
+                
+                
             }
             .paging-vel{
                 margin-top: 10.5px;

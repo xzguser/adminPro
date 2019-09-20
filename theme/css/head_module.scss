@@ -2,13 +2,13 @@
 .head-page{
   width: 1920px;
   height: 80px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 7px 6px 0 rgba(0, 0, 0, 0.16);
   .head-content{
    
     height: 80px;
   
     background-color: #ffffff;
-    border: 2px solid #f2f2f2;
+    // border: 2px solid #f2f2f2;
     display: flex;
     position: relative;
     .head-Path{
@@ -155,7 +155,7 @@
           bottom: 8px;
           border-radius: 50%;
         
-          background: red;
+          background: #FF5454;
           width: 16px;
           height: 16px;
           font-family: $font-family;
@@ -163,6 +163,7 @@
           font-weight: bold;
           text-align: center;
           color: #ffffff;
+          left: 7px;
         }
         .dis-con-a{
           position: absolute;
@@ -191,19 +192,29 @@
           bottom: 6px;
           height: 21px;
        
-          width: 6px;
+          width: 24px;
+          // background: yellow;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .left-icon{
+            width: 10px;
+            height: 10px;
+            
+          }
         }
         .china-ves{
-          width: 48px;
+          width: 30px;
           height: 21px;
           border-right: 1px solid #eeeeee;
           position: absolute;
+          right: 0px;
           bottom: 6px;
           .china-logo{
            
             height: 20px;
             width: 20px;
-            padding-left: 20px;
+           // padding-left: 20px;
   
           }
         }
@@ -223,8 +234,8 @@
           font-size: 14px;
           height: 30px;
           border-radius: 25px;
-          box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
-          background-color: #eeeeee;
+          box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+          // background-color: #eeeeee;
           display: inline-flex;
           justify-content: center;
           align-items: center;
@@ -249,12 +260,18 @@
           bottom: 8px;
           height: 21px;
           right: 0px;
+          width: 16px;
           font-family: $font-family;
           font-size: 16px;
           font-weight: bold;
           text-align: left;
-   
-          transform: rotate(180deg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .bottom-icon{
+            width: 10px;
+            height: 10px;
+          }
         }
       }
       // .icon-con{

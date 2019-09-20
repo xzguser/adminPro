@@ -7,6 +7,11 @@
     const data_btn = '[data-btn="data-btn"]';
     const data_btnAll='[data-btnAll="data-btnAll"]';
     const tab_switch = '[data-tab-switch="data-tab-switch"]';
+
+    //获取表格中的第一行高度
+    // const data_tr =  '[data-tr="data-tr"]';
+
+    // $($($('[data-tr="data-tr"]')[0].children[1])[0].children[0])[0].clientHeight
     const ache = {
         init: function () {
             const that = this;
@@ -28,7 +33,17 @@
                });
                $($(data_btn)[0]).addClass("white-btn");
                $($(tab_switch)[1]).addClass("hide");
-               $($(tab_switch)[2]).addClass("hide")
+               $($(tab_switch)[2]).addClass("hide");
+
+               
+              
+               if($('[data-tr="data-tr"]')[0] != undefined){
+                    //把获取的tr高度赋值给图标的容器高度
+                    var tr =  $($($('[data-tr="data-tr"]')[0].children[1])[0].children[0])[0].clientHeight;
+                    
+                    $('[data-icon="data-icon"]')[0].style.height= tr+"px";
+               }
+              
            })();
         }
         //切换事件

@@ -5,10 +5,7 @@
     .scrool-content{
         height: 901px;
         width: 100%;
-      
-        
-       
-           
+        box-shadow: 0px 4px 5px #ccc inset;
           
         .form-content{
            
@@ -39,7 +36,7 @@
             }
             .create-message{
               height: 34px;
-              margin-left: 39px;
+              margin-left: 40px;
               width: 900px;
               border-bottom: 1px solid black;
               display: flex;
@@ -58,7 +55,7 @@
             .website-set{
               // background: red;
               padding-top: 26px;
-              margin-left: 21px;
+              margin-left: 40px;
               height: 51px;
            
               font-family: $font-family;
@@ -74,7 +71,7 @@
               width: 100%;
               .website-number{
                 height: 30px;
-                margin-left: 39px;
+                margin-left: 40px;
                 display: flex;
                 padding-bottom: 16px;
              
@@ -87,7 +84,7 @@
                   font-weight: bold;
                   font-style: normal;
                   font-stretch: normal;
-                  padding-right: 12px;
+                  // padding-right: 12px;
                   letter-spacing: normal;
                   text-align: left;
                   color: #333333;
@@ -104,52 +101,23 @@
                   font-weight: normal;
                   font-style: normal;
                   font-stretch: normal;
-              
+                  margin-left: 17px;
                   letter-spacing: normal;
                   padding-left: 14px;
                   width: 230px;
                   margin-right: 50px;
                   color: #666666;
-                }
-
-                .left-title1{
-                  height:100%;
-                  display: flex;
-                  align-items: center;
-                  font-family: $font-family;
-                  font-size: 18px;
-                  font-weight: bold;
-                  font-style: normal;
-                  font-stretch: normal;
-                  padding-right: 12px;
-                  letter-spacing: normal;
-                  text-align: left;
-                  color: #333333;
                 }
                 .right-con1{
-                  border-radius: 5px;
-                  border: solid 1px #d8d8d8;
+                
                   background-color: #ffffff;
-                  display: flex;
-                  align-items: center;
-                  font-family: $font-family;
-                  font-size: 16px;
-                  font-weight: normal;
-                  font-style: normal;
-                  font-stretch: normal;
-                  padding-left: 14px;
-                  letter-spacing: normal;
-                  // margin-left: 14px;
-                  width: 230px;
-                  margin-right: 50px;
-                  color: #666666;
                 }
               }
               .domain-module{
                 height: 130px;
             
           
-                margin-left: 39px;
+                margin-left: 40px;
                 display: flex;
                 .left-domain-title{
                     width: 90px;
@@ -208,7 +176,7 @@
                 height: 30px;
                 padding-bottom: 19px;
             
-                margin-left: 50px;
+                margin-left: 40px;
                 display: flex;
                 .count-title{
                   width: 80px;
@@ -268,7 +236,7 @@
                   padding-bottom: 17px;
               
                   .beyond-left-title{
-                    width: 240px;
+                    // width: 280px;
                     font-family: $font-family;
                     font-size: 16px;
                     font-weight: bold;
@@ -358,13 +326,11 @@
 
               .popup-vel{
                 height: 47px;
-
-              
                 margin-left: 40px;
                 display: flex;
                 align-items: center;
                 .popup-left{
-                  width: 224px;
+                  // width: 264px;
                  
                   font-family:$font-family;
                   font-size: 16px;
