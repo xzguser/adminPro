@@ -216,9 +216,9 @@
                     width: 1860px;
                     border-left: 1px solid #eeeeee;
                     .table-content{
-                        // td:nth-child(2) div{
-                        //     color: #0099ff;
-                        // }
+                        td:nth-child(1){
+                            width: 50px;
+                        }
                         td:last-child{
                             width: 630px;
                         }

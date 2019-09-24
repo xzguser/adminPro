@@ -52,7 +52,7 @@
                     .row-vel{
                         height: 100%;
                         width: 280px;
-                   
+                        font-family: $font-family;
                         position: relative;
                         .form-top-title{
                             position: absolute;
@@ -103,7 +103,7 @@
                     .row-vel{
                         height: 100%;
                         width: 280px;
-                   
+                        font-family: $font-family;
                         position: relative;
                         .form-top-title{
                             position: absolute;
@@ -142,6 +142,7 @@
                         height: 100%;
                         width: 280px;
                         position: relative;
+                        font-family: $font-family;
                         .form-top-title{
                             position: absolute;
                             bottom: 30px;
@@ -216,6 +217,7 @@
                     .row-vel{
                         height: 100%;
                         width: 280px;
+                        font-family: $font-family;
                         position: relative;
                         .form-top-title{
                             position: absolute;
@@ -223,6 +225,7 @@
                             height: 43px;
                             width: 230px;
                             font-weight: bold;
+                           
                             font-size: 16px;
                             align-items: center;
                             display: flex;

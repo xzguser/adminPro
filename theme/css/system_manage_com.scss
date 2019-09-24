@@ -175,12 +175,12 @@
               .select-count-sum{
                 height: 30px;
                 padding-bottom: 19px;
-            
+                font-family: $font-family;
                 margin-left: 40px;
                 display: flex;
                 .count-title{
                   width: 80px;
-                  font-family: $font-family;
+                  
                   font-size: 16px;
                   font-weight: bold;
                   text-align: left;
@@ -211,7 +211,7 @@
                     border: solid 1px #d8d8d8;
                     background-color: #ffffff;
 
-                    font-family:$font-family;
+                   
                     font-size: 18px;
                     padding-left: 10px;
                     color: #666666;

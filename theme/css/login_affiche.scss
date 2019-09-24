@@ -31,7 +31,7 @@
             height: 50px;
            
             display: flex;
-            margin-left: 18.5px;
+            margin-left: 17.5px;
             margin-top: 21px;
             
             .basic-con{
@@ -41,13 +41,14 @@
 
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
-                // margin-right: 1.5px;
+
                 display: flex;
-                box-shadow: 3px -2px 6px 0 rgba(0, 0, 0, 0.16) inset, 3px 0 6px 0 rgba(0, 0, 0, 0.16);
-              
+                // box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.16) inset, 3px 0 6px 0 rgba(0, 0, 0, 0.16);
+               // box-shadow: -3px -1px 6px rgba(0, 0, 0, 0.16), -3px 1px 3px -3px rgba(0, 0, 0, 0.16) inset;
+                box-shadow: 0px 1px 6px 0 rgba(0, 0, 0, 0.16), 0px 0px 6px 0 rgba(0, 0, 0, 0.16);
                 background-color: #ffffff;
                 color: #aeaeae;
-                // margin-right: 2px;
+      
                 .basic-set{
                     display: flex;
                     align-items: center;
@@ -68,7 +69,9 @@
                 height: 50px;
                 margin-top: 0px;
                 color: #308769;
-                box-shadow: -2px -4px 6px rgba(0, 0, 0, 0.16),3px -4px 6px rgba(0, 0, 0, 0.16);
+        
+              //box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.16), 2px -1px 2px 0px rgba(0, 0, 0, 0.16);
+              box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.16), 1px -1px 2px 0px rgba(0, 0, 0, 0.16);
             }
   
          }
@@ -81,6 +84,7 @@
             border: solid 1px #e4e4e4;
             border-top: 0px;
             background-color: #ffffff;
+            font-family: $font-family;
             width: 1866px;
             .table-affiche-left{
               width: 45px;

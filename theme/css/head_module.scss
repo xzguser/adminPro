@@ -30,7 +30,7 @@
       display: flex;
       height: 100%;
       width: 700px;
-      
+      font-family: $font-family;
       .option-row{
         width: 100px;
         height: 100%;
@@ -156,14 +156,14 @@
           border-radius: 50%;
         
           background: #FF5454;
-          width: 16px;
+          width: 18px;
           height: 16px;
           font-family: $font-family;
-          font-size: 10px;
+          font-size: 7px;
           font-weight: bold;
           text-align: center;
           color: #ffffff;
-          left: 7px;
+          left: 4px;
         }
         .dis-con-a{
           position: absolute;
@@ -234,7 +234,7 @@
           font-size: 14px;
           height: 30px;
           border-radius: 25px;
-          box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
           // background-color: #eeeeee;
           display: inline-flex;
           justify-content: center;
