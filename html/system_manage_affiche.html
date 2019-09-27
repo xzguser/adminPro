@@ -3,93 +3,111 @@
 	<head>
 		<meta charset="utf-8">
 		<title>系统管理-站内公告</title>
-
+		<script src="../js/jquery/jquery-1.8.3.js"></script>
 		<link rel="stylesheet" href="../style/css/style.css">
 	</head>
 	
 	<body>
 		<div class="systemInstation-page">
-			<!-- 头部内容 -->
+			<!-- 头部管理模块 -->
 			<div class="head-page">
-					<div class="head-content green-text">
+					<div class="head-content "  >
 						<div class="head-Path">
 							<img src="../style/img/logo.png" alt="" class="logo-img">
 						</div>
-						<div class="head-option">
-							<div class="option-row">
-								<div class="img-row img-agent"></div>
-								<div class="title-row">会员代理商</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-system sel-img"></div>
-								<div class="title-row">系统管理</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-discounts"></div>
-								<div class="title-row">优惠管理</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-financial"></div>
-								<div class="title-row">财务管理</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-statement"></div>
-								
-								<div class="title-row">报表汇出</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-game"></div>
-								<div class="title-row">游戏管理</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-backstage"></div>
-							
-								<div class="title-row">后台管理</div>
-							</div>
+						<div class="head-option" header-img="header-img">
+							<a href="user_query.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-agent "></div>
+									<div class="title-row">会员代理商</div>
+								</div>
+							</a>
+							<a href="system_manage_com.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-system sel-img" ></div>
+									<div class="title-row">系统管理</div>
+								</div>
+							</a>
+							<a href="discounts_manage.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-discounts" ></div>
+									<div class="title-row">优惠管理</div>
+								</div>
+							</a>
+							<a href="finance_manage.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-financial" ></div>
+									<div class="title-row">财务管理</div>
+								</div>
+							</a>
+							 <a href="javascript:void(0)" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-statement" ></div>
+		
+									<div class="title-row">报表汇出</div>
+								</div>
+							</a>
+		
+		
+							<a href="game_manage.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-game"></div>
+									<div class="title-row">游戏管理</div>
+								</div>
+							</a>
+		
+							<a href="authority_manage.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-backstage"></div>
+			
+									<div class="title-row">后台管理</div>
+								</div>
+							</a>
+						   
 						</div>
-						<div class="right-title ">
+						<div class="right-title green-text" header-nav="header-nav" >
 					
-								<div class="dis-con">
-									<div class="dis-con-a green-bor-right">优惠上传</div>
+								<div class="dis-con green-bor-right">
+									<div class="dis-con-a ">优惠上传</div>
 									
 								</div>
-								<div class="dis-con">
-										<div class="dis-con-a green-bor-right">在线客服</div>
+								<div class="dis-con green-bor-right">
+										<div class="dis-con-a ">在线客服</div>
 								</div>
-								<div class="dis-con-min">
-										<div class="dis-con-a green-bor-right">公告</div>
+								<div class="dis-con-min green-bor-right">
+										<div class="dis-con-a ">公告</div>
 								</div>
-								<div class="dis-con">
-										<div class="dis-con-a green-bor-right">数据分析</div>
+								<div class="dis-con green-bor-right">
+										<div class="dis-con-a ">数据分析</div>
 								</div>
-								<div class="dis-con">
-										<div data-style="data-style" class="dis-con-a green-bor-right">风格切换</div>
+								<div class="dis-con green-bor-right">
+										<div data-style="data-style" class="dis-con-a ">风格切换</div>
 								</div>
-								<div class="dis-con-max">
+								<div class="dis-con-max green-bor-right">
 									<div class="message-count">12</div>
-									<div class="dis-con-a green-bor-right">GT NEWS+</div>
+									<div class="dis-con-a ">GT NEWS+</div>
 								</div>
-								<div class="dis-state">
-									<!-- <span class="symbol">&lt;</span> -->
+								<div class="dis-state green-bor-right">
+								
 									<div class="symbol">
-										<img class="left-icon" src="../style/img/symbol-left-green.png" alt="">
+										<div left-icon="left-icon" class="left-icon-green"></div>
 									</div>
-									<div class="china-ves green-bor-right">
+									<div class="china-ves">
 										<img src="../style/img/china-2x.png" class="china-logo" alt="">
 									</div>
 								</div>
 								<div class="dis-greet">
-										<div class="btn-swicth green-btn">切回旧版</div>
+										<div class="btn-swicth green-btn" switch-old="switch-old" >切回旧版</div>
 										<div class="call-con">Hi，YUI</div>
 										<div class="arrows">
-											<img class="bottom-icon" src="../style/img/symbol-bottom-green.png" alt="">
+											<div bottom-icon="bottom-icon" class="bottom-icon-green"></div>
 										</div>
 								</div>
 							</div>
 					</div>
 			</div>
 
-			<div class="navigation_bar green-bg">
+			<div class="navigation_bar green-bg" navi-bg="navi-bg">
 				<div class="bar-btn">
 					<div class="bar-btn-txt ">站台系统值</div>
 				</div>
@@ -101,10 +119,12 @@
 				</div>
 				
 			</div>
-			<div class="scrool-content">
+			<div class="scrool-content scr-green" scro-con="scro-con">
 					<div class="title-modules">
 						<span class="title-max">系统管理</span>
-						<span class="arrows-module">&gt;</span>
+						<span class="arrows-module">
+							<img class="icon-right" src="../style/img/symbol-right.png" alt="">
+						</span>
 						<span class="title-first">前端设定</span>
 						<!-- 栏位筛选 -->
 						<div class="filtrate-btn">
@@ -132,7 +152,7 @@
 						
 					</div>
 					<div class="form-content">
-						<div class="top-module-row">
+						<div class="top-module-row" top-module="top-module">
 								<div class="select-module">系统公告</div>
 								<div class="select-module green-tar">站内公告</div>
 								<div class="select-module">站内信回复</div>
@@ -189,11 +209,12 @@
 						</div>
 
 						<div class="query-btn-vel">
-							
-							<div class="btn-submit green-btn1">查询</div>
+							<div class="btn-submit green-btn" data-submit="data-submit">
+								<a href="javascript:void(0)">查询</a>
+							</div>
 						</div>
 
-						<div class="table-header green-bg">
+						<div class="table-header green-bg" navi-bg="navi-bg">
 							<div class="left-btn">查询结果</div>
 							<div class="right-btn">+ 新增公告</div>
 						</div>
@@ -697,5 +718,8 @@
 				</div>
 			
 		</div>
+		<script src="../js/jquery/winHtml.js"></script>
 	</body>
 </html>
+
+<script src="../js/jquery/setStyle.js"></script>

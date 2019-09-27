@@ -10,6 +10,13 @@
 //select::-ms-expand {
 //  display: none;
 //}
+html body{
+  font-family: $font-family !important;
+
+  // a{
+  //   display: block !important;
+  // }
+}
 
   /*----------日期选择的箭头----------*/
   input[type="date"]::-webkit-calendar-picker-indicator {
@@ -22,6 +29,13 @@
 /*----------用来移除上下箭头----------*/
 input[type="date"]::-webkit-inner-spin-button {
     display: none;
+    // background: yellow;
+    // display: flex;
+    // align-items: center;
+    // margin-top: 5px;
+    // margin-left: 5px;
+    // width: 20px;
+    // height: 20px;
 }
 
 /*----------用来移除叉叉按钮----------*/
@@ -69,22 +83,32 @@ input[type="date"] {
   visibility: hidden !important;
 }
 
-.bg1{
+.scr-green{
   background-color: #eeeeee;
 }
-.bg2{
+.scr-orange{
   background-color: #fff0e5;
 }
-.bg3{
+.scr-blue{
   background-color: #d4e4ff;
 }
 //浅绿色
-.green-text{
+.green-text,.green-text>a{
   color: #66c7a5 !important;
 }
+
 //深绿色
 .green-text1{
   color: #308769!important;
+}
+//深蓝色
+.blue-text1{
+  color: #1b65db !important;
+}
+
+//深橙色
+.orange-text1{
+  color: #ff872a !important;
 }
 .green-bg{
   background-color: #66c7a5 !important;
@@ -101,6 +125,22 @@ input[type="date"] {
     color: #ffffff !important;
   }
 }
+.blue-header-bg{
+  background-image: linear-gradient(to bottom, #3f89ff, #1b65db);
+  color: #ffffff;
+  div:first-child{
+    color: #ffffff !important;
+  }
+}
+.orange-header-bg{
+  background-image: linear-gradient(to bottom, #ff872a, #ff6a3b);
+  color: #ffffff;
+  div:first-child{
+    color: #ffffff !important;
+  }
+}
+
+
 
 .green-btn{
   background-color: #308769 !important;
@@ -110,7 +150,10 @@ input[type="date"] {
   font-weight: bold;
   color: #ffffff !important;
 }
-
+.green-btn>a{
+  color: #fff !important;
+}
+//中-绿色
 .green-btn1{
   background-color: #1ba786 !important;
   font-style: normal;
@@ -119,14 +162,34 @@ input[type="date"] {
   font-weight: bold;
   color: #ffffff !important;
 }
-// .green-btn2{
-//   background-color: #1ba786 !important;
-//   font-style: normal;
-//   font-stretch: normal;
-//   font-size: 16px;
-//   font-weight: bold;
-//   color: #ffffff !important;
-// }
+.green-btn1>a{
+  color: #fff !important;
+}
+
+.blue-btn1{
+  background-color:  #1b65db !important;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff !important;
+}
+.blue-btn1>a{
+  color: #fff !important;
+}
+
+.orange-btn1{
+  background-color:  #ff6a3b !important;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff !important;
+}
+.orange-btn1>a{
+  color: #fff !important;
+}
+
 .green-open{
   background-image: linear-gradient(to top, #14c587, #137855) !important;;
 }
@@ -150,6 +213,10 @@ input[type="date"] {
   font-style: normal;
   font-stretch: normal;
   color: #ffffff !important;
+  // box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.16) inset;
+}
+.orange-btn>a{
+  color: #fff !important;
 }
 .orange-bg{
   background-color: #ff872a !important;
@@ -191,6 +258,9 @@ input[type="date"] {
   font-stretch: normal;
   color: #ffffff !important;
 }
+.blue-btn>a{
+  color: #fff !important;
+}
 .blue-open{
   background-image: linear-gradient(to top, #4885db, #0652db)!important;
 }
@@ -227,6 +297,9 @@ input[type="date"] {
   font-family: $font-family;
   margin-right: 25px;
 }
+.btn-submit>a{
+  color: #122640;
+}
 //按钮
 .btn-general{
   position: relative;
@@ -245,6 +318,9 @@ input[type="date"] {
     text-align: center;
     color: #ffffff;
   }
+}
+.btn-general>a{
+  color: #fff !important;
 }
 
 //深绿色
@@ -280,7 +356,7 @@ input[type="date"] {
     align-items: center;
     justify-content: center;
     margin-right: 18.6px;
-
+    // box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.16) inset;
     .bar-btn-txt {
       // width: 64px;
       height: 21px;
@@ -333,16 +409,19 @@ input[type="date"] {
   display: flex;
   align-items: flex-end;
   color: #308769;
+  
 }
 .orange-btn-bar {
   display: flex;
   align-items: flex-end;
   color: #ff6a3b;
+ 
 }
 .blue-btn-bar {
   display: flex;
   align-items: flex-end;
   color: #1b65db;
+ 
 }
 .tab-btn {
   display: flex;
@@ -570,7 +649,7 @@ input[type="date"] {
   border: solid 1px #989898;
   background-image: linear-gradient(to bottom, #ffffff, #d8d8d8)!important;
   background: rgb(255, 255, 255,1);
-  z-index: 10;
+  z-index: 1;
   span{
     display:  none;
   }
@@ -861,7 +940,7 @@ input[type="date"] {
 .blue-color{
   color: #0099ff !important;
 }
-//红色
+//浅红色
 .red-color{
   color: #ff3b3b !important;
 }
@@ -869,7 +948,10 @@ input[type="date"] {
 .green-color{
   color:#1fb25f !important;
 }
-
+//浅橙色
+.orange-color{
+  color:#ff872a!important;
+}
 
 .check-box{
   width: 18px;
@@ -883,40 +965,40 @@ input[type="date"] {
   border-right:1px solid #ff872a !important;
 }
 .blue-bor-right{
-  border-right:1px solid #1b65db !important;
+  border-right:1px solid #3f89ff !important; 
 }
 
-.date-vel{
-  width: 160px;
-  height: 30px;
-  border-radius: 5px;
+// .date-vel{
+//   width: 160px;
+//   height: 30px;
+//   border-radius: 5px;
  
-  background-color: #ffffff;
-  position: relative;
-  .date-input{
+//   background-color: #ffffff;
+//   position: relative;
+//   .date-input{
   
-    height: 100%;
-    width: 144px;
-    height: 28px;
-    border-radius: 5px;
-    border: solid 1px #d8d8d8;
-    font-family: Microsoft JhengHei;
-    font-size: 16px;
-    padding-left: 14px;
-    text-align: left;
-    color: #666666;
-    z-index:1;
-  }
-  .date-icon{
-    position: absolute;
-    right: 9px;
-    margin-top: 5px;
-    width: 18px;
-    height: 20px;
-    top: 0px;
-    z-index: 3;
-  }
-}
+//     height: 100%;
+//     width: 144px;
+//     height: 28px;
+//     border-radius: 5px;
+//     border: solid 1px #d8d8d8;
+//     font-family: Microsoft JhengHei;
+//     font-size: 16px;
+//     padding-left: 14px;
+//     text-align: left;
+//     color: #666666;
+//     z-index:1;
+//   }
+//   .date-icon{
+//     position: absolute;
+//     right: 9px;
+//     margin-top: 5px;
+//     width: 18px;
+//     height: 20px;
+//     top: 0px;
+//     z-index: 3;
+//   }
+// }
 
 .date-vel{
   width: 158px;
@@ -938,4 +1020,14 @@ input[type="date"] {
    
     z-index:1;
   }
+}
+
+.green-bor-bottom{
+    border-bottom: 1px solid #308769 !important;
+}
+.blue-bor-bottom{
+  border-bottom: 1px solid #1b65db !important;
+}
+.orange-bor-bottom{
+  border-bottom: 1px solid #ff6a3b  !important;
 }

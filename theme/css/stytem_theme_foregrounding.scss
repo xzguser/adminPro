@@ -11,7 +11,7 @@
             margin-top: 0px;
             background: #ffffff;
             width: 1900px;
-            height: 914px;
+            height: 909px;
             .form-register-con{
                 .platform-vel{
                     margin-top: 20px;
@@ -53,15 +53,9 @@
                     margin-top: 22px;
                     height: 31px;
                     margin-left: 21px;
-                    .register-span{
-                        height: 21px;
-    
-                        font-family: $font-family;
-                        font-size: 16px;
-                        font-weight: bold;
-                        text-align: left;
-                        color: #11513d;
-                    }
+                    font-weight: bold;
+               
+                   
                 }
 
                 .register-module-vel{
@@ -112,15 +106,8 @@
                     margin-top: 23px;
                     height: 48px;
                     margin-left: 21px;
-                    .pwd-span{
-                        height: 21px;
-    
-                        font-family: $font-family;
-                        font-size: 16px;
-                        font-weight: bold;
-                        text-align: left;
-                        color: #11513d;
-                    }
+                    font-weight: bold;
+                   
                 }
 
                 .bottom-vel{
@@ -164,4 +151,21 @@
         }
 
     }
+}
+//颜色切换
+.title-green{
+    height: 21px;
+    font-size: 16px;
+    color: #11513d;
+    
+}
+.title-blue{
+    height: 21px;
+    font-size: 16px;
+    color: #3f89ff;
+}
+.title-orange{
+    height: 21px;
+    font-size: 16px;
+    color: #ff6a3b;
 }

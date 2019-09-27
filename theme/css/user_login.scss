@@ -18,8 +18,8 @@
                 height:115px;
                 width:600px;
                 margin-left: 100px;
-
-                border-bottom: 1px solid #308769;
+                border-bottom: 1px solid;
+              
                 display: flex;
                 justify-content: center;
                
@@ -46,7 +46,7 @@
                     font-stretch: normal;
                     letter-spacing: normal;
                     text-align: left;
-                    color: #11513d;
+                    // color: #11513d;
                 }
                 .user-input{
                     height: 50px;
@@ -71,7 +71,7 @@
                     font-stretch: normal;
                     letter-spacing: normal;
                     text-align: left;
-                    color: #11513d;
+                    // color: #11513d;
                 }
                 .pwd-input{
                     height: 50px;
@@ -128,18 +128,15 @@
                         width: 100px;
                         height: 40px;
                         border-radius: 10px;
-                        background-color: #308769;
+                      
                         display: flex;
                         justify-content: center;
                         align-items: center;
 
                         font-family: $font-family;
-                        font-size:18px;
-                        font-weight: bold;
-                        font-style: normal;
-                        font-stretch: normal;
-                        letter-spacing: normal;
-                        color: #ffffff;
+                        font-size:18px !important;
+                      
+                       
                     }
                 }
             }
@@ -155,14 +152,11 @@
                display: flex;
                justify-content: center;
                padding-top: 25px;
-           
+        
                font-family: $font-family;
                font-size: 16px;
                font-weight: normal;
-               font-style: normal;
-               font-stretch: normal;
-               letter-spacing: normal;
-               color: #308769;
+            //    color: #308769;
             }
         }
     }

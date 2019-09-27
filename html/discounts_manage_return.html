@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>优惠管理-返水管理-返水查询</title>
-
+		<script src="../js/jquery/jquery-1.8.3.js"></script>
 		<link rel="stylesheet" href="../style/css/style.css">
 	</head>
 	
@@ -11,85 +11,103 @@
 		<div class="discountsReturn-page">
 			<!-- 头部 -->
 			<div class="head-page">
-					<div class="head-content green-text">
+					<div class="head-content "  >
 						<div class="head-Path">
 							<img src="../style/img/logo.png" alt="" class="logo-img">
 						</div>
-						<div class="head-option">
-							<div class="option-row">
-								<div class="img-row img-agent sel-img"></div>
-								<div class="title-row">会员代理商</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-system"></div>
-								<div class="title-row">系统管理</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-discounts"></div>
-								<div class="title-row">优惠管理</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-financial"></div>
-								<div class="title-row">财务管理</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-statement"></div>
-								
-								<div class="title-row">报表汇出</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-game"></div>
-								<div class="title-row">游戏管理</div>
-							</div>
-							<div class="option-row">
-								<div class="img-row img-backstage"></div>
-							
-								<div class="title-row">后台管理</div>
-							</div>
+						<div class="head-option" header-img="header-img">
+							<a href="user_query.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-agent"></div>
+									<div class="title-row">会员代理商</div>
+								</div>
+							</a>
+							<a href="system_manage_com.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-system" ></div>
+									<div class="title-row">系统管理</div>
+								</div>
+							</a>
+							<a href="discounts_manage.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-discounts sel-img" ></div>
+									<div class="title-row">优惠管理</div>
+								</div>
+							</a>
+							<a href="finance_manage.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-financial" ></div>
+									<div class="title-row">财务管理</div>
+								</div>
+							</a>
+							 <a href="javascript:void(0)" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-statement" ></div>
+		
+									<div class="title-row">报表汇出</div>
+								</div>
+							</a>
+		
+		
+							<a href="game_manage.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-game"></div>
+									<div class="title-row">游戏管理</div>
+								</div>
+							</a>
+		
+							<a href="authority_manage.html" class="green-text" img-Switch="img-Switch">
+								<div class="option-row">
+									<div class="img-row img-backstage"></div>
+			
+									<div class="title-row">后台管理</div>
+								</div>
+							</a>
+						   
 						</div>
-						<div class="right-title ">
+						<div class="right-title green-text" header-nav="header-nav" >
 					
-								<div class="dis-con">
-									<div class="dis-con-a green-bor-right">优惠上传</div>
+								<div class="dis-con green-bor-right">
+									<div class="dis-con-a ">优惠上传</div>
 									
 								</div>
-								<div class="dis-con">
-										<div class="dis-con-a green-bor-right">在线客服</div>
+								<div class="dis-con green-bor-right">
+										<div class="dis-con-a ">在线客服</div>
 								</div>
-								<div class="dis-con-min">
-										<div class="dis-con-a green-bor-right">公告</div>
+								<div class="dis-con-min green-bor-right">
+										<div class="dis-con-a ">公告</div>
 								</div>
-								<div class="dis-con">
-										<div class="dis-con-a green-bor-right">数据分析</div>
+								<div class="dis-con green-bor-right">
+										<div class="dis-con-a ">数据分析</div>
 								</div>
-								<div class="dis-con">
-										<div data-style="data-style" class="dis-con-a green-bor-right">风格切换</div>
+								<div class="dis-con green-bor-right">
+										<div data-style="data-style" class="dis-con-a ">风格切换</div>
 								</div>
-								<div class="dis-con-max">
+								<div class="dis-con-max green-bor-right">
 									<div class="message-count">12</div>
-									<div class="dis-con-a green-bor-right">GT NEWS+</div>
+									<div class="dis-con-a ">GT NEWS+</div>
 								</div>
-								<div class="dis-state">
-									<!-- <span class="symbol">&lt;</span> -->
+								<div class="dis-state green-bor-right">
+								
 									<div class="symbol">
-										<img class="left-icon" src="../style/img/symbol-left-green.png" alt="">
+										<div left-icon="left-icon" class="left-icon-green"></div>
 									</div>
-									<div class="china-ves green-bor-right">
+									<div class="china-ves">
 										<img src="../style/img/china-2x.png" class="china-logo" alt="">
 									</div>
 								</div>
 								<div class="dis-greet">
-										<div class="btn-swicth green-btn">切回旧版</div>
+										<div class="btn-swicth green-btn" switch-old="switch-old" >切回旧版</div>
 										<div class="call-con">Hi，YUI</div>
 										<div class="arrows">
-											<img class="bottom-icon" src="../style/img/symbol-bottom-green.png" alt="">
+											<div bottom-icon="bottom-icon" class="bottom-icon-green"></div>
 										</div>
 								</div>
 							</div>
 					</div>
 			</div>
 			<!-- 标题栏 -->
-			<div class="navigation_bar green-bg">
+			<div class="navigation_bar green-bg" navi-bg="navi-bg">
 				<div class="bar-btn">
 					<div class="bar-btn-txt">活动管理</div>
 				</div>
@@ -97,11 +115,13 @@
 					<div class="bar-btn-txt ">返水管理</div>
 				</div>
 			</div>
-			<div class="scrool-content bg1">
+			<div class="scrool-content scr-green" scro-con="scro-con">
 					<!-- 当前页 -->
 					<div class="title-modules">
 						<span class="title-max">优惠管理</span>
-						<span class="arrows-module">&gt;</span>
+						<span class="arrows-module">
+							<img class="icon-right" src="../style/img/symbol-right.png" alt="">
+						</span>
 						<span class="title-first">返水管理</span>
 						<!-- 栏位筛选 -->
 						<div class="filtrate-btn">
@@ -128,7 +148,7 @@
 						
 					</div>
 					<div class="form-content">
-							<div class="top-module-row">
+							<div class="top-module-row" top-module="top-module">
 								<div class="select-module">一般活动</div>
 								<div class="select-module green-tar">即时返水查询</div>
 								<div class="select-module">会员返水查询</div>
@@ -200,7 +220,7 @@
 													<div class="td-div">挑战业界最高返水</div>
 											</td>
 											<td>
-												<div class="td-div new-div green-text1">
+												<div class="td-div new-div green-text1" data-text1="data-text1" >
 													<span class="operation-state ">开始</span>
 													<span class="operation-state">结束</span>
 													<span class="operation-state">删除</span>
@@ -240,24 +260,30 @@
 										</div>
 										<span class="hint-con">北京时间:2018-09-24 12:00:00到2018-10-01 12:00:00</span>
 								</div>
-								<div class="btn-vel">
-									<div class="btn-general green-btn" data-color="data-color">
-										<span>今天</span>
+								<div class="btn-vel" btn-color="btn-color" >
+									<div class="btn-general green-btn" >
+
+										<a href="javascript:void(0)">今天</a>
 									</div>
-									<div class="btn-general " data-color="data-color">
-										<span>昨天</span>
+									<div class="btn-general " >
+									
+										<a href="javascript:void(0)">昨天</a>
 									</div>
-									<div class="btn-general " data-color="data-color">
-										<span>上周</span>
+									<div class="btn-general " >
+										
+										<a href="javascript:void(0)">上周</a>
 									</div>
-									<div class="btn-general " data-color="data-color">
-										<span>本周</span>
+									<div class="btn-general " >
+											<a href="javascript:void(0)">本周</a>
+										
 									</div>
-									<div class="btn-general " data-color="data-color">
-										<span>上月</span>
+									<div class="btn-general " >
+									
+										<a href="javascript:void(0)">上月</a>
 									</div>
-									<div class="btn-general " data-color="data-color">
-										<span>本月</span>
+									<div class="btn-general " >
+										
+										<a href="javascript:void(0)">本月</a>
 									</div>
 								</div>
 							</div>
@@ -274,10 +300,10 @@
 
 							<div class="query-btn-vel">
 							
-								<div class="btn-submit green-btn">查询</div>
+									<div class="btn-submit green-btn" data-submit="data-submit">查询</div>
 							</div>
 							<div class="table-header ">
-								<div class="top-btn green-header-bg">查询结果</div>
+								<div class="top-btn green-header-bg" table-hea-bg="table-hea-bg">查询结果</div>
 								<div class="bot-con">
 									<span class="red-color">会员账号&nbsp;:</span>
 									<span>&nbsp;进入查询本次返水会员明细</span>
@@ -545,5 +571,8 @@
 					</div>
 			</div>
 		</div>
+		<script src="../js/jquery/winHtml.js"></script>
 	</body>
 </html>
+
+<script src="../js/jquery/setStyle.js"></script>

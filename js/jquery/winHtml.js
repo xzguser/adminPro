@@ -19,7 +19,7 @@ var html='<div class="pop-content hide" data-cashap-id="pop-content">' +
     '                    <div class="orange-switch" data-tab-switch="data-tab-switch"></div>' +
     '                </div>' +
     '                <div class="pop-event">' +
-    '                    <div class="btn-submit green-btn">存储</div>' +
+    '                    <div class="btn-submit green-btn" data-save="data-save" data-submit="data-submit" >存储</div>' +
     '                    <div class="btn-submit" data-close="data-close">取消</div>' +
     '                </div>' +
     '            </div>' +
@@ -29,3 +29,5 @@ var html='<div class="pop-content hide" data-cashap-id="pop-content">' +
 const div = document.createElement("label");
 div.innerHTML = html;
 document.body.insertBefore(div, document.body.firstElementChild);
+
+

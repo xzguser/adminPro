@@ -3,93 +3,111 @@
 	<head>
 		<meta charset="utf-8">
 		<title>优惠管理-VIP管理-设定</title>
-
+		<script src="../js/jquery/jquery-1.8.3.js"></script>
 		<link rel="stylesheet" href="../style/css/style.css">
 	</head>
 	
 	<body>
 		<div class="discountsVip-page">
 				<!-- 头部 -->
-				<div class="head-page">
-						<div class="head-content green-text">
-							<div class="head-Path">
-								<img src="../style/img/logo.png" alt="" class="logo-img">
-							</div>
-							<div class="head-option">
+			<div class="head-page">
+					<div class="head-content "  >
+						<div class="head-Path">
+							<img src="../style/img/logo.png" alt="" class="logo-img">
+						</div>
+						<div class="head-option" header-img="header-img">
+							<a href="user_query.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-agent"></div>
+									<div class="img-row img-agent "></div>
 									<div class="title-row">会员代理商</div>
 								</div>
+							</a>
+							<a href="system_manage_com.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-system"></div>
+									<div class="img-row img-system" ></div>
 									<div class="title-row">系统管理</div>
 								</div>
+							</a>
+							<a href="discounts_manage.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-discounts sel-img"></div>
+									<div class="img-row img-discounts sel-img" ></div>
 									<div class="title-row">优惠管理</div>
 								</div>
+							</a>
+							<a href="finance_manage.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-financial"></div>
+									<div class="img-row img-financial" ></div>
 									<div class="title-row">财务管理</div>
 								</div>
+							</a>
+							 <a href="javascript:void(0)" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-statement"></div>
-									
+									<div class="img-row img-statement" ></div>
+		
 									<div class="title-row">报表汇出</div>
 								</div>
+							</a>
+		
+		
+							<a href="game_manage.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
 									<div class="img-row img-game"></div>
 									<div class="title-row">游戏管理</div>
 								</div>
+							</a>
+		
+							<a href="authority_manage.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
 									<div class="img-row img-backstage"></div>
-								
+			
 									<div class="title-row">后台管理</div>
 								</div>
-							</div>
-							<div class="right-title ">
+							</a>
+						   
+						</div>
+						<div class="right-title green-text" header-nav="header-nav" >
 					
-									<div class="dis-con">
-										<div class="dis-con-a green-bor-right">优惠上传</div>
-										
+								<div class="dis-con green-bor-right">
+									<div class="dis-con-a ">优惠上传</div>
+									
+								</div>
+								<div class="dis-con green-bor-right">
+										<div class="dis-con-a ">在线客服</div>
+								</div>
+								<div class="dis-con-min green-bor-right">
+										<div class="dis-con-a ">公告</div>
+								</div>
+								<div class="dis-con green-bor-right">
+										<div class="dis-con-a ">数据分析</div>
+								</div>
+								<div class="dis-con green-bor-right">
+										<div data-style="data-style" class="dis-con-a ">风格切换</div>
+								</div>
+								<div class="dis-con-max green-bor-right">
+									<div class="message-count">12</div>
+									<div class="dis-con-a ">GT NEWS+</div>
+								</div>
+								<div class="dis-state green-bor-right">
+								
+									<div class="symbol">
+										<div left-icon="left-icon" class="left-icon-green"></div>
 									</div>
-									<div class="dis-con">
-											<div class="dis-con-a green-bor-right">在线客服</div>
-									</div>
-									<div class="dis-con-min">
-											<div class="dis-con-a green-bor-right">公告</div>
-									</div>
-									<div class="dis-con">
-											<div class="dis-con-a green-bor-right">数据分析</div>
-									</div>
-									<div class="dis-con">
-											<div data-style="data-style" class="dis-con-a green-bor-right">风格切换</div>
-									</div>
-									<div class="dis-con-max">
-										<div class="message-count">12</div>
-										<div class="dis-con-a green-bor-right">GT NEWS+</div>
-									</div>
-									<div class="dis-state">
-										<!-- <span class="symbol">&lt;</span> -->
-										<div class="symbol">
-											<img class="left-icon" src="../style/img/symbol-left-green.png" alt="">
-										</div>
-										<div class="china-ves green-bor-right">
-											<img src="../style/img/china-2x.png" class="china-logo" alt="">
-										</div>
-									</div>
-									<div class="dis-greet">
-											<div class="btn-swicth green-btn">切回旧版</div>
-											<div class="call-con">Hi，YUI</div>
-											<div class="arrows">
-												<img class="bottom-icon" src="../style/img/symbol-bottom-green.png" alt="">
-											</div>
+									<div class="china-ves">
+										<img src="../style/img/china-2x.png" class="china-logo" alt="">
 									</div>
 								</div>
-						</div>
-				</div>
+								<div class="dis-greet">
+										<div class="btn-swicth green-btn" switch-old="switch-old" >切回旧版</div>
+										<div class="call-con">Hi，YUI</div>
+										<div class="arrows">
+											<div bottom-icon="bottom-icon" class="bottom-icon-green"></div>
+										</div>
+								</div>
+							</div>
+					</div>
+			</div>
 				<!-- 标题栏 -->
-				<div class="navigation_bar green-bg">
+				<div class="navigation_bar green-bg" navi-bg="navi-bg">
 					<div class="bar-btn green-btn">
 						<div class="bar-btn-txt">活动管理</div>
 					</div>
@@ -98,11 +116,13 @@
 					</div>
 					
 				</div>
-				<div class="scrool-content bg1">
+				<div class="scrool-content scr-green" scro-con="scro-con">
 						<!-- 当前页 -->
 						<div class="title-modules">
 							<span class="title-max">优惠管理</span>
-							<span class="arrows-module">&gt;</span>
+							<span class="arrows-module">
+								<img class="icon-right" src="../style/img/symbol-right.png" alt="">
+							</span>
 							<span class="title-first">活动管理</span>
 							<div class="affiche-page-right">
 									<div class="right-icon">
@@ -125,7 +145,7 @@
 							
 						</div>
 						<div class="form-content">
-								<div class="top-module-row">
+								<div class="top-module-row" top-module="top-module">
 									<div class="select-module">一般活动</div>
 									<div class="select-module">红包活动</div>
 									<div class="select-module green-tar">VIP管理</div>
@@ -134,7 +154,7 @@
 									<div class="select-module">绑定活动</div>
 								</div>
 								<!-- 选项切换 -->
-								<div class="datum-title green-btn-bar">
+								<div class="datum-title green-btn-bar" datum-bar="datum-bar">
 						
 										<div class="tab-btn green-btn-active">
 											<div class="tab-btn-text ">VIP设定</div>
@@ -172,7 +192,7 @@
 										<div class="table-buttom-vel">
 												<table class="table-02">
 														<tbody><tr class="table-head">
-															<td class="green-bg first-td-border">
+															<td class="green-bg first-td-border" navi-bg="navi-bg">
 																<div>VIP条件设定</div>
 															</td>
 															<td class="firstRow">
@@ -190,7 +210,7 @@
 														</tr>
 														</tbody><tbody>
 														<tr class="table-content">
-															<td class="green-bg first-td-border">
+															<td class="green-bg first-td-border" navi-bg="navi-bg">
 																<div class="td-div">
 																	<span class="td-text">VIP1</span>
 																	<select class="td-sel">
@@ -226,7 +246,7 @@
 															</td>
 														</tr>
 														<tr class="table-content">
-															<td class="green-bg first-td-border">
+															<td class="green-bg first-td-border" navi-bg="navi-bg">
 																<div class="td-div">
 																	<span class="td-text">VIP2</span>
 																	<select class="td-sel">
@@ -262,7 +282,7 @@
 															</td>
 														</tr>
 														<tr class="table-content">
-															<td class="green-bg first-td-border">
+															<td class="green-bg first-td-border" navi-bg="navi-bg">
 																<div class="td-div">
 																	<span class="td-text">VIP3</span>
 																	<select class="td-sel">
@@ -298,7 +318,7 @@
 															</td>
 														</tr>
 														<tr class="table-content">
-															<td class="green-bg">
+															<td class="green-bg" navi-bg="navi-bg">
 																<div class="td-div">
 																	<span class="td-text">VIP1</span>
 																	<select class="td-sel">
@@ -343,7 +363,7 @@
 										<div class="table-vip-vel">
 											<table class="table-02 new-table-02">
 													<tbody><tr class="table-head">
-														<td class="green-bg first-td-border">
+														<td class="green-bg first-td-border" navi-bg="navi-bg">
 															
 														</td>
 														<td class="firstRow">
@@ -373,7 +393,7 @@
 													</tr>
 													</tbody><tbody>
 													<tr class="table-content">
-														<td class="green-bg first-td">
+														<td class="green-bg first-td" navi-bg="navi-bg">
 															<div class="td-div">
 																<span class="td-text">VIP1</span>
 															
@@ -438,7 +458,7 @@
 													</tr>
 													
 													<tr class="table-content">
-															<td class="green-bg first-td">
+															<td class="green-bg first-td" navi-bg="navi-bg">
 																<div class="td-div">
 																	<span class="td-text">VIP2</span>
 																
@@ -503,7 +523,7 @@
 														</tr>
 
 													<tr class="table-content">
-															<td class="green-bg first-td">
+															<td class="green-bg first-td" navi-bg="navi-bg">
 																<div class="td-div">
 																	<span class="td-text">VIP3</span>
 																
@@ -568,7 +588,7 @@
 														</tr>
 
 													<tr class="table-content lastrow">
-															<td class="green-bg ">
+															<td class="green-bg " navi-bg="navi-bg">
 																<div class="td-div">
 																	<span class="td-text">VIP4</span>
 																</div>
@@ -644,7 +664,7 @@
 									<div class="bottom-con-vel">
 										<table class="table-02 new-table-03">
 												<tbody><tr class="table-head">
-													<td class="td-first green-bg">
+													<td class="td-first green-bg" navi-bg="navi-bg">
 														
 													</td>
 													<td class="firstRow">
@@ -680,7 +700,7 @@
 												</tr>
 												</tbody><tbody>
 												<tr class="table-content">
-													<td class="green-bg">
+													<td class="green-bg" navi-bg="navi-bg">
 														<div class="td-div">
 															<span class="td-text">彩金设定</span>
 														</div>
@@ -762,11 +782,19 @@
 								</div>
 
 								<div class="btn-con">
-									<div class="btn-submit green-btn">储存</div>
-									<div class="btn-submit">取消</div>
+									<div class="btn-submit green-btn" data-submit="data-submit">
+										<a href="javascript:void(0)">储存</a>
+									</div>
+								
+									<div class="btn-submit">
+										<a href="javascript:void(0)">取消</a>
+									</div>
 								</div>
 							</div>
 					</div>
 		</div>
+		<script src="../js/jquery/winHtml.js"></script>
 	</body>
 </html>
+
+<script src="../js/jquery/setStyle.js"></script>

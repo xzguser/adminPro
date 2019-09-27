@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>登录页面</title>
-
+		<script src="../js/jquery/jquery-1.8.3.js"></script>
 		<link rel="stylesheet" href="../style/css/style.css">
 	</head>
 	
@@ -11,15 +11,15 @@
 		<div class="login-page">
 			<div class="main-content">
 				<div class="middle-con">
-					<div class="middle-top">
+					<div class="middle-top green-bor-bottom" border-bottom="border-bottom">
 						<img src="../style/img/logo.png" class="middle-top-logo" alt="">
 					</div>
 					<div class="middle-username-con">
-						<div class="user-title">用户名</div>
+						<div class="user-title title-green" regis-con="regis-con">用户名</div>
 						<input type="text" class="user-input"></input>
 					</div>
 					<div class="middle-userpwd-con">
-						<div class="pwd-title">密码</div>
+						<div class="pwd-title title-green" regis-con="regis-con">密码</div>
 						<input type="password" class="pwd-input"></input>
 					</div>
 					<div class="midele-another">
@@ -31,12 +31,14 @@
 							<span class="module-login">安卓版下载</span>
 						</div>
 						<div class="bottom-main">
-							<div class="btn-bg">登入</div>
+							<div class="btn-bg green-btn" data-submit="data-submit">
+								<a href="login_affiche.html">登入</a>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="bottom-con">
-					<div class="address-con">
+					<div class="address-con green-text1" data-text1="data-text1">
 						Copyright © 2015 GamesTree ONline All Rights Reserved
 					</div>
 				</div>
@@ -46,4 +48,6 @@
 			
 		</div>
 	</body>
+
+	<script src="../js/jquery/setStyle.js"></script>
 </html>
