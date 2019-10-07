@@ -29,13 +29,6 @@ html body{
 /*----------用来移除上下箭头----------*/
 input[type="date"]::-webkit-inner-spin-button {
     display: none;
-    // background: yellow;
-    // display: flex;
-    // align-items: center;
-    // margin-top: 5px;
-    // margin-left: 5px;
-    // width: 20px;
-    // height: 20px;
 }
 
 /*----------用来移除叉叉按钮----------*/
@@ -99,7 +92,7 @@ input[type="date"] {
 
 //深绿色
 .green-text1{
-  color: #308769!important;
+  color: #308769 !important;
 }
 //深蓝色
 .blue-text1{
@@ -164,6 +157,15 @@ input[type="date"] {
 }
 .green-btn1>a{
   color: #fff !important;
+}
+
+.green-btn2{
+  background-color: #1ba786 !important;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff !important;
 }
 
 .blue-btn1{
@@ -279,9 +281,10 @@ input[type="date"] {
 .white-btn{
   width: 40px;
   height: 40px;
-  border-radius: 20px;
+  // border-radius: 20px;
   border: 2.5px solid #fff;
-  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.16);
+  // box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.16);
+  box-shadow:  0px 0px 6px 0 rgba(0, 0, 0, 0.66);
 }
 
 .btn-submit{
@@ -348,7 +351,6 @@ input[type="date"] {
   align-items: center;
 
   .bar-btn {
-    // width: 120px;
     padding-left: 27px;
     padding-right: 27px;
     height: 54px;
@@ -356,16 +358,37 @@ input[type="date"] {
     align-items: center;
     justify-content: center;
     margin-right: 18.6px;
-    // box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.16) inset;
+   
     .bar-btn-txt {
-      // width: 64px;
       height: 21px;
       font-family: $font-family;
       font-size: 16px;
       font-weight: bold;
       text-align: left;
-      color: #ffffff;
+    
     }
+  }
+  .green-bar-btn{
+    background-color: #308769 !important;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 16px;
+    color: #ffffff !important;
+     box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.16) inset;
+  }
+  .orange-bar-btn{
+    background-color: #ff6a3b !important;
+    font-style: normal;
+    font-stretch: normal;
+    color: #ffffff !important;
+     box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.16) inset;
+  }
+  .blue-bar-btn{
+    background-color: #1b65db !important;
+    font-style: normal;
+    font-stretch: normal;
+    color: #ffffff !important;
+    box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.16) inset;
   }
 
 
@@ -681,7 +704,7 @@ input[type="date"] {
   position: absolute;
   width: 1920px;
   height: 1035px;
-  z-index: 2;
+  z-index: 10;
 }
 .mask{
   position: absolute;
@@ -722,8 +745,10 @@ input[type="date"] {
 
     .pop-active{
       display: flex;
-      height: 70px;
+      height: 49px;
       width: 100%;
+      margin-bottom: 21px;
+      align-items: center;
       .pop-btn{
         width: 40px;
         height: 40px;
@@ -735,8 +760,6 @@ input[type="date"] {
     .pop-img{
       width: 599.7px;
       height: 286px;
-      box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);
-      background-color: #e4e4e4;
       .green-switch{
         width: 599.7px;
         height: 286px;

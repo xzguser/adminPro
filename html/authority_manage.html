@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>权限管理-后台权限管理-站台权限设定-编辑</title>
-		<script src="../js/jquery/jquery-1.8.3.js"></script>
+		<!-- <script src="../js/jquery/jquery-1.8.3.js"></script> -->
 		<link rel="stylesheet" href="../style/css/style.css">
 	</head>
 	<body>
@@ -14,7 +14,7 @@
 						<div class="style-authority">
 							<div class="pop-close1" > <img src="../style/img/ic_close.png" alt=""> </div>
 							<div class="content-authority">
-								<div class="header-vel green-text1">用戶權限列表</div>
+								<div class="header-vel green-text1" data-text1="data-text1">用戶權限列表</div>
 								<div class="tab-title">
 									<span class="text-con">當前修改的權限管理等級為：客服主管</span>
 								</div>
@@ -538,7 +538,8 @@
 										</table>
 								</div>
 								<div class="save-vel">
-										<div class="btn-submit green-btn">储存</div>
+									
+										<div class="btn-submit green-btn" data-submit="data-submit">储存</div>
 								</div>
 							</div>
 						</div>
@@ -556,31 +557,41 @@
 						<div class="head-option" header-img="header-img">
 							<a href="user_query.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-agent "></div>
+									<div class="img-row img-agent ">
+										<div class="img-row1 "></div>
+									</div>
 									<div class="title-row">会员代理商</div>
 								</div>
 							</a>
 							<a href="system_manage_com.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-system" ></div>
+									<div class="img-row img-system" >
+										<div class="img-row1 "></div>
+									</div>
 									<div class="title-row">系统管理</div>
 								</div>
 							</a>
 							<a href="discounts_manage.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-discounts" ></div>
+									<div class="img-row img-discounts" >
+										<div class="img-row1 "></div>
+									</div>
 									<div class="title-row">优惠管理</div>
 								</div>
 							</a>
 							<a href="finance_manage.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-financial" ></div>
+									<div class="img-row img-financial" >
+										<div class="img-row1 "></div>
+									</div>
 									<div class="title-row">财务管理</div>
 								</div>
 							</a>
 							 <a href="javascript:void(0)" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-statement" ></div>
+									<div class="img-row img-statement" >
+										<div class="img-row1 "></div>
+									</div>
 		
 									<div class="title-row">报表汇出</div>
 								</div>
@@ -589,14 +600,18 @@
 		
 							<a href="game_manage.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-game"></div>
+									<div class="img-row img-game">
+										<div class="img-row1 "></div>
+									</div>
 									<div class="title-row">游戏管理</div>
 								</div>
 							</a>
 		
-							<a href="authority_manage.html" class="green-text" img-Switch="img-Switch">
+							<a href="javascript:void(0)" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-backstage sel-img"></div>
+									<div class="img-row img-backstage ">
+										<div class="img-row1 sel-img"></div>
+									</div>
 			
 									<div class="title-row">后台管理</div>
 								</div>
@@ -645,7 +660,7 @@
 					</div>
 			</div>
 			<!-- 选项栏 -->
-			<div class="navigation_bar green-bg"  navi-bg="navi-bg">
+			<div class="navigation_bar green-bg"  bar-hurdle="bar-hurdle">
 				<div class="bar-btn ">
 					<div class="bar-btn-txt">登入记录查询</div>
 				</div>
@@ -655,7 +670,7 @@
 				<div class="bar-btn">
 					<div class="bar-btn-txt ">后台IP管理</div>
 				</div>
-				<div class="bar-btn green-btn">
+				<div class="bar-btn green-bar-btn">
 					<div class="bar-btn-txt ">后台权限管理</div>
 				</div>
 			</div>
@@ -665,7 +680,7 @@
 							<span class="arrows-module">
 								<img class="icon-right" src="../style/img/symbol-right.png" alt="">
 							</span>
-							<span class="title-first">后台权限设置</span>
+							<span class="title-first" title-con="title-con">后台权限设置</span>
 							<!-- 栏位筛选 -->
 							<!-- <div class="filtrate-btn">
 									栏位筛选
@@ -687,131 +702,148 @@
 						
 							
 					</div>
-					<div class="form-content">
-						<div class="top-module-row" top-module="top-module">
-							<div class="select-module green-tar">站台权限设定</div>
-							<div class="select-module">账号权限设定</div>
-							<div class="select-module">权限限额</div>
+					<div class="form-content" form-control="form-control">
+						<div class="main-content1 hide" main-con="main-con">
+								登入记录查询
 						</div>
-						<div class="platform-vel">
-							<div class="platform-left">站台名称：</div>
-							<div class="platform-right" >
-								<select class="form-w140">
-									<option value="0">---全部---</option>
-								</select>
-							</div>
+						<div class="main-content1 hide" main-con="main-con">
+								后台用户管理
 						</div>
-
-						<div class="btn-vel">
-								<div class="btn-submit green-btn" data-submit="data-submit">查询</div>
-								
+						<div class="main-content1 hide" main-con="main-con">
+								后台IP管理
 						</div>
-
-						<div class="table-title-vel">
-							<div class="title-con">管理权限等级列表</div>
-						</div>
-
-						<div class="table-tier-vel">
-							<table class="table-01 new-width">
-									<tbody>
-										<tr class="table-head green-bg" navi-bg="navi-bg">
-											<td>
-												<div>序号</div>
-											</td>
-											<td>
-												<div>管理等级</div>
-											</td>
-											<td>
-												<div>说明</div>
-											</td>
-											<td>
-												<div>人数</div>
-											</td>
-											<td class="lastCol">
-												<div>操作</div>
-											</td>
-										</tr>
-									</tbody>
-									<tbody>
-										<tr class="table-content">
-											<td>
-												<div class="td-div">1</div>
-											</td>
-											<td>
-												<div class="td-div">客服主管</div>
-											</td>
-											<td>
-												<div class="td-div">role_kefuzhuguan</div>
-											</td>
-											<td>
-												<div class="td-div">140</div>
-											</td>
-											<td class="lastCol">
-												<div class="td-div">
-													<img class="update-icon" src="../style/img/update-2x.png" alt="">
+						<div class="main-content4" main-con="main-con">
+								<div class="top-module-row" top-module="top-module">
+										<div class="select-module green-tar">站台权限设定</div>
+										<div class="select-module">账号权限设定</div>
+										<div class="select-module">权限限额</div>
+								</div>
+								<div class="switch-module1" >
+										<div class="platform-vel">
+												<div class="platform-left">站台名称：</div>
+												<div class="platform-right" >
+													<select class="form-w140">
+														<option value="0">---全部---</option>
+													</select>
 												</div>
-											</td>
-										</tr>
-										<tr class="table-content">
-											<td>
-												<div class="td-div">2</div>
-											</td>
-											<td>
-												<div class="td-div">客服</div>
-											</td>
-											<td>
-												<div class="td-div">role_kefuzhuguan</div>
-											</td>
-											<td>
-												<div class="td-div">140</div>
-											</td>
-											<td class="lastCol">
-												<div class="td-div">
-													<img class="update-icon" src="../style/img/update-2x.png" alt="">
-												</div>
-											</td>
-										</tr>
-										<tr class="table-content">
-											<td>
-												<div class="td-div">3</div>
-											</td>
-											<td>
-												<div class="td-div">行销企劃</div>
-											</td>
-											<td>
-												<div class="td-div">role_kefuzhuguan</div>
-											</td>
-											<td>
-												<div class="td-div">140</div>
-											</td>
-											<td class="lastCol">
-												<div class="td-div">
-													<img class="update-icon" src="../style/img/update-2x.png" alt="">
-												</div>
-											</td>
-										</tr>
-										<tr class="table-content">
-											<td>
-												<div class="td-div">4</div>
-											</td>
-											<td>
-												<div class="td-div">管理员</div>
-											</td>
-											<td>
-												<div class="td-div">role_kefuzhuguan</div>
-											</td>
-											<td>
-												<div class="td-div">140</div>
-											</td>
-											<td class="lastCol">
-												<div class="td-div">
-													<img class="update-icon" src="../style/img/update-2x.png" alt="">
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+											</div>
+				
+											<div class="btn-vel">
+													<div class="btn-submit green-btn" data-submit="data-submit">查询</div>
+													
+											</div>
+				
+											<div class="table-title-vel">
+												<div class="title-con">管理权限等级列表</div>
+											</div>
+				
+											<div class="table-tier-vel">
+												<table class="table-01 new-width">
+														<tbody>
+															<tr class="table-head green-bg" navi-bg="navi-bg">
+																<td>
+																	<div>序号</div>
+																</td>
+																<td>
+																	<div>管理等级</div>
+																</td>
+																<td>
+																	<div>说明</div>
+																</td>
+																<td>
+																	<div>人数</div>
+																</td>
+																<td class="lastCol">
+																	<div>操作</div>
+																</td>
+															</tr>
+														</tbody>
+														<tbody>
+															<tr class="table-content">
+																<td>
+																	<div class="td-div">1</div>
+																</td>
+																<td>
+																	<div class="td-div">客服主管</div>
+																</td>
+																<td>
+																	<div class="td-div">role_kefuzhuguan</div>
+																</td>
+																<td>
+																	<div class="td-div">140</div>
+																</td>
+																<td class="lastCol">
+																	<div class="td-div">
+																		<img class="update-icon" src="../style/img/update-2x.png" alt="">
+																	</div>
+																</td>
+															</tr>
+															<tr class="table-content">
+																<td>
+																	<div class="td-div">2</div>
+																</td>
+																<td>
+																	<div class="td-div">客服</div>
+																</td>
+																<td>
+																	<div class="td-div">role_kefuzhuguan</div>
+																</td>
+																<td>
+																	<div class="td-div">140</div>
+																</td>
+																<td class="lastCol">
+																	<div class="td-div">
+																		<img class="update-icon" src="../style/img/update-2x.png" alt="">
+																	</div>
+																</td>
+															</tr>
+															<tr class="table-content">
+																<td>
+																	<div class="td-div">3</div>
+																</td>
+																<td>
+																	<div class="td-div">行销企劃</div>
+																</td>
+																<td>
+																	<div class="td-div">role_kefuzhuguan</div>
+																</td>
+																<td>
+																	<div class="td-div">140</div>
+																</td>
+																<td class="lastCol">
+																	<div class="td-div">
+																		<img class="update-icon" src="../style/img/update-2x.png" alt="">
+																	</div>
+																</td>
+															</tr>
+															<tr class="table-content">
+																<td>
+																	<div class="td-div">4</div>
+																</td>
+																<td>
+																	<div class="td-div">管理员</div>
+																</td>
+																<td>
+																	<div class="td-div">role_kefuzhuguan</div>
+																</td>
+																<td>
+																	<div class="td-div">140</div>
+																</td>
+																<td class="lastCol">
+																	<div class="td-div">
+																		<img class="update-icon" src="../style/img/update-2x.png" alt="">
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+											</div>
+								</div>
+								<div class="switch-module2 hide" >账号权限设定</div>
+								<div class="switch-module3 hide" >权限限额</div>
 						</div>
+							
+						
 					</div>
 				</div>
 		</div>
@@ -820,4 +852,5 @@
 	
 </html>
 
-<script src="../js/jquery/setStyle.js"></script>
+<!-- <script src="../js/jquery/setStyle.js"></script> -->
+<script src="../dist/setStyle.js"></script>

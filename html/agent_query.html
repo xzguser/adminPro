@@ -43,9 +43,10 @@
 							<img src="../style/img/logo.png" alt="" class="logo-img">
 						</div>
 						<div class="head-option" header-img="header-img">
-							<a href="user_query.html" class="green-text" img-Switch="img-Switch">
+							<a href="javascript:void(0)" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-agent sel-img"></div>
+
+									<div class="img-row img-agent act"></div>
 									<div class="title-row">会员代理商</div>
 								</div>
 							</a>
@@ -134,8 +135,8 @@
 					</div>
 			</div>
 			<!-- 选项栏 -->
-			<div class="navigation_bar green-bg" navi-bg="navi-bg" >
-				<div class="bar-btn green-btn">
+			<div class="navigation_bar green-bg"  bar-hurdle="bar-hurdle" >
+				<div class="bar-btn green-bar-btn">
 					<div class="bar-btn-txt">用户查询</div>
 				</div>
 				<div class="bar-btn">
@@ -149,12 +150,12 @@
 				</div>
 			</div>
 			<div class="scrool-content scr-green" scro-con="scro-con">
-				<div class="title-modules">
+				<div class="title-modules" >
 					<span class="title-max">会员代理商</span>
-					<span class="arrows-module">
+					<span class="arrows-module" >
 						<img class="icon-right" src="../style/img/symbol-right.png" alt="">
 					</span>
-					<span class="title-first">用户查询</span>
+					<span class="title-first" title-con="title-con">用户查询</span>
 					<!-- 栏位筛选 -->
 					<!-- <div class="filtrate-btn">
 							栏位筛选
@@ -176,132 +177,168 @@
 				
 					
 			</div>
-				<div class="form-content">
-					<div class="top-module-row" top-module="top-module">
-						<div class="select-module green-tar">会员查询</div>
-						<div class="select-module ">代理商查询</div>
-					
-					</div>
-					<div class="insert-user green-text"  text-switch="text-switch">
-						<div class="insert-con">新增/编辑用户</div>
-					</div>
-					<!-- 模块 -->
-					<div class="datum-title green-btn-bar" datum-bar="datum-bar">
-						
-						<div class="tab-btn green-btn-active">
-							<div class="tab-btn-text ">基本资料设定</div>
-						</div>
-						<div class="tab-btn">
-							<div class="tab-btn-text ">详细资料设定</div>
-						</div>
-						<div class="tab-btn">
-							<div class="tab-btn-text ">IP设定</div>
-						</div>
-						<div class="tab-btn">
-							<div class="tab-btn-text ">数据同步</div>
-						</div>
-					</div>
-					<form class="form-main-content" action="" >
-						<div class="table1-con">
-							<div class="row-vel">
-								<span class="form-top-title">账号&nbsp;:</span>
-								<input class="form-bottom-account" />
+				<div class="form-content" form-control="form-control">
+					<div class="main-content1" main-con="main-con">
+							<div class="top-module-row" top-module="top-module">
+									<div class="select-module green-tar">会员查询</div>
+									<div class="select-module ">代理商查询</div>
+								
 							</div>
-							<div class="row-vel">
-									<span class="form-top-title">真实姓名&nbsp;:</span>
-									<input class="form-bottom-input" />
-							</div>
-							<div class="row-vel">
-									<span class="form-top-title">密码&nbsp;:</span>
-									<input class="form-bottom-input" />
-							</div>
-							<div class="row-vel">
-									<span class="form-top-title">确认密码&nbsp;:</span>
-									<input class="form-bottom-input" />
-							</div>
-						</div>
-						<div class="table2-con">
-								<div class="row-vel">
-									<span class="form-top-title">取款密码&nbsp;:</span>
-									<input class="form-bottom-input" />
-								</div>
-								<div class="row-vel">
-										<span class="form-top-title">确认取款密码&nbsp;:</span>
-										<input class="form-bottom-input" />
-								</div>
-								<div class="row-vel">
-										<span class="form-top-title">状态&nbsp;:</span>
-										<select class="form-bottom-input" >
-											<option value="0">停用</option>
-											<option value="1">启用</option>
-										</select>
-								</div>
-								<div class="row-vel">
-										<span class="form-top-title">VIP层级&nbsp;:</span>
-										<select class="form-bottom-input" >
-												<option value="0">VIP0</option>
-												<option value="1">VIP1</option>
-										</select>
-								</div>
-						</div>
-						<div class="table3-con">
-								<div class="row-vel">
-									<span class="form-top-title">返水状态&nbsp;:</span>
-									<span class="form-bottom-span">正常</span>
-								</div>
-								<div class="row-vel">
-										<span class="form-top-title">层级&nbsp;:</span>
-										<select class="form-bottom-input" >
-												<option value="0">第三层</option>
-												<option value="1">第二层</option>
-										</select>
-								</div>
-								<div class="row-vel">
-										<span class="form-top-title">是否锁定层级&nbsp;:</span>
-										<div class="form-bottom-content">
-												<input type="checkbox" class="form-bottom-checkbox" value="0" name="State" >
-												<span class="form-bottom-sel">是</span>
-												<input type="checkbox" class="form-bottom-checkbox" value="1" name="State">
-												<span class="form-bottom-sel">否</span>
+							<div class="switch-module1">
+									<div class="insert-user green-text"  text-switch="text-switch">
+											<div class="insert-con">新增/编辑用户</div>
+									</div>
+									<!-- 模块 -->
+									<div class="datum-title green-btn-bar" datum-bar="datum-bar">
+										
+										<div class="tab-btn green-btn-active">
+											<div class="tab-btn-text ">基本资料设定</div>
 										</div>
-									
-								</div>
-								<div class="row-vel">
-										<span class="form-top-title">钱包模式&nbsp;:</span>
-										<span class="form-bottom-span">多钱包模式</span>
-								</div>
-						</div>
-
-						<div class="table4-con">
-								<div class="row-vel">
-									<span class="form-top-title">最近登陆IP&nbsp;:</span>
-									<span class="form-bottom-span">180.226.74.254</span>
-								</div>
-								<div class="row-vel">
-										<span class="form-top-title">建立时间&nbsp;:</span>
-									<span class="form-bottom-span">2018/06/15 17:26:11</span>
-								</div>
-								<div class="row-vel">
-									<span class="form-top-title">建立人员&nbsp;:</span>
-									<span class="form-bottom-span">XY283283232</span>
-								</div>
-								<div class="row-vel">
-										<span class="form-top-title">最近更新&nbsp;:</span>
-										<a  class="form-bottom-a">CATHY1[2018/06/17 3:22:25]</a>
-								</div>
-						</div>
-						<div class="btn-con">
-						
-								<div class="btn-submit green-btn" data-submit="data-submit">
-									<a href="user_query.html">储存</a>
-								</div>
-						
-								<div class="btn-submit" >
-									<a href="user_query.html">取消</a>
-								</div>
-							
-						</div>
-					</form>
+										<div class="tab-btn">
+											<div class="tab-btn-text ">详细资料设定</div>
+										</div>
+										<div class="tab-btn">
+											<div class="tab-btn-text ">IP设定</div>
+										</div>
+										<div class="tab-btn">
+											<div class="tab-btn-text ">数据同步</div>
+										</div>
+									</div>
+									<form class="form-main-content" action="" >
+										<div class="table1-con">
+											<div class="row-vel">
+												<span class="form-top-title">账号&nbsp;:</span>
+												<input class="form-bottom-account" />
+											</div>
+											<div class="row-vel">
+													<span class="form-top-title">真实姓名&nbsp;:</span>
+													<input class="form-bottom-input" />
+											</div>
+											<div class="row-vel">
+													<span class="form-top-title">密码&nbsp;:</span>
+													<input class="form-bottom-input" />
+											</div>
+											<div class="row-vel">
+													<span class="form-top-title">确认密码&nbsp;:</span>
+													<input class="form-bottom-input" />
+											</div>
+										</div>
+										<div class="table2-con">
+												<div class="row-vel">
+													<span class="form-top-title">取款密码&nbsp;:</span>
+													<input class="form-bottom-input" />
+												</div>
+												<div class="row-vel">
+														<span class="form-top-title">确认取款密码&nbsp;:</span>
+														<input class="form-bottom-input" />
+												</div>
+												<div class="row-vel">
+														<span class="form-top-title">状态&nbsp;:</span>
+														<select class="form-bottom-input" >
+															<option value="0">停用</option>
+															<option value="1">启用</option>
+														</select>
+												</div>
+												<div class="row-vel">
+														<span class="form-top-title">VIP层级&nbsp;:</span>
+														<select class="form-bottom-input" >
+																<option value="0">VIP0</option>
+																<option value="1">VIP1</option>
+														</select>
+												</div>
+										</div>
+										<div class="table3-con">
+												<div class="row-vel">
+													<span class="form-top-title">返水状态&nbsp;:</span>
+													<span class="form-bottom-span">正常</span>
+												</div>
+												<div class="row-vel">
+														<span class="form-top-title">层级&nbsp;:</span>
+														<select class="form-bottom-input" >
+																<option value="0">第三层</option>
+																<option value="1">第二层</option>
+														</select>
+												</div>
+												<div class="row-vel">
+														<span class="form-top-title">是否锁定层级&nbsp;:</span>
+														<div class="form-bottom-content">
+																<input type="checkbox" class="form-bottom-checkbox" value="0" name="State" >
+																<span class="form-bottom-sel">是</span>
+																<input type="checkbox" class="form-bottom-checkbox" value="1" name="State">
+																<span class="form-bottom-sel">否</span>
+														</div>
+													
+												</div>
+												<div class="row-vel">
+														<span class="form-top-title">钱包模式&nbsp;:</span>
+														<span class="form-bottom-span">多钱包模式</span>
+												</div>
+										</div>
+				
+										<div class="table4-con">
+												<div class="row-vel">
+													<span class="form-top-title">最近登陆IP&nbsp;:</span>
+													<span class="form-bottom-span">180.226.74.254</span>
+												</div>
+												<div class="row-vel">
+														<span class="form-top-title">建立时间&nbsp;:</span>
+													<span class="form-bottom-span">2018/06/15 17:26:11</span>
+												</div>
+												<div class="row-vel">
+													<span class="form-top-title">建立人员&nbsp;:</span>
+													<span class="form-bottom-span">XY283283232</span>
+												</div>
+												<div class="row-vel">
+														<span class="form-top-title">最近更新&nbsp;:</span>
+														<a  class="form-bottom-a">CATHY1[2018/06/17 3:22:25]</a>
+												</div>
+										</div>
+										<div class="btn-con">
+										
+												<div class="btn-submit green-btn" data-submit="data-submit">
+													<a href="user_query.html">储存</a>
+												</div>
+										
+												<div class="btn-submit" >
+													<a href="user_query.html">取消</a>
+												</div>
+											
+										</div>
+									</form>
+							</div>
+							<div class="switch-module2 hide">
+									代理商查询模块
+							</div>
+					</div>
+					<div class="main-content2 hide" main-con="main-con">
+							<div class="top-module-row" top-module="top-module">
+								<div class="select-module green-tar">会员资料查询</div>
+								<div class="select-module">汇入查询</div>
+							</div>
+							<div class="switch-module1" >会员资料查询
+									<div class="btn-submit blue-btn" data-submit="data-submit">
+											<a href="javascript:void(0)">查询</a>
+										</div>
+							</div>
+							<div class="switch-module2 hide" >汇入查询</div>
+					</div>
+					<div class="main-content3 hide " main-con="main-con">
+							<div class="top-module-row" top-module="top-module">
+								<div class="select-module green-tar">会员信息查询</div>
+								<div class="select-module">修改会员银行卡信息内容</div>
+							</div>
+							<div class="switch-module1" >会员信息查询</div>
+							<div class="switch-module2 hide" >修改会员银行卡信息内容</div>
+					</div>
+					<div class="main-content4 hide" main-con="main-con">
+							<div class="top-module-row" top-module="top-module">
+								<div class="select-module green-tar">佣金查询</div>
+								<div class="select-module">佣金管理查询</div>
+							</div>
+							<div class="switch-module1" >佣金查询</div>
+							<div class="switch-module2 hide">佣金管理查询</div>
+					</div>
+					
 				</div>
 			</div>
 			
@@ -312,5 +349,7 @@
 	</body>
 </html>
 
-<script src="../js/jquery/setStyle.js"></script>
-<!-- <script src="../js/modules/header.js"></script> -->
+<!-- <script src="../js/jquery/setStyle.js"></script> -->
+ <!-- <script src="../js/modules/incident.js"></script> -->
+<script src="../dist/setStyle.js"></script>
+<!--<script src="../js/modules/setStyle.js"></script>-->

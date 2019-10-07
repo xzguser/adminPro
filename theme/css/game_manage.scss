@@ -12,206 +12,224 @@
             background: #ffffff;
             width: 1900px;
             height: 830px;
-           
-            .query-row-vel{
-               padding-top: 15px;
-             
-               height: 30px;
-               margin-left: 21px;
-               display: flex;
-               .query-module{
-                   width: 280px;
-                   display: flex;
-                //    background: red;
-                   height: 100%;
-                   align-items: center;
-                  
-                   .left-module{
-                        font-family:$font-family;
+            .main-content1{
+            
+                .query-row-vel{
+                    padding-top: 15px;
+                    
+                    height: 30px;
+                    margin-left: 21px;
+                    display: flex;
+                    .query-module{
+                        width: 280px;
+                        display: flex;
+                        //    background: red;
+                        height: 100%;
+                        align-items: center;
+                        
+                        .left-module{
+                                font-family:$font-family;
+                                font-size: 16px;
+                            
+                                text-align: left;
+                                color: #333333;
+                                margin-right: 10px;
+                        }
+                        .right-module{
+                                .module-select{
+                                    width: 140px;
+                                    height: 30px;
+                                    border-radius: 5px;
+                                    border: solid 1px #d8d8d8;
+                                    background-color: #ffffff;
+                                    padding-left: 14px;
+                                    font-size: 16px;
+                                    font-family: $font-family;
+                                    color: #666666;
+                                }
+                        }
+                    }
+
+                    .query-module-min{
+                        width: 240px;
+                        .right-module{
+                                .module-select-min{
+                                    width: 100px;
+                                }
+                        }
+                        
+                    }
+                }
+
+                .game-type-vel{
+                    margin-top: 27px;
+                    height: 21px;
+                    margin-left: 21px;
+                    display: flex;
+                    .game-title{
+                        height: 21px;
+                        font-family: $font-family;
                         font-size: 16px;
-                       
+                    
                         text-align: left;
                         color: #333333;
                         margin-right: 10px;
-                   }
-                   .right-module{
-                        .module-select{
-                            width: 140px;
-                            height: 30px;
-                            border-radius: 5px;
-                            border: solid 1px #d8d8d8;
-                            background-color: #ffffff;
-                            padding-left: 14px;
-                            font-size: 16px;
+                    }
+                    .game-check{
+                        height: 100%;
+                        display: flex;
+                        .check-state{
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 5.4px;
+                            background-color: #999999;
+                        }
+                        .span-con{
+                            margin-right: 29px;
                             font-family: $font-family;
+                            font-size: 16px;
+                            text-align: left;
                             color: #666666;
                         }
-                   }
-               }
-
-               .query-module-min{
-                   width: 240px;
-                   .right-module{
-                        .module-select-min{
-                            width: 100px;
-                        }
-                   }
-                  
-               }
-            }
-
-            .game-type-vel{
-                margin-top: 27px;
-                height: 21px;
-                margin-left: 21px;
-                display: flex;
-                .game-title{
-                    height: 21px;
-                    font-family: $font-family;
-                    font-size: 16px;
-                 
-                    text-align: left;
-                    color: #333333;
-                    margin-right: 10px;
-                }
-                .game-check{
-                    height: 100%;
-                    display: flex;
-                    .check-state{
-                        width: 18px;
-                        height: 18px;
-                        margin-right: 5.4px;
-                        background-color: #999999;
-                    }
-                    .span-con{
-                        margin-right: 29px;
-                        font-family: $font-family;
-                        font-size: 16px;
-                        text-align: left;
-                        color: #666666;
                     }
                 }
-            }
-            
-            .query-btn-vel{
-                margin-top: 17px;
-                height: 30px;
-                margin-left: 21px;
-             
-                .query-btn{
-                    width: 80px;
-                    height: 30px;
-                    border-radius: 10px;
-                    background-color: #1ba786;
-                    font-family: $font-family;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: #ffffff;
-                    font-size: 16px;
-                    font-weight: bold;
-                }
-            }
-
-            .account-vel{
-                margin-top: 28px;
-                height: 60px;
-                margin-left: 21px;
-                display: flex;
-                align-items: center;
-                .btn-module{
-                    width: 135px;
                 
-                    display: flex;
-                    align-items: center;
-                    .btn-con{
-                        width: 120px;
+                .query-btn-vel{
+                    margin-top: 17px;
+                    height: 30px;
+                    margin-left: 21px;
+                
+                    .query-btn{
+                        width: 80px;
                         height: 30px;
                         border-radius: 10px;
-                        background-color: #df97da;
+                        background-color: #1ba786;
                         font-family: $font-family;
-                        font-size: 16px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         color: #ffffff;
-                    }
-                }
-
-                .affiche-title{
-                    font-family:$font-family;
-                    font-size: 16px;
-                    text-align: left;
-                    color: #122640;
-                }
-                .affiche-div{
-                    width: 273px;
-                    height: 58px;
-                    margin-right: 16px;
-                    border-radius: 5px;
-                    border: solid 1px #d8d8d8;
-                    background-color: #ffffff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding-left: 5px;
-                    .affiche-text{
-                        width: 269px;
-                        height: 54px;
-                        border: none;
                         font-size: 16px;
-                        padding-left: 10px;
-                        font-family: $font-family;
-                        color: #666666;
-                    }
-
-                    .affiche-text::-webkit-scrollbar {/*滚动条整体样式*/
-                        width: 3px;     /*高宽分别对应横竖滚动条的尺寸*/
-                        height: 0px;
-                    }
-                    .affiche-text::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
-                        border-radius: 10px;
-                        background-color: #66c7a5;
-                    }
-                    .affiche-text::-webkit-scrollbar-track {/*滚动条里面轨道*/
-                        border-radius: 10px;
-                        background: #EDEDED;
+                        font-weight: bold;
                     }
                 }
 
-                .query-btn{
-                    width: 80px;
-                    height: 30px;
-                    border-radius: 10px;
-                    background-color: #1ba786;
-                    font-family: $font-family;
+                .account-vel{
+                    margin-top: 28px;
+                    height: 60px;
+                    margin-left: 21px;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
-                    color: #ffffff;
-                    font-size: 16px;
-                    font-weight: bold;
-                }
-            }
-
-            .table-vel{
-                margin-top: 9px;
-                margin-left: 21px;
-                .table-01{
-                    border-left: 1px solid #ccc;
-                    .table-head{
-                        td{
-                            border-right: 1px solid #fff;
+                    .btn-module{
+                        width: 135px;
+                    
+                        display: flex;
+                        align-items: center;
+                        .btn-con{
+                            width: 120px;
+                            height: 30px;
+                            border-radius: 10px;
+                            background-color: #df97da;
+                            font-family: $font-family;
+                            font-size: 16px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #ffffff;
                         }
                     }
+
+                    .affiche-title{
+                        font-family:$font-family;
+                        font-size: 16px;
+                        text-align: left;
+                        color: #122640;
+                    }
+                    .affiche-div{
+                        width: 273px;
+                        height: 58px;
+                        margin-right: 16px;
+                        border-radius: 5px;
+                        border: solid 1px #d8d8d8;
+                        background-color: #ffffff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding-left: 5px;
+                        .affiche-text{
+                            width: 269px;
+                            height: 54px;
+                            border: none;
+                            font-size: 16px;
+                            padding-left: 10px;
+                            font-family: $font-family;
+                            color: #666666;
+                        }
+
+                        .affiche-text::-webkit-scrollbar {/*滚动条整体样式*/
+                            width: 3px;     /*高宽分别对应横竖滚动条的尺寸*/
+                            height: 0px;
+                        }
+                        .affiche-text::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+                            border-radius: 10px;
+                            background-color: #66c7a5;
+                        }
+                        .affiche-text::-webkit-scrollbar-track {/*滚动条里面轨道*/
+                            border-radius: 10px;
+                            background: #EDEDED;
+                        }
+                    }
+
+                    .query-btn{
+                        width: 80px;
+                        height: 30px;
+                        border-radius: 10px;
+                        background-color: #1ba786;
+                        font-family: $font-family;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
                 }
-                
-                
+
+                .table-vel{
+                    margin-top: 9px;
+                    margin-left: 21px;
+                    .table-01{
+                        border-left: 1px solid #ccc;
+                        .table-head{
+                            td{
+                                border-right: 1px solid #fff;
+                            }
+                        }
+                    }
+                    
+                    
+                }
+                .paging-vel{
+                    margin-top: 10.5px;
+                    margin-left: 21px;
+                }
             }
-            .paging-vel{
-                margin-top: 10.5px;
+            .main-content2{
+            
+                .switch-module1{
+                  margin-left: 21px;
+                }
+                .switch-module2{
+                  margin-left: 21px;
+                }
+            }
+            .main-content3{
                 margin-left: 21px;
             }
+            .main-content4{
+                margin-left: 21px;
+            }
+                   
         }
 
     }

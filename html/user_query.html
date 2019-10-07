@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>用户查询-会员查询-查询结果</title>
-		<script src="../js/jquery/jquery-1.8.3.js"></script>
+		<!-- <script src="../js/jquery/jquery-1.8.3.js"></script> -->
 		<link rel="stylesheet" href="../style/css/style.css">
 	</head>
 	
@@ -11,32 +11,40 @@
 		<div class="queryVip-page">
 				<!-- 头部 -->
 				<div class="head-page">
-						<div class="head-content "  >
+						<div class="head-content" >
 							<div class="head-Path">
 								<img src="../style/img/logo.png" alt="" class="logo-img">
 							</div>
 							<div class="head-option" header-img="header-img">
-								<a href="user_query.html" class="green-text" img-Switch="img-Switch">
+								<a href="javascript:void(0)" class="green-text" img-Switch="img-Switch">
 									<div class="option-row">
-										<div class="img-row img-agent sel-img"></div>
+										<div class="img-row img-agent">
+											<div class="img-row1 sel-img"></div>
+										</div>
 										<div class="title-row">会员代理商</div>
 									</div>
 								</a>
 								<a href="system_manage_com.html" class="green-text" img-Switch="img-Switch">
 									<div class="option-row">
-										<div class="img-row img-system" ></div>
+										<div class="img-row img-system" >
+											<div class="img-row1"></div>
+										</div>
 										<div class="title-row">系统管理</div>
 									</div>
 								</a>
 								<a href="discounts_manage.html" class="green-text" img-Switch="img-Switch">
 									<div class="option-row">
-										<div class="img-row img-discounts" ></div>
+										<div class="img-row img-discounts" >
+											<div class="img-row1"></div>
+										</div>
 										<div class="title-row">优惠管理</div>
 									</div>
 								</a>
 								<a href="finance_manage.html" class="green-text" img-Switch="img-Switch">
 									<div class="option-row">
-										<div class="img-row img-financial" ></div>
+										<div class="img-row img-financial" >
+											<div class="img-row1"></div>
+										</div>
 										<div class="title-row">财务管理</div>
 									</div>
 								</a>
@@ -108,8 +116,8 @@
 				</div>
 
 			<!-- 选项栏 -->
-			<div class="navigation_bar green-bg" navi-bg="navi-bg">
-					<div class="bar-btn green-btn">
+			<div class="navigation_bar green-bg" bar-hurdle="bar-hurdle">
+					<div class="bar-btn green-bar-btn">
 						<div class="bar-btn-txt">用户查询</div>
 					</div>
 					<div class="bar-btn">
@@ -129,7 +137,7 @@
 							<span class="arrows-module">
 								<img class="icon-right" src="../style/img/symbol-right.png" alt="">
 							</span>
-							<span class="title-first">用户查询</span>
+							<span class="title-first" title-con="title-con">用户查询</span>
 							<!-- 栏位筛选 -->
 							<div class="filtrate-btn">
 									栏位筛选
@@ -151,442 +159,884 @@
 						
 							
 						</div>
-					<div class="form-content">
-						<div class="top-module-row" top-module="top-module">
-							<div class="select-module green-tar">会员查询</div>
-							<div class="select-module">代理商查询</div>
-						</div>
-						<!-- 查询内容 row1 -->
-						<div class="import-vel">
-							<div class="outside-module">
-								<div class="modu-left">站台名称：</div>
-								<select class="form-w220"></select>
+					<div class="form-content" form-control="form-control">
+						<div class="main-content1 " main-con="main-con">
+							<div class="top-module-row" top-module="top-module">
+								<div class="select-module green-tar">会员查询</div>
+								<div class="select-module">代理商查询</div>
 							</div>
-							<div class="outside-module">
-								<div class="modu-left">在线状态：</div>
-								<select class="form-w220"></select>
-							</div>
-							<div class="outside-module">
-								<div class="modu-left">排序类型：</div>
-								<select class="form-w220"></select>
-							</div>
-							<div class="outside-module">
-								<div class="modu-left">会员帐号：</div>
-								<select class="form-w220"></select>
-							</div>
-							<div class="outside-module">
-								<div class="modu-left">真实姓名：</div>
-								<select class="form-w220"></select>
-							</div>
-						</div>
-						<!-- 查询内容 row2 -->
-						<div class="import-vel new-distance">
-							<div class="scope-module">
-								<div class="title-left">创造日期：</div>
-								<div class="date-vel">
-									<input class="date-con" type="date" value="2019-02-03">
-								</div>
-								<span class="scope-symbol">~</span>
-								<div class="date-vel">
-									<input class="date-con" type="date" value="2019-02-03">
-								</div>
-							</div>
-							<div class="scope-module">
-								<div class="title-left">账户余额：</div>
-								<input class="inp-w160" type="text"  />
-								<span class="scope-symbol">~</span>
-								<input class="inp-w160" type="text"  />
-							</div>
-							<div class="outside-module">
-								<div class="modu-left">用户状态：</div>
-								<select class="form-w220">
-									<option value="0">---全部---</option>
-								</select>
-							</div>
-						</div>
-						<!-- 查询内容 row3 -->
-						<div class="import-vel new-distance">
-							
-							<div class="outside-module">
-								<div class="modu-left">用户状态：</div>
-								<select class="inp-w220"></select>
-							</div>
-							<div class="outside-module">
-								<div class="modu-left">所属层级：</div>
-								<select class="inp-w220"></select>
-							</div>
-							<div class="outside-module">
-								<div class="modu-left">锁定层级：</div>
-								<select class="inp-w220"></select>
-							</div>
-						</div>
-
-						<div class="query-vel">
-							<a class="a-text green-text" text-switch="text-switch" href="javascript:void(0)">进阶搜寻</a>
-							<div class="btn-submit blue-btn" data-submit="data-submit">
-								<a href="javascript:void(0)">查询</a>
-							</div>
-						</div>
-
-						<div class="state-vel">
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state01.png" alt="">
-								<span>：凍結</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state02.png" alt="">
-								<span>：解冻</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state03.png" alt="">
-								<span>：停用</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state04.png" alt="">
-								<span>：启用</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state05.png" alt="">
-								<span>：基本资料</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state06.png" alt="">
-								<span>：退佣设定</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state07.png" alt="">
-								<span>：注单查询</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state08.png" alt="">
-								<span>：帐务</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state09.png" alt="">
-								<span>：推荐网址</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state10.png" alt="">
-								<span>：数据同步</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state11.png" alt="">
-								<span>：新MG限红</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state12.png" alt="">
-								<span>：对应域名</span>
-							</div>
-							<div class="state-module">
-								<img class="img-icon" src="../style/img/state13.png" alt="">
-								<span>：链接反查帐号</span>
-							</div>
-						</div>
-
-						<div class="table-header green-bg" navi-bg="navi-bg" >
-							<div class="left-btn">查询结果</div>
-							<div class="right-btn"><a href="agent_query.html">+ 新增用戶</a></div>
-						</div>
-
-						<div class="table-state-vel">
-							<table class="table-01 new-width">
-									<tbody>
-										<tr class="table-head">
-											<td>
-												<div>在线状态</div>
-											</td>
-											<td>
-												<div>站台序号</div>
-											</td>
-											<td>
-												<div>用户帐号</div>
-											</td>
-											<td>
-												<div>所属代理</div>
-											</td>
-											<td>
-												<div>我的钱包</div>
-											</td>
-											<td>
-												<div>产品额度</div>
-											</td>
-											<td>
-												<div>状态</div>
-											</td>
-											<td>
-												<div>帐号创建日期</div>
-											</td>
-											<td>
-												<div>备注</div>
-											</td>
-											<td class="lastCol">
-												<div>功能</div>
-											</td>
-										</tr>
-									</tbody>
-									<tbody>
-									<tr class="table-content">
-										<td>
-											<div class="td-div reseda-color">在线</div>
-										</td>
-										<td>
-											<div class="td-div">测试站</div>
-										</td>
-										<td>
-											<div class="td-div">A12331315</div>
-										</td>
-										<td>
-											<div class="td-div blue-color">K1Z61</div>
-										</td>
-										<td>
-											<div class="td-div">0.00</div>
-										</td>
-										<td>
-											<div class="td-div blue-color">点击显示</div>
-										</td>
-										<td>
-											<div class="td-div">正常</div>
-										</td>
-										<td>
-											<div class="td-div">2018-08-01 04:42:57</div>
-										</td>
-										<td>
-											<div class="td-div">TEST</div>
-										</td>
-										<td>
-											<div class="td-div finally-div">
-												<div class="img-con">
-													<img class="logo-con" src="../style/img/state01.png" alt="">
-													<img class="logo-con" src="../style/img/state03.png" alt="">
-													<img class="logo-con" src="../style/img/state05.png" alt="">
-													<img class="logo-con" src="../style/img/state07.png" alt="">
-													<img class="logo-con" src="../style/img/state08.png" alt="">
-													<img class="logo-con" src="../style/img/state11.png" alt="">
-												</div>
-											
+						
+							<div class="switch-module1">
+								<div class="query-result" query-result-id="query-result-id">
+									<!-- 查询内容 row1 -->
+									<div class="import-vel">
+											<div class="outside-module">
+												<div class="modu-left">站台名称：</div>
+												<select class="form-w220"></select>
 											</div>
-										</td>
-									</tr>
-									<tr class="table-content">
-											<td>
-												<div class="td-div reseda-color">在线</div>
-											</td>
-											<td>
-												<div class="td-div">测试站</div>
-											</td>
-											<td>
-												<div class="td-div">A12331315</div>
-											</td>
-											<td>
-												<div class="td-div blue-color">K1Z61</div>
-											</td>
-											<td>
-												<div class="td-div">0.00</div>
-											</td>
-											<td>
-												<div class="td-div blue-color">点击显示</div>
-											</td>
-											<td>
-												<div class="td-div">正常</div>
-											</td>
-											<td>
-												<div class="td-div">2018-08-01 04:42:57</div>
-											</td>
-											<td>
-												<div class="td-div">TEST</div>
-											</td>
-											<td>
-												<div class="td-div finally-div">
-													<div class="img-con">
-															<img class="logo-con" src="../style/img/state01.png" alt="">
-															<img class="logo-con" src="../style/img/state03.png" alt="">
-															<img class="logo-con" src="../style/img/state05.png" alt="">
-															<img class="logo-con" src="../style/img/state07.png" alt="">
-															<img class="logo-con" src="../style/img/state08.png" alt="">
-															<img class="logo-con" src="../style/img/state11.png" alt="">
-													</div>
-												
-												</div>
-											</td>
-									</tr>
-									<tr class="table-content">
-											<td>
-												<div class="td-div">离线</div>
-											</td>
-											<td>
-												<div class="td-div">测试站</div>
-											</td>
-											<td>
-												<div class="td-div">A12331315</div>
-											</td>
-											<td>
-												<div class="td-div blue-color">K1Z61</div>
-											</td>
-											<td>
-												<div class="td-div">0.00</div>
-											</td>
-											<td>
-												<div class="td-div blue-color">点击显示</div>
-											</td>
-											<td>
-												<div class="td-div">正常</div>
-											</td>
-											<td>
-												<div class="td-div">2018-08-01 04:42:57</div>
-											</td>
-											<td>
-												<div class="td-div">TEST</div>
-											</td>
-											<td>
-												<div class="td-div finally-div">
-													<div class="img-con">
-															<img class="logo-con" src="../style/img/state01.png" alt="">
-															<img class="logo-con" src="../style/img/state03.png" alt="">
-															<img class="logo-con" src="../style/img/state05.png" alt="">
-															<img class="logo-con" src="../style/img/state07.png" alt="">
-															<img class="logo-con" src="../style/img/state08.png" alt="">
-															<img class="logo-con" src="../style/img/state11.png" alt="">
-													</div>
-												
-												</div>
-											</td>
-									</tr>
-									<tr class="table-content">
-											<td>
-												<div class="td-div">离线</div>
-											</td>
-											<td>
-												<div class="td-div">测试站</div>
-											</td>
-											<td>
-												<div class="td-div">A12331315</div>
-											</td>
-											<td>
-												<div class="td-div blue-color">K1Z61</div>
-											</td>
-											<td>
-												<div class="td-div">0.00</div>
-											</td>
-											<td>
-												<div class="td-div blue-color">点击显示</div>
-											</td>
-											<td>
-												<div class="td-div">正常</div>
-											</td>
-											<td>
-												<div class="td-div">2018-08-01 04:42:57</div>
-											</td>
-											<td>
-												<div class="td-div">TEST</div>
-											</td>
-											<td>
-												<div class="td-div finally-div">
-													<div class="img-con">
-															<img class="logo-con" src="../style/img/state01.png" alt="">
-															<img class="logo-con" src="../style/img/state03.png" alt="">
-															<img class="logo-con" src="../style/img/state05.png" alt="">
-															<img class="logo-con" src="../style/img/state07.png" alt="">
-															<img class="logo-con" src="../style/img/state08.png" alt="">
-															<img class="logo-con" src="../style/img/state11.png" alt="">
-													</div>
-												
-												</div>
-											</td>
-									</tr>
-									<tr class="table-content lastrow">
-											<td>
-												<div class="td-div reseda-color">在线</div>
-											</td>
-											<td>
-												<div class="td-div">测试站</div>
-											</td>
-											<td>
-												<div class="td-div">A12331315</div>
-											</td>
-											<td>
-												<div class="td-div blue-color">K1Z61</div>
-											</td>
-											<td>
-												<div class="td-div">0.00</div>
-											</td>
-											<td>
-												<div class="td-div blue-color">点击显示</div>
-											</td>
-											<td>
-												<div class="td-div">正常</div>
-											</td>
-											<td>
-												<div class="td-div">2018-08-01 04:42:57</div>
-											</td>
-											<td>
-												<div class="td-div">TEST</div>
-											</td>
-											<td>
-												<div class="td-div finally-div">
-													<div class="img-con">
-															<img class="logo-con" src="../style/img/state01.png" alt="">
-															<img class="logo-con" src="../style/img/state03.png" alt="">
-															<img class="logo-con" src="../style/img/state05.png" alt="">
-															<img class="logo-con" src="../style/img/state07.png" alt="">
-															<img class="logo-con" src="../style/img/state08.png" alt="">
-															<img class="logo-con" src="../style/img/state11.png" alt="">
-													</div>
-												
-												</div>
-											</td>
-									</tr>
-									</tbody>
-								</table>
-						</div>
-						<!-- 分页 -->
-						<div class="paging-vel">
-							<div class="page-content">
-									<div class="page-number">
-										<select class="page-sel">
-											<option>10</option>
-										</select>
+											<div class="outside-module">
+												<div class="modu-left">在线状态：</div>
+												<select class="form-w220"></select>
+											</div>
+											<div class="outside-module">
+												<div class="modu-left">排序类型：</div>
+												<select class="form-w220"></select>
+											</div>
+											<div class="outside-module">
+												<div class="modu-left">会员帐号：</div>
+												<select class="form-w220"></select>
+											</div>
+											<div class="outside-module">
+												<div class="modu-left">真实姓名：</div>
+												<select class="form-w220"></select>
+											</div>
 									</div>
-									<!--    左边-->
-									<div class="page-left">
-										<div class="page-left-first">
-											<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-												../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
+									<!-- 查询内容 row2 -->
+									<div class="import-vel new-distance">
+										<div class="scope-module">
+											<div class="title-left">创造日期：</div>
+											<div class="date-vel">
+												<input class="date-con" type="date" value="2019-02-03">
+											</div>
+											<span class="scope-symbol">~</span>
+											<div class="date-vel">
+												<input class="date-con" type="date" value="2019-02-03">
+											</div>
 										</div>
-										<div class="page-left-polygon">
-											<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
-												../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+										<div class="scope-module">
+											<div class="title-left">账户余额：</div>
+											<input class="inp-w160" type="text"  />
+											<span class="scope-symbol">~</span>
+											<input class="inp-w160" type="text"  />
+										</div>
+										<div class="outside-module">
+											<div class="modu-left">用户状态：</div>
+											<select class="form-w220">
+												<option value="0">---全部---</option>
+											</select>
 										</div>
 									</div>
-									<!--    中间-->
-									<div class="page-center">
-										<span>Page</span>
-										<input value="10">
-										<div class="of-page">
-											<sapn>of</sapn>
-											<sapn>41</sapn>
+									<!-- 查询内容 row3 -->
+									<div class="import-vel new-distance">
+										
+										<div class="outside-module">
+											<div class="modu-left">用户状态：</div>
+											<select class="inp-w220"></select>
+										</div>
+										<div class="outside-module">
+											<div class="modu-left">所属层级：</div>
+											<select class="inp-w220"></select>
+										</div>
+										<div class="outside-module">
+											<div class="modu-left">锁定层级：</div>
+											<select class="inp-w220"></select>
 										</div>
 									</div>
-									<!--    右边-->
-									<div class="page-right">
-										<div class="page-right-polygon">
-											<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
-												../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+
+									<div class="query-vel">
+										<a class="a-text green-text" text-switch="text-switch" href="javascript:void(0)">进阶搜寻</a>
+										<div class="btn-submit blue-btn" data-submit="data-submit">
+											<a href="javascript:void(0)">查询</a>
 										</div>
-										<div class="page-right-first">
-											<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-												../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
+									</div>
+
+									<div class="state-vel">
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state01.png" alt="">
+											<span>：凍結</span>
 										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state02.png" alt="">
+											<span>：解冻</span>
+										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state03.png" alt="">
+											<span>：停用</span>
+										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state04.png" alt="">
+											<span>：启用</span>
+										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state05.png" alt="">
+											<span>：基本资料</span>
+										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state06.png" alt="">
+											<span>：退佣设定</span>
+										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state07.png" alt="">
+											<span>：注单查询</span>
+										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state08.png" alt="">
+											<span>：帐务</span>
+										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state09.png" alt="">
+											<span>：推荐网址</span>
+										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state10.png" alt="">
+											<span>：数据同步</span>
+										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state11.png" alt="">
+											<span>：新MG限红</span>
+										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state12.png" alt="">
+											<span>：对应域名</span>
+										</div>
+										<div class="state-module">
+											<img class="img-icon" src="../style/img/state13.png" alt="">
+											<span>：链接反查帐号</span>
+										</div>
+									</div>
+									<div class="table-header green-bg" navi-bg="navi-bg" >
+											<div class="left-btn">查询结果</div>
+											<div class="right-btn" insert-user-href="insert-user-href">
+												<a href="javascript:void(0)">+ 新增用戶</a>
+											</div>
+										</div>
+		
+									<div class="table-state-vel">
+										<table class="table-01 new-width">
+												<tbody>
+													<tr class="table-head">
+														<td>
+															<div>在线状态</div>
+														</td>
+														<td>
+															<div>站台序号</div>
+														</td>
+														<td>
+															<div>用户帐号</div>
+														</td>
+														<td>
+															<div>所属代理</div>
+														</td>
+														<td>
+															<div>我的钱包</div>
+														</td>
+														<td>
+															<div>产品额度</div>
+														</td>
+														<td>
+															<div>状态</div>
+														</td>
+														<td>
+															<div>帐号创建日期</div>
+														</td>
+														<td>
+															<div>备注</div>
+														</td>
+														<td class="lastCol">
+															<div>功能</div>
+														</td>
+													</tr>
+												</tbody>
+												<tbody>
+												<tr class="table-content">
+													<td>
+														<div class="td-div reseda-color">在线</div>
+													</td>
+													<td>
+														<div class="td-div">测试站</div>
+													</td>
+													<td>
+														<div class="td-div">A12331315</div>
+													</td>
+													<td>
+														<div class="td-div blue-color">K1Z61</div>
+													</td>
+													<td>
+														<div class="td-div">0.00</div>
+													</td>
+													<td>
+														<div class="td-div blue-color">点击显示</div>
+													</td>
+													<td>
+														<div class="td-div">正常</div>
+													</td>
+													<td>
+														<div class="td-div">2018-08-01 04:42:57</div>
+													</td>
+													<td>
+														<div class="td-div">TEST</div>
+													</td>
+													<td>
+														<div class="td-div finally-div">
+															<div class="img-con">
+																<img class="logo-con" src="../style/img/state01.png" alt="">
+																<img class="logo-con" src="../style/img/state03.png" alt="">
+																<img class="logo-con" src="../style/img/state05.png" alt="">
+																<img class="logo-con" src="../style/img/state07.png" alt="">
+																<img class="logo-con" src="../style/img/state08.png" alt="">
+																<img class="logo-con" src="../style/img/state11.png" alt="">
+															</div>
+														
+														</div>
+													</td>
+												</tr>
+												<tr class="table-content">
+														<td>
+															<div class="td-div reseda-color">在线</div>
+														</td>
+														<td>
+															<div class="td-div">测试站</div>
+														</td>
+														<td>
+															<div class="td-div">A12331315</div>
+														</td>
+														<td>
+															<div class="td-div blue-color">K1Z61</div>
+														</td>
+														<td>
+															<div class="td-div">0.00</div>
+														</td>
+														<td>
+															<div class="td-div blue-color">点击显示</div>
+														</td>
+														<td>
+															<div class="td-div">正常</div>
+														</td>
+														<td>
+															<div class="td-div">2018-08-01 04:42:57</div>
+														</td>
+														<td>
+															<div class="td-div">TEST</div>
+														</td>
+														<td>
+															<div class="td-div finally-div">
+																<div class="img-con">
+																		<img class="logo-con" src="../style/img/state01.png" alt="">
+																		<img class="logo-con" src="../style/img/state03.png" alt="">
+																		<img class="logo-con" src="../style/img/state05.png" alt="">
+																		<img class="logo-con" src="../style/img/state07.png" alt="">
+																		<img class="logo-con" src="../style/img/state08.png" alt="">
+																		<img class="logo-con" src="../style/img/state11.png" alt="">
+																</div>
+															
+															</div>
+														</td>
+												</tr>
+												<tr class="table-content">
+														<td>
+															<div class="td-div">离线</div>
+														</td>
+														<td>
+															<div class="td-div">测试站</div>
+														</td>
+														<td>
+															<div class="td-div">A12331315</div>
+														</td>
+														<td>
+															<div class="td-div blue-color">K1Z61</div>
+														</td>
+														<td>
+															<div class="td-div">0.00</div>
+														</td>
+														<td>
+															<div class="td-div blue-color">点击显示</div>
+														</td>
+														<td>
+															<div class="td-div">正常</div>
+														</td>
+														<td>
+															<div class="td-div">2018-08-01 04:42:57</div>
+														</td>
+														<td>
+															<div class="td-div">TEST</div>
+														</td>
+														<td>
+															<div class="td-div finally-div">
+																<div class="img-con">
+																		<img class="logo-con" src="../style/img/state01.png" alt="">
+																		<img class="logo-con" src="../style/img/state03.png" alt="">
+																		<img class="logo-con" src="../style/img/state05.png" alt="">
+																		<img class="logo-con" src="../style/img/state07.png" alt="">
+																		<img class="logo-con" src="../style/img/state08.png" alt="">
+																		<img class="logo-con" src="../style/img/state11.png" alt="">
+																</div>
+															
+															</div>
+														</td>
+												</tr>
+												<tr class="table-content">
+														<td>
+															<div class="td-div">离线</div>
+														</td>
+														<td>
+															<div class="td-div">测试站</div>
+														</td>
+														<td>
+															<div class="td-div">A12331315</div>
+														</td>
+														<td>
+															<div class="td-div blue-color">K1Z61</div>
+														</td>
+														<td>
+															<div class="td-div">0.00</div>
+														</td>
+														<td>
+															<div class="td-div blue-color">点击显示</div>
+														</td>
+														<td>
+															<div class="td-div">正常</div>
+														</td>
+														<td>
+															<div class="td-div">2018-08-01 04:42:57</div>
+														</td>
+														<td>
+															<div class="td-div">TEST</div>
+														</td>
+														<td>
+															<div class="td-div finally-div">
+																<div class="img-con">
+																		<img class="logo-con" src="../style/img/state01.png" alt="">
+																		<img class="logo-con" src="../style/img/state03.png" alt="">
+																		<img class="logo-con" src="../style/img/state05.png" alt="">
+																		<img class="logo-con" src="../style/img/state07.png" alt="">
+																		<img class="logo-con" src="../style/img/state08.png" alt="">
+																		<img class="logo-con" src="../style/img/state11.png" alt="">
+																</div>
+															
+															</div>
+														</td>
+												</tr>
+												<tr class="table-content lastrow">
+														<td>
+															<div class="td-div reseda-color">在线</div>
+														</td>
+														<td>
+															<div class="td-div">测试站</div>
+														</td>
+														<td>
+															<div class="td-div">A12331315</div>
+														</td>
+														<td>
+															<div class="td-div blue-color">K1Z61</div>
+														</td>
+														<td>
+															<div class="td-div">0.00</div>
+														</td>
+														<td>
+															<div class="td-div blue-color">点击显示</div>
+														</td>
+														<td>
+															<div class="td-div">正常</div>
+														</td>
+														<td>
+															<div class="td-div">2018-08-01 04:42:57</div>
+														</td>
+														<td>
+															<div class="td-div">TEST</div>
+														</td>
+														<td>
+															<div class="td-div finally-div">
+																<div class="img-con">
+																		<img class="logo-con" src="../style/img/state01.png" alt="">
+																		<img class="logo-con" src="../style/img/state03.png" alt="">
+																		<img class="logo-con" src="../style/img/state05.png" alt="">
+																		<img class="logo-con" src="../style/img/state07.png" alt="">
+																		<img class="logo-con" src="../style/img/state08.png" alt="">
+																		<img class="logo-con" src="../style/img/state11.png" alt="">
+																</div>
+															
+															</div>
+														</td>
+												</tr>
+												</tbody>
+											</table>
+									</div>
+									<!-- 分页 -->
+									<div class="paging-vel">
+										<div class="page-content">
+												<div class="page-number">
+													<select class="page-sel">
+														<option>10</option>
+													</select>
+												</div>
+												<!--    左边-->
+												<div class="page-left">
+													<div class="page-left-first">
+														<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+															../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
+													</div>
+													<div class="page-left-polygon">
+														<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+															../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+													</div>
+												</div>
+												<!--    中间-->
+												<div class="page-center">
+													<span>Page</span>
+													<input value="10">
+													<div class="of-page">
+														<sapn>of</sapn>
+														<sapn>41</sapn>
+													</div>
+												</div>
+												<!--    右边-->
+												<div class="page-right">
+													<div class="page-right-polygon">
+														<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+															../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+													</div>
+													<div class="page-right-first">
+														<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+															../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
+													</div>
+											
+												</div>
+												<!--    刷新-->
+												<div class="ico-refresh">
+													<img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
+															../style/img/ic_refresh_24px@3x.png">
+												</div>
+												<div class="page-text">
+													<span>总单数406，当前专案1到10</span>
+												</div>
+										</div>
+									</div>
+								</div>
+								<div class="insert-con-module hide" insert-con-id="insert-con-id">
+										<div class="insert-user green-text"  text-switch="text-switch">
+												<div class="insert-con">新增/编辑用户</div>
+										</div>
+										<!-- 模块 -->
+										<div class="datum-title green-btn-bar" datum-bar="datum-bar">
+											
+											<div class="tab-btn green-btn-active">
+												<div class="tab-btn-text ">基本资料设定</div>
+											</div>
+											<div class="tab-btn">
+												<div class="tab-btn-text ">详细资料设定</div>
+											</div>
+											<div class="tab-btn">
+												<div class="tab-btn-text ">IP设定</div>
+											</div>
+											<div class="tab-btn">
+												<div class="tab-btn-text ">数据同步</div>
+											</div>
+										</div>
+										<form class="form-main-content" action="" >
+											<div class="table1-con">
+												<div class="row-vel">
+													<span class="form-top-title">账号&nbsp;:</span>
+													<input class="form-bottom-account" />
+												</div>
+												<div class="row-vel">
+														<span class="form-top-title">真实姓名&nbsp;:</span>
+														<input class="form-bottom-input" />
+												</div>
+												<div class="row-vel">
+														<span class="form-top-title">密码&nbsp;:</span>
+														<input class="form-bottom-input" />
+												</div>
+												<div class="row-vel">
+														<span class="form-top-title">确认密码&nbsp;:</span>
+														<input class="form-bottom-input" />
+												</div>
+											</div>
+											<div class="table2-con">
+													<div class="row-vel">
+														<span class="form-top-title">取款密码&nbsp;:</span>
+														<input class="form-bottom-input" />
+													</div>
+													<div class="row-vel">
+															<span class="form-top-title">确认取款密码&nbsp;:</span>
+															<input class="form-bottom-input" />
+													</div>
+													<div class="row-vel">
+															<span class="form-top-title">状态&nbsp;:</span>
+															<select class="form-bottom-input" >
+																<option value="0">停用</option>
+																<option value="1">启用</option>
+															</select>
+													</div>
+													<div class="row-vel">
+															<span class="form-top-title">VIP层级&nbsp;:</span>
+															<select class="form-bottom-input" >
+																	<option value="0">VIP0</option>
+																	<option value="1">VIP1</option>
+															</select>
+													</div>
+											</div>
+											<div class="table3-con">
+													<div class="row-vel">
+														<span class="form-top-title">返水状态&nbsp;:</span>
+														<span class="form-bottom-span">正常</span>
+													</div>
+													<div class="row-vel">
+															<span class="form-top-title">层级&nbsp;:</span>
+															<select class="form-bottom-input" >
+																	<option value="0">第三层</option>
+																	<option value="1">第二层</option>
+															</select>
+													</div>
+													<div class="row-vel">
+															<span class="form-top-title">是否锁定层级&nbsp;:</span>
+															<div class="form-bottom-content">
+																	<input type="checkbox" class="form-bottom-checkbox" value="0" name="State" >
+																	<span class="form-bottom-sel">是</span>
+																	<input type="checkbox" class="form-bottom-checkbox" value="1" name="State">
+																	<span class="form-bottom-sel">否</span>
+															</div>
+														
+													</div>
+													<div class="row-vel">
+															<span class="form-top-title">钱包模式&nbsp;:</span>
+															<span class="form-bottom-span">多钱包模式</span>
+													</div>
+											</div>
+					
+											<div class="table4-con">
+													<div class="row-vel">
+														<span class="form-top-title">最近登陆IP&nbsp;:</span>
+														<span class="form-bottom-span">180.226.74.254</span>
+													</div>
+													<div class="row-vel">
+															<span class="form-top-title">建立时间&nbsp;:</span>
+														<span class="form-bottom-span">2018/06/15 17:26:11</span>
+													</div>
+													<div class="row-vel">
+														<span class="form-top-title">建立人员&nbsp;:</span>
+														<span class="form-bottom-span">XY283283232</span>
+													</div>
+													<div class="row-vel">
+															<span class="form-top-title">最近更新&nbsp;:</span>
+															<a  class="form-bottom-a">CATHY1[2018/06/17 3:22:25]</a>
+													</div>
+											</div>
+											<div class="btn-con">
+											
+													<div class="btn-submit green-btn" data-submit="data-submit" data-save-id="data-save-id">
+														<a href="javascript:void(0)">储存</a>
+													</div>
+											
+													<div class="btn-submit" data-cancel-id="data-cancel-id">
+														<a href="javascript:void(0)">取消</a>
+													</div>
+												
+											</div>
+										</form>
+								</div>		
+
 								
-									</div>
-									<!--    刷新-->
-									<div class="ico-refresh">
-										<img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
-												../style/img/ic_refresh_24px@3x.png">
-									</div>
-									<div class="page-text">
-										<span>总单数406，当前专案1到10</span>
-									</div>
 							</div>
+							<div class="switch-module2 hide">
+								代理商查询模块
+							</div>
+						</div>
+
+						<div class="main-content2 hide" main-con="main-con">
+								<div class="top-module-row" top-module="top-module">
+									<div class="select-module green-tar">会员资料查询</div>
+									<div class="select-module">汇入查询</div>
+								</div>
+								<div class="switch-module1" >会员资料查询</div>
+								<div class="switch-module2 hide" >汇入查询</div>
+						</div>
+						<div class="main-content3 hide " main-con="main-con">
+								<div class="top-module-row" top-module="top-module">
+									<div class="select-module green-tar">会员信息查询</div>
+									<div class="select-module">修改会员银行卡信息内容</div>
+								</div>
+								<div class="switch-module1" >会员信息查询</div>
+								<div class="switch-module2 hide" >修改会员银行卡信息内容</div>
+						</div>
+						<div class="main-content4 hide" main-con="main-con">
+								<div class="top-module-row" top-module="top-module">
+										<div class="select-module">退佣设定</div>
+										<div class="select-module  green-tar">退佣计算</div>
+								</div>
+								<div class="switch-module1 hide" >退佣设定</div>
+								<div class="switch-module2 ">
+										
+										
+											<div class="datum-title green-btn-bar" datum-bar="datum-bar">
+										
+												<div class="tab-btn green-btn-active">
+													<div class="tab-btn-text ">代理默认退佣设定</div>
+												</div>
+												<div class="tab-btn">
+													<div class="tab-btn-text ">次代理默认退佣设定</div>
+												</div>
+											</div>
+											
+											<div class="platform-content">
+												<div class="platform-module-con">
+													<div class="platform-left-title">站台名称&nbsp;:</div>
+													<select class="platform-right-title">
+														<option value="0">A100-测试站-DEMO</option>
+														<option value="1">A100-测试站-DEMO</option>
+													</select>
+												</div>
+				
+												<div class="platform-module-con">
+													<div class="platform-left-title">佣金名称&nbsp;:</div>
+													<input type="text" class="platform-right-title" />
+												</div>
+												
+												<div class="platform-module-con">
+														<div class="platform-left-title">状态&nbsp;:</div>
+														<select class="platform-right-title">
+															<option value="0">启用中</option>
+															<option value="1">禁用中</option>
+														</select>
+												</div>
+												<div class="platform-module-con">
+														<div class="platform-left-title">佣金计算方式&nbsp;:</div>
+														<div class="platform-right-con">
+															<input type="checkbox"  class="platform-checkbox">
+															<span class="platform-sel">退水制</span>
+															<input type="checkbox"  class="platform-checkbox">
+															<span class="platform-sel">退佣制</span>
+														</div>
+												</div>
+												<div class="platform-module-con">
+														<div class="platform-left-title">站台有效会员设定&nbsp;:</div>
+														<input type="text" class="platform-right-title" />
+														<span class="hint-con">RMB以上，设"0"则表示不限制下注量</span>
+												</div>
+												<div class="platform-module-con">
+														<div class="platform-left-title">是否同步所有帐号&nbsp;:</div>
+														<div class="platform-right-con">
+															<input type="checkbox"  class="platform-checkbox">
+															<span class="platform-sel">是</span>
+															<input type="checkbox"  class="platform-checkbox">
+															<span class="platform-sel">否</span>
+														</div>
+												</div>
+											</div>
+											<div class="select-con">
+													<div class="btn-submit green-btn" data-submit="data-submit">查询</div>
+											</div>
+											<div class="platform-table">
+				
+													<table class="table-01 table-01-new">
+															<tbody>
+																<tr class="table-head green-bg" navi-bg="navi-bg">
+																	<td colspan="3">
+																		<div>退水比例(退水制)</div>
+																	</td>
+																	<td>
+																		<div>盈利</div>
+																	</td>
+																	<td>
+																		<div>盈利</div>
+																	</td>
+																	<td>
+																		<div>盈利</div>
+																	</td>
+																	<td>
+																		<div>有效投注</div>
+																	</td>
+																	<td>
+																		<div>
+																			<select class="form-w140 sel-head">
+																				<option value="0">有效投注</option>
+																			</select>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+															<tbody>
+																<tr class="table-content">
+																	<td>
+																		<div class="td-div">层级</div>
+																	</td>
+																	<td>
+																		<div class="td-div">有效投注</div>
+																	</td>
+																	<td>
+																		<div class="td-div">有效会员</div>
+																	</td>
+																	<td>
+																		<div class="td-div">真人</div>
+																	</td>
+																	<td>
+																		<div class="td-div">运动</div>
+																	</td>
+																	<td>
+																		<div class="td-div">电子</div>
+																	</td>
+																	<td>
+																		<div class="td-div">彩票</div>
+																	</td>
+																	<td>
+																		<div class="td-div">
+																			<select class="form-w140 sel-con">
+																				<option value="0">真人AG</option>
+																			</select>
+																		</div>
+																	</td>
+																</tr>
+																<tr class="table-content">
+																		<td>
+																			<div class="td-div">1</div>
+																		</td>
+																		<td>
+																			<div class="td-div">1~10000.00</div>
+																		</td>
+																		<td>
+																			<div class="td-div">1人以上</div>
+																		</td>
+																		<td>
+																			<div class="td-div">1.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">1.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">1.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">0.10%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">0.20%</div>
+																		</td>
+																</tr>
+																<tr class="table-content">
+																		<td>
+																			<div class="td-div">2</div>
+																		</td>
+																		<td>
+																			<div class="td-div">10001~20000.00</div>
+																		</td>
+																		<td>
+																			<div class="td-div">5人以上</div>
+																		</td>
+																		<td>
+																			<div class="td-div">2.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">2.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">2.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">0.20%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">0.30%</div>
+																		</td>
+																</tr>
+																<tr class="table-content">
+																		<td>
+																			<div class="td-div">3</div>
+																		</td>
+																		<td>
+																			<div class="td-div">20001~50000.00</div>
+																		</td>
+																		<td>
+																			<div class="td-div">10人以上</div>
+																		</td>
+																		<td>
+																			<div class="td-div">3.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">3.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">3.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">0.30%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">0.40%</div>
+																		</td>
+																</tr>
+																<tr class="table-content">
+																		<td>
+																			<div class="td-div">4</div>
+																		</td>
+																		<td>
+																			<div class="td-div">50001~100000.00</div>
+																		</td>
+																		<td>
+																			<div class="td-div">15人以上</div>
+																		</td>
+																		<td>
+																			<div class="td-div">4.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">4.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">4.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">0.40%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">0.50%</div>
+																		</td>
+																</tr>
+																<tr class="table-content ">
+																		<td>
+																			<div class="td-div">5</div>
+																		</td>
+																		<td>
+																			<div class="td-div">666666677.00</div>
+																		</td>
+																		<td>
+																			<div class="td-div">20人以上</div>
+																		</td>
+																		<td>
+																			<div class="td-div">5.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">5.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">5.00%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">0.40%</div>
+																		</td>
+																		<td>
+																			<div class="td-div">0.60%</div>
+																		</td>
+																</tr>
+																<tr class="table-bottom">
+																		<td colspan="3" >
+																			<div class="td-div div-abs">操作</div>
+																		</td>
+																	
+																		<td>
+																			<div class="td-div">删除</div>
+																		</td>
+																		<td>
+																			<div class="td-div">删除</div>
+																		</td>
+																		<td>
+																			<div class="td-div">删除</div>
+																		</td>
+																		<td>
+																			<div class="td-div">删除</div>
+																		</td>
+																		<td>
+																			
+																		</td>
+																</tr>
+															</tbody>
+														</table>
+											</div>
+											<div class="insert-vel">
+												<div class="insert-bg">+&nbsp;新增欄</div>
+											</div>
+											<div class="btn-con">
+													<div class="btn-submit green-btn" data-submit="data-submit">储存</div>
+													<div class="btn-submit">取消</div>
+											</div>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -595,4 +1045,7 @@
 	</body>
 </html>
 
-<script src="../js/jquery/setStyle.js"></script>
+<!-- <script src="../js/jquery/setStyle.js"></script> -->
+<script src="../dist/setStyle.js"></script>
+<script src="../js/pages/agentComponents.js"></script>
+<!--<script src="../js/modules/incident.js"></script>-->

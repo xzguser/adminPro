@@ -15,186 +15,446 @@
             background: #ffffff;
             width: 1900px;
             height: 830px;
-
-          
+            .main-content1{
             
-            .datum-title{
-                height: 50px;
-                margin-left: 21px;
-                margin-top: 50px;
-
-            }
-
-            .vip-vel{
-                height: 47px;
-                margin-top: 20px;
-                margin-left: 21px;
-                
-                .function-module{
-                    height: 24px;
-                    display: flex;
-                    .function-left{
-                        width: 74px;
-                        height: 24px;
-                        font-family: $font-family;
-                        font-size: 16px;
-                        font-weight: bold;
-                        text-align: left;
-                        color: #333333;
-                        display: flex;
-                        align-items: center;
+              
+                .switch-module1{
+                  margin-left: 21px;
+                }
+                .switch-module2{
+                  margin-left: 21px;
+                }
+                .switch-module3{
+                    .datum-title{
+                        height: 50px;
+                        margin-left: 21px;
+                        margin-top: 50px;
+    
                     }
-                    .function-right{
-                        height: 24px;
-                        display: flex;
-                        align-items: center;
-                        .checkbox-select{
-                            margin-left: 9px;
-                            width: 18px;
-                            height: 18px;
-                        }
-                        .select-content{
-                            margin-left: 7px;
+    
+                    .vip-vel{
+                        height: 47px;
+                        margin-top: 20px;
+                        margin-left: 21px;
+                        
+                        .function-module{
                             height: 24px;
-                            font-family: $font-family;
-                            font-size: 18px;
-                            font-weight: normal;
-                          
-                            text-align: left;
-                            color: #666666;
+                            display: flex;
+                            .function-left{
+                                width: 74px;
+                                height: 24px;
+                                font-family: $font-family;
+                                font-size: 16px;
+                                font-weight: bold;
+                                text-align: left;
+                                color: #333333;
+                                display: flex;
+                                align-items: center;
+                            }
+                            .function-right{
+                                height: 24px;
+                                display: flex;
+                                align-items: center;
+                                .checkbox-select{
+                                    margin-left: 9px;
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                                .select-content{
+                                    margin-left: 7px;
+                                    height: 24px;
+                                    font-family: $font-family;
+                                    font-size: 18px;
+                                    font-weight: normal;
+                                
+                                    text-align: left;
+                                    color: #666666;
+                                }
+                            }
                         }
+                    
+                    }
+                    .table-max{
+                        height: 293px;
+                        display: flex;
+                        margin-left: 21px;
+                        font-family: $font-family;
+                        font-weight: bold;
+                        .table-left-con{
+                            width: 710px;
+                            height: 100%;
+                    
+                            .hierarchy-module{
+                                height: 30px;
+                                // background: yellow;
+                                display: flex;
+                                .hierarchy-left{
+                                    width: 74px;
+                                    height: 30px;
+                                
+                                    font-size: 16px;
+                                
+                                    text-align: left;
+                                    color: #333333;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                .hierarchy-right{
+                                    margin-left: 12px;
+                                    width: 130px;
+                                    height: 30px;
+                                    border-radius: 10px;
+                                    background-color: #fcae00;
+                                
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #ffffff;
+                                }
+                            }
+    
+                            .table-buttom-vel{
+                                margin-top: 11px;
+                                height: 252px;
+                                
+                            }
+                        }
+    
+                        .table-right-con{
+                            height: 100%;
+                            // width: 900px;
+                        
+                            .top-title{
+                                height: 30px;
+                                display: flex;
+                                align-items: center;
+                            
+                                font-size: 16px;
+                                text-align: left;
+                                color: #333333;
+                            }
+                            .table-vip-vel{
+                                margin-top: 11px;
+                                height: 252px;
+                            
+                                .new-table-02{
+                                    width: 887px;
+                                    .table-head{
+                                        .lastCol{
+                                            width: 100px
+                                        }
+                                    }
+                                    .first-td{
+                                        width: 88px;
+                                        border-bottom: 1px solid #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    .bottom-table-vel{
+                        margin-top: 22.5px;
+                        height: 137px;
+                        font-family: $font-family;
+                        font-weight: bold;
+                        margin-left: 21px;
+                        .top-con-title{
+                            height: 21px;
+                        
+                            display: flex;
+                            align-items: center;
+                            .left-span{
+                            
+                                font-size: 16px;
+                                text-align: left;
+                                color: #333333;
+                            }
+                            .right-span{
+                            
+                                font-size: 16px;
+                                text-align: left;
+                                color: #ff3b3b;
+                            }
+                        }
+                        .bottom-con-vel{
+                            margin-top: 16px;
+                            height: 100px;
+                        
+                            .new-table-03{
+                                width: 951px;
+                                .td-first{
+                                    width: 148px;
+                                    
+                                    border-bottom: 1px solid #fff;
+                                }
+                            }
+                        }
+                    }
+    
+                    .btn-con{
+                        height: 30px;
+                        margin-top: 20px;
+                        margin-left: 21px;
+                        display: flex;
+                    
+                    
                     }
                 }
-               
+                .switch-module4{
+                    margin-left: 21px;
+                }
+                .switch-module5{
+                    margin-left: 21px;
+                }
+                .switch-module6{
+                    margin-left: 21px;
+                }
             }
-            .table-max{
-                height: 293px;
-                display: flex;
-                margin-left: 21px;
-                font-family: $font-family;
-                font-weight: bold;
-                .table-left-con{
-                    width: 710px;
-                    height: 100%;
-               
-                      .hierarchy-module{
+            .main-content2{
+            
+                .switch-module1{
+                    margin-left: 21px;
+                }
+                .switch-module2{
+                    .backwater-vel{
+                        margin-top: 20px;
                         height: 30px;
-                        // background: yellow;
+                  
                         display: flex;
-                        .hierarchy-left{
-                            width: 74px;
-                            height: 30px;
-                           
+                        margin-left: 21px;
+                        .backwater-set{
+                            font-family: $font-family;
                             font-size: 16px;
-                           
                             text-align: left;
                             color: #333333;
                             display: flex;
                             align-items: center;
                         }
-                        .hierarchy-right{
-                            margin-left: 12px;
-                            width: 130px;
+                        .insert-set{
+                            margin-left: 28px;
                             height: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 120px;
+                            font-family:$font-family;
+                            font-size: 16px;
+                            color: #ffffff;
                             border-radius: 10px;
                             background-color: #fcae00;
-                         
-                            font-size: 16px;
-                            font-weight: bold;
+                        }
+                    }
+        
+                    .table-vel{
+                        margin-top: 15.5px;
+                        margin-left: 21px;
+                        .platform-table-new{
+                            width: 1400px;
+                            box-shadow: none;
+                            .table-head{
+                                height: 34px;
+                            }
+                            .table-content{
+                                height: 36px;
+                            }
+                            td{
+                                border-right: none;
+                                font-weight: bold;
+                                .new-div{
+                                    width: 280px;
+                                }
+                            }
+                            .topo-color-blue{
+                                color: #0099ff;
+                            }
+                        }
+                    }
+        
+                    .query-vel{
+                        margin-top: 16.5px;
+                        margin-left: 21px;
+                        height: 30px;
+                        display: flex;
+                        .con-module-vel{
+                            width: 310px;
+                            height: 100%;
+                           
+                            margin-right: 50px;
+                            display: flex;
+                            .left-con{
+                                display: flex;
+                                align-items: center;
+                                font-family: $font-family;
+                                font-size: 16px;
+                                text-align: left;
+                                color: #333333;
+                            }
+                            .right-con{
+                                margin-left: 10px;
+                                width: 220px;
+                                height: 100%;
+                               
+                                .right-con-select{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 5px;
+                                    border: solid 1px #d8d8d8;
+                                    background-color: #ffffff;
+                                }
+                            }
+                        }
+                        .date-module-vel{
+                            width: 435px;
+                            margin-right: 10px;
+                           
+                            display: flex;
+                            position: relative;
+                            .date-title{
+                                display: flex;
+                                align-items: center;
+                                font-family: $font-family;
+                                font-size: 16px;
+                                text-align: left;
+                                color: #333333;
+                                margin-right: 10px;
+                            }
+                            .date-input{
+                                border-radius: 5px;
+                                border: solid 1px #d8d8d8;
+                                background-color: #ffffff;
+                                // margin-left: 10px;
+                                width: 146px;
+                                font-family: $font-family;
+                                padding-left: 14px;
+                                font-size: 16px;
+                                color: #666666;
+                            }
+                            .scope{
+                                width: 25px;
+                                height: 100%;
+                                font-size: 18px;
+                                font-family:$font-family;
+                                text-align: center;
+                                color: #666666;
+                            }
+        
+                            .hint-con{
+                                position: absolute;
+                                top: 42px;
+                                left: 90px;
+                                font-family: $font-family;
+                                font-size: 16px;
+                                width: 400px;
+                                text-align: left;
+                                color: #666666;
+                            }
+                        }
+        
+                        .btn-vel{
+                            display: flex;
+                            height: 30px;
+                            div{
+                                margin-right: 14px;
+                            }
+                        }
+                    }
+        
+                    .query-admin-vel{
+                        margin-top: 20px;
+                       
+                    }
+        
+                    .query-btn-vel{
+                        margin-top: 17px;
+                        height: 30px;
+                        margin-left: 21px;
+                     
+                        .query-btn{
+                            width: 80px;
+                            height: 30px;
+                            border-radius: 10px;
+                            background-color: #1ba786;
+                            font-family: $font-family;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             color: #ffffff;
+                            font-size: 16px;
+                            font-weight: bold;
                         }
-                      }
-
-                      .table-buttom-vel{
-                          margin-top: 11px;
-                          height: 252px;
-                         
-                      }
-                }
-
-                .table-right-con{
-                    height: 100%;
-                    // width: 900px;
-                   
-                    .top-title{
-                        height: 30px;
-                        display: flex;
-                        align-items: center;
-                     
-                        font-size: 16px;
-                        text-align: left;
-                        color: #333333;
                     }
-                    .table-vip-vel{
-                        margin-top: 11px;
-                        height: 252px;
-                      
-                        .new-table-02{
-                            width: 887px;
-                            .table-head{
-                                .lastCol{
-                                    width: 100px
+        
+                    .table-header{
+                        margin-top: 30px;
+                        margin-left: 21px;
+                        width: 1860px;
+                        height: 100px;
+                        position: relative;
+        
+                        font-family: $font-family;
+                        font-size: 16px;
+        
+                        .top-btn{
+                            
+                            padding-left: 12.7px;
+                            display: flex;
+                            align-items: center;
+                            height: 50px;
+                        }
+                        .bot-con{
+                            color: #333333;
+                            height: 48px;
+                            padding-left: 12.7px;
+                            display: flex;
+                            align-items: center;
+                            border: 1px solid #eeeeee;
+                            box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+                        }
+                    }
+        
+                    .table-max-vel{
+                        width: 1860px;
+                        margin-left: 21px;
+                        .table-01-new{
+                            width: 1860px;
+                            border-left: 1px solid #eeeeee;
+                            .table-content{
+                                td:nth-child(1){
+                                    width: 50px;
+                                }
+                                td:last-child{
+                                    width: 630px;
                                 }
                             }
-                            .first-td{
-                                width: 88px;
-                                border-bottom: 1px solid #fff;
-                            }
                         }
                     }
+        
+                    .paging-vel{
+                        margin-top: 16px;
+                        margin-left: 21px;
+                    }
+                }
+                .switch-module3{
+                    margin-left: 21px;
+                }
+                .switch-module4{
+                    margin-left: 21px;
+                }
+                .switch-module5{
+                    margin-left: 21px;
+                }
+                .switch-module6{
+                    margin-left: 21px;
+                }
+                .switch-module7{
+                    margin-left: 21px;
                 }
             }
             
-            .bottom-table-vel{
-                margin-top: 22.5px;
-                height: 137px;
-                font-family: $font-family;
-                font-weight: bold;
-                margin-left: 21px;
-                .top-con-title{
-                    height: 21px;
-                  
-                    display: flex;
-                    align-items: center;
-                    .left-span{
-                       
-                        font-size: 16px;
-                        text-align: left;
-                        color: #333333;
-                    }
-                    .right-span{
-                      
-                        font-size: 16px;
-                        text-align: left;
-                        color: #ff3b3b;
-                    }
-                }
-                .bottom-con-vel{
-                    margin-top: 16px;
-                    height: 100px;
-                   
-                    .new-table-03{
-                        width: 951px;
-                        .td-first{
-                            width: 148px;
-                            
-                            border-bottom: 1px solid #fff;
-                        }
-                    }
-                }
-            }
-
-            .btn-con{
-                height: 30px;
-                margin-top: 20px;
-                margin-left: 21px;
-                display: flex;
-             
-               
-            }
+                
         }
 
     }

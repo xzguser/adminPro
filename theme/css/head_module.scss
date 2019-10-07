@@ -45,9 +45,20 @@
           width: 44px;
           height: 44px;
         }
+
+
+        .img-row1{
+          position: absolute;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          width: 44px;
+          height: 44px;
+        }
         .img-agent{
           background-image: url("../../style/img/agent-2x.png");
+
         }
+
         .img-system{
           background-image: url("../../style/img/system-2x.png");
       
@@ -73,34 +84,46 @@
         }
        
         .sel-img{
-            background-image: url("../../style/img/agent-2x-bg.png");
+           // background-image: url("../../style/img/agent-2x-bg.png");
             animation:mymove 0.3s;
             animation-fill-mode: forwards;
         }
          @keyframes mymove {
             from{top:-80px;}
             to{top:0px;}
-          }
-        //  @-webkit-keyframes mymove{
-        //   from{top:-80px;}
-        //   to{top:8px;}
-        //  }
-        .img-system.sel-img{
+         }
+        .sel-img1{
+          animation:mymove1 0.3s;
+          animation-fill-mode: forwards;
+        }
+        @keyframes mymove1 {
+          from{top:0px;}
+          to{top:-80px;}
+        }
+
+        .act{
+          background-image: url("../../style/img/agent-2x-bg.png");
+        }
+
+        .img-agent .sel-img{
+          background-image: url("../../style/img/agent-2x-bg.png");
+        }
+        .img-system .sel-img{
           background-image: url("../../style/img/system-2x-bg.png");
         }
-        .img-discounts.sel-img{
+        .img-discounts .sel-img{
           background-image: url("../../style/img/discounts-2x-bg.png");
         }
-        .img-financial.sel-img{
+        .img-financial .sel-img{
           background-image: url("../../style/img/financial-2x-bg.png");
         }
-        .img-statement.sel-img{
+        .img-statement .sel-img{
           background-image: url("../../style/img/statement-2x-bg.png");
         }
-        .img-game.sel-img{
+        .img-game .sel-img{
           background-image: url("../../style/img/game-2x-bg.png");
         }
-        .img-backstage.sel-img{
+        .img-backstage .sel-img{
           background-image: url("../../style/img/backstage-2x-bg.png");
         }
       
@@ -253,8 +276,6 @@
            
             height: 20px;
             width: 20px;
-           // padding-left: 20px;
-  
           }
         }
        
@@ -318,6 +339,13 @@
             width: 10px;
             height: 10px;
             background:url("../../style/img/symbol-bottom-blue.png");
+            background-repeat: no-repeat;
+            background-size: 10px 10px;
+          }
+          .bottom-icon-orange{
+            width: 10px;
+            height: 10px;
+            background:url("../../style/img/symbol-bottom-orange.png");
             background-repeat: no-repeat;
             background-size: 10px 10px;
           }

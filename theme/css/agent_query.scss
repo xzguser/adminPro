@@ -15,259 +15,296 @@
 
             width: 1900px;
             height: 830px;
-            
-            .insert-user{
-                height: 77px;
-                width: 100%;
-               
-                display: flex;
-                .insert-con{
-                    margin-left: 21px;
-                   
-                    font-family: $font-family;
-                    font-size: 16px;
-                    font-weight: bold;
-                    align-items: center;
-                    display: flex;
-                    text-align: left;
-                 
-                }
-            }
-            .datum-title{
-                height: 73px;
-                // width: 100%;
-                padding-left: 21px;
-
-            }
-
-            .form-main-content{
-                padding-left: 21px;
-                // width: 100%;
-              
-                .table1-con{
-                    height: 83px;
-                    width:100%;
-                    // background: #308769;
-                    display: flex;
-                    .row-vel{
-                        height: 100%;
-                        width: 280px;
-                        font-family: $font-family;
-                        position: relative;
-                        .form-top-title{
-                            position: absolute;
-                            bottom: 30px;
-                            height: 43px;
-                            width: 230px;
+            .main-content1{
+                .switch-module1{
+                    .insert-user{
+                        height: 77px;
+                        width: 100%;
+                    
+                        display: flex;
+                        .insert-con{
+                            margin-left: 21px;
+                        
+                            font-family: $font-family;
+                            font-size: 16px;
                             font-weight: bold;
-                            font-size: 16px;
                             align-items: center;
                             display: flex;
-                            color: #333333;
+                            text-align: left;
+                        
                         }
-                        .form-bottom-account{
-                            position: absolute;
-                            bottom: 0px;
-                            height: 30px;
-                            width: 230px;
-                            border: solid 1px #d8d8d8;
-                            font-size: 16px;
-                            align-items: center;
-                            display: flex;
-                            color: #333333;
-                            border-radius: 5px;
-                            background: #e2e2e2;
-                        }
-                        .form-bottom-input{
-                            position: absolute;
-                            bottom: 0px;
-                            height: 30px;
-                            width: 230px;
-                            border: solid 1px #d8d8d8;
-                            font-size: 16px;
-                            align-items: center;
-                            display: flex;
-                            color: #333333;
-                            border-radius: 5px;
-                         
-                        }
-                      
                     }
-                }
+                    .datum-title{
+                        height: 73px;
+                        // width: 100%;
+                        padding-left: 21px;
 
-                .table2-con{
-                    height: 91px;
-                    width:100%;
-                  
-                    display: flex;
-                    .row-vel{
-                        height: 100%;
-                        width: 280px;
-                        font-family: $font-family;
-                        position: relative;
-                        .form-top-title{
-                            position: absolute;
-                            bottom: 30px;
-                            height: 43px;
-                            width: 230px;
-                            font-weight: bold;
-                            font-size: 16px;
-                            align-items: center;
-                            display: flex;
-                            color: #333333;
-                        }
-                     
-                        .form-bottom-input{
-                            position: absolute;
-                            bottom: 0px;
-                            height: 30px;
-                            width: 230px;
-                            border: solid 1px #d8d8d8;
-                            font-size: 16px;
-                            align-items: center;
-                            display: flex;
-                            color: #333333;
-                            border-radius: 5px;
-                         
-                        }
-                      
                     }
-                }
 
-                .table3-con{
-                    height: 91px;
-                    width:100%;
-                    display: flex;
-                    .row-vel{
-                        height: 100%;
-                        width: 280px;
-                        position: relative;
-                        font-family: $font-family;
-                        .form-top-title{
-                            position: absolute;
-                            bottom: 30px;
-                            height: 43px;
-                            width: 230px;
-                            font-weight: bold;
-                            font-size: 16px;
-                            align-items: center;
+                    .form-main-content{
+                        padding-left: 21px;
+                        // width: 100%;
+                    
+                        .table1-con{
+                            height: 83px;
+                            width:100%;
+                            // background: #308769;
                             display: flex;
-                            color: #333333;
-                        }
-                     
-                        .form-bottom-input{
-                            position: absolute;
-                            bottom: 0px;
-                            height: 30px;
-                            width: 230px;
-                            border: solid 1px #d8d8d8;
-                            font-size: 16px;
-                            align-items: center;
-                            display: flex;
-                            color: #333333;
-                            border-radius: 5px;
-                        }
-                        .form-bottom-span{
-                            position: absolute;
-                            bottom: 0px;
-                            height: 30px;
-                            width: 230px;
-                           
-                            font-size: 16px;
-                            align-items: center;
-                            display: flex;
-                            color: #666666;
-                            border-radius: 5px;
-                        }
-                        .form-bottom-content{
-                            position: absolute;
-                            bottom: 0px;
-                            height: 30px;
-                            width: 230px;
-                           
-                            font-size: 16px;
-                            align-items: center;
-                            display: flex;
-                            .form-bottom-checkbox{
-                                width: 18px;
-                                height: 18px;
+                            .row-vel{
+                                height: 100%;
+                                width: 280px;
+                                font-family: $font-family;
+                                position: relative;
+                                .form-top-title{
+                                    position: absolute;
+                                    bottom: 30px;
+                                    height: 43px;
+                                    width: 230px;
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                                    color: #333333;
+                                }
+                                .form-bottom-account{
+                                    position: absolute;
+                                    bottom: 0px;
+                                    height: 30px;
+                                    width: 230px;
+                                    border: solid 1px #d8d8d8;
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                                    color: #333333;
+                                    border-radius: 5px;
+                                    background: #e2e2e2;
+                                }
+                                .form-bottom-input{
+                                    position: absolute;
+                                    bottom: 0px;
+                                    height: 30px;
+                                    width: 230px;
+                                    border: solid 1px #d8d8d8;
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                                    color: #333333;
+                                    border-radius: 5px;
                                 
-                                margin-right: 5px;
+                                }
+                            
                             }
-                            .form-bottom-sel{
-                                width: 16px;
-                                height: 21px;
-                                margin-right: 22px;
-                                font-family:$font-family;
-                                font-size: 16px;
-                                font-weight: normal;
-                                font-style: normal;
-                                font-stretch: normal;
-                                letter-spacing: normal;
-                                color: #666666;
+                        }
+
+                        .table2-con{
+                            height: 91px;
+                            width:100%;
+                        
+                            display: flex;
+                            .row-vel{
+                                height: 100%;
+                                width: 280px;
+                                font-family: $font-family;
+                                position: relative;
+                                .form-top-title{
+                                    position: absolute;
+                                    bottom: 30px;
+                                    height: 43px;
+                                    width: 230px;
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                                    color: #333333;
+                                }
+                            
+                                .form-bottom-input{
+                                    position: absolute;
+                                    bottom: 0px;
+                                    height: 30px;
+                                    width: 230px;
+                                    border: solid 1px #d8d8d8;
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                                    color: #333333;
+                                    border-radius: 5px;
+                                
+                                }
+                            
                             }
+                        }
+
+                        .table3-con{
+                            height: 91px;
+                            width:100%;
+                            display: flex;
+                            .row-vel{
+                                height: 100%;
+                                width: 280px;
+                                position: relative;
+                                font-family: $font-family;
+                                .form-top-title{
+                                    position: absolute;
+                                    bottom: 30px;
+                                    height: 43px;
+                                    width: 230px;
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                                    color: #333333;
+                                }
+                            
+                                .form-bottom-input{
+                                    position: absolute;
+                                    bottom: 0px;
+                                    height: 30px;
+                                    width: 230px;
+                                    border: solid 1px #d8d8d8;
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                                    color: #333333;
+                                    border-radius: 5px;
+                                }
+                                .form-bottom-span{
+                                    position: absolute;
+                                    bottom: 0px;
+                                    height: 30px;
+                                    width: 230px;
+                                
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                                    color: #666666;
+                                    border-radius: 5px;
+                                }
+                                .form-bottom-content{
+                                    position: absolute;
+                                    bottom: 0px;
+                                    height: 30px;
+                                    width: 230px;
+                                
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                                    .form-bottom-checkbox{
+                                        width: 18px;
+                                        height: 18px;
+                                        
+                                        margin-right: 5px;
+                                    }
+                                    .form-bottom-sel{
+                                        width: 16px;
+                                        height: 21px;
+                                        margin-right: 22px;
+                                        font-family:$font-family;
+                                        font-size: 16px;
+                                        font-weight: normal;
+                                        font-style: normal;
+                                        font-stretch: normal;
+                                        letter-spacing: normal;
+                                        color: #666666;
+                                    }
+                                }
+                            }
+                        }
+
+                        .table4-con{
+                            height: 91px;
+                            width:100%;
+                            display: flex;
+                            .row-vel{
+                                height: 100%;
+                                width: 280px;
+                                font-family: $font-family;
+                                position: relative;
+                                .form-top-title{
+                                    position: absolute;
+                                    bottom: 30px;
+                                    height: 43px;
+                                    width: 230px;
+                                    font-weight: bold;
+                                
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                                    color: #333333;
+                                }
+                            
+                            
+                                .form-bottom-span{
+                                    position: absolute;
+                                    bottom: 0px;
+                                    height: 30px;
+                                    width: 230px;
+                                
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                                    color: #666666;
+                            
+                                }
+                                .form-bottom-a{
+                                    color: #0099ff;
+                                    position: absolute;
+                                    bottom: 0px;
+                                    height: 30px;
+                                    width: 230px;
+                                    font-size: 16px;
+                                    align-items: center;
+                                    display: flex;
+                            
+                                }
+                            }
+                        }
+
+                        .btn-con{
+                            width: 100%;
+                            // height: 76px;
+                            margin-top: 23px;
+                            display: flex;
+                        
+                            
                         }
                     }
                 }
-
-                .table4-con{
-                    height: 91px;
-                    width:100%;
-                    display: flex;
-                    .row-vel{
-                        height: 100%;
-                        width: 280px;
-                        font-family: $font-family;
-                        position: relative;
-                        .form-top-title{
-                            position: absolute;
-                            bottom: 30px;
-                            height: 43px;
-                            width: 230px;
-                            font-weight: bold;
-                           
-                            font-size: 16px;
-                            align-items: center;
-                            display: flex;
-                            color: #333333;
-                        }
-                     
-                     
-                        .form-bottom-span{
-                            position: absolute;
-                            bottom: 0px;
-                            height: 30px;
-                            width: 230px;
-                           
-                            font-size: 16px;
-                            align-items: center;
-                            display: flex;
-                            color: #666666;
-                       
-                        }
-                        .form-bottom-a{
-                            color: #0099ff;
-                            position: absolute;
-                            bottom: 0px;
-                            height: 30px;
-                            width: 230px;
-                            font-size: 16px;
-                            align-items: center;
-                            display: flex;
-                    
-                        }
-                    }
-                }
-
-                .btn-con{
-                    width: 100%;
-                    // height: 76px;
-                    margin-top: 23px;
-                    display: flex;
-                   
-                    
+                .switch-module2{
+                    margin-top: 20px;
+                    margin-left: 21px;
                 }
             }
+            .main-content2{
+            
+              
+                .switch-module1{
+                  margin-left: 21px;
+                }
+                .switch-module2{
+                  margin-left: 21px;
+                }
+              }
+              .main-content3{
+               
+                
+                  .switch-module1{
+                      margin-left: 21px;
+                    }
+                  .switch-module2{
+                      margin-left: 21px;
+                  }
+              }
+              .main-content4{
+             
+               
+                  .switch-module1{
+                      margin-left: 21px;
+                    }
+                  .switch-module2{
+                      margin-left: 21px;
+                  }
+              }
         }
 
     }

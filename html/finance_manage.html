@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>财政管理-公司金流管理-入款管理</title>
-		<script src="../js/jquery/jquery-1.8.3.js"></script>
+		<!-- <script src="../js/jquery/jquery-1.8.3.js"></script> -->
 		<link rel="stylesheet" href="../style/css/style.css">
 	</head>
 	
@@ -18,31 +18,41 @@
 						<div class="head-option" header-img="header-img">
 							<a href="user_query.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-agent "></div>
+									<div class="img-row img-agent ">
+										<div class="img-row1"></div>
+									</div>
 									<div class="title-row">会员代理商</div>
 								</div>
 							</a>
 							<a href="system_manage_com.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-system" ></div>
+									<div class="img-row img-system" >
+										<div class="img-row1"></div>
+									</div>
 									<div class="title-row">系统管理</div>
 								</div>
 							</a>
 							<a href="discounts_manage.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-discounts" ></div>
+									<div class="img-row img-discounts" >
+										<div class="img-row1"></div>
+									</div>
 									<div class="title-row">优惠管理</div>
 								</div>
 							</a>
-							<a href="finance_manage.html" class="green-text" img-Switch="img-Switch">
+							<a href="javascript:void(0)" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-financial sel-img" ></div>
+									<div class="img-row img-financial " >
+										<div class="img-row1 sel-img"></div>
+									</div>
 									<div class="title-row">财务管理</div>
 								</div>
 							</a>
 							 <a href="javascript:void(0)" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-statement" ></div>
+									<div class="img-row img-statement" >
+										<div class="img-row1 "></div>
+									</div>
 		
 									<div class="title-row">报表汇出</div>
 								</div>
@@ -51,14 +61,18 @@
 		
 							<a href="game_manage.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-game"></div>
+									<div class="img-row img-game">
+										<div class="img-row1 "></div>
+									</div>
 									<div class="title-row">游戏管理</div>
 								</div>
 							</a>
 		
 							<a href="authority_manage.html" class="green-text" img-Switch="img-Switch">
 								<div class="option-row">
-									<div class="img-row img-backstage"></div>
+									<div class="img-row img-backstage">
+										<div class="img-row1 "></div>
+									</div>
 			
 									<div class="title-row">后台管理</div>
 								</div>
@@ -108,8 +122,8 @@
 			</div>
 
 			<!-- 选项栏 -->
-			<div class="navigation_bar green-bg" navi-bg="navi-bg">
-				<div class="bar-btn green-btn">
+			<div class="navigation_bar green-bg" bar-hurdle="bar-hurdle">
+				<div class="bar-btn green-bar-btn">
 					<div class="bar-btn-txt">公司金流管理</div>
 				</div>
 				<div class="bar-btn">
@@ -141,7 +155,7 @@
 						<span class="arrows-module">
 							<img class="icon-right" src="../style/img/symbol-right.png" alt="">
 						</span>
-						<span class="title-first">公司金流管理</span>
+						<span class="title-first" title-con="title-con">公司金流管理</span>
 						<!-- 栏位筛选 -->
 						<div class="filtrate-btn">
 								栏位筛选
@@ -163,434 +177,470 @@
 					
 						
 					</div>
-					<div class="form-content">
-						<div class="top-module-row" top-module="top-module">
+					<div class="form-content" form-control="form-control">
+						<div class="main-content1 " main-con="main-con">
+							<div class="top-module-row" top-module="top-module">
 								<div class="select-module green-tar">入款管理</div>
 								<div class="select-module">系统交易</div>
 								<div class="select-module">代付设定</div>
 								<div class="select-module">存款方式设定</div>
 								<div class="select-module">交易统计</div>
-
-						</div>
-						<div class="row-vel">
-							<span class="left-title">入款管理：</span>
-							<select class="form-w100 distance-s">
-								<option value="0">不更新</option>
-							</select>
-							<select class="form-w85">
-								<option value="0">更新</option>
-							</select>
-						</div>
-						<div class="row-vel">
-							<span class="left-title">站台名称：</span>
-							<select class="form-w205">
-								<option value="0">A100-测试站-DEMO</option>
-							</select>
-						</div>
-						<div class="row-vel">
-							<span class="left-title">查询时间：</span>
-							
-							<div class="date-vel-01">
-									<div class="date-vel">
-										<input class="date-con" type="date" value="2019-02-03">
-									</div>
-									<span class="symbol-w5"></span>
-									<select class="form-w70">
-										<option value="0">00</option>
-									</select>
-									<span class="symbol-w10">:</span>
-									<select class="form-w70">
-										<option value="0">00</option>
-									</select>
-									<span class="symbol-w10">:</span>
-									<select class="form-w70">
-										<option value="0">00</option>
-									</select>
 							</div>
-						
-							<span class="symbol-w25">~</span>
-
-							<div class="date-vel-02">
-								<div class="date-vel">
-									<input class="date-con" type="date" value="2019-02-03">
-								</div>
-								<span class="symbol-w5"></span>
-								<select class="form-w70">
-									<option value="0">00</option>
-								</select>
-								<span class="symbol-w10">:</span>
-								<select class="form-w70">
-									<option value="0">00</option>
-								</select>
-								<span class="symbol-w10">:</span>
-								<select class="form-w70">
-									<option value="0">00</option>
-								</select>
-							</div>
-								<div class="date-vel-03" btn-color="btn-color">
-
-									<div class="btn-general green-btn" >
-
-										<a href="javascript:void(0)">今天</a>
-									</div>
-									<div class="btn-general " >
-									
-										<a href="javascript:void(0)">昨天</a>
-									</div>
-									<div class="btn-general " >
+							<div class="switch-module1" >
+									<div class="row-vel">
+											<span class="left-title">入款管理：</span>
+											<select class="form-w100 distance-s">
+												<option value="0">不更新</option>
+											</select>
+											<select class="form-w85">
+												<option value="0">更新</option>
+											</select>
+										</div>
+										<div class="row-vel">
+											<span class="left-title">站台名称：</span>
+											<select class="form-w205">
+												<option value="0">A100-测试站-DEMO</option>
+											</select>
+										</div>
+										<div class="row-vel">
+											<span class="left-title">查询时间：</span>
+											
+											<div class="date-vel-01">
+													<div class="date-vel">
+														<input class="date-con" type="date" value="2019-02-03">
+													</div>
+													<span class="symbol-w5"></span>
+													<select class="form-w70">
+														<option value="0">00</option>
+													</select>
+													<span class="symbol-w10">:</span>
+													<select class="form-w70">
+														<option value="0">00</option>
+													</select>
+													<span class="symbol-w10">:</span>
+													<select class="form-w70">
+														<option value="0">00</option>
+													</select>
+											</div>
 										
-										<a href="javascript:void(0)">上周</a>
-									</div>
-									<div class="btn-general " >
-											<a href="javascript:void(0)">本周</a>
-										
-									</div>
-									<div class="btn-general " >
-									
-										<a href="javascript:void(0)">上月</a>
-									</div>
-									<div class="btn-general " >
-										
-										<a href="javascript:void(0)">本月</a>
-									</div>
-								</div>
-							<div class="abs-con">北京时间:2018-09-24 12:00:00到2018-10-01 12:00:00</div>
-							
-						</div>
-
-						<div class="row-vel-01">
-							<div class="module-con mod-abs">
-								<div class="module-left ">交易码：</div>
-								<input type="text" class="inp-w140 rig-abs">
-							</div>
-							<div class="module-con">
-								<div class="module-left">金额范围：</div>
-								<input type="text" class="inp-w140">
-								<span class="symbol-w25">~</span>
-								<input type="text" class="inp-w140">
-							</div>
-						</div>
-						<div class="row-vel-01 row-vel-02">
-							<div class="module-con">
-								<div class="module-left">代理帐号：</div>
-								<select class="form-w140"></select>
-							</div>
-							<div class="module-con">
-								<div class="module-left">筛选条件：</div>
-								<select class="form-w140 mar-distance">
-									<option value="0">---全部---</option>
-								</select>
-								<input type="text" class="inp-w190">
-							</div>
-							<div class="module-con">
-								<div class="module-left">排序规则：</div>
-								<select class="form-w140">
-									<option value="0">---默认---</option>
-								</select>
-							</div>
-							<div class="module-con">
-								<div class="module-left">入款途径：</div>
-								<select class="form-w140">
-									<option value="0">---全部---</option>
-								</select>
-							</div>
-							<div class="module-con">
-								<div class="module-left">支付类型：</div>
-								<select class="form-w140">
-									<option value="0">---全部---</option>
-								</select>
-							</div>
-					
-						</div>
-						<div class="row-vel-01 row-vel-03">
-							<div class="module-con">
-								<div class="module-left">交易方式：</div>
-								<select class="form-w140" >
-									<option value="0">---全部---</option>
-								</select>
-							</div>
-							<div class="module-con">
-								<div class="module-left">付款方式：</div>
-								<select class="form-w150" >
-									<option value="0">---全部---</option>
-								</select>
-							</div>
-							<div class="module-con">
-								<div class="module-left">支付银行：</div>
-								<select class="form-w230" >
-									<option value="0"></option>
-								</select>
-							</div>
-							<div class="module-con">
-								<div class="module-left">收款银行：</div>
-								<select class="form-w230" >
-									<option value="0"></option>
-								</select>
-							</div>
-							<div class="module-con">
-								<div class="module-left">层级：</div>
-								<select class="form-w192" >
-									<option value="0">---全部---</option>
-								</select>
-							</div>
-						</div>
-
-						<div class="row-vel-01 row-vel-03">
-							<div class="module-con">
-								<div class="module-left">交易方式：</div>
-								<div class="module-right">
-									<input type="checkbox" class="checkbox-che" checked>
-									<span class="che-text">处理中</span>
-									<input type="checkbox" class="checkbox-che" >
-									<span class="che-text">交易成功</span>
-									<input type="checkbox" class="checkbox-che" >
-									<span class="che-text">交易终止</span>
-								</div>
-							</div>
-						
-						</div>
-						<div class="row-vel-01 row-vel-03">
-							<div class="module-con">
-								<div class="module-left">交易方式：</div>
-								<div class="module-right">
-									<input type="checkbox" class="checkbox-che" checked>
-									<span class="che-text">线上存款</span>
-									<input type="checkbox" class="checkbox-che" >
-									<span class="che-text">线下存款</span>
-									<input type="checkbox" class="checkbox-che" >
-									<span class="che-text">更新</span>
-									<input type="checkbox" class="checkbox-che" >
-									<span class="che-text">警示金额</span>
-									<input type="checkbox" class="checkbox-che" >
-									<span class="che-text">未完成交易</span>
-								</div>
-							</div>
-						
-						</div>
-
-						<div class="query-vel">
-								<div class="btn-submit green-btn" data-submit="data-submit">
-									<a href="javascript:void(0)">查询</a>
-								</div>
-						</div>
-						<div class="third-vel">
-							<div class="third-left">入款管理列表</div>
-							<div class="third-right">汇出Excel</div>
-						</div>
-
-						<div class="table-vel">
-								<table class="table-01 table-width">
-										<tbody>
-											<tr class="table-head green-header-bg" table-hea-bg="table-hea-bg">
-											<td>
-												<div>	
-													<input type="checkbox" class="check-box" />
+											<span class="symbol-w25">~</span>
+		
+											<div class="date-vel-02">
+												<div class="date-vel">
+													<input class="date-con" type="date" value="2019-02-03">
 												</div>
-											</td>
-											<td>
-												<div>交易码</div>
-											</td>
-											<td>
-												<div>会员帐号</div>
-											</td>
-											<td>
-												<div>代理层级</div>
-											</td>
-											<td>
-												<div>交易资讯</div>
-											</td>
-											<td>
-												<div>原始金额</div>
-											</td>
-											<td>
-												<div>入款金额</div>
-											</td>
-											<td>
-												<div>存款优惠</div>
-											</td>
-											<td>
-												<div>到账金额</div>
-											</td>
-											<td>
-												<div>账户余额</div>
-											</td>
-											<td>
-												<div>交易状态</div>
-											</td>
-											<td>
-												<div>备注</div>
-											</td>
-											<td>
-												<div>操作</div>
-											</td>
-											<td class="lastCol">
-												<div>更新人</div>
-											</td>
-											</tr>
-										</tbody>
-										<tbody>
-											<tr class="table-content">
-												<td>
-													<div class="td-div">
-														<input type="checkbox" class="check-box">
+												<span class="symbol-w5"></span>
+												<select class="form-w70">
+													<option value="0">00</option>
+												</select>
+												<span class="symbol-w10">:</span>
+												<select class="form-w70">
+													<option value="0">00</option>
+												</select>
+												<span class="symbol-w10">:</span>
+												<select class="form-w70">
+													<option value="0">00</option>
+												</select>
+											</div>
+												<div class="date-vel-03" btn-color="btn-color">
+		
+													<div class="btn-general green-btn" >
+		
+														<a href="javascript:void(0)">今天</a>
 													</div>
-												</td>
-												<td>
-													<div class="td-div">201810010324222624</div>
-												</td>
-												<td>
-													<div class="td-div">JOANN321</div>
-												</td>
-												<td>
-													<div class="td-div ">Test-Jacky</div>
-													<div class="td-div">K1Z61</div>
-												</td>
-												<td>
-													<div class="td-div new-div" >
-														<span >支付途径：</span>
-														<span class="blue-color">祥云支付宝[180761041]</span>
-													</div>
-													<div class="td-div new-div" >账户名称：</div>
-													<div class="td-div new-div" >交易方式：线上存款</div>		
-												</td>
-												<td>
-													<div class="td-div">212.00</div>
-												</td>
-												<td>
-													<div class="td-div">1.00</div>
-												</td>
-												<td>
-													<div class="td-div blue-color">5.00</div>
-												</td>
-												<td>
-													<div class="td-div">6.00</div>
-												</td>
-												<td>
-													<div class="td-div">218.00</div>
-												</td>
-												<td>
-													<div class="td-div">交易成功</div>
-												</td>
-												<td>
-													<div class="td-div red-color">新增</div>
-												</td>
-												<td>
+													<div class="btn-general " >
 													
-												</td>
-												<td class="lastCol">
-													<div class="td-div">MUZIC</div>
-													<div class="td-div">2018-10-01</div>
-													<div class="td-div">10:26:23</div>
-												</td>
-											</tr>
-											<tr class="table-content lastrow">
-													<td>
-														<div class="td-div">
-															<input type="checkbox" class="check-box">
-														</div>
-													</td>
-													<td>
-														<div class="td-div">201810010324222624</div>
-													</td>
-													<td>
-														<div class="td-div">JOANN321</div>
-													</td>
-													<td>
-														<div class="td-div ">Test-Jacky</div>
-														<div class="td-div">K1Z61</div>
-													</td>
-													<td>
-														<div class="td-div new-div" >
-															<span >支付途径：</span>
-															<span class="blue-color">祥云支付宝[180761041]</span>
-														</div>
-														<div class="td-div new-div" >账户名称：</div>
-														<div class="td-div new-div" >交易方式：线上存款</div>		
-													</td>
-													<td>
-														<div class="td-div">212.00</div>
-													</td>
-													<td>
-														<div class="td-div">1.00</div>
-													</td>
-													<td>
-														<div class="td-div blue-color">5.00</div>
-													</td>
-													<td>
-														<div class="td-div">6.00</div>
-													</td>
-													<td>
-														<div class="td-div">218.00</div>
-													</td>
-													<td>
-														<div class="td-div">交易成功</div>
-													</td>
-													<td>
-														<div class="td-div red-color">新增</div>
-													</td>
-													<td>
+														<a href="javascript:void(0)">昨天</a>
+													</div>
+													<div class="btn-general " >
 														
-													</td>
-													<td class="lastCol">
-														<div class="td-div">MUZIC</div>
-														<div class="td-div">2018-10-01</div>
-														<div class="td-div">10:26:23</div>
-													</td>
-											</tr>
+														<a href="javascript:void(0)">上周</a>
+													</div>
+													<div class="btn-general " >
+															<a href="javascript:void(0)">本周</a>
+														
+													</div>
+													<div class="btn-general " >
+													
+														<a href="javascript:void(0)">上月</a>
+													</div>
+													<div class="btn-general " >
+														
+														<a href="javascript:void(0)">本月</a>
+													</div>
+												</div>
+											<div class="abs-con">北京时间:2018-09-24 12:00:00到2018-10-01 12:00:00</div>
+											
+										</div>
+		
+										<div class="row-vel-01">
+											<div class="module-con mod-abs">
+												<div class="module-left ">交易码：</div>
+												<input type="text" class="inp-w140 rig-abs">
+											</div>
+											<div class="module-con">
+												<div class="module-left">金额范围：</div>
+												<input type="text" class="inp-w140">
+												<span class="symbol-w25">~</span>
+												<input type="text" class="inp-w140">
+											</div>
+										</div>
+										<div class="row-vel-01 row-vel-02">
+											<div class="module-con">
+												<div class="module-left">代理帐号：</div>
+												<select class="form-w140"></select>
+											</div>
+											<div class="module-con">
+												<div class="module-left">筛选条件：</div>
+												<select class="form-w140 mar-distance">
+													<option value="0">---全部---</option>
+												</select>
+												<input type="text" class="inp-w190">
+											</div>
+											<div class="module-con">
+												<div class="module-left">排序规则：</div>
+												<select class="form-w140">
+													<option value="0">---默认---</option>
+												</select>
+											</div>
+											<div class="module-con">
+												<div class="module-left">入款途径：</div>
+												<select class="form-w140">
+													<option value="0">---全部---</option>
+												</select>
+											</div>
+											<div class="module-con">
+												<div class="module-left">支付类型：</div>
+												<select class="form-w140">
+													<option value="0">---全部---</option>
+												</select>
+											</div>
+									
+										</div>
+										<div class="row-vel-01 row-vel-03">
+											<div class="module-con">
+												<div class="module-left">交易方式：</div>
+												<select class="form-w140" >
+													<option value="0">---全部---</option>
+												</select>
+											</div>
+											<div class="module-con">
+												<div class="module-left">付款方式：</div>
+												<select class="form-w150" >
+													<option value="0">---全部---</option>
+												</select>
+											</div>
+											<div class="module-con">
+												<div class="module-left">支付银行：</div>
+												<select class="form-w230" >
+													<option value="0"></option>
+												</select>
+											</div>
+											<div class="module-con">
+												<div class="module-left">收款银行：</div>
+												<select class="form-w230" >
+													<option value="0"></option>
+												</select>
+											</div>
+											<div class="module-con">
+												<div class="module-left">层级：</div>
+												<select class="form-w192" >
+													<option value="0">---全部---</option>
+												</select>
+											</div>
+										</div>
+		
+										<div class="row-vel-01 row-vel-03">
+											<div class="module-con">
+												<div class="module-left">交易方式：</div>
+												<div class="module-right">
+													<input type="checkbox" class="checkbox-che" checked>
+													<span class="che-text">处理中</span>
+													<input type="checkbox" class="checkbox-che" >
+													<span class="che-text">交易成功</span>
+													<input type="checkbox" class="checkbox-che" >
+													<span class="che-text">交易终止</span>
+												</div>
+											</div>
 										
-										</tbody>
-									</table>
-						</div>
-
-						<div class="paging-vel">
-							<div class="page-content">
-									<div class="page-number">
-										<select class="page-sel">
-											<option>10</option>
-										</select>
-									</div>
-									<!--    左边-->
-									<div class="page-left">
-										<div class="page-left-first">
-											<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-												../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
 										</div>
-										<div class="page-left-polygon">
-											<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
-												../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+										<div class="row-vel-01 row-vel-03">
+											<div class="module-con">
+												<div class="module-left">交易方式：</div>
+												<div class="module-right">
+													<input type="checkbox" class="checkbox-che" checked>
+													<span class="che-text">线上存款</span>
+													<input type="checkbox" class="checkbox-che" >
+													<span class="che-text">线下存款</span>
+													<input type="checkbox" class="checkbox-che" >
+													<span class="che-text">更新</span>
+													<input type="checkbox" class="checkbox-che" >
+													<span class="che-text">警示金额</span>
+													<input type="checkbox" class="checkbox-che" >
+													<span class="che-text">未完成交易</span>
+												</div>
+											</div>
+										
 										</div>
-									</div>
-									<!--    中间-->
-									<div class="page-center">
-										<span>Page</span>
-										<input value="10">
-										<div class="of-page">
-											<sapn>of</sapn>
-											<sapn>41</sapn>
+		
+										<div class="query-vel">
+												<div class="btn-submit green-btn" data-submit="data-submit">
+													<a href="javascript:void(0)">查询</a>
+												</div>
 										</div>
-									</div>
-									<!--    右边-->
-									<div class="page-right">
-										<div class="page-right-polygon">
-											<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
-												../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+										<div class="third-vel">
+											<div class="third-left">入款管理列表</div>
+											<div class="third-right">汇出Excel</div>
 										</div>
-										<div class="page-right-first">
-											<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-												../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
+		
+										<div class="table-vel">
+												<table class="table-01 table-width">
+														<tbody>
+															<tr class="table-head green-header-bg" table-hea-bg="table-hea-bg">
+															<td>
+																<div>	
+																	<input type="checkbox" class="check-box" />
+																</div>
+															</td>
+															<td>
+																<div>交易码</div>
+															</td>
+															<td>
+																<div>会员帐号</div>
+															</td>
+															<td>
+																<div>代理层级</div>
+															</td>
+															<td>
+																<div>交易资讯</div>
+															</td>
+															<td>
+																<div>原始金额</div>
+															</td>
+															<td>
+																<div>入款金额</div>
+															</td>
+															<td>
+																<div>存款优惠</div>
+															</td>
+															<td>
+																<div>到账金额</div>
+															</td>
+															<td>
+																<div>账户余额</div>
+															</td>
+															<td>
+																<div>交易状态</div>
+															</td>
+															<td>
+																<div>备注</div>
+															</td>
+															<td>
+																<div>操作</div>
+															</td>
+															<td class="lastCol">
+																<div>更新人</div>
+															</td>
+															</tr>
+														</tbody>
+														<tbody>
+															<tr class="table-content">
+																<td>
+																	<div class="td-div">
+																		<input type="checkbox" class="check-box">
+																	</div>
+																</td>
+																<td>
+																	<div class="td-div">201810010324222624</div>
+																</td>
+																<td>
+																	<div class="td-div">JOANN321</div>
+																</td>
+																<td>
+																	<div class="td-div ">Test-Jacky</div>
+																	<div class="td-div">K1Z61</div>
+																</td>
+																<td>
+																	<div class="td-div new-div" >
+																		<span >支付途径：</span>
+																		<span class="blue-color">祥云支付宝[180761041]</span>
+																	</div>
+																	<div class="td-div new-div" >账户名称：</div>
+																	<div class="td-div new-div" >交易方式：线上存款</div>		
+																</td>
+																<td>
+																	<div class="td-div">212.00</div>
+																</td>
+																<td>
+																	<div class="td-div">1.00</div>
+																</td>
+																<td>
+																	<div class="td-div blue-color">5.00</div>
+																</td>
+																<td>
+																	<div class="td-div">6.00</div>
+																</td>
+																<td>
+																	<div class="td-div">218.00</div>
+																</td>
+																<td>
+																	<div class="td-div">交易成功</div>
+																</td>
+																<td>
+																	<div class="td-div red-color">新增</div>
+																</td>
+																<td>
+																	
+																</td>
+																<td class="lastCol">
+																	<div class="td-div">MUZIC</div>
+																	<div class="td-div">2018-10-01</div>
+																	<div class="td-div">10:26:23</div>
+																</td>
+															</tr>
+															<tr class="table-content lastrow">
+																	<td>
+																		<div class="td-div">
+																			<input type="checkbox" class="check-box">
+																		</div>
+																	</td>
+																	<td>
+																		<div class="td-div">201810010324222624</div>
+																	</td>
+																	<td>
+																		<div class="td-div">JOANN321</div>
+																	</td>
+																	<td>
+																		<div class="td-div ">Test-Jacky</div>
+																		<div class="td-div">K1Z61</div>
+																	</td>
+																	<td>
+																		<div class="td-div new-div" >
+																			<span >支付途径：</span>
+																			<span class="blue-color">祥云支付宝[180761041]</span>
+																		</div>
+																		<div class="td-div new-div" >账户名称：</div>
+																		<div class="td-div new-div" >交易方式：线上存款</div>		
+																	</td>
+																	<td>
+																		<div class="td-div">212.00</div>
+																	</td>
+																	<td>
+																		<div class="td-div">1.00</div>
+																	</td>
+																	<td>
+																		<div class="td-div blue-color">5.00</div>
+																	</td>
+																	<td>
+																		<div class="td-div">6.00</div>
+																	</td>
+																	<td>
+																		<div class="td-div">218.00</div>
+																	</td>
+																	<td>
+																		<div class="td-div">交易成功</div>
+																	</td>
+																	<td>
+																		<div class="td-div red-color">新增</div>
+																	</td>
+																	<td>
+																		
+																	</td>
+																	<td class="lastCol">
+																		<div class="td-div">MUZIC</div>
+																		<div class="td-div">2018-10-01</div>
+																		<div class="td-div">10:26:23</div>
+																	</td>
+															</tr>
+														
+														</tbody>
+													</table>
 										</div>
-								
-									</div>
-									<!--    刷新-->
-									<div class="ico-refresh">
-										<img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
-												../style/img/ic_refresh_24px@3x.png">
-									</div>
-									<div class="page-text">
-										<span>总单数406，当前专案1到10</span>
-									</div>
+		
+										<div class="paging-vel">
+											<div class="page-content">
+													<div class="page-number">
+														<select class="page-sel">
+															<option>10</option>
+														</select>
+													</div>
+													<!--    左边-->
+													<div class="page-left">
+														<div class="page-left-first">
+															<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+																../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
+														</div>
+														<div class="page-left-polygon">
+															<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+																../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+														</div>
+													</div>
+													<!--    中间-->
+													<div class="page-center">
+														<span>Page</span>
+														<input value="10">
+														<div class="of-page">
+															<sapn>of</sapn>
+															<sapn>41</sapn>
+														</div>
+													</div>
+													<!--    右边-->
+													<div class="page-right">
+														<div class="page-right-polygon">
+															<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+																../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+														</div>
+														<div class="page-right-first">
+															<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+																../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
+														</div>
+												
+													</div>
+													<!--    刷新-->
+													<div class="ico-refresh">
+														<img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
+																../style/img/ic_refresh_24px@3x.png">
+													</div>
+													<div class="page-text">
+														<span>总单数406，当前专案1到10</span>
+													</div>
+											</div>
+										</div>
 							</div>
+							<div class="switch-module2 hide" >
+								
+							</div>
+							<div class="switch-module3 hide" >代付设定</div>
+							<div class="switch-module4 hide" >存款方式设定</div>
+							<div class="switch-module5 hide" >交易统计</div>
 						</div>
+						<div class="main-content2 hide" main-con="main-con">
+								<div class="top-module-row" top-module="top-module">
+										<div class="select-module green-tar">第一</div>
+										<div class="select-module">第二</div>
+									
+								</div>
+								<div class="switch-module1" >第一内容</div>
+								<div class="switch-module2 hide" >第二内容</div>
+						</div>
+						<div class="main-content3 hide" main-con="main-con">
+							入款账户管理
+						</div>	
+						<div class="main-content4 hide" main-con="main-con">
+							支付商户管理
+						</div>	
+						<div class="main-content5 hide" main-con="main-con">
+							取消申请审核
+						</div>	
+						<div class="main-content6 hide" main-con="main-con">
+							转账额度审核
+						</div>	
+						<div class="main-content7 hide" main-con="main-con">
+							钱包管理
+						</div>	
+						<div class="main-content8 hide" main-con="main-con">
+							对账管理
+						</div>		
 					</div>
 				</div>
 		</div>
@@ -598,4 +648,5 @@
 	</body>
 </html>
 
-<script src="../js/jquery/setStyle.js"></script>
+<!-- <script src="../js/jquery/setStyle.js"></script> -->
+<script src="../dist/setStyle.js"></script>
