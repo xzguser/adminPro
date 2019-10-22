@@ -1,2213 +1,2220 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>财政管理</title>
-		<!-- <script src="../js/jquery/jquery-1.8.3.js"></script> -->
-		<link rel="stylesheet" href="../style/css/style.css">
-	</head>
-	
-	<body>
-		<div class="finance-page">
-			<!-- 头部 -->
-			<div class="head-page">
-					<div class="head-content ">
-						<div class="head-Path">
-							<img src="../style/img/logo.png" alt="" class="logo-img">
-						</div>
-						<div class="head-option" header-img="header-img">
-							<a href="user_query.html" class="blue-text" img-switch="img-Switch">
-								<div class="option-row">
-									<div class="img-row img-agent ">
-										<div class="img-row1"></div>
-									</div>
-									<div class="img-bg img-agent-bg">
-		
-									</div>
-									<div class="title-row">会员代理商</div>
-								</div>
-							</a>
-							<a href="system_manage_com.html" class="blue-text" img-switch="img-Switch">
-								<div class="option-row">
-									<div class="img-row img-system">
-										<div class="img-row1 "></div>
-									</div>
-									<div class="img-bg img-system-bg">
-		
-									 </div>
-									<div class="title-row">系统管理</div>
-								</div>
-							</a>
-							<a href="discounts_manage.html" class="blue-text" img-switch="img-Switch">
-								<div class="option-row">
-									<div class="img-row img-discounts">
-										<div class="img-row1 "></div>
-									</div>
-									<div class="img-bg img-discounts-bg"> </div>
-									<div class="title-row">优惠管理</div>
-								</div>
-							</a>
-							<a href="finance_manage.html" class="blue-text" img-switch="img-Switch">
-								<div class="option-row">
-									<div class="img-row img-financial">
-										<div class="img-row1 sel-img"></div>
-									</div>
-									<div class="img-bg img-financial-bg"> </div>
-									<div class="title-row">财务管理</div>
-								</div>
-							</a>
-							<a href="statement_manage.html" class="blue-text" img-switch="img-Switch">
-								<div class="option-row">
-									<div class="img-row img-statement">
-										<div class="img-row1"></div>  
-									</div>
-									<div class="img-bg img-statement-bg"> </div>
-									<div class="title-row">报表汇出</div>
-								</div>
-							</a>
-		
-		
-							<a href="game_manage.html" class="blue-text" img-switch="img-Switch">
-								<div class="option-row">
-									<div class="img-row img-game">
-										<div class="img-row1"></div>
-									</div>
-									<div class="img-bg img-game-bg"> </div>
-									<div class="title-row">游戏管理</div>
-								</div>
-							</a>
-		
-							<a href="authority_manage.html" class="blue-text" img-switch="img-Switch">
-								<div class="option-row">
-									<div class="img-row img-backstage">
-										<div class="img-row1"></div>
-									</div>
-									<div class="img-bg img-backstage-bg"> </div>
-									<div class="title-row">后台管理</div>
-								</div>
-							</a>
-						
-						</div>
-						<div class="right-title blue-text" header-nav="header-nav">
-					
-								<div class="dis-con blue-bor-right">
-									<div class="dis-con-a ">优惠上传</div>
-									
-								</div>
-								<div class="dis-con blue-bor-right">
-										<div class="dis-con-a ">在线客服</div>
-								</div>
-								<div class="dis-con-min blue-bor-right">
-										<div class="dis-con-a ">公告</div>
-								</div>
-								<div class="dis-con blue-bor-right">
-										<div class="dis-con-a ">数据分析</div>
-								</div>
-								<div class="dis-con blue-bor-right">
-										<div data-style="data-style" class="dis-con-a ">风格切换</div>
-								</div>
-								<div class="dis-con-max blue-bor-right">
-									<div class="message-count">12</div>
-									<div class="dis-con-a ">GT NEWS+</div>
-								</div>
-								<div class="dis-state blue-bor-right">
-								
-									<div class="symbol">
-										<div left-icon="left-icon" class="left-icon-blue"></div>
-									</div>
-									<div class="china-ves">
-										<img src="../style/img/china-2x.png" class="china-logo" alt="">
-									</div>
-								</div>
-								<div class="dis-greet">
-										<div class="btn-swicth blue-btn" switch-old="switch-old">切回旧版</div>
-										<div class="call-con">Hi，YUI</div>
-										<div class="arrows">
-											<div bottom-icon="bottom-icon" class="bottom-icon-blue"></div>
-										</div>
-								</div>
-							</div>
-					</div>
-			</div>
+<head>
+    <meta charset="utf-8">
+    <title>财政管理</title>
+    <!-- <script src="../js/jquery/jquery-1.8.3.js"></script> -->
+    <link rel="stylesheet" href="../style/css/style.css">
+</head>
 
-			<!-- 选项栏 -->
-			<div class="navigation_bar green-bg" bar-hurdle="bar-hurdle">
-				<div class="bar-btn green-bar-btn ">
-					<div class="bar-btn-txt">公司金流管理</div>
-				</div>
-				<div class="bar-btn">
-					<div class="bar-btn-txt ">层级管理</div>
-				</div>
-				<div class="bar-btn">
-					<div class="bar-btn-txt ">入款帐户管理</div>
-				</div>
-				<div class="bar-btn">
-					<div class="bar-btn-txt ">支付商户管理</div>
-				</div>
-				<div class="bar-btn ">
-					<div class="bar-btn-txt ">取消申请审核</div>
-				</div>
-				<div class="bar-btn">
-					<div class="bar-btn-txt ">转帐额度管理</div>
-				</div>
-				<div class="bar-btn">
-					<div class="bar-btn-txt ">钱包管理</div>
-				</div>
-				<div class="bar-btn">
-					<div class="bar-btn-txt ">对帐管理</div>
-				</div>
-			</div>
+<body>
+<div class="finance-page">
+    <!-- 头部 -->
+    <div class="head-page">
+        <div class="head-content ">
+            <div class="head-Path">
+                <img src="../style/img/logo.png" alt="" class="logo-img">
+            </div>
+            <div class="head-option" header-img="header-img">
+                <a href="user_query.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-agent ">
+                            <div class="img-row1"></div>
+                        </div>
+                        <div class="img-bg img-agent-bg">
 
-			<div class="scrool-content scr-green" scro-con="scro-con">
-					<div class="title-modules">
-						<span class="title-max">财务管理</span>
-						<span class="arrows-module">
+                        </div>
+                        <div class="title-row">会员代理商</div>
+                    </div>
+                </a>
+                <a href="system_manage_com.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-system">
+                            <div class="img-row1 "></div>
+                        </div>
+                        <div class="img-bg img-system-bg">
+
+                        </div>
+                        <div class="title-row">系统管理</div>
+                    </div>
+                </a>
+                <a href="discounts_manage.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-discounts">
+                            <div class="img-row1 "></div>
+                        </div>
+                        <div class="img-bg img-discounts-bg"></div>
+                        <div class="title-row">优惠管理</div>
+                    </div>
+                </a>
+                <a href="finance_manage.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-financial">
+                            <div class="img-row1 sel-img"></div>
+                        </div>
+                        <div class="img-bg img-financial-bg"></div>
+                        <div class="title-row">财务管理</div>
+                    </div>
+                </a>
+                <a href="statement_manage.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-statement">
+                            <div class="img-row1"></div>
+                        </div>
+                        <div class="img-bg img-statement-bg"></div>
+                        <div class="title-row">报表汇出</div>
+                    </div>
+                </a>
+
+
+                <a href="game_manage.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-game">
+                            <div class="img-row1"></div>
+                        </div>
+                        <div class="img-bg img-game-bg"></div>
+                        <div class="title-row">游戏管理</div>
+                    </div>
+                </a>
+
+                <a href="authority_manage.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-backstage">
+                            <div class="img-row1"></div>
+                        </div>
+                        <div class="img-bg img-backstage-bg"></div>
+                        <div class="title-row">后台管理</div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="right-title blue-text" header-nav="header-nav">
+
+                <div class="dis-con blue-bor-right">
+                    <div class="dis-con-a ">优惠上传</div>
+
+                </div>
+                <div class="dis-con blue-bor-right">
+                    <div class="dis-con-a ">在线客服</div>
+                </div>
+                <div class="dis-con-min blue-bor-right">
+                    <div class="dis-con-a ">公告</div>
+                </div>
+                <div class="dis-con blue-bor-right">
+                    <div class="dis-con-a ">数据分析</div>
+                </div>
+                <div class="dis-con blue-bor-right">
+                    <div data-style="data-style" class="dis-con-a ">风格切换</div>
+                </div>
+                <div class="dis-con-max blue-bor-right">
+                    <div class="message-count">12</div>
+                    <div class="dis-con-a ">GT NEWS+</div>
+                </div>
+                <div class="dis-state blue-bor-right">
+
+                    <div class="symbol">
+                        <div left-icon="left-icon" class="left-icon-blue"></div>
+                    </div>
+                    <div class="china-ves">
+                        <img src="../style/img/china-2x.png" class="china-logo" alt="">
+                    </div>
+                </div>
+                <div class="dis-greet">
+                    <div class="btn-swicth blue-btn" switch-old="switch-old">切回旧版</div>
+                    <div class="call-con">Hi，YUI</div>
+                    <div class="arrows">
+                        <div bottom-icon="bottom-icon" class="bottom-icon-blue"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 选项栏 -->
+    <div class="navigation_bar green-bg" bar-hurdle="bar-hurdle">
+        <div class="bar-btn green-bar-btn ">
+            <div class="bar-btn-txt">公司金流管理</div>
+        </div>
+        <div class="bar-btn">
+            <div class="bar-btn-txt ">层级管理</div>
+        </div>
+        <div class="bar-btn">
+            <div class="bar-btn-txt ">入款帐户管理</div>
+        </div>
+        <div class="bar-btn">
+            <div class="bar-btn-txt ">支付商户管理</div>
+        </div>
+        <div class="bar-btn ">
+            <div class="bar-btn-txt ">取消申请审核</div>
+        </div>
+        <div class="bar-btn">
+            <div class="bar-btn-txt ">转帐额度管理</div>
+        </div>
+        <div class="bar-btn">
+            <div class="bar-btn-txt ">钱包管理</div>
+        </div>
+        <div class="bar-btn">
+            <div class="bar-btn-txt ">对帐管理</div>
+        </div>
+    </div>
+
+    <div class="scrool-content scr-green" scro-con="scro-con">
+        <div class="title-modules">
+            <span class="title-max">财务管理</span>
+            <span class="arrows-module">
 							<img class="icon-right" src="../style/img/symbol-right.png" alt="">
 						</span>
-						<span class="title-first" title-con="title-con">公司金流管理</span>
-						<!-- 栏位筛选 -->
-						<div class="filtrate-btn">
-								栏位筛选
-						</div>
-						<div class="affiche-page-right">
-								<div class="right-icon">
-									<img src="../style/img/ic_group_24px.png" srcset="../style/img/ic_group_24px@2x.png 2x,
+            <span class="title-first" title-con="title-con">公司金流管理</span>
+            <!-- 栏位筛选 -->
+            <div class="filtrate-btn">
+                栏位筛选
+            </div>
+            <div class="affiche-page-right">
+                <div class="right-icon">
+                    <img src="../style/img/ic_group_24px.png" srcset="../style/img/ic_group_24px@2x.png 2x,
 											../style/img/ic_group_24px@3x.png 3x" class="ic_group_24px">
-								</div>
-								<div class="right-number">20</div>
-								<div class="right-text">人 /</div>
-								<div class="right-time-icon">
-									<img src="../style/img/ic_time.png" srcset="../style/img/ic_time@2x.png 2x,
+                </div>
+                <div class="right-number">20</div>
+                <div class="right-text">人 /</div>
+                <div class="right-time-icon">
+                    <img src="../style/img/ic_time.png" srcset="../style/img/ic_time@2x.png 2x,
 										../style/img/ic_time@3x.png 3x" class="ic_time">
-								</div>
-								<div class="right-time">北京2017/12/01（五）01：16：28</div>
-						</div>
-					
-					
-						
-					</div>
-					<div class="form-content" form-control="form-control">
-						<div class="main-content1 " main-con="main-con">
-							<div class="top-module-row" top-module="top-module">
-								<div class="select-module green-tar ">入款管理</div>
-								<div class="select-module ">系统交易</div>
-								<div class="select-module  ">代付设定</div>
-								<div class="select-module">存款方式设定</div>
-								<div class="select-module">交易统计</div>
-							</div>
-							<div class="switch-module1 " >
-									<div class="row-vel">
-										<div class="input-vel">
-											<div class="input-left-title">站台名称：</div>
-											<select class="form-w230">
-												<option value="0">A100-测试站-DEMO</option>
-											</select>
-										</div>
-										<div class="input-vel">
-											<div class="input-few-title">交易码：</div>
-											<input type="text" class="input-w230" />
-										</div>
-										<div class="input-vel new-date">
-											<div class="input-left-title">查询时间：</div>
-											<div class="date-vel date-vel-wid">
-												<input class="date-con date-con-wid" type="date" value="2019-02-03">
-											</div>
-											<div class="scope-con">~</div>
-											<div class="date-vel date-vel-wid">
-												<input class="date-con date-con-wid" type="date" value="2019-02-03">
-											</div>
-										</div>
-										<div class="btn-vel" btn-color="btn-color">
-		
-												<div class="btn-general green-btn">
-	
-													<a href="javascript:void(0)">今天</a>
-												</div>
-												<div class="btn-general">
-												
-													<a href="javascript:void(0)">昨天</a>
-												</div>
-												<div class="btn-general">
-													
-													<a href="javascript:void(0)">上周</a>
-												</div>
-												<div class="btn-general">
-														<a href="javascript:void(0)">本周</a>
-													
-												</div>
-												<div class="btn-general">
-												
-													<a href="javascript:void(0)">上月</a>
-												</div>
-												<div class="btn-general">
-													
-													<a href="javascript:void(0)">本月</a>
-												</div>
-										</div>
-									</div>
-									<div class="row-vel">
-										<div class="input-vel new-select">
-											<div class="input-left-title">筛选条件：</div>
-											<select class="form-w230">
-												<option value="0">A100-测试站-DEMO</option>
-											</select>
-											<span class="blank-con"></span>
-											<input type="text" class="inp-w343">
-										</div>
-										<div class="input-vel">
-											<div class="input-left-title">金额范围：</div>
-											<input type="text" class="inp-w100">
-											<span class="scope-con30">~</span>
-											<input type="text" class="inp-w100">
-										</div>
-										<div class="input-vel">
-											<div class="input-left-title">代理帐号：</div>
-											<input type="text" class="input-w230">
-										</div>
-										<div class="input-vel">
-											<div class="input-left-title">交易状态：</div>
-											<input type="checkbox" class="checkbox-che" checked />
-											<span class="span-text">处理中</span>
-											<input type="checkbox" class="checkbox-che" checked />
-											<span class="span-text">交易成功</span>
-											<input type="checkbox" class="checkbox-che" checked />
-											<span class="span-text">交易终止</span>
-										</div>
-									</div>
-									<div class="sea-height">
-										<div class="search-vel sea-new" data-move="data-move" >
-											<a href="javascript:void(0)" class="search-title green-text" text-switch="text-switch">进阶搜寻</a>
-											<div class="green-bottom-icon" icon-switch="icon-switch" ></div>
-										</div>
-									</div>
-									<div class="income-modules hide" move-module="move-module">
-										<div class="row-vel">
-											<div class="input-vel">
-												<div class="input-left-title">排序规则：</div>
-												<select class="form-w230">
-													<option value="0">---默认---</option>
-												</select>
-											</div>
-											<div class="input-vel">
-												<div class="input-left-title">入款途径：</div>
-												<select class="form-w230">
-													<option value="0">---全部---</option>
-												</select>
-											</div>
-											<div class="input-vel">
-												<div class="input-left-title">支付类型：</div>
-												<select class="form-w230">
-													<option value="0">---全部---</option>
-												</select>
-											</div>
-											<div class="input-vel">
-												<div class="input-left-title">交易方式：</div>
-												<select class="form-w230">
-													<option value="0">---全部---</option>
-												</select>
-											</div>
-											<div class="input-vel">
-												<div class="input-left-title">付款方式：</div>
-												<select class="form-w230">
-													<option value="0">---全部---</option>
-												</select>
-											</div>
-										</div>
-										<div class="row-vel">
-											<div class="input-vel">
-												<div class="input-left-title">支付银行：</div>
-												<select class="form-w230">
-												
-												</select>
-											</div>
-											<div class="input-vel">
-												<div class="input-left-title">收款银行：</div>
-												<select class="form-w230">
-											
-												</select>
-											</div>
-											<div class="input-vel">
-												<div class="input-left-title">所属层级：</div>
-												<select class="form-w230">
-													<option value="0">---全部---</option>
-												</select>
-											</div>
-											<div class="input-vel">
-												<div class="input-left-title">入款管理：</div>
-												<select  class="form-w120">
-													<option value="0">不更新</option>
-												</select>
-												<span class="blank-con1"></span>
-												<select  class="form-w85">
-													<option value="0">最新</option>
-												</select>
-											</div>
-										
-										</div>
-										<div class="row-vel">
-											<div class="input-vel new-check">
-												<div class="input-left-title">声音提示：</div>
-												<input type="checkbox" class="checkbox-che" checked />
-												<span class="span-text">线上存款</span>
-												<input type="checkbox" class="checkbox-che"  />
-												<span class="span-text">线下存款</span>
-												<input type="checkbox" class="checkbox-che"  />
-												<span class="span-text">更新</span>
-												<input type="checkbox" class="checkbox-che"  />
-												<span class="span-text">警示金额</span>
-												<input type="checkbox" class="checkbox-che"  />
-												<span class="span-text">未完成交易</span>
-											</div>
-										
-										</div>
-									</div>
-										
-									<div class="query-vel">
-										<div class="btn-submit green-btn" data-submit="data-submit">
-											<a href="javascript:void(0)">查询</a>
-										</div>
-									</div>
-									<div class="third-vel">
-										<div class="third-left">入款管理列表</div>
-										<div class="third-right">
-											<div class="btn-w120 btn-pink">汇出Excel</div>
-										</div>
-									</div>
-									<div class="table-head-vel">
-										<table class="table-01 head-table">
-												<tr class="table-head green-header-bg" table-hea-bg="table-hea-bg">
-														<td>
-															<div>	
-																<input type="checkbox" class="check-box" />
-															</div>
-														</td>
-														<td>
-															<div>交易码</div>
-														</td>
-														<td>
-															<div>会员帐号</div>
-														</td>
-														<td>
-															<div>代理层级</div>
-														</td>
-														<td>
-															<div>交易资讯</div>
-														</td>
-														<td>
-															<div>原始金额</div>
-														</td>
-														<td>
-															<div>入款金额</div>
-														</td>
-														<td>
-															<div>存款优惠</div>
-														</td>
-														<td>
-															<div>到账金额</div>
-														</td>
-														<td>
-															<div>账户余额</div>
-														</td>
-														<td>
-															<div>交易状态</div>
-														</td>
-														<td>
-															<div>备注</div>
-														</td>
-														<td>
-															<div>操作</div>
-														</td>
-														<td class="lastCol">
-															<div>更新人</div>
-														</td>
-												</tr>
-										</table>
-									</div>
-									<div class="table-vel">
-										<table class="table-01 table-width">
-											
-											
-											
-											<tr class="table-content">
-												<td>
-													<div class="td-div">
-														<input type="checkbox" class="check-box">
-													</div>
-												</td>
-												<td>
-													<div class="td-div">201810010324222624</div>
-												</td>
-												<td>
-													<div class="td-div">JOANN321</div>
-												</td>
-												<td>
-													<div class="td-div ">Test-Jacky</div>
-													<div class="td-div">K1Z61</div>
-												</td>
-												<td>
-													<div class="td-div new-div" >
-														<span >支付途径：</span>
-														<span class="blue-color">祥云支付宝[180761041]</span>
-													</div>
-													<div class="td-div new-div" >账户名称：</div>
-													<div class="td-div new-div" >交易方式：线上存款</div>		
-												</td>
-												<td>
-													<div class="td-div">212.00</div>
-												</td>
-												<td>
-													<div class="td-div">1.00</div>
-												</td>
-												<td>
-													<div class="td-div blue-color">5.00</div>
-												</td>
-												<td>
-													<div class="td-div">6.00</div>
-												</td>
-												<td>
-													<div class="td-div">218.00</div>
-												</td>
-												<td>
-													<div class="td-div">交易成功</div>
-												</td>
-												<td>
-													<div class="td-div red-color">新增</div>
-												</td>
-												<td>
-													
-												</td>
-												<td class="lastCol">
-													<div class="td-div">MUZIC</div>
-													<div class="td-div">2018-10-01</div>
-													<div class="td-div">10:26:23</div>
-												</td>
-											</tr>
-											<tr class="table-content">
-												<td>
-													<div class="td-div">
-														<input type="checkbox" class="check-box">
-													</div>
-												</td>
-												<td>
-													<div class="td-div">201810010324222624</div>
-												</td>
-												<td>
-													<div class="td-div">JOANN321</div>
-												</td>
-												<td>
-													<div class="td-div ">Test-Jacky</div>
-													<div class="td-div">K1Z61</div>
-												</td>
-												<td>
-													<div class="td-div new-div" >
-														<span >支付途径：</span>
-														<span class="blue-color">祥云支付宝[180761041]</span>
-													</div>
-													<div class="td-div new-div" >账户名称：</div>
-													<div class="td-div new-div" >交易方式：线上存款</div>		
-												</td>
-												<td>
-													<div class="td-div">212.00</div>
-												</td>
-												<td>
-													<div class="td-div">1.00</div>
-												</td>
-												<td>
-													<div class="td-div blue-color">5.00</div>
-												</td>
-												<td>
-													<div class="td-div">6.00</div>
-												</td>
-												<td>
-													<div class="td-div">218.00</div>
-												</td>
-												<td>
-													<div class="td-div">交易成功</div>
-												</td>
-												<td>
-													<div class="td-div red-color">新增</div>
-												</td>
-												<td>
-													
-												</td>
-												<td class="lastCol">
-													<div class="td-div">MUZIC</div>
-													<div class="td-div">2018-10-01</div>
-													<div class="td-div">10:26:23</div>
-												</td>
-											</tr>
-											<tr class="table-content">
-												<td>
-													<div class="td-div">
-														<input type="checkbox" class="check-box">
-													</div>
-												</td>
-												<td>
-													<div class="td-div">201810010324222624</div>
-												</td>
-												<td>
-													<div class="td-div">JOANN321</div>
-												</td>
-												<td>
-													<div class="td-div ">Test-Jacky</div>
-													<div class="td-div">K1Z61</div>
-												</td>
-												<td>
-													<div class="td-div new-div" >
-														<span >支付途径：</span>
-														<span class="blue-color">祥云支付宝[180761041]</span>
-													</div>
-													<div class="td-div new-div" >账户名称：</div>
-													<div class="td-div new-div" >交易方式：线上存款</div>		
-												</td>
-												<td>
-													<div class="td-div">212.00</div>
-												</td>
-												<td>
-													<div class="td-div">1.00</div>
-												</td>
-												<td>
-													<div class="td-div blue-color">5.00</div>
-												</td>
-												<td>
-													<div class="td-div">6.00</div>
-												</td>
-												<td>
-													<div class="td-div">218.00</div>
-												</td>
-												<td>
-													<div class="td-div">交易成功</div>
-												</td>
-												<td>
-													<div class="td-div red-color">新增</div>
-												</td>
-												<td>
-													
-												</td>
-												<td class="lastCol">
-													<div class="td-div">MUZIC</div>
-													<div class="td-div">2018-10-01</div>
-													<div class="td-div">10:26:23</div>
-												</td>
-											</tr>
-											<tr class="table-content">
-												<td>
-													<div class="td-div">
-														<input type="checkbox" class="check-box">
-													</div>
-												</td>
-												<td>
-													<div class="td-div">201810010324222624</div>
-												</td>
-												<td>
-													<div class="td-div">JOANN321</div>
-												</td>
-												<td>
-													<div class="td-div ">Test-Jacky</div>
-													<div class="td-div">K1Z61</div>
-												</td>
-												<td>
-													<div class="td-div new-div" >
-														<span >支付途径：</span>
-														<span class="blue-color">祥云支付宝[180761041]</span>
-													</div>
-													<div class="td-div new-div" >账户名称：</div>
-													<div class="td-div new-div" >交易方式：线上存款</div>		
-												</td>
-												<td>
-													<div class="td-div">212.00</div>
-												</td>
-												<td>
-													<div class="td-div">1.00</div>
-												</td>
-												<td>
-													<div class="td-div blue-color">5.00</div>
-												</td>
-												<td>
-													<div class="td-div">6.00</div>
-												</td>
-												<td>
-													<div class="td-div">218.00</div>
-												</td>
-												<td>
-													<div class="td-div">交易成功</div>
-												</td>
-												<td>
-													<div class="td-div red-color">新增</div>
-												</td>
-												<td>
-													
-												</td>
-												<td class="lastCol">
-													<div class="td-div">MUZIC</div>
-													<div class="td-div">2018-10-01</div>
-													<div class="td-div">10:26:23</div>
-												</td>
-											</tr>
-											<tr class="table-content lastrow">
-													<td>
-														<div class="td-div">
-															<input type="checkbox" class="check-box">
-														</div>
-													</td>
-													<td>
-														<div class="td-div">201810010324222624</div>
-													</td>
-													<td>
-														<div class="td-div">JOANN321</div>
-													</td>
-													<td>
-														<div class="td-div ">Test-Jacky</div>
-														<div class="td-div">K1Z61</div>
-													</td>
-													<td>
-														<div class="td-div new-div" >
-															<span >支付途径：</span>
-															<span class="blue-color">祥云支付宝[180761041]</span>
-														</div>
-														<div class="td-div new-div" >账户名称：</div>
-														<div class="td-div new-div" >交易方式：线上存款</div>		
-													</td>
-													<td>
-														<div class="td-div">212.00</div>
-													</td>
-													<td>
-														<div class="td-div">1.00</div>
-													</td>
-													<td>
-														<div class="td-div blue-color">5.00</div>
-													</td>
-													<td>
-														<div class="td-div">6.00</div>
-													</td>
-													<td>
-														<div class="td-div">218.00</div>
-													</td>
-													<td>
-														<div class="td-div">交易成功</div>
-													</td>
-													<td>
-														<div class="td-div red-color">新增</div>
-													</td>
-													<td>
-														
-													</td>
-													<td class="lastCol">
-														<div class="td-div">MUZIC</div>
-														<div class="td-div">2018-10-01</div>
-														<div class="td-div">10:26:23</div>
-													</td>
-											</tr>
-									
-										</table>
-									</div>
-	
-									<div class="paging-vel">
-										<div class="page-content">
-												<div class="page-number">
-													<select class="page-sel">
-														<option>10</option>
-													</select>
-												</div>
-												<!--    左边-->
-												<div class="page-left">
-													<div class="page-left-first">
-														<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-															../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
-													</div>
-													<div class="page-left-polygon">
-														<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
-															../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
-													</div>
-												</div>
-												<!--    中间-->
-												<div class="page-center">
-													<span>Page</span>
-													<input value="10">
-													<div class="of-page">
-														<sapn>of</sapn>
-														<sapn>41</sapn>
-													</div>
-												</div>
-												<!--    右边-->
-												<div class="page-right">
-													<div class="page-right-polygon">
-														<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
-															../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
-													</div>
-													<div class="page-right-first">
-														<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-															../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
-													</div>
-											
-												</div>
-												<!--    刷新-->
-												<div class="ico-refresh">
-													<img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
-															../style/img/ic_refresh_24px@3x.png">
-												</div>
-												<div class="page-text">
-													<span>总单数406，当前专案1到10</span>
-												</div>
-										</div>
-									</div>
-							</div>
-							<div class="switch-module2 hide" >
-								<div class="module-vel">
-									<div class="input-vel">
-										<div class="input-left-title">站台名称：</div>
-										<select class="form-w230">
-											<option value="0">A100-测试站-DEMO</option>
-										</select>
-									</div>
-									<div class="input-vel">
-										<div class="input-few-title">交易码：</div>
-										<input type="text" class="input-w230">
-									</div>
-									<div class="input-vel date-new">
-										<div class="input-left-title">查询时间：</div>
-										<div class="date-vel date-vel-wid">
-											<input class="date-con date-con-wid" type="date" value="2019-02-03">
-										</div>
-										<div class="scope-con">~</div>
-										<div class="date-vel date-vel-wid">
-											<input class="date-con date-con-wid" type="date" value="2019-02-03">
-										</div>
-									</div>
-									<div class="btn-vel" btn-color="btn-color">
-		
-											<div class="btn-general green-btn" >
+                </div>
+                <div class="right-time">北京2017/12/01（五）01：16：28</div>
+            </div>
 
-												<a href="javascript:void(0)">今天</a>
-											</div>
-											<div class="btn-general " >
-											
-												<a href="javascript:void(0)">昨天</a>
-											</div>
-											<div class="btn-general " >
-												
-												<a href="javascript:void(0)">上周</a>
-											</div>
-											<div class="btn-general " >
-													<a href="javascript:void(0)">本周</a>
-												
-											</div>
-											<div class="btn-general " >
-											
-												<a href="javascript:void(0)">上月</a>
-											</div>
-											<div class="btn-general " >
-												
-												<a href="javascript:void(0)">本月</a>
-											</div>
-									</div>
-								</div>
-								<div class="module-vel">
-										<div class="input-vel">
-											<div class="input-left-title">交易状态：</div>
-											<input type="checkbox" class="checkbox-che" checked>
-											<span class="span-text">处理中</span>
-											<input type="checkbox" class="checkbox-che" checked>
-											<span class="span-text">交易成功</span>
-											<input type="checkbox" class="checkbox-che" checked>
-											<span class="span-text">交易终止</span>
-										</div>
-										
-											<div class="input-vel">
-												<div class="input-left-title">代理帐号：</div>
-												<select class="form-w230"></select>
-											
-											</div>
-							
-									
-											<div class="input-vel filtrate-new">
-												<div class="input-left-title">筛选条件：</div>
-												<select class="form-w230"></select>
-												<span class="blank-con"></span>
-												<input type="text" class="inp-w343">
-											</div>
-											<div class="input-vel money-new">
-													<div class="input-left-title">金额范围：</div>
-													<input type="text" class="input-w100">
-													<span class="scope-con">~</span>
-													<input type="text" class="input-w100">
-											</div>
-									
-								</div>
-								<div class="module-vel">
-									<div class="input-vel">
-										<div class="input-left-title">交易类型：</div>
-										<select class="form-w230">
-											<option value="0">---全部---</option>
-										</select>
-									
-									</div>	
-									<div class="input-vel">
-										<div class="input-left-title">金流明细：</div>
-										<select class="form-w230">
-											<option value="0">---全部---</option>
-										</select>
-									</div>
-									<div class="input-vel">
-										<div class="input-left-title">所属层级：</div>
-										<select class="form-w230">
-											<option value="0">---全部---</option>
-										</select>
-									</div>
-									<div class="input-vel">
-										<div class="input-left-title">所属层级：</div>
-										<select class="form-w120">
-											<option value="0">不更新</option>
-										</select>
-										<span class="blank-con1"></span>
-										<select class="form-w85">
-											<option value="0">更新</option>
-										</select>
-									</div>
-								</div>
-								<div class="btn-new-vel">
-									<div class="btn-submit green-btn" data-submit="data-submit">
-										<a href="javascript:void(0)">查询</a>
-									</div>
-								</div>
-								<div class="head-vel">
-									<div class="left-title-con">系统交易列表</div>
-									<div class="right-btn">
-										<div class="btn-w120 btn-buff">+ 交易添加</div>
-										<span class="text-span"></span>
-										<div class="btn-w120 btn-pink">汇出Excel</div>
-										<span class="text-span"></span>
-										<div class="btn-w100 btn-somber">进度查询</div>
-									</div>
-								</div>
-								<div class="table-vel">
-									<table class="table-01 table-width">
-											<tbody>
-												<tr class="table-head green-header-bg" table-hea-bg="table-hea-bg">
-												<td>
-													<div>	
-														<input type="checkbox" class="check-box">
-													</div>
-												</td>
-												<td>
-													<div>交易码</div>
-												</td>
-												<td>
-													<div>交易信息</div>
-												</td>
-												<td>
-													<div>代理层级</div>
-												</td>
-												<td>
-													<div>原始金额</div>
-												</td>
-												<td>
-													<div>金流明细-存入</div>
-												</td>
-												<td>
-													<div>金流明细-支出</div>
-												</td>
-												<td>
-													<div>到帐金额</div>
-												</td>
-												<td>
-													<div>目前</div>
-												</td>
-												<td>
-													<div>交易状态</div>
-												</td>
-												
-												<td>
-													<div>备注</div>
-												</td>
-												<td>
-													<div>操作</div>
-												</td>
-												<td class="lastCol">
-													<div>更新人</div>
-												</td>
-												</tr>
-											</tbody>
-											<tbody>
-												<tr class="table-content">
-													<td>
-														<div class="td-div">
-															<input type="checkbox" class="check-box">
-														</div>
-													</td>
-													<td>
-														<div class="td-div">201810010324222624</div>
-													</td>
-													<td>
-														<div class="td-div">日期：2018-10-01 10:26:23</div>
-														<div class="td-div new-div">
-															<span>帐号：AES2 (</span>
-															<span class="red-color">AES2 </span>
-															<span>)</span>
-														</div>
-														<div class="td-div">交易类型：活动-1倍打码</div>		
-																
-													</td>
-													<td>
-														<div class="td-div ">Test-Jacky</div>
-														<div class="td-div">K1Z61</div>
-													</td>
-													<td>
-														<div class="td-div">103757.27</div>
-													</td>
-													<td>
-														<div class="td-div red-color">存入：10.00</div>
-														<div class="td-div">存款优惠：0.00</div>
-													</td>
-												
-													<td>
-														<div class="td-div red-color ">存入：10.00</div>
-														<div class="td-div">存款优惠：0.00</div>
-													</td>
-													<td>
-														<div class="td-div ">10.00</div>
-													</td>
-													<td>
-														<div class="td-div">103767.27</div>
-													</td>
-													<td>
-														<div class="td-div">
-															<select class="form-w100">
-																<option value="0">处理中</option>
-															</select>
-														</div>
-													</td>
-													<td>
-														<div class="td-div red-color">1234</div>
-													</td>
-													<td>
-														<div class="td-div blue-color ">更新</div>
-														<div class="td-div blue-color">交易成功</div>
-													</td>
-												
-													<td class="lastCol">
-														<div class="td-div">MUZIC</div>
-														<div class="td-div">2018-10-01</div>
-														<div class="td-div">10:26:23</div>
-													</td>
-												</tr>
-												<tr class="table-content">
-														<td>
-															<div class="td-div">
-																<input type="checkbox" class="check-box">
-															</div>
-														</td>
-														<td>
-															<div class="td-div">201810010324222624</div>
-														</td>
-														<td>
-															<div class="td-div">日期：2018-10-01 10:26:23</div>
-															<div class="td-div new-div">
-																<span>帐号：AES2 (</span>
-																<span class="red-color">AES2 </span>
-																<span>)</span>
-															</div>
-															<div class="td-div">交易类型：活动-1倍打码</div>					
-														</td>
-														<td>
-															<div class="td-div ">Test-Jacky</div>
-															<div class="td-div">K1Z61</div>
-														</td>
-														<td>
-															<div class="td-div">103757.27</div>
-														</td>
-														<td>
-															<div class="td-div red-color ">存入：10.00</div>
-															<div class="td-div">存款优惠：0.00</div>
-														</td>
-													
-														<td>
-															<div class="td-div red-color ">存入：10.00</div>
-															<div class="td-div">存款优惠：0.00</div>
-														</td>
-														<td>
-															<div class="td-div ">10.00</div>
-														</td>
-														<td>
-															<div class="td-div">103767.27</div>
-														</td>
-														<td>
-															<div class="td-div">
-																<select class="form-w100">
-																	<option value="0">处理中</option>
-																</select>
-															</div>
-														</td>
-														<td>
-															<div class="td-div red-color">1234</div>
-														</td>
-														<td>
-															<div class="td-div blue-color">更新</div>
-															<div class="td-div blue-color">交易成功</div>
-														</td>
-													
-														<td class="lastCol">
-															<div class="td-div">MUZIC</div>
-															<div class="td-div">2018-10-01</div>
-															<div class="td-div">10:26:23</div>
-														</td>
-												</tr>
-												<tr class="table-content">
-														<td colspan="4">
-																<div class="td-div colspan-td">小计：</div>
-														</td>
-														<td>
-															<div class="td-div">103757.27</div>
-														</td>
-														<td>
-															<div class="td-div red-color ">存入：20.00</div>
-															<div class="td-div new-div">
-																<span>存款优惠：</span>
-																<span class="blue-color">5</span>
-																<span>.00</span>
-															</div>
-														</td>
-													
-														<td>
-															<div class="td-div ">支出：00</div>
-															<div class="td-div">扣除优惠：5.00</div>
-														</td>
-														<td>
-															<div class="td-div ">20.00</div>
-														</td>
-														
-														<td class="lastCol" colspan="5">
-															
-														</td>
-												</tr>
-												<tr class="table-content">
-														<td colspan="4">
-																<div class="td-div colspan-td">合计：</div>
-														</td>
-														<td>
-															<div class="td-div">103757.27</div>
-														</td>
-														<td>
-															<div class="td-div red-color ">存入：20.00</div>
-															<div class="td-div new-div">
-																<span>存款优惠：</span>
-																<span class="blue-color">5</span>
-																<span>.00</span>
-															</div>
-														</td>
-													
-														<td>
-															<div class="td-div ">支出：00</div>
-															<div class="td-div">扣除优惠：5.00</div>
-														</td>
-														<td>
-															<div class="td-div ">20.00</div>
-														</td>
-														
-														<td class="lastCol" colspan="5"></td>
-												</tr>
-											</tbody>
-										</table>
-								</div>
-								<div class="paging-vel">
-									<div class="page-content">
-											<div class="page-number">
-												<select class="page-sel">
-													<option>10</option>
-												</select>
-											</div>
-											<!--    左边-->
-											<div class="page-left">
-												<div class="page-left-first">
-													<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-														../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
-												</div>
-												<div class="page-left-polygon">
-													<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+
+        </div>
+        <div class="form-content" form-control="form-control">
+            <div class="main-content1 " main-con="main-con">
+                <div class="top-module-row" top-module="top-module">
+                    <div class="select-module green-tar ">入款管理</div>
+                    <div class="select-module ">系统交易</div>
+                    <div class="select-module  ">代付设定</div>
+                    <div class="select-module">存款方式设定</div>
+                    <div class="select-module">交易统计</div>
+                </div>
+                <div class="switch-module1 ">
+                    <div class="row-vel">
+                        <div class="input-vel">
+                            <div class="input-left-title">站台名称：</div>
+                            <select class="form-w230">
+                                <option value="0">A100-测试站-DEMO</option>
+                            </select>
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-few-title">交易码：</div>
+                            <input type="text" class="input-w230"/>
+                        </div>
+                        <div class="input-vel new-date">
+                            <div class="input-left-title">查询时间：</div>
+                            <div class="date-vel date-vel-wid">
+                                <input class="date-con date-con-wid" type="date" value="2019-02-03">
+                            </div>
+                            <div class="scope-con">~</div>
+                            <div class="date-vel date-vel-wid">
+                                <input class="date-con date-con-wid" type="date" value="2019-02-03">
+                            </div>
+                        </div>
+                        <div class="btn-vel" btn-color="btn-color">
+
+                            <div class="btn-general green-btn">
+
+                                <a href="javascript:void(0)">今天</a>
+                            </div>
+                            <div class="btn-general">
+
+                                <a href="javascript:void(0)">昨天</a>
+                            </div>
+                            <div class="btn-general">
+
+                                <a href="javascript:void(0)">上周</a>
+                            </div>
+                            <div class="btn-general">
+                                <a href="javascript:void(0)">本周</a>
+
+                            </div>
+                            <div class="btn-general">
+
+                                <a href="javascript:void(0)">上月</a>
+                            </div>
+                            <div class="btn-general">
+
+                                <a href="javascript:void(0)">本月</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-vel">
+                        <div class="input-vel new-select">
+                            <div class="input-left-title">筛选条件：</div>
+                            <select class="form-w230">
+                                <option value="0">A100-测试站-DEMO</option>
+                            </select>
+                            <span class="blank-con"></span>
+                            <input type="text" class="inp-w343">
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-left-title">金额范围：</div>
+                            <input type="text" class="inp-w100">
+                            <span class="scope-con30">~</span>
+                            <input type="text" class="inp-w100">
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-left-title">代理帐号：</div>
+                            <input type="text" class="input-w230">
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-left-title">交易状态：</div>
+                            <input type="checkbox" class="checkbox-che" checked/>
+                            <span class="span-text">处理中</span>
+                            <input type="checkbox" class="checkbox-che" checked/>
+                            <span class="span-text">交易成功</span>
+                            <input type="checkbox" class="checkbox-che" checked/>
+                            <span class="span-text">交易终止</span>
+                        </div>
+                    </div>
+                    <div class="sea-height">
+                        <div class="search-vel sea-new" data-move="data-move">
+                            <a href="javascript:void(0)" class="search-title green-text"
+                               text-switch="text-switch">进阶搜寻</a>
+                            <div class="green-bottom-icon" icon-switch="icon-switch"></div>
+                        </div>
+                    </div>
+                    <div class="income-modules hide" move-module="move-module">
+                        <div class="row-vel">
+                            <div class="input-vel">
+                                <div class="input-left-title">排序规则：</div>
+                                <select class="form-w230">
+                                    <option value="0">---默认---</option>
+                                </select>
+                            </div>
+                            <div class="input-vel">
+                                <div class="input-left-title">入款途径：</div>
+                                <select class="form-w230">
+                                    <option value="0">---全部---</option>
+                                </select>
+                            </div>
+                            <div class="input-vel">
+                                <div class="input-left-title">支付类型：</div>
+                                <select class="form-w230">
+                                    <option value="0">---全部---</option>
+                                </select>
+                            </div>
+                            <div class="input-vel">
+                                <div class="input-left-title">交易方式：</div>
+                                <select class="form-w230">
+                                    <option value="0">---全部---</option>
+                                </select>
+                            </div>
+                            <div class="input-vel">
+                                <div class="input-left-title">付款方式：</div>
+                                <select class="form-w230">
+                                    <option value="0">---全部---</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row-vel">
+                            <div class="input-vel">
+                                <div class="input-left-title">支付银行：</div>
+                                <select class="form-w230">
+
+                                </select>
+                            </div>
+                            <div class="input-vel">
+                                <div class="input-left-title">收款银行：</div>
+                                <select class="form-w230">
+
+                                </select>
+                            </div>
+                            <div class="input-vel">
+                                <div class="input-left-title">所属层级：</div>
+                                <select class="form-w230">
+                                    <option value="0">---全部---</option>
+                                </select>
+                            </div>
+                            <div class="input-vel">
+                                <div class="input-left-title">入款管理：</div>
+                                <select class="form-w120">
+                                    <option value="0">不更新</option>
+                                </select>
+                                <span class="blank-con1"></span>
+                                <select class="form-w85">
+                                    <option value="0">最新</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="row-vel">
+                            <div class="input-vel new-check">
+                                <div class="input-left-title">声音提示：</div>
+                                <input type="checkbox" class="checkbox-che" checked/>
+                                <span class="span-text">线上存款</span>
+                                <input type="checkbox" class="checkbox-che"/>
+                                <span class="span-text">线下存款</span>
+                                <input type="checkbox" class="checkbox-che"/>
+                                <span class="span-text">更新</span>
+                                <input type="checkbox" class="checkbox-che"/>
+                                <span class="span-text">警示金额</span>
+                                <input type="checkbox" class="checkbox-che"/>
+                                <span class="span-text">未完成交易</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="query-vel">
+                        <div class="btn-submit green-btn" data-submit="data-submit">
+                            <a href="javascript:void(0)">查询</a>
+                        </div>
+                    </div>
+                    <div class="third-vel">
+                        <div class="third-left">入款管理列表</div>
+                        <div class="third-right">
+                            <div class="btn-w120 btn-pink">汇出Excel</div>
+                        </div>
+                    </div>
+                    <div class="table-head-vel">
+                        <table class="table-01 head-table">
+                            <tr class="table-head green-header-bg" table-hea-bg="table-hea-bg">
+                                <td>
+                                    <div>
+                                        <input type="checkbox" class="check-box"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>交易码</div>
+                                </td>
+                                <td>
+                                    <div>会员帐号</div>
+                                </td>
+                                <td>
+                                    <div>代理层级</div>
+                                </td>
+                                <td>
+                                    <div>交易资讯</div>
+                                </td>
+                                <td>
+                                    <div>原始金额</div>
+                                </td>
+                                <td>
+                                    <div>入款金额</div>
+                                </td>
+                                <td>
+                                    <div>存款优惠</div>
+                                </td>
+                                <td>
+                                    <div>到账金额</div>
+                                </td>
+                                <td>
+                                    <div>账户余额</div>
+                                </td>
+                                <td>
+                                    <div>交易状态</div>
+                                </td>
+                                <td>
+                                    <div>备注</div>
+                                </td>
+                                <td>
+                                    <div>操作</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div>更新人</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table-vel">
+                        <table class="table-01 table-width">
+
+
+                            <tr class="table-content">
+                                <td>
+                                    <div class="td-div">
+                                        <input type="checkbox" class="check-box">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div">201810010324222624</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">JOANN321</div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">Test-Jacky</div>
+                                    <div class="td-div">K1Z61</div>
+                                </td>
+                                <td>
+                                    <div class="td-div new-div">
+                                        <span>支付途径：</span>
+                                        <span class="blue-color">祥云支付宝[180761041]</span>
+                                    </div>
+                                    <div class="td-div new-div">账户名称：</div>
+                                    <div class="td-div new-div">交易方式：线上存款</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">212.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">1.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div blue-color">5.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">6.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">218.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">交易成功</div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color">新增</div>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div">MUZIC</div>
+                                    <div class="td-div">2018-10-01</div>
+                                    <div class="td-div">10:26:23</div>
+                                </td>
+                            </tr>
+                            <tr class="table-content">
+                                <td>
+                                    <div class="td-div">
+                                        <input type="checkbox" class="check-box">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div">201810010324222624</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">JOANN321</div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">Test-Jacky</div>
+                                    <div class="td-div">K1Z61</div>
+                                </td>
+                                <td>
+                                    <div class="td-div new-div">
+                                        <span>支付途径：</span>
+                                        <span class="blue-color">祥云支付宝[180761041]</span>
+                                    </div>
+                                    <div class="td-div new-div">账户名称：</div>
+                                    <div class="td-div new-div">交易方式：线上存款</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">212.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">1.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div blue-color">5.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">6.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">218.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">交易成功</div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color">新增</div>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div">MUZIC</div>
+                                    <div class="td-div">2018-10-01</div>
+                                    <div class="td-div">10:26:23</div>
+                                </td>
+                            </tr>
+                            <tr class="table-content">
+                                <td>
+                                    <div class="td-div">
+                                        <input type="checkbox" class="check-box">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div">201810010324222624</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">JOANN321</div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">Test-Jacky</div>
+                                    <div class="td-div">K1Z61</div>
+                                </td>
+                                <td>
+                                    <div class="td-div new-div">
+                                        <span>支付途径：</span>
+                                        <span class="blue-color">祥云支付宝[180761041]</span>
+                                    </div>
+                                    <div class="td-div new-div">账户名称：</div>
+                                    <div class="td-div new-div">交易方式：线上存款</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">212.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">1.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div blue-color">5.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">6.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">218.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">交易成功</div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color">新增</div>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div">MUZIC</div>
+                                    <div class="td-div">2018-10-01</div>
+                                    <div class="td-div">10:26:23</div>
+                                </td>
+                            </tr>
+                            <tr class="table-content">
+                                <td>
+                                    <div class="td-div">
+                                        <input type="checkbox" class="check-box">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div">201810010324222624</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">JOANN321</div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">Test-Jacky</div>
+                                    <div class="td-div">K1Z61</div>
+                                </td>
+                                <td>
+                                    <div class="td-div new-div">
+                                        <span>支付途径：</span>
+                                        <span class="blue-color">祥云支付宝[180761041]</span>
+                                    </div>
+                                    <div class="td-div new-div">账户名称：</div>
+                                    <div class="td-div new-div">交易方式：线上存款</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">212.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">1.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div blue-color">5.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">6.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">218.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">交易成功</div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color">新增</div>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div">MUZIC</div>
+                                    <div class="td-div">2018-10-01</div>
+                                    <div class="td-div">10:26:23</div>
+                                </td>
+                            </tr>
+                            <tr class="table-content lastrow">
+                                <td>
+                                    <div class="td-div">
+                                        <input type="checkbox" class="check-box">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div">201810010324222624</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">JOANN321</div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">Test-Jacky</div>
+                                    <div class="td-div">K1Z61</div>
+                                </td>
+                                <td>
+                                    <div class="td-div new-div">
+                                        <span>支付途径：</span>
+                                        <span class="blue-color">祥云支付宝[180761041]</span>
+                                    </div>
+                                    <div class="td-div new-div">账户名称：</div>
+                                    <div class="td-div new-div">交易方式：线上存款</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">212.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">1.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div blue-color">5.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">6.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">218.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">交易成功</div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color">新增</div>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div">MUZIC</div>
+                                    <div class="td-div">2018-10-01</div>
+                                    <div class="td-div">10:26:23</div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <div class="paging-vel">
+                        <div class="page-content">
+                            <div class="page-number">
+                                <select class="page-sel">
+                                    <option>10</option>
+                                </select>
+                            </div>
+                            <!--    左边-->
+                            <div class="page-left">
+                                <div class="page-left-first">
+                                    <img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+															../style/img/ic_first_page_24px@3x.png 3x"
+                                         class="ic_first_page_24px">
+                                </div>
+                                <div class="page-left-polygon">
+                                    <img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+															../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+                                </div>
+                            </div>
+                            <!--    中间-->
+                            <div class="page-center">
+                                <span>Page</span>
+                                <input value="10">
+                                <div class="of-page">
+                                    <sapn>of</sapn>
+                                    <sapn>41</sapn>
+                                </div>
+                            </div>
+                            <!--    右边-->
+                            <div class="page-right">
+                                <div class="page-right-polygon">
+                                    <img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+															../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
+                                </div>
+                                <div class="page-right-first">
+                                    <img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+															../style/img/ic_first_page_24px@3x.png 3x"
+                                         class="ic_first_page_24px">
+                                </div>
+
+                            </div>
+                            <!--    刷新-->
+                            <div class="ico-refresh">
+                                <img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
+															../style/img/ic_refresh_24px@3x.png">
+                            </div>
+                            <div class="page-text">
+                                <span>总单数406，当前专案1到10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="switch-module2 hide">
+                    <div class="module-vel">
+                        <div class="input-vel">
+                            <div class="input-left-title">站台名称：</div>
+                            <select class="form-w230">
+                                <option value="0">A100-测试站-DEMO</option>
+                            </select>
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-few-title">交易码：</div>
+                            <input type="text" class="input-w230">
+                        </div>
+                        <div class="input-vel date-new">
+                            <div class="input-left-title">查询时间：</div>
+                            <div class="date-vel date-vel-wid">
+                                <input class="date-con date-con-wid" type="date" value="2019-02-03">
+                            </div>
+                            <div class="scope-con">~</div>
+                            <div class="date-vel date-vel-wid">
+                                <input class="date-con date-con-wid" type="date" value="2019-02-03">
+                            </div>
+                        </div>
+                        <div class="btn-vel" btn-color="btn-color">
+
+                            <div class="btn-general green-btn">
+
+                                <a href="javascript:void(0)">今天</a>
+                            </div>
+                            <div class="btn-general ">
+
+                                <a href="javascript:void(0)">昨天</a>
+                            </div>
+                            <div class="btn-general ">
+
+                                <a href="javascript:void(0)">上周</a>
+                            </div>
+                            <div class="btn-general ">
+                                <a href="javascript:void(0)">本周</a>
+
+                            </div>
+                            <div class="btn-general ">
+
+                                <a href="javascript:void(0)">上月</a>
+                            </div>
+                            <div class="btn-general ">
+
+                                <a href="javascript:void(0)">本月</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module-vel">
+                        <div class="input-vel">
+                            <div class="input-left-title">交易状态：</div>
+                            <input type="checkbox" class="checkbox-che" checked>
+                            <span class="span-text">处理中</span>
+                            <input type="checkbox" class="checkbox-che" checked>
+                            <span class="span-text">交易成功</span>
+                            <input type="checkbox" class="checkbox-che" checked>
+                            <span class="span-text">交易终止</span>
+                        </div>
+
+                        <div class="input-vel">
+                            <div class="input-left-title">代理帐号：</div>
+                            <select class="form-w230"></select>
+
+                        </div>
+
+
+                        <div class="input-vel filtrate-new">
+                            <div class="input-left-title">筛选条件：</div>
+                            <select class="form-w230"></select>
+                            <span class="blank-con"></span>
+                            <input type="text" class="inp-w343">
+                        </div>
+                        <div class="input-vel money-new">
+                            <div class="input-left-title">金额范围：</div>
+                            <input type="text" class="input-w100">
+                            <span class="scope-con">~</span>
+                            <input type="text" class="input-w100">
+                        </div>
+
+                    </div>
+                    <div class="module-vel">
+                        <div class="input-vel">
+                            <div class="input-left-title">交易类型：</div>
+                            <select class="form-w230">
+                                <option value="0">---全部---</option>
+                            </select>
+
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-left-title">金流明细：</div>
+                            <select class="form-w230">
+                                <option value="0">---全部---</option>
+                            </select>
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-left-title">所属层级：</div>
+                            <select class="form-w230">
+                                <option value="0">---全部---</option>
+                            </select>
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-left-title">所属层级：</div>
+                            <select class="form-w120">
+                                <option value="0">不更新</option>
+                            </select>
+                            <span class="blank-con1"></span>
+                            <select class="form-w85">
+                                <option value="0">更新</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-new-vel">
+                        <div class="btn-submit green-btn" data-submit="data-submit">
+                            <a href="javascript:void(0)">查询</a>
+                        </div>
+                    </div>
+                    <div class="head-vel">
+                        <div class="left-title-con">系统交易列表</div>
+                        <div class="right-btn">
+                            <div class="btn-w120 btn-buff">+ 交易添加</div>
+                            <span class="text-span"></span>
+                            <div class="btn-w120 btn-pink">汇出Excel</div>
+                            <span class="text-span"></span>
+                            <div class="btn-w100 btn-somber">进度查询</div>
+                        </div>
+                    </div>
+                    <div class="table-vel">
+                        <table class="table-01 table-width">
+                            <tbody>
+                            <tr class="table-head green-header-bg" table-hea-bg="table-hea-bg">
+                                <td>
+                                    <div>
+                                        <input type="checkbox" class="check-box">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>交易码</div>
+                                </td>
+                                <td>
+                                    <div>交易信息</div>
+                                </td>
+                                <td>
+                                    <div>代理层级</div>
+                                </td>
+                                <td>
+                                    <div>原始金额</div>
+                                </td>
+                                <td>
+                                    <div>金流明细-存入</div>
+                                </td>
+                                <td>
+                                    <div>金流明细-支出</div>
+                                </td>
+                                <td>
+                                    <div>到帐金额</div>
+                                </td>
+                                <td>
+                                    <div>目前</div>
+                                </td>
+                                <td>
+                                    <div>交易状态</div>
+                                </td>
+
+                                <td>
+                                    <div>备注</div>
+                                </td>
+                                <td>
+                                    <div>操作</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div>更新人</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr class="table-content">
+                                <td>
+                                    <div class="td-div">
+                                        <input type="checkbox" class="check-box">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div">201810010324222624</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">日期：2018-10-01 10:26:23</div>
+                                    <div class="td-div new-div">
+                                        <span>帐号：AES2 (</span>
+                                        <span class="red-color">AES2 </span>
+                                        <span>)</span>
+                                    </div>
+                                    <div class="td-div">交易类型：活动-1倍打码</div>
+
+                                </td>
+                                <td>
+                                    <div class="td-div ">Test-Jacky</div>
+                                    <div class="td-div">K1Z61</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">103757.27</div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color">存入：10.00</div>
+                                    <div class="td-div">存款优惠：0.00</div>
+                                </td>
+
+                                <td>
+                                    <div class="td-div red-color ">存入：10.00</div>
+                                    <div class="td-div">存款优惠：0.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">10.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">103767.27</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">
+                                        <select class="form-w100">
+                                            <option value="0">处理中</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color">1234</div>
+                                </td>
+                                <td>
+                                    <div class="td-div blue-color ">更新</div>
+                                    <div class="td-div blue-color">交易成功</div>
+                                </td>
+
+                                <td class="lastCol">
+                                    <div class="td-div">MUZIC</div>
+                                    <div class="td-div">2018-10-01</div>
+                                    <div class="td-div">10:26:23</div>
+                                </td>
+                            </tr>
+                            <tr class="table-content">
+                                <td>
+                                    <div class="td-div">
+                                        <input type="checkbox" class="check-box">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div">201810010324222624</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">日期：2018-10-01 10:26:23</div>
+                                    <div class="td-div new-div">
+                                        <span>帐号：AES2 (</span>
+                                        <span class="red-color">AES2 </span>
+                                        <span>)</span>
+                                    </div>
+                                    <div class="td-div">交易类型：活动-1倍打码</div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">Test-Jacky</div>
+                                    <div class="td-div">K1Z61</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">103757.27</div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color ">存入：10.00</div>
+                                    <div class="td-div">存款优惠：0.00</div>
+                                </td>
+
+                                <td>
+                                    <div class="td-div red-color ">存入：10.00</div>
+                                    <div class="td-div">存款优惠：0.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">10.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">103767.27</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">
+                                        <select class="form-w100">
+                                            <option value="0">处理中</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color">1234</div>
+                                </td>
+                                <td>
+                                    <div class="td-div blue-color">更新</div>
+                                    <div class="td-div blue-color">交易成功</div>
+                                </td>
+
+                                <td class="lastCol">
+                                    <div class="td-div">MUZIC</div>
+                                    <div class="td-div">2018-10-01</div>
+                                    <div class="td-div">10:26:23</div>
+                                </td>
+                            </tr>
+                            <tr class="table-content">
+                                <td colspan="4">
+                                    <div class="td-div colspan-td">小计：</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">103757.27</div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color ">存入：20.00</div>
+                                    <div class="td-div new-div">
+                                        <span>存款优惠：</span>
+                                        <span class="blue-color">5</span>
+                                        <span>.00</span>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="td-div ">支出：00</div>
+                                    <div class="td-div">扣除优惠：5.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">20.00</div>
+                                </td>
+
+                                <td class="lastCol" colspan="5">
+
+                                </td>
+                            </tr>
+                            <tr class="table-content">
+                                <td colspan="4">
+                                    <div class="td-div colspan-td">合计：</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">103757.27</div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color ">存入：20.00</div>
+                                    <div class="td-div new-div">
+                                        <span>存款优惠：</span>
+                                        <span class="blue-color">5</span>
+                                        <span>.00</span>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="td-div ">支出：00</div>
+                                    <div class="td-div">扣除优惠：5.00</div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">20.00</div>
+                                </td>
+
+                                <td class="lastCol" colspan="5"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="paging-vel">
+                        <div class="page-content">
+                            <div class="page-number">
+                                <select class="page-sel">
+                                    <option>10</option>
+                                </select>
+                            </div>
+                            <!--    左边-->
+                            <div class="page-left">
+                                <div class="page-left-first">
+                                    <img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+														../style/img/ic_first_page_24px@3x.png 3x"
+                                         class="ic_first_page_24px">
+                                </div>
+                                <div class="page-left-polygon">
+                                    <img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
 														../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
-												</div>
-											</div>
-											<!--    中间-->
-											<div class="page-center">
-												<span>Page</span>
-												<input value="10">
-												<div class="of-page">
-													<sapn>of</sapn>
-													<sapn>41</sapn>
-												</div>
-											</div>
-											<!--    右边-->
-											<div class="page-right">
-												<div class="page-right-polygon">
-													<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+                                </div>
+                            </div>
+                            <!--    中间-->
+                            <div class="page-center">
+                                <span>Page</span>
+                                <input value="10">
+                                <div class="of-page">
+                                    <sapn>of</sapn>
+                                    <sapn>41</sapn>
+                                </div>
+                            </div>
+                            <!--    右边-->
+                            <div class="page-right">
+                                <div class="page-right-polygon">
+                                    <img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
 														../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
-												</div>
-												<div class="page-right-first">
-													<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-														../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
-												</div>
-										
-											</div>
-											<!--    刷新-->
-											<div class="ico-refresh">
-												<img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
+                                </div>
+                                <div class="page-right-first">
+                                    <img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+														../style/img/ic_first_page_24px@3x.png 3x"
+                                         class="ic_first_page_24px">
+                                </div>
+
+                            </div>
+                            <!--    刷新-->
+                            <div class="ico-refresh">
+                                <img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
 														../style/img/ic_refresh_24px@3x.png">
-											</div>
-											<div class="page-text">
-												<span>总单数406，当前专案1到10</span>
-											</div>
-									</div>
-								</div>
-								<div class="operation-connect">
-										<div class="connect-vel">
-											<div class="content-vel">
-												<a href="javascript:void(0)" class="module-a">批次更新所的项目为交易失败</a>
-											</div>
-											<div class="content-vel">
-												<a href="javascript:void(0)" class="module-a">批次更新所选的项目为交易成功</a>
-											</div>
-											<div class="content-vel">
-												<a href="javascript:void(0)" class="module-a">批量修改成交易备注</a>
-											</div>
-											<div class="content-vel">
-												<a href="javascript:void(0)" class="module-a">全选</a>
-												<span class="span-module">|</span>
-												<a href="javascript:void(0)" class="module-a">反选</a>
-											</div>
-										</div>
-								</div>
-							</div>
-							<div class="switch-module3 hide" >
-								<div class="pay-vel">
-									<div class="input-vel">
-										<div class="input-left-title">站台名称：</div>
-										<select class="form-w230">
-											<option value="0">A100-测试站-DEMO</option>
-										</select>
-									</div>
-									<div class="input-vel new-date">
-										<div class="input-left-title">查询时间：</div>
-										<div class="date-vel date-vel-wid">
-											<input class="date-con date-con-wid" type="date" value="2019-02-03">
-										</div>
-										<div class="scope-con">~</div>
-										<div class="date-vel date-vel-wid">
-											<input class="date-con date-con-wid" type="date" value="2019-02-03">
-										</div>
-									</div>
-									<div class="btn-vel btn-new-wid" btn-color="btn-color">
-		
-										<div class="btn-general green-btn">
+                            </div>
+                            <div class="page-text">
+                                <span>总单数406，当前专案1到10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="operation-connect">
+                        <div class="connect-vel">
+                            <div class="content-vel">
+                                <a href="javascript:void(0)" class="module-a">批次更新所的项目为交易失败</a>
+                            </div>
+                            <div class="content-vel">
+                                <a href="javascript:void(0)" class="module-a">批次更新所选的项目为交易成功</a>
+                            </div>
+                            <div class="content-vel">
+                                <a href="javascript:void(0)" class="module-a">批量修改成交易备注</a>
+                            </div>
+                            <div class="content-vel">
+                                <a href="javascript:void(0)" class="module-a">全选</a>
+                                <span class="span-module">|</span>
+                                <a href="javascript:void(0)" class="module-a">反选</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="switch-module3 hide">
+                    <div class="pay-vel">
+                        <div class="input-vel">
+                            <div class="input-left-title">站台名称：</div>
+                            <select class="form-w230">
+                                <option value="0">A100-测试站-DEMO</option>
+                            </select>
+                        </div>
+                        <div class="input-vel new-date">
+                            <div class="input-left-title">查询时间：</div>
+                            <div class="date-vel date-vel-wid">
+                                <input class="date-con date-con-wid" type="date" value="2019-02-03">
+                            </div>
+                            <div class="scope-con">~</div>
+                            <div class="date-vel date-vel-wid">
+                                <input class="date-con date-con-wid" type="date" value="2019-02-03">
+                            </div>
+                        </div>
+                        <div class="btn-vel btn-new-wid" btn-color="btn-color">
 
-											<a href="javascript:void(0)">今天</a>
-										</div>
-										<div class="btn-general">
-										
-											<a href="javascript:void(0)">昨天</a>
-										</div>
-										<div class="btn-general">
-											
-											<a href="javascript:void(0)">上周</a>
-										</div>
-										<div class="btn-general">
-												<a href="javascript:void(0)">本周</a>
-											
-										</div>
-										<div class="btn-general">
-										
-											<a href="javascript:void(0)">上月</a>
-										</div>
-										<div class="btn-general">
-											
-											<a href="javascript:void(0)">本月</a>
-										</div>
-									</div>
-									<div class="input-vel">
-										<div class="input-few-title">　交易码：</div>
-										<input type="text" class="input-w230">
-									</div>
-								</div>
-								<div class="pay-vel">
-									<div class="input-vel">
-										<div class="input-left-title">金额范围：</div>
-										<input type="text" class="inp-w100" />
-										<span class="scope-con30">~</span>
-										<input type="text" class="inp-w100" />
-									</div>
-									<div class="input-vel new-screen">
-										<div class="input-left-title">筛选条件：</div>
-										<select class="form-w230" >
-											<option value="0">---全部---</option>
-										</select>
-										<span class="blank-con"></span>
-										<input type="text" class="inp-w343">
-									</div>
-									<div class="input-vel">
-										<div class="input-left-title">代付类型：</div>
-										<select class="form-w230" >
-									
-										</select>
-									</div>
-								</div>
-								<div class="pay-vel">
-									<div class="input-vel new-check">
-										<div class="input-left-title">代付状态：</div>
-										<input type="checkbox" class="checkbox-che" checked >
-										<span class="span-text">受理中</span>
-										<input type="checkbox" class="checkbox-che">
-										<span class="span-text">已受理</span>
-										<input type="checkbox" class="checkbox-che">
-										<span class="span-text">成功</span>
-										<input type="checkbox" class="checkbox-che">
-										<span class="span-text">余额不足</span>
-										<input type="checkbox" class="checkbox-che">
-										<span class="span-text">交易失败</span>
-									</div>
-								
-								</div>
-								<div class="query-vel">
-									<div class="btn-submit green-btn" data-submit="data-submit">
-										<a href="javascript:void(0)">查询</a>
-									</div>
-								</div>
-								<div class="table-header green-bg" navi-bg="navi-bg">
-									<div class="left-btn">查询结果</div>
-									<div class="right-btn">
-										<div class="btn-w100 btn-somber">代付设定</div>
-										<span class="blank-con"></span>
-										<div class="btn-w120 btn-buff">+ 新增公告</div>
-									</div>
-								</div>
-								<div class="table-main-vel">
-									<table class="table-01 table-01-new">
-										
-											<tr class="table-content">
-													<td>
-														<div class="td-div">
-															<input class="checkbox-che" type="checkbox">
-														</div>
-													</td>
-													<td>
-														<div class="td-div">信息内容</div>
-													</td>
-													<td>
-														<div class="td-div">发怖失效时间</div>
-													</td>
-													<td>
-														<div class="td-div">状态</div>
-													</td>
-													<td>
-														<div class="td-div">信息类型</div>
-													</td>
-													<td>
-														<div class="td-div">对象</div>
-													</td>
-													<td>
-														<div class="td-div">新增时间/人员</div>
-													</td>
-													<td>
-														<div class="td-div">最后修改时间/人员</div>
-													</td>
-													<td>
-														<div class="td-div">排序值</div>
-													</td>
-													<td class="lastCol">
-														<div class="td-div">操作</div>
-													</td>
-											</tr>
-									
-											<tr class="table-content ">
-												<td>
-													<div class="td-div">
-														<input class="checkbox-che" type="checkbox">
-													</div>
-												</td>
-												<td>
-													<div class="td-div"></div>
-												</td>
-												<td>
-													<div class="td-div">2018-10-18 00:00:00发布</div>
-													<div class="td-div">2018-10-18 14:10:00失效</div>
-												</td>
-												<td>
-													<div class="td-div">启用</div>
-													<div class="td-div state-con">发布完成</div>
-												</td>
-												<td>
-													<div class="td-div"></div>
-												</td>
-												<td>
-													<div class="td-div">A100-测试站-DEMO全站用户</div>
-												</td>
-												<td>
-													<div class="td-div">2018-10-23 19:16:47/JAKE</div>
-												</td>
-												<td>
-													<div class="td-div">2018-10-24 19:16:47/JAKE</div>
-												</td>
-												<td>
-												
-													<div class="td-div">10</div>
-												</td>
-												<td class="lastCol">
-													<div class="td-div operation-div-max">
-														<div class="operation-div">
-																<img class="state-icon" src="../style/img/start-2x.png" alt="">
-																<img class="state-icon" src="../style/img/stop-2x.png" alt="">
-																<img class="state-icon" src="../style/img/update-2x.png" alt="">
-																<img class="state-icon" src="../style/img/delete-2x.png" alt="">
-														</div>
-													
-													</div>
-												</td>
-											</tr>
-											<tr class="table-content ">
-													<td>
-														<div class="td-div">
-															<input class="checkbox-che" type="checkbox">
-														</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-18 00:00:00发布</div>
-														<div class="td-div">2018-10-18 14:10:00失效</div>
-													</td>
-													<td>
-														<div class="td-div">启用</div>
-														<div class="td-div state-con">发布完成</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div ">A100-测试站-DEMO全站用户</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-23 19:16:47/JAKE</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-24 19:16:47/JAKE</div>
-													</td>
-													<td>
-														<div class="td-div red-color">[已置顶]</div>
-														<div class="td-div">10</div>
-													</td>
-													<td class="lastCol">
-														<div class="td-div operation-div-max">
-															<div class="operation-div">
-																	<img class="state-icon" src="../style/img/start-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/stop-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/update-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/delete-2x.png" alt="">
-															</div>
-														
-														</div>
-													</td>
-											</tr>
-											<tr class="table-content ">
-													<td>
-														<div class="td-div">
-															<input class="checkbox-che" type="checkbox">
-														</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-18 00:00:00发布</div>
-														<div class="td-div">2018-10-18 14:10:00失效</div>
-													</td>
-													<td>
-														<div class="td-div">启用</div>
-														<div class="td-div state-con">发布完成</div>
-													</td>
-													<td>
-												
-													</td>
-													<td>
-														<div class="td-div ">A100-测试站-DEMO全站用户</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-23 19:16:47/JAKE</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-24 19:16:47/JAKE</div>
-													</td>
-													<td>
-															<div class="td-div">10</div>
-													</td>
-													<td class="lastCol">
-														<div class="td-div operation-div-max">
-															<div class="operation-div">
-																	<img class="state-icon" src="../style/img/start-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/stop-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/update-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/delete-2x.png" alt="">
-															</div>
-														
-														</div>
-													</td>
-											</tr>
-											<tr class="table-content ">
-													<td>
-														<div class="td-div">
-															<input class="checkbox-che" type="checkbox">
-														</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-18 00:00:00发布</div>
-														<div class="td-div">2018-10-18 14:10:00失效</div>
-													</td>
-													<td>
-														<div class="td-div">启用</div>
-														<div class="td-div state-con">发布完成</div>
-													</td>
-													<td>
-													
-													</td>
-													<td>
-														<div class="td-div ">A100-测试站-DEMO全站用户</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-23 19:16:47/JAKE</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-24 19:16:47/JAKE</div>
-													</td>
-													<td>
-															<div class="td-div">10</div>
-													</td>
-													<td class="lastCol">
-														<div class="td-div operation-div-max">
-															<div class="operation-div">
-																	<img class="state-icon" src="../style/img/start-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/stop-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/update-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/delete-2x.png" alt="">
-															</div>
-														
-														</div>
-													</td>
-											</tr>
-											<tr class="table-content ">
-													<td>
-														<div class="td-div">
-															<input class="checkbox-che" type="checkbox">
-														</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-18 00:00:00发布</div>
-														<div class="td-div">2018-10-18 14:10:00失效</div>
-													</td>
-													<td>
-														<div class="td-div">启用</div>
-														<div class="td-div state-con">发布完成</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div">A100-测试站-DEMO全站用户</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-23 19:16:47/JAKE</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-24 19:16:47/JAKE</div>
-													</td>
-													<td>
-															<div class="td-div">10</div>
-													</td>
-													<td class="lastCol">
-														<div class="td-div operation-div-max">
-															<div class="operation-div">
-																	<img class="state-icon" src="../style/img/start-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/stop-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/update-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/delete-2x.png" alt="">
-															</div>
-														
-														</div>
-													</td>
-											</tr>
-											<tr class="table-content ">
-													<td>
-														<div class="td-div">
-															<input class="checkbox-che" type="checkbox">
-														</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-18 00:00:00发布</div>
-														<div class="td-div">2018-10-18 14:10:00失效</div>
-													</td>
-													<td>
-														<div class="td-div">启用</div>
-														<div class="td-div state-con">发布完成</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div ">A100-测试站-DEMO全站用户</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-23 19:16:47/JAKE</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-24 19:16:47/JAKE</div>
-													</td>
-													<td>
-															<div class="td-div">10</div>
-													</td>
-													<td class="lastCol">
-														<div class="td-div operation-div-max">
-															<div class="operation-div">
-																	<img class="state-icon" src="../style/img/start-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/stop-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/update-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/delete-2x.png" alt="">
-															</div>
-														
-														</div>
-													</td>
-											</tr>
-											<tr class="table-content ">
-													<td>
-														<div class="td-div">
-															<input class="checkbox-che" type="checkbox">
-														</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-18 00:00:00发布</div>
-														<div class="td-div">2018-10-18 14:10:00失效</div>
-													</td>
-													<td>
-														<div class="td-div">启用</div>
-														<div class="td-div state-con">发布完成</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div ">A100-测试站-DEMO全站用户</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-23 19:16:47/JAKE</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-24 19:16:47/JAKE</div>
-													</td>
-													<td>
-															<div class="td-div">10</div>
-													</td>
-													<td class="lastCol">
-														<div class="td-div operation-div-max">
-															<div class="operation-div">
-																	<img class="state-icon" src="../style/img/start-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/stop-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/update-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/delete-2x.png" alt="">
-															</div>
-														
-														</div>
-													</td>
-											</tr>
-											<tr class="table-content ">
-													<td>
-														<div class="td-div">
-															<input class="checkbox-che" type="checkbox">
-														</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-18 00:00:00发布</div>
-														<div class="td-div">2018-10-18 14:10:00失效</div>
-													</td>
-													<td>
-														<div class="td-div">启用</div>
-														<div class="td-div state-con">发布完成</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div ">A100-测试站-DEMO全站用户</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-23 19:16:47/JAKE</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-24 19:16:47/JAKE</div>
-													</td>
-													<td>
-															<div class="td-div">10</div>
-													</td>
-													<td class="lastCol">
-														<div class="td-div operation-div-max">
-															<div class="operation-div">
-																	<img class="state-icon" src="../style/img/start-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/stop-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/update-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/delete-2x.png" alt="">
-															</div>
-														
-														</div>
-													</td>
-											</tr>
-											<tr class="table-content ">
-													<td>
-														<div class="td-div">
-															<input class="checkbox-che" type="checkbox">
-														</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-18 00:00:00发布</div>
-														<div class="td-div">2018-10-18 14:10:00失效</div>
-													</td>
-													<td>
-														<div class="td-div">启用</div>
-														<div class="td-div state-con">发布完成</div>
-													</td>
-													<td>
-														<div class="td-div"></div>
-													</td>
-													<td>
-														<div class="td-div ">A100-测试站-DEMO全站用户</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-23 19:16:47/JAKE</div>
-													</td>
-													<td>
-														<div class="td-div">2018-10-24 19:16:47/JAKE</div>
-													</td>
-													<td>
-								
-														<div class="td-div">10</div>
-													</td>
-													<td class="lastCol">
-														<div class="td-div operation-div-max">
-															<div class="operation-div">
-																	<img class="state-icon" src="../style/img/start-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/stop-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/update-2x.png" alt="">
-																	<img class="state-icon" src="../style/img/delete-2x.png" alt="">
-															</div>
-														
-														</div>
-													</td>
-											</tr>
-									
-										</table>
-								</div>
-								<div class="paging-vel">
-										<div class="page-content">
-												<div class="page-number">
-													<select class="page-sel">
-														<option>10</option>
-													</select>
-												</div>
-												<!--    左边-->
-												<div class="page-left">
-													<div class="page-left-first">
-														<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-															../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
-													</div>
-													<div class="page-left-polygon">
-														<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+                            <div class="btn-general green-btn">
+
+                                <a href="javascript:void(0)">今天</a>
+                            </div>
+                            <div class="btn-general">
+
+                                <a href="javascript:void(0)">昨天</a>
+                            </div>
+                            <div class="btn-general">
+
+                                <a href="javascript:void(0)">上周</a>
+                            </div>
+                            <div class="btn-general">
+                                <a href="javascript:void(0)">本周</a>
+
+                            </div>
+                            <div class="btn-general">
+
+                                <a href="javascript:void(0)">上月</a>
+                            </div>
+                            <div class="btn-general">
+
+                                <a href="javascript:void(0)">本月</a>
+                            </div>
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-few-title">　交易码：</div>
+                            <input type="text" class="input-w230">
+                        </div>
+                    </div>
+                    <div class="pay-vel">
+                        <div class="input-vel">
+                            <div class="input-left-title">金额范围：</div>
+                            <input type="text" class="inp-w100"/>
+                            <span class="scope-con30">~</span>
+                            <input type="text" class="inp-w100"/>
+                        </div>
+                        <div class="input-vel new-screen">
+                            <div class="input-left-title">筛选条件：</div>
+                            <select class="form-w230">
+                                <option value="0">---全部---</option>
+                            </select>
+                            <span class="blank-con"></span>
+                            <input type="text" class="inp-w343">
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-left-title">代付类型：</div>
+                            <select class="form-w230">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pay-vel">
+                        <div class="input-vel new-check">
+                            <div class="input-left-title">代付状态：</div>
+                            <input type="checkbox" class="checkbox-che" checked>
+                            <span class="span-text">受理中</span>
+                            <input type="checkbox" class="checkbox-che">
+                            <span class="span-text">已受理</span>
+                            <input type="checkbox" class="checkbox-che">
+                            <span class="span-text">成功</span>
+                            <input type="checkbox" class="checkbox-che">
+                            <span class="span-text">余额不足</span>
+                            <input type="checkbox" class="checkbox-che">
+                            <span class="span-text">交易失败</span>
+                        </div>
+
+                    </div>
+                    <div class="query-vel">
+                        <div class="btn-submit green-btn" data-submit="data-submit">
+                            <a href="javascript:void(0)">查询</a>
+                        </div>
+                    </div>
+                    <div class="table-header green-bg" navi-bg="navi-bg">
+                        <div class="left-btn">查询结果</div>
+                        <div class="right-btn">
+                            <div class="btn-w100 btn-somber">代付设定</div>
+                            <span class="blank-con"></span>
+                            <div class="btn-w120 btn-buff">+ 新增公告</div>
+                        </div>
+                    </div>
+                    <div class="table-main-vel">
+                        <table class="table-01 table-01-new">
+
+                            <tr class="table-content">
+                                <td>
+                                    <div class="td-div">
+                                        <input class="checkbox-che" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div">信息内容</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">发怖失效时间</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">状态</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">信息类型</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">对象</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">新增时间/人员</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">最后修改时间/人员</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">排序值</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div">操作</div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-content ">
+                                <td>
+                                    <div class="td-div">
+                                        <input class="checkbox-che" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-18 00:00:00发布</div>
+                                    <div class="td-div">2018-10-18 14:10:00失效</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">启用</div>
+                                    <div class="td-div state-con">发布完成</div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div">A100-测试站-DEMO全站用户</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-23 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-24 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+
+                                    <div class="td-div">10</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div operation-div-max">
+                                        <div class="operation-div">
+                                            <img class="state-icon" src="../style/img/start-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/stop-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/update-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/delete-2x.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-content ">
+                                <td>
+                                    <div class="td-div">
+                                        <input class="checkbox-che" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-18 00:00:00发布</div>
+                                    <div class="td-div">2018-10-18 14:10:00失效</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">启用</div>
+                                    <div class="td-div state-con">发布完成</div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">A100-测试站-DEMO全站用户</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-23 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-24 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div red-color">[已置顶]</div>
+                                    <div class="td-div">10</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div operation-div-max">
+                                        <div class="operation-div">
+                                            <img class="state-icon" src="../style/img/start-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/stop-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/update-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/delete-2x.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-content ">
+                                <td>
+                                    <div class="td-div">
+                                        <input class="checkbox-che" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-18 00:00:00发布</div>
+                                    <div class="td-div">2018-10-18 14:10:00失效</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">启用</div>
+                                    <div class="td-div state-con">发布完成</div>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <div class="td-div ">A100-测试站-DEMO全站用户</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-23 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-24 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">10</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div operation-div-max">
+                                        <div class="operation-div">
+                                            <img class="state-icon" src="../style/img/start-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/stop-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/update-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/delete-2x.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-content ">
+                                <td>
+                                    <div class="td-div">
+                                        <input class="checkbox-che" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-18 00:00:00发布</div>
+                                    <div class="td-div">2018-10-18 14:10:00失效</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">启用</div>
+                                    <div class="td-div state-con">发布完成</div>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <div class="td-div ">A100-测试站-DEMO全站用户</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-23 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-24 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">10</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div operation-div-max">
+                                        <div class="operation-div">
+                                            <img class="state-icon" src="../style/img/start-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/stop-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/update-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/delete-2x.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-content ">
+                                <td>
+                                    <div class="td-div">
+                                        <input class="checkbox-che" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-18 00:00:00发布</div>
+                                    <div class="td-div">2018-10-18 14:10:00失效</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">启用</div>
+                                    <div class="td-div state-con">发布完成</div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div">A100-测试站-DEMO全站用户</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-23 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-24 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">10</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div operation-div-max">
+                                        <div class="operation-div">
+                                            <img class="state-icon" src="../style/img/start-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/stop-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/update-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/delete-2x.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-content ">
+                                <td>
+                                    <div class="td-div">
+                                        <input class="checkbox-che" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-18 00:00:00发布</div>
+                                    <div class="td-div">2018-10-18 14:10:00失效</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">启用</div>
+                                    <div class="td-div state-con">发布完成</div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">A100-测试站-DEMO全站用户</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-23 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-24 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">10</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div operation-div-max">
+                                        <div class="operation-div">
+                                            <img class="state-icon" src="../style/img/start-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/stop-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/update-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/delete-2x.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-content ">
+                                <td>
+                                    <div class="td-div">
+                                        <input class="checkbox-che" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-18 00:00:00发布</div>
+                                    <div class="td-div">2018-10-18 14:10:00失效</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">启用</div>
+                                    <div class="td-div state-con">发布完成</div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">A100-测试站-DEMO全站用户</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-23 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-24 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">10</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div operation-div-max">
+                                        <div class="operation-div">
+                                            <img class="state-icon" src="../style/img/start-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/stop-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/update-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/delete-2x.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-content ">
+                                <td>
+                                    <div class="td-div">
+                                        <input class="checkbox-che" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-18 00:00:00发布</div>
+                                    <div class="td-div">2018-10-18 14:10:00失效</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">启用</div>
+                                    <div class="td-div state-con">发布完成</div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">A100-测试站-DEMO全站用户</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-23 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-24 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">10</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div operation-div-max">
+                                        <div class="operation-div">
+                                            <img class="state-icon" src="../style/img/start-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/stop-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/update-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/delete-2x.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-content ">
+                                <td>
+                                    <div class="td-div">
+                                        <input class="checkbox-che" type="checkbox">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-18 00:00:00发布</div>
+                                    <div class="td-div">2018-10-18 14:10:00失效</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">启用</div>
+                                    <div class="td-div state-con">发布完成</div>
+                                </td>
+                                <td>
+                                    <div class="td-div"></div>
+                                </td>
+                                <td>
+                                    <div class="td-div ">A100-测试站-DEMO全站用户</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-23 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+                                    <div class="td-div">2018-10-24 19:16:47/JAKE</div>
+                                </td>
+                                <td>
+
+                                    <div class="td-div">10</div>
+                                </td>
+                                <td class="lastCol">
+                                    <div class="td-div operation-div-max">
+                                        <div class="operation-div">
+                                            <img class="state-icon" src="../style/img/start-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/stop-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/update-2x.png" alt="">
+                                            <img class="state-icon" src="../style/img/delete-2x.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="paging-vel">
+                        <div class="page-content">
+                            <div class="page-number">
+                                <select class="page-sel">
+                                    <option>10</option>
+                                </select>
+                            </div>
+                            <!--    左边-->
+                            <div class="page-left">
+                                <div class="page-left-first">
+                                    <img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+															../style/img/ic_first_page_24px@3x.png 3x"
+                                         class="ic_first_page_24px">
+                                </div>
+                                <div class="page-left-polygon">
+                                    <img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
 															../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
-													</div>
-												</div>
-												<!--    中间-->
-												<div class="page-center">
-													<span>Page</span>
-													<input value="10">
-													<div class="of-page">
-														<sapn>of</sapn>
-														<sapn>41</sapn>
-													</div>
-												</div>
-												<!--    右边-->
-												<div class="page-right">
-													<div class="page-right-polygon">
-														<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+                                </div>
+                            </div>
+                            <!--    中间-->
+                            <div class="page-center">
+                                <span>Page</span>
+                                <input value="10">
+                                <div class="of-page">
+                                    <sapn>of</sapn>
+                                    <sapn>41</sapn>
+                                </div>
+                            </div>
+                            <!--    右边-->
+                            <div class="page-right">
+                                <div class="page-right-polygon">
+                                    <img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
 															../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
-													</div>
-													<div class="page-right-first">
-														<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-															../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
-													</div>
-											
-												</div>
-												<!--    刷新-->
-												<div class="ico-refresh">
-													<img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
+                                </div>
+                                <div class="page-right-first">
+                                    <img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+															../style/img/ic_first_page_24px@3x.png 3x"
+                                         class="ic_first_page_24px">
+                                </div>
+
+                            </div>
+                            <!--    刷新-->
+                            <div class="ico-refresh">
+                                <img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
 															../style/img/ic_refresh_24px@3x.png">
-												</div>
-												<div class="page-text">
-													<span>总单数406，当前专案1到10</span>
-												</div>
-											</div>
-								</div>
-							</div>
-							<div class="switch-module4 hide" >存款方式设定</div>
-							<div class="switch-module5 hide" >交易统计</div>
-						</div>
-						<div class="main-content2 hide" main-con="main-con">
-								<div class="top-module-row" top-module="top-module">
-										<div class="select-module green-tar">第一</div>
-										<div class="select-module">第二</div>
-								</div>
-								<div class="switch-module1" >第一内容</div>
-								<div class="switch-module2 hide" >第二内容</div>
-						</div>
-						<div class="main-content3 hide" main-con="main-con">
-							入款账户管理
-						</div>	
-						<div class="main-content4 hide" main-con="main-con">
-							支付商户管理
-						</div>	
-						<div class="main-content5 hide" main-con="main-con">
-							<div class="audit-vel">
-								<div class="input-vel">
-									<div class="input-left-title">站台名称：</div>
-									<select class="form-w230">
-										<option value="0">A100-测试站-DEMO</option>
-									</select>
-								</div>
-								<div class="input-vel">
-									<div class="input-left-title">　交易码：</div>
-									<input type="text" class="input-w230">
-								</div>
-								<div class="input-vel date-new">
-									<div class="input-left-title">查询时间：</div>
-									<div class="date-vel date-vel-wid">
-										<input class="date-con date-con-wid" type="date" value="2019-02-03">
-									</div>
-									<div class="scope-con">~</div>
-									<div class="date-vel date-vel-wid">
-										<input class="date-con date-con-wid" type="date" value="2019-02-03">
-									</div>
-								</div>
-								<div class="btn-vel" btn-color="btn-color">
-		
-										<div class="btn-general green-btn">
+                            </div>
+                            <div class="page-text">
+                                <span>总单数406，当前专案1到10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="switch-module4 hide">存款方式设定</div>
+                <div class="switch-module5 hide">交易统计</div>
+            </div>
+            <div class="main-content2 hide" main-con="main-con">
+                <div class="top-module-row" top-module="top-module">
+                    <div class="select-module green-tar">第一</div>
+                    <div class="select-module">第二</div>
+                </div>
+                <div class="switch-module1">第一内容</div>
+                <div class="switch-module2 hide">第二内容</div>
+            </div>
+            <div class="main-content3 hide" main-con="main-con">
+                入款账户管理
+            </div>
+            <div class="main-content4 hide" main-con="main-con">
+                支付商户管理
+            </div>
+            <div class="main-content5 hide" main-con="main-con">
+                <div class="audit-vel">
+                    <div class="input-vel">
+                        <div class="input-left-title">站台名称：</div>
+                        <select class="form-w230">
+                            <option value="0">A100-测试站-DEMO</option>
+                        </select>
+                    </div>
+                    <div class="input-vel">
+                        <div class="input-left-title">　交易码：</div>
+                        <input type="text" class="input-w230">
+                    </div>
+                    <div class="input-vel date-new">
+                        <div class="input-left-title">查询时间：</div>
+                        <div class="date-vel date-vel-wid">
+                            <input class="date-con date-con-wid" type="date" value="2019-02-03">
+                        </div>
+                        <div class="scope-con">~</div>
+                        <div class="date-vel date-vel-wid">
+                            <input class="date-con date-con-wid" type="date" value="2019-02-03">
+                        </div>
+                    </div>
+                    <div class="btn-vel" btn-color="btn-color">
 
-											<a href="javascript:void(0)">今天</a>
-										</div>
-										<div class="btn-general">
-										
-											<a href="javascript:void(0)">昨天</a>
-										</div>
-										<div class="btn-general">
-											
-											<a href="javascript:void(0)">上周</a>
-										</div>
-										<div class="btn-general">
-												<a href="javascript:void(0)">本周</a>
-											
-										</div>
-										<div class="btn-general">
-										
-											<a href="javascript:void(0)">上月</a>
-										</div>
-										<div class="btn-general">
-											
-											<a href="javascript:void(0)">本月</a>
-										</div>
-								</div>
-							</div>
-							<div class="audit-vel">
-								<div class="input-vel new-select">
-									<div class="input-left-title">筛选条件：</div>
-									<select class="form-w230">
-										<option value="0">A100-测试站-DEMO</option>
-									</select>
-									<span class="blank-con"></span>
-									<input type="text" class="inp-w343">
-								</div>
-								<div class="input-vel">
-									<div class="input-left-title">出款管理：</div>
-									<select class="form-w120">
-										<option value="0">不更新</option>
-									</select>
-									<span class="blank-con1"></span>
-									<select class="form-w85">
-										<option value="0">更新</option>
-									</select>
-								</div>
-								<div class="input-vel new-wid ">
-									<div class="input-left-title">交易状态：</div>
-									<input type="checkbox" class="checkbox-che" checked />
-									<span class="span-text">处理中</span>
-									<input type="checkbox" class="checkbox-che" />
-									<span class="span-text">已审核</span>
-									<input type="checkbox" class="checkbox-che" />
-									<span class="span-text">已受理</span>
-									<input type="checkbox" class="checkbox-che" />
-									<span class="span-text">交易成功</span>
-									<input type="checkbox" class="checkbox-che" />
-									<span class="span-text">交易终止</span>
-								</div>
-							</div>
-							<div class="search-vel sea-new" data-move="data-move">
-								<a href="javascript:void(0)" class="search-title green-text" text-switch="text-switch" >进阶搜寻</a>
-								<div class="green-bottom-icon" icon-switch="icon-switch"  id="1" ></div>
-							</div>
-						
-							<div class="audit-modules hide"  move-module="move-module">
-								<div class="audit-vel audit-new">
-										<div class="input-vel">
-											<div class="input-left-title">金额范围：</div>
-											<input type="text" class="inp-w100">
-											<span class="scope-con30">~</span>
-											<input type="text" class="inp-w100">
-										</div>
-										<div class="input-vel">
-											<div class="input-left-title">排序規則：</div>
-											<select  class="form-w230">
-												<option value="0">---默認---</option>
-											</select>
-										</div>
-										<div class="input-vel">
-											<div class="input-left-title">取款銀行：</div>
-											<select  class="form-w230"></select>
-										</div>
-										<div class="input-vel">
-											<div class="input-left-title">排序規則：</div>
-											<select  class="form-w230">
-												<option value="0">---全部---</option>
-											</select>
-										</div>
-								</div>
-								<div class="audit-vel ">
-									<div class="input-vel new-wid">
-										<div class="input-left-title">排序規則：</div>
-										<input type="checkbox" class="checkbox-che" checked/>
-										<span class="span-text">线上存款</span>
-										<input type="checkbox" class="checkbox-che" />
-										<span class="span-text">线下存款</span>
-										<input type="checkbox" class="checkbox-che" />
-										<span class="span-text">更新</span>
-										<input type="checkbox" class="checkbox-che" />
-										<span class="span-text">警示金额</span>
-										<input type="checkbox" class="checkbox-che" />
-										<span class="span-text">未完成交易</span>
-									</div>
-								</div>
-							</div>
-							
-							<div class="btn-div-vel" >
-								<div class="btn-submit green-btn" data-submit="data-submit">
-									<a href="javascript:void(0)">查询</a>
-								</div>
-							</div>
-							<div class="list-head-vel">
-								<div class="paragraph-con">出款管理列表</div>
-							</div>
-							<div class="head-hint-vel">
-								<div class="hint-module">
-									<div class="reseda-color">快速審核：</div>
-									<div >优化出款，有异常会弹出提醒无异常直接成功</div>
-								</div>
-								<div class="hint-module">
-									<div class="crimson-color">急速出款：</div>
-									<div >直接交易成功不做任何审核</div>
-								</div>
-								<div class="hint-module">
-									<div class="crimson-color">批量代付：</div>
-									<div >不进行任何审核</div>
-								</div>
-								<div class="picture-vel">
-									<img class="icon-picture" src="../style/img/audit2.png" alt="">
-									<span class="icon-text" >：審核</span>
-								</div>
-								<div class="picture-vel new-picture1">
-									<img class="icon-picture" src="../style/img/audit1.png" alt="">
-									<span class="icon-text" >：快速審核</span>
-								</div>
-								<div class="picture-vel new-picture1">
-									<img class="icon-picture" src="../style/img/paragraph.png" alt="">
-									<span class="icon-text" >：极速出款</span>
-								</div>
-								<div class="picture-vel">
-									<img class="icon-picture" src="../style/img/renewal.png" alt="">
-									<span class="icon-text" >：更新</span>
-								</div>
-								<div class="picture-vel new-picture2">
-									<img class="icon-picture" src="../style/img/pay.png" alt="">
-									<span class="icon-text" >：代付</span>
-								</div>
-								<div class="btn-w100 btn-wathet">批量代付</div>
-								<div class="remit-vel">
-										<div class="btn-w120 btn-pink">汇出Excel</div>
-								</div>
-							</div>
-							<div class="table-vel-audit">
-								<table class="table-01 table-width">
-									<tbody>
-										<tr class="table-head green-bg" navi-bg="navi-bg">
-										<td>
-											<div>	
-												<input type="checkbox" class="check-box">
-											</div>
-										</td>
-										<td>
-											<div>会员帐号</div>
-										</td>
-										<td>
-											<div>出款状况</div>
-										</td>
-										<td>
-											<div>出款日期</div>
-										</td>
-										<td>
-											<div>代理层级</div>
-										</td>
-										<td>
-											<div>原始金额</div>
-										</td>
-										<td>
-											<div>缴款金额</div>
-										</td>
-										<td>
-											
-										</td>
-										<td>
-											<div>对帐金额</div>
-										</td>
-										<td>
-											<div>账户余额</div>
-										</td>
-										
-										<td>
-											<div>交易状态</div>
-										</td>
-										<td>
-											<div>备注</div>
-										</td>
-										<td>
-											<div>会员姓名</div>
-										</td>
-										<td>
-											<div>操作</div>
-										</td>
-										<td>
-											<div>代付</div>
-										</td>
-										<td>
-											<div>备注</div>
-										</td>
-									
-										<td class="lastCol">
-											<div>更新人</div>
-										</td>
-										</tr>
-									</tbody>
-									<tbody>
-										<tr class="table-content">
-											<td>
-												<div class="td-div">
-													<input type="checkbox" class="check-box">
-												</div>
-											</td>
-										
-											<td>
-												<div class="td-div blue-color">NNN002</div>
-											</td>
-											<td>
-												<div class="td-div red-color">首次出款</div>
-											</td>
-											<td>
-												<div class="td-div">2018-09-26 10:01:01</div>		
-											</td>
-											<td>
-												<div class="td-div">CS测试 NANCY666</div>
-											</td>
-											<td>
-												<div class="td-div">1996.00</div>
-											</td>
-											<td>
-												<div class="td-div">100.00</div>
-											</td>
-											<td>
-												<div class="td-div blue-color">0.00</div>
-											</td>
-											<td>
-												<div class="td-div red-color">100.00</div>
-											</td>
-											<td>
-												<div class="td-div">19860.00</div>
-											</td>
-											<td>
-												<div class="td-div">
-													<select class="form-w124">
-														<option value="0">交易成功</option>
-													</select>
-												</div>
-											</td>
-											<td>
-												<div class="td-div red-color">新增</div>
-											</td>
-											<td>
-												<div class="td-div  ">南希</div>
-											</td>
-											<td>
-												<div class="td-div icon-div">
-													<img class="operation-icon" src="../style/img/pay.png" alt="">
-													<img class="operation-icon" src="../style/img/renewal.png" alt="">
-													<img class="operation-icon" src="../style/img/audit2.png" alt="">
-												</div>
-											</td>
-											<td>
-												<div class="td-div  "></div>
-											</td>
-											<td>
-												<div class="td-div  "></div>
-											</td>
-											<td class="lastCol">
-												<div class="td-div">MUZIC</div>
-												<div class="td-div">2018-10-01</div>
-												<div class="td-div">10:26:23</div>
-											</td>
-										</tr>
-										<tr class="table-content bg-tr">
-												<td colspan="6"  >
-													<div class="td-div colspan-td">小计</div>
-												</td>
-											
-												<td>
-													<div class="td-div">100.00</div>
-												</td>
-												<td>
-													<div class="td-div blue-color">0.00</div>
-												</td>
-												<td>
-													<div class="td-div red-color">100.00</div>
-												</td>
-												
-												<td class="lastCol" colspan="8"></td>
-										</tr>
-										<tr class="table-content">
-												<td colspan="6" >
-													<div class="td-div colspan-td">合计</div>
-												</td>
-											
-												<td>
-													<div class="td-div">100.00</div>
-												</td>
-												<td>
-													<div class="td-div blue-color">0.00</div>
-												</td>
-												<td>
-													<div class="td-div red-color">100.00</div>
-												</td>
-												
-												<td class="lastCol" colspan="8"></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="page-vel">
-								<div class="page-content">
-										<div class="page-number">
-											<select class="page-sel">
-												<option>10</option>
-											</select>
-										</div>
-										<!--    左边-->
-										<div class="page-left">
-											<div class="page-left-first">
-												<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-													../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
-											</div>
-											<div class="page-left-polygon">
-												<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+                        <div class="btn-general green-btn">
+
+                            <a href="javascript:void(0)">今天</a>
+                        </div>
+                        <div class="btn-general">
+
+                            <a href="javascript:void(0)">昨天</a>
+                        </div>
+                        <div class="btn-general">
+
+                            <a href="javascript:void(0)">上周</a>
+                        </div>
+                        <div class="btn-general">
+                            <a href="javascript:void(0)">本周</a>
+
+                        </div>
+                        <div class="btn-general">
+
+                            <a href="javascript:void(0)">上月</a>
+                        </div>
+                        <div class="btn-general">
+
+                            <a href="javascript:void(0)">本月</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="audit-vel">
+                    <div class="input-vel new-select">
+                        <div class="input-left-title">筛选条件：</div>
+                        <select class="form-w230">
+                            <option value="0">A100-测试站-DEMO</option>
+                        </select>
+                        <span class="blank-con"></span>
+                        <input type="text" class="inp-w343">
+                    </div>
+                    <div class="input-vel">
+                        <div class="input-left-title">出款管理：</div>
+                        <select class="form-w120">
+                            <option value="0">不更新</option>
+                        </select>
+                        <span class="blank-con1"></span>
+                        <select class="form-w85">
+                            <option value="0">更新</option>
+                        </select>
+                    </div>
+                    <div class="input-vel new-wid ">
+                        <div class="input-left-title">交易状态：</div>
+                        <input type="checkbox" class="checkbox-che" checked/>
+                        <span class="span-text">处理中</span>
+                        <input type="checkbox" class="checkbox-che"/>
+                        <span class="span-text">已审核</span>
+                        <input type="checkbox" class="checkbox-che"/>
+                        <span class="span-text">已受理</span>
+                        <input type="checkbox" class="checkbox-che"/>
+                        <span class="span-text">交易成功</span>
+                        <input type="checkbox" class="checkbox-che"/>
+                        <span class="span-text">交易终止</span>
+                    </div>
+                </div>
+                <div class="search-vel sea-new" data-move="data-move">
+                    <a href="javascript:void(0)" class="search-title green-text" text-switch="text-switch">进阶搜寻</a>
+                    <div class="green-bottom-icon" icon-switch="icon-switch" id="1"></div>
+                </div>
+
+                <div class="audit-modules hide" move-module="move-module">
+                    <div class="audit-vel audit-new">
+                        <div class="input-vel">
+                            <div class="input-left-title">金额范围：</div>
+                            <input type="text" class="inp-w100">
+                            <span class="scope-con30">~</span>
+                            <input type="text" class="inp-w100">
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-left-title">排序規則：</div>
+                            <select class="form-w230">
+                                <option value="0">---默認---</option>
+                            </select>
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-left-title">取款銀行：</div>
+                            <select class="form-w230"></select>
+                        </div>
+                        <div class="input-vel">
+                            <div class="input-left-title">排序規則：</div>
+                            <select class="form-w230">
+                                <option value="0">---全部---</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="audit-vel ">
+                        <div class="input-vel new-wid">
+                            <div class="input-left-title">排序規則：</div>
+                            <input type="checkbox" class="checkbox-che" checked/>
+                            <span class="span-text">线上存款</span>
+                            <input type="checkbox" class="checkbox-che"/>
+                            <span class="span-text">线下存款</span>
+                            <input type="checkbox" class="checkbox-che"/>
+                            <span class="span-text">更新</span>
+                            <input type="checkbox" class="checkbox-che"/>
+                            <span class="span-text">警示金额</span>
+                            <input type="checkbox" class="checkbox-che"/>
+                            <span class="span-text">未完成交易</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-div-vel">
+                    <div class="btn-submit green-btn" data-submit="data-submit">
+                        <a href="javascript:void(0)">查询</a>
+                    </div>
+                </div>
+                <div class="list-head-vel">
+                    <div class="paragraph-con">出款管理列表</div>
+                </div>
+                <div class="head-hint-vel">
+                    <div class="hint-module">
+                        <div class="reseda-color">快速審核：</div>
+                        <div>优化出款，有异常会弹出提醒无异常直接成功</div>
+                    </div>
+                    <div class="hint-module">
+                        <div class="crimson-color">急速出款：</div>
+                        <div>直接交易成功不做任何审核</div>
+                    </div>
+                    <div class="hint-module">
+                        <div class="crimson-color">批量代付：</div>
+                        <div>不进行任何审核</div>
+                    </div>
+                    <div class="picture-vel">
+                        <img class="icon-picture" src="../style/img/audit2.png" alt="">
+                        <span class="icon-text">：審核</span>
+                    </div>
+                    <div class="picture-vel new-picture1">
+                        <img class="icon-picture" src="../style/img/audit1.png" alt="">
+                        <span class="icon-text">：快速審核</span>
+                    </div>
+                    <div class="picture-vel new-picture1">
+                        <img class="icon-picture" src="../style/img/paragraph.png" alt="">
+                        <span class="icon-text">：极速出款</span>
+                    </div>
+                    <div class="picture-vel">
+                        <img class="icon-picture" src="../style/img/renewal.png" alt="">
+                        <span class="icon-text">：更新</span>
+                    </div>
+                    <div class="picture-vel new-picture2">
+                        <img class="icon-picture" src="../style/img/pay.png" alt="">
+                        <span class="icon-text">：代付</span>
+                    </div>
+                    <div class="btn-w100 btn-wathet">批量代付</div>
+                    <div class="remit-vel">
+                        <div class="btn-w120 btn-pink">汇出Excel</div>
+                    </div>
+                </div>
+                <div class="table-vel-audit">
+                    <table class="table-01 table-width">
+                        <tbody>
+                        <tr class="table-head green-bg" navi-bg="navi-bg">
+                            <td>
+                                <div>
+                                    <input type="checkbox" class="check-box">
+                                </div>
+                            </td>
+                            <td>
+                                <div>会员帐号</div>
+                            </td>
+                            <td>
+                                <div>出款状况</div>
+                            </td>
+                            <td>
+                                <div>出款日期</div>
+                            </td>
+                            <td>
+                                <div>代理层级</div>
+                            </td>
+                            <td>
+                                <div>原始金额</div>
+                            </td>
+                            <td>
+                                <div>缴款金额</div>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <div>对帐金额</div>
+                            </td>
+                            <td>
+                                <div>账户余额</div>
+                            </td>
+
+                            <td>
+                                <div>交易状态</div>
+                            </td>
+                            <td>
+                                <div>备注</div>
+                            </td>
+                            <td>
+                                <div>会员姓名</div>
+                            </td>
+                            <td>
+                                <div>操作</div>
+                            </td>
+                            <td>
+                                <div>代付</div>
+                            </td>
+                            <td>
+                                <div>备注</div>
+                            </td>
+
+                            <td class="lastCol">
+                                <div>更新人</div>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr class="table-content">
+                            <td>
+                                <div class="td-div">
+                                    <input type="checkbox" class="check-box">
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="td-div blue-color">NNN002</div>
+                            </td>
+                            <td>
+                                <div class="td-div red-color">首次出款</div>
+                            </td>
+                            <td>
+                                <div class="td-div">2018-09-26 10:01:01</div>
+                            </td>
+                            <td>
+                                <div class="td-div">CS测试 NANCY666</div>
+                            </td>
+                            <td>
+                                <div class="td-div">1996.00</div>
+                            </td>
+                            <td>
+                                <div class="td-div">100.00</div>
+                            </td>
+                            <td>
+                                <div class="td-div blue-color">0.00</div>
+                            </td>
+                            <td>
+                                <div class="td-div red-color">100.00</div>
+                            </td>
+                            <td>
+                                <div class="td-div">19860.00</div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <select class="form-w124">
+                                        <option value="0">交易成功</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div red-color">新增</div>
+                            </td>
+                            <td>
+                                <div class="td-div  ">南希</div>
+                            </td>
+                            <td>
+                                <div class="td-div icon-div">
+                                    <img class="operation-icon" src="../style/img/pay.png" alt="">
+                                    <img class="operation-icon" src="../style/img/renewal.png" alt="">
+                                    <img class="operation-icon" src="../style/img/audit2.png" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div  "></div>
+                            </td>
+                            <td>
+                                <div class="td-div  "></div>
+                            </td>
+                            <td class="lastCol">
+                                <div class="td-div">MUZIC</div>
+                                <div class="td-div">2018-10-01</div>
+                                <div class="td-div">10:26:23</div>
+                            </td>
+                        </tr>
+                        <tr class="table-content bg-tr">
+                            <td colspan="6">
+                                <div class="td-div colspan-td">小计</div>
+                            </td>
+
+                            <td>
+                                <div class="td-div">100.00</div>
+                            </td>
+                            <td>
+                                <div class="td-div blue-color">0.00</div>
+                            </td>
+                            <td>
+                                <div class="td-div red-color">100.00</div>
+                            </td>
+
+                            <td class="lastCol" colspan="8"></td>
+                        </tr>
+                        <tr class="table-content">
+                            <td colspan="6">
+                                <div class="td-div colspan-td">合计</div>
+                            </td>
+
+                            <td>
+                                <div class="td-div">100.00</div>
+                            </td>
+                            <td>
+                                <div class="td-div blue-color">0.00</div>
+                            </td>
+                            <td>
+                                <div class="td-div red-color">100.00</div>
+                            </td>
+
+                            <td class="lastCol" colspan="8"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="page-vel">
+                    <div class="page-content">
+                        <div class="page-number">
+                            <select class="page-sel">
+                                <option>10</option>
+                            </select>
+                        </div>
+                        <!--    左边-->
+                        <div class="page-left">
+                            <div class="page-left-first">
+                                <img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+													../style/img/ic_first_page_24px@3x.png 3x"
+                                     class="ic_first_page_24px">
+                            </div>
+                            <div class="page-left-polygon">
+                                <img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
 													../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
-											</div>
-										</div>
-										<!--    中间-->
-										<div class="page-center">
-											<span>Page</span>
-											<input value="10">
-											<div class="of-page">
-												<sapn>of</sapn>
-												<sapn>41</sapn>
-											</div>
-										</div>
-										<!--    右边-->
-										<div class="page-right">
-											<div class="page-right-polygon">
-												<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+                            </div>
+                        </div>
+                        <!--    中间-->
+                        <div class="page-center">
+                            <span>Page</span>
+                            <input value="10">
+                            <div class="of-page">
+                                <sapn>of</sapn>
+                                <sapn>41</sapn>
+                            </div>
+                        </div>
+                        <!--    右边-->
+                        <div class="page-right">
+                            <div class="page-right-polygon">
+                                <img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
 													../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
-											</div>
-											<div class="page-right-first">
-												<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-													../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
-											</div>
-									
-										</div>
-										<!--    刷新-->
-										<div class="ico-refresh">
-											<img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
+                            </div>
+                            <div class="page-right-first">
+                                <img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+													../style/img/ic_first_page_24px@3x.png 3x"
+                                     class="ic_first_page_24px">
+                            </div>
+
+                        </div>
+                        <!--    刷新-->
+                        <div class="ico-refresh">
+                            <img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
 													../style/img/ic_refresh_24px@3x.png">
-										</div>
-										<div class="page-text">
-											<span>总单数406，当前专案1到10</span>
-										</div>
-								</div>
-							</div>
-							<div class="link-vel">
-								<div class="connect-vel">
-									<div class="content-vel">
-										<a href="javascript:void(0)" class="module-a">批次更新所的项目为交易失败</a>
-									</div>
-									<div class="content-vel">
-										<a href="javascript:void(0)" class="module-a">批次更新所选的项目为交易成功</a>
-									</div>
-									<div class="content-vel">
-										<a href="javascript:void(0)" class="module-a">批量修改成交易备注</a>
-									</div>
-									<div class="content-vel">
-										<a href="javascript:void(0)" class="module-a">全选</a>
-										<span class="span-module">|</span>
-										<a href="javascript:void(0)" class="module-a">反选</a>
-									</div>
-								</div>
-							</div>
-						</div>	
-						<div class="main-content6 hide" main-con="main-con">
-							转账额度审核
-						</div>	
-						<div class="main-content7 hide" main-con="main-con">
-							钱包管理
-						</div>	
-						<div class="main-content8 hide" main-con="main-con">
-							对账管理
-						</div>		
-					</div>
-				</div>
-		</div>
-		<script src="../js/jquery/winHtml.js"></script>
-	</body>
+                        </div>
+                        <div class="page-text">
+                            <span>总单数406，当前专案1到10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="link-vel">
+                    <div class="connect-vel">
+                        <div class="content-vel">
+                            <a href="javascript:void(0)" class="module-a">批次更新所的项目为交易失败</a>
+                        </div>
+                        <div class="content-vel">
+                            <a href="javascript:void(0)" class="module-a">批次更新所选的项目为交易成功</a>
+                        </div>
+                        <div class="content-vel">
+                            <a href="javascript:void(0)" class="module-a">批量修改成交易备注</a>
+                        </div>
+                        <div class="content-vel">
+                            <a href="javascript:void(0)" class="module-a">全选</a>
+                            <span class="span-module">|</span>
+                            <a href="javascript:void(0)" class="module-a">反选</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content6 hide" main-con="main-con">
+                转账额度审核
+            </div>
+            <div class="main-content7 hide" main-con="main-con">
+                钱包管理
+            </div>
+            <div class="main-content8 hide" main-con="main-con">
+                对账管理
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery/winHtml.js"></script>
+</body>
 </html>
 
 <!-- <script src="../js/jquery/setStyle.js"></script> -->

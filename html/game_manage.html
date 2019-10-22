@@ -1,885 +1,886 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>游戏管理 </title>
-		<!-- <script src="../js/jquery/jquery-1.8.3.js"></script> -->
-		<link rel="stylesheet" href="../style/css/style.css">
-	</head>
-	
-	<body>
-		<div class="game-page">
-					<!-- 头部 -->
-					<div class="head-page">
-							<div class="head-content ">
-								<div class="head-Path">
-									<img src="../style/img/logo.png" alt="" class="logo-img">
-								</div>
-								<div class="head-option" header-img="header-img">
-									<a href="user_query.html" class="blue-text" img-switch="img-Switch">
-										<div class="option-row">
-											<div class="img-row img-agent ">
-												<div class="img-row1"></div>
-											</div>
-											<div class="img-bg img-agent-bg">
-				
-											</div>
-											<div class="title-row">会员代理商</div>
-										</div>
-									</a>
-									<a href="javascript:void(0)" class="blue-text" img-switch="img-Switch">
-										<div class="option-row">
-											<div class="img-row img-system">
-												<div class="img-row1 "></div>
-											</div>
-											<div class="img-bg img-system-bg">
-				
-											 </div>
-											<div class="title-row">系统管理</div>
-										</div>
-									</a>
-									<a href="discounts_manage.html" class="blue-text" img-switch="img-Switch">
-										<div class="option-row">
-											<div class="img-row img-discounts">
-												<div class="img-row1 "></div>
-											</div>
-											<div class="img-bg img-discounts-bg"> </div>
-											<div class="title-row">优惠管理</div>
-										</div>
-									</a>
-									<a href="finance_manage.html" class="blue-text" img-switch="img-Switch">
-										<div class="option-row">
-											<div class="img-row img-financial">
-												<div class="img-row1"></div>
-											</div>
-											<div class="img-bg img-financial-bg"> </div>
-											<div class="title-row">财务管理</div>
-										</div>
-									</a>
-									<a href="statement_manage.html" class="blue-text" img-switch="img-Switch">
-										<div class="option-row">
-											<div class="img-row img-statement">
-												<div class="img-row1"></div>  
-											</div>
-											<div class="img-bg img-statement-bg"> </div>
-											<div class="title-row">报表汇出</div>
-										</div>
-									</a>
-				
-				
-									<a href="game_manage.html" class="blue-text" img-switch="img-Switch">
-										<div class="option-row">
-											<div class="img-row img-game">
-												<div class="img-row1 sel-img"></div>
-											</div>
-											<div class="img-bg img-game-bg"> </div>
-											<div class="title-row">游戏管理</div>
-										</div>
-									</a>
-				
-									<a href="authority_manage.html" class="blue-text" img-switch="img-Switch">
-										<div class="option-row">
-											<div class="img-row img-backstage">
-												<div class="img-row1"></div>
-											</div>
-											<div class="img-bg img-backstage-bg"> </div>
-											<div class="title-row">后台管理</div>
-										</div>
-									</a>
-								
-								</div>
-								<div class="right-title blue-text" header-nav="header-nav">
-							
-										<div class="dis-con blue-bor-right">
-											<div class="dis-con-a ">优惠上传</div>
-											
-										</div>
-										<div class="dis-con blue-bor-right">
-												<div class="dis-con-a ">在线客服</div>
-										</div>
-										<div class="dis-con-min blue-bor-right">
-												<div class="dis-con-a ">公告</div>
-										</div>
-										<div class="dis-con blue-bor-right">
-												<div class="dis-con-a ">数据分析</div>
-										</div>
-										<div class="dis-con blue-bor-right">
-												<div data-style="data-style" class="dis-con-a ">风格切换</div>
-										</div>
-										<div class="dis-con-max blue-bor-right">
-											<div class="message-count">12</div>
-											<div class="dis-con-a ">GT NEWS+</div>
-										</div>
-										<div class="dis-state blue-bor-right">
-										
-											<div class="symbol">
-												<div left-icon="left-icon" class="left-icon-blue"></div>
-											</div>
-											<div class="china-ves">
-												<img src="../style/img/china-2x.png" class="china-logo" alt="">
-											</div>
-										</div>
-										<div class="dis-greet">
-												<div class="btn-swicth blue-btn" switch-old="switch-old">切回旧版</div>
-												<div class="call-con">Hi，YUI</div>
-												<div class="arrows">
-													<div bottom-icon="bottom-icon" class="bottom-icon-blue"></div>
-												</div>
-										</div>
-									</div>
-							</div>
-					</div>
-				<!-- 选项卡 -->
-				<div class="navigation_bar green-bg" bar-hurdle="bar-hurdle">
-						<div class="bar-btn green-bar-btn">
-							<div class="bar-btn-txt">电子游戏</div>
-						</div>
-						<div class="bar-btn ">
-							<div class="bar-btn-txt ">运动管理</div>
-						</div>
-						<div class="bar-btn ">
-							<div class="bar-btn-txt ">幸运彩票管理</div>
-						</div>
-						<div class="bar-btn ">
-							<div class="bar-btn-txt ">电子推荐管理</div>
-						</div>
-				</div>
-	
-				<div class="scrool-content scr-green" scro-con="scro-con">
-						<div class="title-modules">
-							<span class="title-max">游戏管理</span>
-							<span class="arrows-module">
+<head>
+    <meta charset="utf-8">
+    <title>游戏管理 </title>
+    <!-- <script src="../js/jquery/jquery-1.8.3.js"></script> -->
+    <link rel="stylesheet" href="../style/css/style.css">
+</head>
+
+<body>
+<div class="game-page">
+    <!-- 头部 -->
+    <div class="head-page">
+        <div class="head-content ">
+            <div class="head-Path">
+                <img src="../style/img/logo.png" alt="" class="logo-img">
+            </div>
+            <div class="head-option" header-img="header-img">
+                <a href="user_query.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-agent ">
+                            <div class="img-row1"></div>
+                        </div>
+                        <div class="img-bg img-agent-bg">
+
+                        </div>
+                        <div class="title-row">会员代理商</div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-system">
+                            <div class="img-row1 "></div>
+                        </div>
+                        <div class="img-bg img-system-bg">
+
+                        </div>
+                        <div class="title-row">系统管理</div>
+                    </div>
+                </a>
+                <a href="discounts_manage.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-discounts">
+                            <div class="img-row1 "></div>
+                        </div>
+                        <div class="img-bg img-discounts-bg"></div>
+                        <div class="title-row">优惠管理</div>
+                    </div>
+                </a>
+                <a href="finance_manage.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-financial">
+                            <div class="img-row1"></div>
+                        </div>
+                        <div class="img-bg img-financial-bg"></div>
+                        <div class="title-row">财务管理</div>
+                    </div>
+                </a>
+                <a href="statement_manage.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-statement">
+                            <div class="img-row1"></div>
+                        </div>
+                        <div class="img-bg img-statement-bg"></div>
+                        <div class="title-row">报表汇出</div>
+                    </div>
+                </a>
+
+
+                <a href="game_manage.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-game">
+                            <div class="img-row1 sel-img"></div>
+                        </div>
+                        <div class="img-bg img-game-bg"></div>
+                        <div class="title-row">游戏管理</div>
+                    </div>
+                </a>
+
+                <a href="authority_manage.html" class="blue-text" img-switch="img-Switch">
+                    <div class="option-row">
+                        <div class="img-row img-backstage">
+                            <div class="img-row1"></div>
+                        </div>
+                        <div class="img-bg img-backstage-bg"></div>
+                        <div class="title-row">后台管理</div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="right-title blue-text" header-nav="header-nav">
+
+                <div class="dis-con blue-bor-right">
+                    <div class="dis-con-a ">优惠上传</div>
+
+                </div>
+                <div class="dis-con blue-bor-right">
+                    <div class="dis-con-a ">在线客服</div>
+                </div>
+                <div class="dis-con-min blue-bor-right">
+                    <div class="dis-con-a ">公告</div>
+                </div>
+                <div class="dis-con blue-bor-right">
+                    <div class="dis-con-a ">数据分析</div>
+                </div>
+                <div class="dis-con blue-bor-right">
+                    <div data-style="data-style" class="dis-con-a ">风格切换</div>
+                </div>
+                <div class="dis-con-max blue-bor-right">
+                    <div class="message-count">12</div>
+                    <div class="dis-con-a ">GT NEWS+</div>
+                </div>
+                <div class="dis-state blue-bor-right">
+
+                    <div class="symbol">
+                        <div left-icon="left-icon" class="left-icon-blue"></div>
+                    </div>
+                    <div class="china-ves">
+                        <img src="../style/img/china-2x.png" class="china-logo" alt="">
+                    </div>
+                </div>
+                <div class="dis-greet">
+                    <div class="btn-swicth blue-btn" switch-old="switch-old">切回旧版</div>
+                    <div class="call-con">Hi，YUI</div>
+                    <div class="arrows">
+                        <div bottom-icon="bottom-icon" class="bottom-icon-blue"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 选项卡 -->
+    <div class="navigation_bar green-bg" bar-hurdle="bar-hurdle">
+        <div class="bar-btn green-bar-btn">
+            <div class="bar-btn-txt">电子游戏</div>
+        </div>
+        <div class="bar-btn ">
+            <div class="bar-btn-txt ">运动管理</div>
+        </div>
+        <div class="bar-btn ">
+            <div class="bar-btn-txt ">幸运彩票管理</div>
+        </div>
+        <div class="bar-btn ">
+            <div class="bar-btn-txt ">电子推荐管理</div>
+        </div>
+    </div>
+
+    <div class="scrool-content scr-green" scro-con="scro-con">
+        <div class="title-modules">
+            <span class="title-max">游戏管理</span>
+            <span class="arrows-module">
 								<img class="icon-right" src="../style/img/symbol-right.png" alt="">
 							</span>
-							<span class="title-first" title-con="title-con">电子游戏</span>
-							<!-- 栏位筛选 -->
-							<!-- <div class="filtrate-btn">
-									栏位筛选
-							</div> -->
-							<div class="affiche-page-right">
-									<div class="right-icon">
-										<img src="../style/img/ic_group_24px.png"
-												srcset="../style/img/ic_group_24px@2x.png 2x,
+            <span class="title-first" title-con="title-con">电子游戏</span>
+            <!-- 栏位筛选 -->
+            <!-- <div class="filtrate-btn">
+                    栏位筛选
+            </div> -->
+            <div class="affiche-page-right">
+                <div class="right-icon">
+                    <img src="../style/img/ic_group_24px.png"
+                         srcset="../style/img/ic_group_24px@2x.png 2x,
 												../style/img/ic_group_24px@3x.png 3x"
-												class="ic_group_24px">
-									</div>
-									<div class="right-number">20</div>
-									<div class="right-text">人 /</div>
-									<div class="right-time-icon">
-										<img src="../style/img/ic_time.png"
-												srcset="../style/img/ic_time@2x.png 2x,
+                         class="ic_group_24px">
+                </div>
+                <div class="right-number">20</div>
+                <div class="right-text">人 /</div>
+                <div class="right-time-icon">
+                    <img src="../style/img/ic_time.png"
+                         srcset="../style/img/ic_time@2x.png 2x,
 											../style/img/ic_time@3x.png 3x"
-												class="ic_time">
-									</div>
-									<div class="right-time">北京2017/12/01（五）01：16：28</div>
-							</div>
-						
-						
-							
-						</div>
-						<div class="form-content" form-control="form-control">
-							<div class="main-content1" main-con="main-con">
-									<div class="query-row-vel">
-											<div class="input-vel">
-												<div class="input-left-title">站台名称：</div>
-												<select class="form-w230">
-													<option value="0">---全部---</option>
-												</select>
-											</div>
-											<div class="input-vel">
-												<div class="input-left-title">产品名称：</div>
-												<select class="form-w230">
-													<option value="0">FG电子</option>
-												</select>
-											</div>
-											<div class="input-vel">
-												<div class="input-left-title">游戏类型：</div>
-												<select class="form-w230">
-													<option value="0">全部</option>
-												</select>
-											</div>
-											<div class="input-vel">
-												<div class="input-left-title">游戏状态：</div>
-												<select class="form-w230">
-													<option value="0">全部</option>
-												</select>
-											</div>
-											<div class="input-vel">
-												<div class="input-left-title">游戏名称：</div>
-												<input type="text" class="inp-w230" />
-											</div>
-										</div>
-										
-										<div class="game-type-vel">
-											<div class="input-vel">
-												<div class="input-left-title">游戏类型：</div>
-												<input type="checkbox" class="checkbox-che" checked />
-												<span class="scop-dis">PC端游戏</span>
-												<input type="checkbox" class="checkbox-che"  />
-												<span class="scop-dis">手机端游戏</span>
-											</div>
-										</div>
-										<!-- 查询按钮 -->
-										<div class="query-btn-vel">
-											<div class="btn-submit green-btn1" data-submit1="data-submit1">
-												<a href="javascript:void(0)">查询</a>
-											</div>
-										</div>
-		
-										<div class="account-vel">
-											<div class="btn-w120 btn-pink">
-												<span class="font-update">帐户解锁</span>
-											</div>
-											<span class="text-dis"></span>
-											<div class="btn-w120 btn-pink">
-												<span class="font-update">转账记录</span>
-											</div>
-											<span class="text-dis"></span>
-											<div class="affiche-title">活动公告：</div>
-											<div class="affiche-div">
-												<textarea class="affiche-text" rows="4"></textarea>
-											</div>
-		
-											<div class="btn-submit green-btn1" data-submit1="data-submit1">
-												<a href="javascript:void(0)">储存</a>
-											</div>
-											
-		
-										</div>
-										<div class="table-vel">
-											<table class="table-01">
-													<tbody>
-														<tr class="table-head green-bg"  navi-bg="navi-bg" >
-															<td>
-																<div>游戏名称</div>
-															</td>
-															<td>
-																<div>语言类型</div>
-															</td>
-															<td>
-																<div>游戏英文原名</div>
-															</td>
-															<td>
-																<div>开关游戏设定</div>
-															</td>
-															<td>
-																<div>最热游戏设定</div>
-															</td>
-															<td>
-																<div>最热游戏设定</div>
-															</td>
-															<td>
-																<div>活动游戏设定</div>
-															</td>
-															<td class="lastCol">
-																<div>优先序号</div>
-															</td>
-														</tr>
-													</tbody>
-													<tbody>
-														<tr class="table-content">
-															<td>
-																<div class="td-div">阿拉斯加垂钓V90</div>
-															</td>
-															<td>
-																<div class="td-div">Chinese</div>
-															</td>
-															<td>
-																<div class="td-div">108herosMultiplierFortunesDesktop</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open green-open"><span>开</span></div>
-																		<div class="btn-off  switch-active"><span>关</span></div>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open green-open"><span>加入</span></div>
-																		<div class="btn-off  switch-active"><span>退出</span></div>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open green-open"><span>加入</span></div>
-																		<div class="btn-off  switch-active"><span>退出</span></div>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open"><span>加入</span></div>
-																		<div class="btn-off  switch-active"><span>退出</span></div>
-																	</div>
-																</div>
-															</td>
-															<td class="lastCol">
-																<div class="td-div">
-																	<div class="btn-setup">
-																		<span>设定</span>
-																	</div>
-																	<div class="btn-input">
-																		<input  class="input-w490" type="text" value="0">
-																	</div>
-																</div>
-															</td>
-														</tr>
-														<tr class="table-content">
-															<td>
-																<div class="td-div">阿拉斯加垂钓V90</div>
-															</td>
-															<td>
-																<div class="td-div">Chinese</div>
-															</td>
-															<td>
-																<div class="td-div">108herosMultiplierFortunesDesktop</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open switch-active"><span>开</span></div>
-																		<div class="btn-off "><span>关</span></div>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open"><span>加入</span></div>
-																		<div class="btn-off  switch-active"><span>退出</span></div>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open switch-active"><span>加入</span></div>
-																		<div class="btn-off "><span>退出</span></div>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open switch-active"><span>加入</span></div>
-																		<div class="btn-off "><span>退出</span></div>
-																	</div>
-																</div>
-															</td>
-															<td class="lastCol">
-																<div class="td-div">
-																	<div class="btn-setup">
-																		<span>设定</span>
-																	</div>
-																	<div class="btn-input">
-																		<input  class="input-w490" type="text" value="0">
-																	</div>
-																</div>
-															</td>
-														</tr>
-														<tr class="table-content ">
-															<td>
-																<div class="td-div">阿拉斯加垂钓V90</div>
-															</td>
-															<td>
-																<div class="td-div">Chinese</div>
-															</td>
-															<td>
-																<div class="td-div">108herosMultiplierFortunesDesktop</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open"><span>开</span></div>
-																		<div class="btn-off  switch-active"><span>关</span></div>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open "><span>加入</span></div>
-																		<div class="btn-off switch-active"><span>退出</span></div>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open switch-active"><span>加入</span></div>
-																		<div class="btn-off "><span>退出</span></div>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="td-div">
-																	<div class="btn-switch">
-																		<div class="btn-open "><span>加入</span></div>
-																		<div class="btn-off switch-active "><span>退出</span></div>
-																	</div>
-																</div>
-															</td>
-															<td class="lastCol">
-																<div class="td-div">
-																	<div class="btn-setup">
-																		<span>设定</span>
-																	</div>
-																	<div class="btn-input">
-																		<input  class="input-w490" type="text" value="0">
-																	</div>
-																</div>
-															</td>
-														</tr>
-														<tr class="table-content ">
-																<td>
-																	<div class="td-div">阿拉斯加垂钓V90</div>
-																</td>
-																<td>
-																	<div class="td-div">Chinese</div>
-																</td>
-																<td>
-																	<div class="td-div">108herosMultiplierFortunesDesktop</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open"><span>开</span></div>
-																			<div class="btn-off  switch-active"><span>关</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active"><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open switch-active"><span>加入</span></div>
-																			<div class="btn-off "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td class="lastCol">
-																	<div class="td-div">
-																		<div class="btn-setup">
-																			<span>设定</span>
-																		</div>
-																		<div class="btn-input">
-																			<input  class="input-w490" type="text" value="0">
-																		</div>
-																	</div>
-																</td>
-														</tr>
-														<tr class="table-content ">
-																<td>
-																	<div class="td-div">阿拉斯加垂钓V90</div>
-																</td>
-																<td>
-																	<div class="td-div">Chinese</div>
-																</td>
-																<td>
-																	<div class="td-div">108herosMultiplierFortunesDesktop</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open"><span>开</span></div>
-																			<div class="btn-off  switch-active"><span>关</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active"><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open switch-active"><span>加入</span></div>
-																			<div class="btn-off "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td class="lastCol">
-																	<div class="td-div">
-																		<div class="btn-setup">
-																			<span>设定</span>
-																		</div>
-																		<div class="btn-input">
-																			<input  class="input-w490" type="text" value="0">
-																		</div>
-																	</div>
-																</td>
-														</tr>
-														<tr class="table-content ">
-																<td>
-																	<div class="td-div">阿拉斯加垂钓V90</div>
-																</td>
-																<td>
-																	<div class="td-div">Chinese</div>
-																</td>
-																<td>
-																	<div class="td-div">108herosMultiplierFortunesDesktop</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open"><span>开</span></div>
-																			<div class="btn-off  switch-active"><span>关</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active"><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open switch-active"><span>加入</span></div>
-																			<div class="btn-off "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td class="lastCol">
-																	<div class="td-div">
-																		<div class="btn-setup">
-																			<span>设定</span>
-																		</div>
-																		<div class="btn-input">
-																			<input  class="input-w490" type="text" value="0">
-																		</div>
-																	</div>
-																</td>
-														</tr>
-														<tr class="table-content ">
-																<td>
-																	<div class="td-div">阿拉斯加垂钓V90</div>
-																</td>
-																<td>
-																	<div class="td-div">Chinese</div>
-																</td>
-																<td>
-																	<div class="td-div">108herosMultiplierFortunesDesktop</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open"><span>开</span></div>
-																			<div class="btn-off  switch-active"><span>关</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active"><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open switch-active"><span>加入</span></div>
-																			<div class="btn-off "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td class="lastCol">
-																	<div class="td-div">
-																		<div class="btn-setup">
-																			<span>设定</span>
-																		</div>
-																		<div class="btn-input">
-																			<input  class="input-w490" type="text" value="0">
-																		</div>
-																	</div>
-																</td>
-														</tr>
-														<tr class="table-content">
-																<td>
-																	<div class="td-div">阿拉斯加垂钓V90</div>
-																</td>
-																<td>
-																	<div class="td-div">Chinese</div>
-																</td>
-																<td>
-																	<div class="td-div">108herosMultiplierFortunesDesktop</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open"><span>开</span></div>
-																			<div class="btn-off  switch-active"><span>关</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active"><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open switch-active"><span>加入</span></div>
-																			<div class="btn-off "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td class="lastCol">
-																	<div class="td-div">
-																		<div class="btn-setup">
-																			<span>设定</span>
-																		</div>
-																		<div class="btn-input">
-																			<input  class="input-w490" type="text" value="0">
-																		</div>
-																	</div>
-																</td>
-														</tr>
-														<tr class="table-content ">
-																<td>
-																	<div class="td-div">阿拉斯加垂钓V90</div>
-																</td>
-																<td>
-																	<div class="td-div">Chinese</div>
-																</td>
-																<td>
-																	<div class="td-div">108herosMultiplierFortunesDesktop</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open"><span>开</span></div>
-																			<div class="btn-off  switch-active"><span>关</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active"><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open switch-active"><span>加入</span></div>
-																			<div class="btn-off "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td class="lastCol">
-																	<div class="td-div">
-																		<div class="btn-setup">
-																			<span>设定</span>
-																		</div>
-																		<div class="btn-input">
-																			<input  class="input-w490" type="text" value="0">
-																		</div>
-																	</div>
-																</td>
-														</tr>
-														<tr class="table-content lastrow">
-																<td>
-																	<div class="td-div">阿拉斯加垂钓V90</div>
-																</td>
-																<td>
-																	<div class="td-div">Chinese</div>
-																</td>
-																<td>
-																	<div class="td-div">108herosMultiplierFortunesDesktop</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open"><span>开</span></div>
-																			<div class="btn-off  switch-active"><span>关</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active"><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open switch-active"><span>加入</span></div>
-																			<div class="btn-off "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<div class="td-div">
-																		<div class="btn-switch">
-																			<div class="btn-open "><span>加入</span></div>
-																			<div class="btn-off switch-active "><span>退出</span></div>
-																		</div>
-																	</div>
-																</td>
-																<td class="lastCol">
-																	<div class="td-div">
-																		<div class="btn-setup">
-																			<span>设定</span>
-																		</div>
-																		<div class="btn-input">
-																			<input  class="input-w490" type="text" value="0">
-																		</div>
-																	</div>
-																</td>
-														</tr>
-													</tbody>
-											</table>
-										</div>
-										<div class="paging-vel">
-											<div class="page-content">
-													<div class="page-number">
-														<select class="page-sel">
-															<option>10</option>
-														</select>
-													</div>
-													<!--    左边-->
-													<div class="page-left">
-														<div class="page-left-first">
-															<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-																../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
-														</div>
-														<div class="page-left-polygon">
-															<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+                         class="ic_time">
+                </div>
+                <div class="right-time">北京2017/12/01（五）01：16：28</div>
+            </div>
+
+
+        </div>
+        <div class="form-content" form-control="form-control">
+            <div class="main-content1" main-con="main-con">
+                <div class="query-row-vel">
+                    <div class="input-vel">
+                        <div class="input-left-title">站台名称：</div>
+                        <select class="form-w230">
+                            <option value="0">---全部---</option>
+                        </select>
+                    </div>
+                    <div class="input-vel">
+                        <div class="input-left-title">产品名称：</div>
+                        <select class="form-w230">
+                            <option value="0">FG电子</option>
+                        </select>
+                    </div>
+                    <div class="input-vel">
+                        <div class="input-left-title">游戏类型：</div>
+                        <select class="form-w230">
+                            <option value="0">全部</option>
+                        </select>
+                    </div>
+                    <div class="input-vel">
+                        <div class="input-left-title">游戏状态：</div>
+                        <select class="form-w230">
+                            <option value="0">全部</option>
+                        </select>
+                    </div>
+                    <div class="input-vel">
+                        <div class="input-left-title">游戏名称：</div>
+                        <input type="text" class="inp-w230"/>
+                    </div>
+                </div>
+
+                <div class="game-type-vel">
+                    <div class="input-vel">
+                        <div class="input-left-title">游戏类型：</div>
+                        <input type="checkbox" class="checkbox-che" checked/>
+                        <span class="scop-dis">PC端游戏</span>
+                        <input type="checkbox" class="checkbox-che"/>
+                        <span class="scop-dis">手机端游戏</span>
+                    </div>
+                </div>
+                <!-- 查询按钮 -->
+                <div class="query-btn-vel">
+                    <div class="btn-submit green-btn1" data-submit1="data-submit1">
+                        <a href="javascript:void(0)">查询</a>
+                    </div>
+                </div>
+
+                <div class="account-vel">
+                    <div class="btn-w120 btn-pink">
+                        <span class="font-update">帐户解锁</span>
+                    </div>
+                    <span class="text-dis"></span>
+                    <div class="btn-w120 btn-pink">
+                        <span class="font-update">转账记录</span>
+                    </div>
+                    <span class="text-dis"></span>
+                    <div class="affiche-title">活动公告：</div>
+                    <div class="affiche-div">
+                        <textarea class="affiche-text" rows="4"></textarea>
+                    </div>
+
+                    <div class="btn-submit green-btn1" data-submit1="data-submit1">
+                        <a href="javascript:void(0)">储存</a>
+                    </div>
+
+
+                </div>
+                <div class="table-vel">
+                    <table class="table-01">
+                        <tbody>
+                        <tr class="table-head green-bg" navi-bg="navi-bg">
+                            <td>
+                                <div>游戏名称</div>
+                            </td>
+                            <td>
+                                <div>语言类型</div>
+                            </td>
+                            <td>
+                                <div>游戏英文原名</div>
+                            </td>
+                            <td>
+                                <div>开关游戏设定</div>
+                            </td>
+                            <td>
+                                <div>最热游戏设定</div>
+                            </td>
+                            <td>
+                                <div>最热游戏设定</div>
+                            </td>
+                            <td>
+                                <div>活动游戏设定</div>
+                            </td>
+                            <td class="lastCol">
+                                <div>优先序号</div>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr class="table-content">
+                            <td>
+                                <div class="td-div">阿拉斯加垂钓V90</div>
+                            </td>
+                            <td>
+                                <div class="td-div">Chinese</div>
+                            </td>
+                            <td>
+                                <div class="td-div">108herosMultiplierFortunesDesktop</div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open green-open"><span>开</span></div>
+                                        <div class="btn-off  switch-active"><span>关</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open green-open"><span>加入</span></div>
+                                        <div class="btn-off  switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open green-open"><span>加入</span></div>
+                                        <div class="btn-off  switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open"><span>加入</span></div>
+                                        <div class="btn-off  switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="lastCol">
+                                <div class="td-div">
+                                    <div class="btn-setup">
+                                        <span>设定</span>
+                                    </div>
+                                    <div class="btn-input">
+                                        <input class="input-w490" type="text" value="0">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-content">
+                            <td>
+                                <div class="td-div">阿拉斯加垂钓V90</div>
+                            </td>
+                            <td>
+                                <div class="td-div">Chinese</div>
+                            </td>
+                            <td>
+                                <div class="td-div">108herosMultiplierFortunesDesktop</div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open switch-active"><span>开</span></div>
+                                        <div class="btn-off "><span>关</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open"><span>加入</span></div>
+                                        <div class="btn-off  switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open switch-active"><span>加入</span></div>
+                                        <div class="btn-off "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open switch-active"><span>加入</span></div>
+                                        <div class="btn-off "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="lastCol">
+                                <div class="td-div">
+                                    <div class="btn-setup">
+                                        <span>设定</span>
+                                    </div>
+                                    <div class="btn-input">
+                                        <input class="input-w490" type="text" value="0">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-content ">
+                            <td>
+                                <div class="td-div">阿拉斯加垂钓V90</div>
+                            </td>
+                            <td>
+                                <div class="td-div">Chinese</div>
+                            </td>
+                            <td>
+                                <div class="td-div">108herosMultiplierFortunesDesktop</div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open"><span>开</span></div>
+                                        <div class="btn-off  switch-active"><span>关</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open switch-active"><span>加入</span></div>
+                                        <div class="btn-off "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="lastCol">
+                                <div class="td-div">
+                                    <div class="btn-setup">
+                                        <span>设定</span>
+                                    </div>
+                                    <div class="btn-input">
+                                        <input class="input-w490" type="text" value="0">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-content ">
+                            <td>
+                                <div class="td-div">阿拉斯加垂钓V90</div>
+                            </td>
+                            <td>
+                                <div class="td-div">Chinese</div>
+                            </td>
+                            <td>
+                                <div class="td-div">108herosMultiplierFortunesDesktop</div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open"><span>开</span></div>
+                                        <div class="btn-off  switch-active"><span>关</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open switch-active"><span>加入</span></div>
+                                        <div class="btn-off "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="lastCol">
+                                <div class="td-div">
+                                    <div class="btn-setup">
+                                        <span>设定</span>
+                                    </div>
+                                    <div class="btn-input">
+                                        <input class="input-w490" type="text" value="0">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-content ">
+                            <td>
+                                <div class="td-div">阿拉斯加垂钓V90</div>
+                            </td>
+                            <td>
+                                <div class="td-div">Chinese</div>
+                            </td>
+                            <td>
+                                <div class="td-div">108herosMultiplierFortunesDesktop</div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open"><span>开</span></div>
+                                        <div class="btn-off  switch-active"><span>关</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open switch-active"><span>加入</span></div>
+                                        <div class="btn-off "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="lastCol">
+                                <div class="td-div">
+                                    <div class="btn-setup">
+                                        <span>设定</span>
+                                    </div>
+                                    <div class="btn-input">
+                                        <input class="input-w490" type="text" value="0">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-content ">
+                            <td>
+                                <div class="td-div">阿拉斯加垂钓V90</div>
+                            </td>
+                            <td>
+                                <div class="td-div">Chinese</div>
+                            </td>
+                            <td>
+                                <div class="td-div">108herosMultiplierFortunesDesktop</div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open"><span>开</span></div>
+                                        <div class="btn-off  switch-active"><span>关</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open switch-active"><span>加入</span></div>
+                                        <div class="btn-off "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="lastCol">
+                                <div class="td-div">
+                                    <div class="btn-setup">
+                                        <span>设定</span>
+                                    </div>
+                                    <div class="btn-input">
+                                        <input class="input-w490" type="text" value="0">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-content ">
+                            <td>
+                                <div class="td-div">阿拉斯加垂钓V90</div>
+                            </td>
+                            <td>
+                                <div class="td-div">Chinese</div>
+                            </td>
+                            <td>
+                                <div class="td-div">108herosMultiplierFortunesDesktop</div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open"><span>开</span></div>
+                                        <div class="btn-off  switch-active"><span>关</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open switch-active"><span>加入</span></div>
+                                        <div class="btn-off "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="lastCol">
+                                <div class="td-div">
+                                    <div class="btn-setup">
+                                        <span>设定</span>
+                                    </div>
+                                    <div class="btn-input">
+                                        <input class="input-w490" type="text" value="0">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-content">
+                            <td>
+                                <div class="td-div">阿拉斯加垂钓V90</div>
+                            </td>
+                            <td>
+                                <div class="td-div">Chinese</div>
+                            </td>
+                            <td>
+                                <div class="td-div">108herosMultiplierFortunesDesktop</div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open"><span>开</span></div>
+                                        <div class="btn-off  switch-active"><span>关</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open switch-active"><span>加入</span></div>
+                                        <div class="btn-off "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="lastCol">
+                                <div class="td-div">
+                                    <div class="btn-setup">
+                                        <span>设定</span>
+                                    </div>
+                                    <div class="btn-input">
+                                        <input class="input-w490" type="text" value="0">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-content ">
+                            <td>
+                                <div class="td-div">阿拉斯加垂钓V90</div>
+                            </td>
+                            <td>
+                                <div class="td-div">Chinese</div>
+                            </td>
+                            <td>
+                                <div class="td-div">108herosMultiplierFortunesDesktop</div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open"><span>开</span></div>
+                                        <div class="btn-off  switch-active"><span>关</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open switch-active"><span>加入</span></div>
+                                        <div class="btn-off "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="lastCol">
+                                <div class="td-div">
+                                    <div class="btn-setup">
+                                        <span>设定</span>
+                                    </div>
+                                    <div class="btn-input">
+                                        <input class="input-w490" type="text" value="0">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-content lastrow">
+                            <td>
+                                <div class="td-div">阿拉斯加垂钓V90</div>
+                            </td>
+                            <td>
+                                <div class="td-div">Chinese</div>
+                            </td>
+                            <td>
+                                <div class="td-div">108herosMultiplierFortunesDesktop</div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open"><span>开</span></div>
+                                        <div class="btn-off  switch-active"><span>关</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active"><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open switch-active"><span>加入</span></div>
+                                        <div class="btn-off "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td-div">
+                                    <div class="btn-switch">
+                                        <div class="btn-open "><span>加入</span></div>
+                                        <div class="btn-off switch-active "><span>退出</span></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="lastCol">
+                                <div class="td-div">
+                                    <div class="btn-setup">
+                                        <span>设定</span>
+                                    </div>
+                                    <div class="btn-input">
+                                        <input class="input-w490" type="text" value="0">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="paging-vel">
+                    <div class="page-content">
+                        <div class="page-number">
+                            <select class="page-sel">
+                                <option>10</option>
+                            </select>
+                        </div>
+                        <!--    左边-->
+                        <div class="page-left">
+                            <div class="page-left-first">
+                                <img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+																../style/img/ic_first_page_24px@3x.png 3x"
+                                     class="ic_first_page_24px">
+                            </div>
+                            <div class="page-left-polygon">
+                                <img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
 																../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
-														</div>
-													</div>
-													<!--    中间-->
-													<div class="page-center">
-														<span>Page</span>
-														<input value="10">
-														<div class="of-page">
-															<sapn>of</sapn>
-															<sapn>41</sapn>
-														</div>
-													</div>
-													<!--    右边-->
-													<div class="page-right">
-														<div class="page-right-polygon">
-															<img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
+                            </div>
+                        </div>
+                        <!--    中间-->
+                        <div class="page-center">
+                            <span>Page</span>
+                            <input value="10">
+                            <div class="of-page">
+                                <sapn>of</sapn>
+                                <sapn>41</sapn>
+                            </div>
+                        </div>
+                        <!--    右边-->
+                        <div class="page-right">
+                            <div class="page-right-polygon">
+                                <img src="../style/img/Polygon_2.png" srcset="../style/img/Polygon_2@2x.png 2x,
 																../style/img/Polygon_2@3x.png 3x" class="Polygon-2">
-														</div>
-														<div class="page-right-first">
-															<img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
-																../style/img/ic_first_page_24px@3x.png 3x" class="ic_first_page_24px">
-														</div>
-												
-													</div>
-													<!--    刷新-->
-													<div class="ico-refresh">
-														<img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
+                            </div>
+                            <div class="page-right-first">
+                                <img src="../style/img/ic_first_page_24px.png" srcset="../style/img/ic_first_page_24px@2x.png 2x,
+																../style/img/ic_first_page_24px@3x.png 3x"
+                                     class="ic_first_page_24px">
+                            </div>
+
+                        </div>
+                        <!--    刷新-->
+                        <div class="ico-refresh">
+                            <img src="../style/img/ic_refresh_24px.png" srcset="../style/img/ic_refresh_24px@2x.png,
 																../style/img/ic_refresh_24px@3x.png">
-													</div>
-													<div class="page-text">
-														<span>总单数406，当前专案1到10</span>
-													</div>
-											</div>
-										</div>
-		
-							</div>
-							<div class="main-content2 hide" main-con="main-con">
-									<div class="top-module-row" top-module="top-module">
-										<div class="select-module green-tar">第一</div>
-										<div class="select-module">第二</div>
-									</div>
-									<div class="switch-module1" >第一</div>
-									<div class="switch-module2 hide" >第二</div>
-							</div>
-							<div class="main-content3 hide" main-con="main-con">
-								幸运彩票管理
-							</div>
-							<div class="main-content4 hide" main-con="main-con">
-								电子推荐管理	
-							</div>
-						</div>
-				</div>
-		</div>
-		<script src="../js/jquery/winHtml.js"></script>
-	</body>
+                        </div>
+                        <div class="page-text">
+                            <span>总单数406，当前专案1到10</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-content2 hide" main-con="main-con">
+                <div class="top-module-row" top-module="top-module">
+                    <div class="select-module green-tar">第一</div>
+                    <div class="select-module">第二</div>
+                </div>
+                <div class="switch-module1">第一</div>
+                <div class="switch-module2 hide">第二</div>
+            </div>
+            <div class="main-content3 hide" main-con="main-con">
+                幸运彩票管理
+            </div>
+            <div class="main-content4 hide" main-con="main-con">
+                电子推荐管理
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery/winHtml.js"></script>
+</body>
 </html>
 
 <!-- <script src="../js/jquery/setStyle.js"></script> -->
