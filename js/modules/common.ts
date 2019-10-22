@@ -1,39 +1,20 @@
 import $ = require("jquery");
-
+import config=require("../../dist/config");
 class Common {
-
-    TagName = ["LABEL", "DIV", "", "", ""];
-    ImgURL: string = "../style/img";
-    ScriptURL: string = "../dist";
-
+    ImgURL: string = config.config.URL.$ImgURL;
+    ScriptURL: string = config.config.URL.$ScriptURL;
     constructor() {
         this.init()
     }
 
     init() {
+        console.log(this.ScriptURL);
         $("body").children().each((index, item) => {
-            //  if ($(item)[0].tagName == "DIV") {
             var dom = $(item).html().toString();
-            dom = dom.replace(/{{#ImgURL}}/g, this.ImgURL).replace(/{{#ScriptURL}}/g, this.ScriptURL);
+            dom = dom.replace(/{{#ImgURL}}/g, this.ImgURL)
+                .replace(/{{#ScriptURL}}/g, this.ScriptURL);
             $(item).html(dom);
-            //   }
-            // if ($(item)[0].tagName == "LABEL") {
-            //     var dom = $(item).html().toString();
-            //     dom = dom.replace(/{{#ImgURL}}/g, this.ImgURL);
-            //     $(item).html(dom);
-            //
-            // }
-            // if ($(item)[0].tagName == "SCRIPT") {
-            //     console.log($(item).text());
-            // }
         });
-    }
-
-    JudgeTagName(dom: HTMLElement, num: number) {
-        this.TagName.forEach((item, index) => {
-            console.log(item, index);
-        });
-
     }
 }
 

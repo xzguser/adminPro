@@ -1,35 +1,33 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+/**
+ * @配置文件
+ */
+
+module.exports.config={
+    URL:{
+        $ImgURL:"../style/img",
+        $ScriptURL:"../dist"
+    }
+};
+
+},{}],2:[function(require,module,exports){
 "use strict";
 var $ = require("jquery");
+var config = require("../../dist/config");
 var Common = /** @class */ (function () {
     function Common() {
-        this.TagName = ["LABEL", "DIV", "", "", ""];
-        this.ImgURL = "../style/img";
-        this.ScriptURL = "../dist";
+        this.ImgURL = config.config.URL.$ImgURL;
+        this.ScriptURL = config.config.URL.$ScriptURL;
         this.init();
     }
     Common.prototype.init = function () {
         var _this = this;
+        console.log(this.ScriptURL);
         $("body").children().each(function (index, item) {
-            //  if ($(item)[0].tagName == this.TagName[index]) {
             var dom = $(item).html().toString();
-            dom = dom.replace(/{{#ImgURL}}/g, _this.ImgURL).replace(/{{#ScriptURL}}/g, _this.ScriptURL);
+            dom = dom.replace(/{{#ImgURL}}/g, _this.ImgURL)
+                .replace(/{{#ScriptURL}}/g, _this.ScriptURL);
             $(item).html(dom);
-            //   }
-            // if ($(item)[0].tagName == "LABEL") {
-            //     var dom = $(item).html().toString();
-            //     dom = dom.replace(/{{#ImgURL}}/g, this.ImgURL);
-            //     $(item).html(dom);
-            //
-            // }
-            // if ($(item)[0].tagName == "SCRIPT") {
-            //     console.log($(item).text());
-            // }
-        });
-    };
-    Common.prototype.JudgeTagName = function (dom, num) {
-        this.TagName.forEach(function (item, index) {
-            console.log(item, index);
         });
     };
     return Common;
@@ -37,7 +35,7 @@ var Common = /** @class */ (function () {
 new Common();
 module.exports = Common;
 
-},{"jquery":2}],2:[function(require,module,exports){
+},{"../../dist/config":1,"jquery":3}],3:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.4.1
  * https://jquery.com/
@@ -10637,4 +10635,4 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}]},{},[1]);
+},{}]},{},[2]);
