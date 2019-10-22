@@ -1,0 +1,153 @@
+ 
+ 
+@charset "UTF-8";
+
+ /*----------日期选择的箭头----------*/
+ input[type="date"]::-webkit-calendar-picker-indicator {
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    color: transparent;
+}
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  color: transparent;
+}
+
+
+/*----------用来移除上下箭头----------*/
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+input[type="datetime-local"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/*----------用来移除叉叉按钮----------*/
+input[type="date"]::-webkit-clear-button{
+    display:none;
+}
+input[type="datetime-local"]::-webkit-clear-button{
+  display:none;
+}
+
+input[type="date"] {
+    width: 137px;
+    height: 30px;
+    border: none;
+    line-height: 1;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: 3;
+    padding-left: 0px;
+    color: #525C66;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        padding-right:0px; 
+        background:url($Image-url+"date-2x.png") no-repeat scroll right center transparent; 
+        background-size: 18px 20px;
+}
+input[type="datetime-local"] {
+  width: 205px;
+  height: 30px;
+  border: none;
+  line-height: 1;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  z-index: 3;
+  padding-left: 0px;
+  color: #525C66;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      padding-right:0px; 
+      background:url($Image-url+"date-2x.png") no-repeat scroll right center transparent; 
+      background-size: 18px 20px;
+}
+
+.date-vel{
+  width: 158px;
+  height: 28px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  font-family: Microsoft JhengHei;
+  color: #666666;
+  position: relative;
+  .date-con{
+    height: 28px;
+   
+    font-size: 16px;
+    padding-left: 14px;
+    text-align: left;
+   
+    z-index:1;
+  }
+}
+
+.date-vel-wid{
+  width:228px;
+  .date-con-wid{
+    width: 202px;
+  }
+}
+.date-vel-new{
+  width: 228px;
+  height: 28px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  font-family:$font-family;
+  color: #666666;
+  position: relative;
+  .date-con{
+    height: 28px;
+   
+    font-size: 14px;
+    padding-left: 14px;
+    text-align: left;
+   
+    z-index:1;
+  }
+}
+
+.date-scope-vel{
+  width: 228px;
+  height: 28px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  font-family: Microsoft JhengHei;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  z-index: 2;
+  .date-input{
+      padding-left: 14px;
+      width: 200px;
+      height: 26px;
+      font-weight: normal;
+      font-size: 14px;
+      border:none;
+      color: #666666;
+      background: transparent;
+      z-index: 2;
+    }
+    .date-icon{
+      background-image: url(../../style/img/date-2x.png);
+      background-repeat: no-repeat;
+      background-size: 18px 20px;
+
+      position: absolute;
+      right: 14px;
+      width: 18px;
+      height: 20px;
+      z-index: 0;
+    }
+    
+}

@@ -13,63 +13,52 @@ $indent-5:5px;
 @import "../../theme/css/base.scss";
 //字体样式
 @import "../../theme/css/font.scss";
+//按钮样式
+@import "../../theme/css/button.scss";
 
 //input样式
-@import "../../theme/css/input";
+@import "../../theme/css/input.scss";
 //表格样式
-@import "../../theme/css/table";
-//公告
-// @import "../../theme/css/affiche.scss";
+@import "../../theme/css/table.scss";
+//日期
+@import "../../theme/css/date.scss";
 
 
-//头部--公共
+//头部模块
 @import "../../theme/css/head_module.scss";
 
-//会员代理商-查询
-@import "../../theme/css/agent_query.scss";
 
-
+//page页面集合
 //登录
-@import "../../theme/css/user_login.scss";
+@import "../../theme/page/user_login.scss";
 
-//代理商-佣金管理
-@import "../../theme/css/commission_manage.scss";
-
-//系统管理-手续费
-@import "../../theme/css/system_manage_com.scss";
+//系统管理
+@import "../../theme/page/system_manage_com.scss";
 
 //登入-显示公告页面
-@import "../../theme/css/login_affiche.scss";
-
-//会员代理商-会员查询-新增会员
-@import "../../theme/css/user_insert.scss";
-
-//优惠管理-VIP管理-设定
-@import "../../theme/css/discounts_manage.scss";
+@import "../../theme/page/login_affiche.scss";
 
 
-//系统管理-站内信息-站内公告
-@import "../../theme/css/system_manage_affiche.scss";
-
-//系统管理-前端设定-前端注册验证
-@import "../../theme/css/stytem_theme_foregrounding.scss";
-
-//优惠管理-返水管理-即时返水查询
-@import "../../theme/css/discounts_manage_return.scss";
+//优惠管理
+@import "../../theme/page/discounts_manage.scss";
 
 
-//游戏管理管理-电子游戏-PC页面
-@import "../../theme/css/game_manage.scss";
+//游戏管理管理
+@import "../../theme/page/game_manage.scss";
 
-//财政管理-公司金流管理-入款管理
-@import "../../theme/css/finance_manage.scss";
+//财政管理
+@import "../../theme/page/finance_manage.scss";
 
-//用户查询-会员查询-查询结果
-@import "../../theme/css/user_query.scss";
+//会员代理商
+@import "../../theme/page/user_query.scss";
 
 
 //权限管理
-@import "../../theme/css/authority_manage.scss";
+@import "../../theme/page/authority_manage.scss";
+
+//报表汇出
+@import "../../theme/page/statement_manage.scss";
+
 
 
 

@@ -1,0 +1,332 @@
+.discountsVip-page{
+    width: 1920px;
+    height: 1035px;
+
+    .scrool-content{
+        height: 901px;
+        width: 100%;
+        box-shadow: 0px 4px 5px #ccc inset;
+       
+           
+          
+        .form-content{
+            margin:9px 10px;
+            margin-top: 0px;
+            background: #ffffff;
+            width: 1900px;
+            height: 830px;
+            .main-content1{
+            
+              
+                .switch-module1{
+                     margin-left: 21px;
+                    .vip-vel{
+                        height: 50px;
+                        margin-top: 30px;
+                       
+                        .function-module{
+                            height: 19px;
+                            display: flex;
+                            .function-left{
+                                width: 74px;
+                                height: 19px;
+                                font-family: $font-family;
+                                font-size: 14px;
+                                font-weight: bold;
+                                text-align: left;
+                                color: #333333;
+                                display: flex;
+                                align-items: center;
+                            }
+                            .function-right{
+                                height: 19px;
+                                display: flex;
+                                align-items: center;
+                                .checkbox-select{
+                                    margin-left: 9px;
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                                .select-content{
+                                    margin-left: 7px;
+                                    height: 24px;
+                                    font-family: $font-family;
+                                    font-size: 14px;
+                                    font-weight: normal;
+                                
+                                    text-align: left;
+                                    color: #666666;
+                                }
+                            }
+                        }
+                    
+                    }
+                    .table-max{
+                        height: 293px;
+                        display: flex;
+                        font-weight: bold;
+                        .table-left-con{
+                            width: 900px;
+                            height: 100%;
+                            margin-right: 50px;
+                            .hierarchy-module{
+                                height: 30px;
+                                display: flex;
+                                .hierarchy-left{
+                                    width: 74px;
+                                    height: 30px;
+                                    font-size: 14px;
+                                    text-align: left;
+                                    color: #333333;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                            }
+
+                            .table-buttom-vel{
+                                margin-top: 11px;
+                                height: 252px;
+                                .new-wid{
+                                    width: 900px;
+                                    .table-head {
+                                        td div{
+                                            font-size: 16px;
+                                        }
+                                        .firstRow div{
+                                            color: #333333;
+                                        }
+                                    }
+                                    
+                                    td:nth-child(1){
+                                        width: 148px;
+                                    }
+                                    td:nth-child(2){
+                                        width:68px;
+                                    }
+                                    td:nth-child(3){
+                                        width:220px;
+                                    }
+                                    td:nth-child(4){
+                                        width:224px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .table-right-con{
+                            height: 100%;
+                           
+                            .top-title{
+                                height: 30px;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                               
+                                .top-left{
+                                    font-size: 16px;
+                                    text-align: left;
+                                    color: #333333;
+                                }
+                                .top-right-btn{
+                                    position: absolute;
+                                    right: 0px;
+                                    top:0px;
+                                }
+                            }
+                            .table-vip-vel{
+                                margin-top: 11px;
+                                height: 252px;
+                            
+                                .new-table-02{
+                                    width: 887px;
+                                    .table-head{
+                                        td div{
+                                            color: #333333;
+                                            font-size: 16px;
+                                        }
+                                        .lastCol{
+                                            width: 100px
+                                        }
+                                    }
+                                    .first-td{
+                                        width: 88px;
+                                        border-bottom: 1px solid #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+                    .btn-con{
+                        height: 30px;
+                        margin-top: 20px;
+                      
+                        display: flex;
+                    
+                    }
+                }
+                .switch-module2{
+                  margin-left: 21px;
+                }
+                .switch-module3{
+                    margin-left: 21px;
+                }
+                .switch-module4{
+                    margin-left: 21px;
+                }
+                .switch-module5{
+                    margin-left: 21px;
+                }
+                .switch-module6{
+                    margin-left: 21px;
+                }
+            }
+            .main-content2{
+            
+                .switch-module1{
+                    margin-left: 21px;
+                    .backwater-vel{
+                        margin-top: 20px;
+                        height: 30px;
+                        display: flex;
+                        .backwater-set{
+                            font-family: $font-family;
+                            font-size: 16px;
+                            text-align: left;
+                            color: #333333;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .insert-set{
+                            margin-left: 7px;
+                            height: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 120px;
+                            font-family:$font-family;
+                            font-size: 16px;
+                            color: #ffffff;
+                            border-radius: 10px;
+                            background-color: #fcae00;
+                        }
+                        }
+            
+                        .table-vel{
+                            margin-top: 15.5px;
+                            margin-left: 21px;
+                            .platform-table-new{
+                                width: 1400px;
+                                box-shadow: none;
+                                .table-head{
+                                    height: 34px;
+                                }
+                                .table-content{
+                                    height: 36px;
+                                }
+                                td{
+                                    border-right: none;
+                                    font-weight: bold;
+                                    .new-div{
+                                        width: 280px;
+                                    }
+                                }
+                                .topo-color-blue{
+                                    color: #0099ff;
+                                }
+                            }
+                        }
+                }
+                .switch-module2{
+                  margin-left: 21px;
+                 
+                }
+                .switch-module3{
+                    margin-left: 21px;
+                    padding-top: 20px;
+                    .query-vel{
+                        height: 44px;
+                        display: flex;
+                        .new-date{
+                            width: 614px;
+                        }
+                    }
+        
+        
+                    .query-btn-vel{
+                        height: 60px;
+                    }
+        
+                    .table-header{
+                  
+                        width: 1860px;
+                        height: 100px;
+                        position: relative;
+        
+                        font-family: $font-family;
+                        font-size: 16px;
+        
+                        .top-btn{
+                            box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+                            padding-left: 12.7px;
+                            display: flex;
+                            align-items: center;
+                            height: 50px;
+                        }
+                        .bot-con{
+                            color: #333333;
+                            height: 48px;
+                            padding-left: 12.7px;
+                            display: flex;
+                            align-items: center;
+                            border: 1px solid #eeeeee;
+                            box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+                        }
+                    }
+        
+                    .table-max-vel{
+                        width: 1860px;
+                      
+                        .table-01-new{
+                            width: 1860px;
+                            border-left: 1px solid #eeeeee;
+                            .table-head{
+                                td div{
+                                    color: #333333;
+                                }
+                            }
+                            .table-content{
+                                td:nth-child(1){
+                                    width: 50px;
+                                }
+                                td:last-child{
+                                    width: 630px;
+                                }
+                            }
+                        }
+                    }
+        
+                    .paging-vel{
+                        margin-top: 21px;
+                        
+                    }
+                }
+                .switch-module4{
+                    margin-left: 21px;
+                }
+                .switch-module5{
+                    margin-left: 21px;
+                }
+                .switch-module6{
+                    margin-left: 21px;
+                }
+                .switch-module7{
+                    margin-left: 21px;
+                }
+            }
+            
+                
+        }
+
+    }
+}

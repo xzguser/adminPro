@@ -1,0 +1,17 @@
+{
+  "name": "adminpro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run browserify": "browserify js/modules/setStyle.js -o dist/setStyle.js",
+    "typescript": "tsc"
+  },
+  "author": "lint",
+  "license": "ISC"
+}

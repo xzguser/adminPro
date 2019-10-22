@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="347adc5f-250a-4f5a-8d12-804131ecd868" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/html/agent_query.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/agent_query.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/authority_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/authority_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/commission_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/commission_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/discounts_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/discounts_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/discounts_manage_return.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/discounts_manage_return.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/finance_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/finance_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/game_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/game_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/login_affiche.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/login_affiche.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/stytem_theme_foregrounding.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/stytem_theme_foregrounding.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/system_manage_affiche.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/system_manage_affiche.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/system_manage_com.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/system_manage_com.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/user_insert.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/user_insert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/user_query.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/user_query.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery/setStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery/setStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery/winHtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery/winHtml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/img/blue-switch.png" beforeDir="false" afterPath="$PROJECT_DIR$/style/img/blue-switch.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/img/green-switch.png" beforeDir="false" afterPath="$PROJECT_DIR$/style/img/green-switch.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/img/orange-switch.png" beforeDir="false" afterPath="$PROJECT_DIR$/style/img/orange-switch.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/css/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/theme/css/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/css/head_module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/theme/css/head_module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/css/user_insert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/theme/css/user_insert.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/css/user_login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/theme/css/user_login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="adminPro" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/modules/setStyle.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/modules/setStyle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/agent_query.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="9" column="76" lean-forward="true" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sel-img</find>
+      <find>navi-bg</find>
+      <find>navi_bg</find>
+      <find>bar-btn</find>
+      <find>twoSwitchBtn</find>
+      <find>navi-bg=&quot;navi-bg&quot;</find>
+      <find>typeRoots</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/html/game_manage.html" />
+        <option value="$PROJECT_DIR$/theme/css/head_module.scss" />
+        <option value="$PROJECT_DIR$/html/user_query.html" />
+        <option value="$PROJECT_DIR$/html/authority_manage.html" />
+        <option value="$PROJECT_DIR$/html/commission_manage.html" />
+        <option value="$PROJECT_DIR$/html/discounts_manage.html" />
+        <option value="$PROJECT_DIR$/html/discounts_manage_return.html" />
+        <option value="$PROJECT_DIR$/html/finance_manage.html" />
+        <option value="$PROJECT_DIR$/html/stytem_theme_foregrounding.html" />
+        <option value="$PROJECT_DIR$/html/system_manage_affiche.html" />
+        <option value="$PROJECT_DIR$/html/user_insert.html" />
+        <option value="$PROJECT_DIR$/html/system_manage_com.html" />
+        <option value="$PROJECT_DIR$/js/modules/incident.js" />
+        <option value="$PROJECT_DIR$/theme/css/base.scss" />
+        <option value="$PROJECT_DIR$/js/jquery/setStyle.js" />
+        <option value="$PROJECT_DIR$/js/modules/setStyle.js" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/html/agent_query.html" />
+        <option value="$PROJECT_DIR$/js/modules/setStyle.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/adminPro.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1337" />
+    <option name="y" value="219" />
+    <option name="width" value="1260" />
+    <option name="height" value="640" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="adminPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminPro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminPro" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminPro" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminPro" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminPro" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminPro" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="setStyle.ts" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="adminPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminPro" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminPro" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.run browserify">
+    <configuration name="run browserify" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="run browserify" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="typescript" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="typescript" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.run browserify" />
+        <item itemvalue="npm.typescript" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="347adc5f-250a-4f5a-8d12-804131ecd868" name="Default Changelist" comment="" />
+      <created>1569825447513</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569825447513</updated>
+      <workItem from="1569825448833" duration="24089000" />
+      <workItem from="1569984389060" duration="5214000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="29303000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1928" y="69" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992224" visible="true" weight="0.1548999" />
+      <window_info id="Structure" order="1" sideWeight="0.5007776" side_tool="true" weight="0.1548999" />
+      <window_info id="Favorites" order="2" sideWeight="0.5007776" side_tool="true" weight="0.1548999" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30260304" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/js/modules/setStyle.js" />
+      </list>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/000000/Desktop/adminPro/html/agent_query.html">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/html/agent_query.html</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/html/agent_query.html</node>
+            <node x="" y="">$PROJECT_DIR$/style/img/china-2x.png</node>
+            <node x="" y="">$PROJECT_DIR$/style/img/ic_group_24px.png</node>
+            <node x="" y="">$PROJECT_DIR$/style/img/ic_time.png</node>
+            <node x="" y="">$PROJECT_DIR$/js/jquery/jquery-1.8.3.js</node>
+            <node x="" y="">$PROJECT_DIR$/style/img/logo.png</node>
+            <node x="" y="">$PROJECT_DIR$/js/jquery/setStyle.js</node>
+            <node x="" y="">$PROJECT_DIR$/style/css/style.css</node>
+            <node x="" y="">$PROJECT_DIR$/style/img/symbol-right.png</node>
+            <node x="" y="">$PROJECT_DIR$/js/jquery/winHtml.js</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="295.0" y="226.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/css/style.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/css/head_module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery/jquery-1.8.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/authority_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="609" column="37" lean-forward="true" selection-start-line="609" selection-start-column="37" selection-end-line="609" selection-end-column="55" />
+          <folding>
+            <element signature="n#label#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/commission_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/discounts_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/discounts_manage_return.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/finance_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/game_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/login_affiche.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/stytem_theme_foregrounding.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/system_manage_affiche.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/system_manage_com.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user_insert.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery/setStyle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/header.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/css/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8800">
+          <caret line="352" column="12" selection-start-line="352" selection-start-column="12" selection-end-line="352" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/css/commission_manage.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user_query.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/incident.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="68" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/sizzle/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1632">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/jquery/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/setStyle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/agent_query.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="9" column="76" lean-forward="true" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/setStyle.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/setStyle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

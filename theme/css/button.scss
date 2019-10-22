@@ -1,0 +1,92 @@
+//按钮
+
+//多个按钮切换
+.btn-vel{
+    display: flex;
+    .btn-general{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: #d8d8d8;
+        font-size: 14px;
+        margin-right: 14px;
+    }
+    .btn-general>a{
+        color: #fff !important;
+    }
+}
+
+//粉红色
+.btn-pink{
+    background-color: #df97da;
+}
+//浅黑色
+.btn-somber{
+    background-color: #19495b;
+}
+//浅黄色
+.btn-buff{
+    background-color: #fcae00;
+}
+//浅蓝色
+.btn-wathet{
+    background-color:#2b8cb4;
+}
+.btn-w88{
+    width: 88px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; 
+}
+
+.btn-w100{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    // background-color: #19495b;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; 
+}
+.btn-w120{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+   
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; 
+}
+
+.btn-gray{
+    // margin-left: 10px;
+     width: 60px;
+     height: 30px;
+     border-radius: 10px;
+     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+     border: solid 1px #afafaf;
+     background-color: #ececec;
+     color: #333333;
+     font-size: 16px;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+

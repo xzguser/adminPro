@@ -5,16 +5,139 @@
     <title>Title</title>
     <link rel="stylesheet" href="../style/css/style.css">
     <script src="../js/jquery/jquery-1.8.3.js"></script>
-
-    <style>
-    </style>
+    <link rel="stylesheet" href="../style/css/jedate.css">
+    <script src="../js/date/jedate.js"></script>
 </head>
 <body>
+	<!-- 头部 -->
+    <div class="head-page">
+            <div class="head-content ">
+                <div class="head-Path">
+                    <img src="../style/img/logo.png" alt="" class="logo-img">
+                </div>
+                <div class="head-option" header-img="header-img">
+                    <a href="user_query.html" class="blue-text" img-switch="img-Switch">
+                        <div class="option-row">
+                            <div class="img-row img-agent ">
+                                <div class="img-row1"></div>
+                            </div>
+                            <div class="img-bg img-agent-bg">
+
+                            </div>
+                            <div class="title-row">会员代理商</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="blue-text" img-switch="img-Switch">
+                        <div class="option-row">
+                            <div class="img-row img-system">
+                                <div class="img-row1 sel-img"></div>
+                            </div>
+                            <div class="img-bg img-system-bg">
+
+                             </div>
+                            <div class="title-row">系统管理</div>
+                        </div>
+                    </a>
+                    <a href="discounts_manage.html" class="blue-text" img-switch="img-Switch">
+                        <div class="option-row">
+                            <div class="img-row img-discounts">
+                                <div class="img-row1"></div>
+                            </div>
+                            <div class="img-bg img-discounts-bg"> </div>
+                            <div class="title-row">优惠管理</div>
+                        </div>
+                    </a>
+                    <a href="finance_manage.html" class="blue-text" img-switch="img-Switch">
+                        <div class="option-row">
+                            <div class="img-row img-financial">
+                                <div class="img-row1"></div>
+                            </div>
+                            <div class="img-bg img-financial-bg"> </div>
+                            <div class="title-row">财务管理</div>
+                        </div>
+                    </a>
+                    <a href="statement_manage.html" class="blue-text" img-switch="img-Switch">
+                        <div class="option-row">
+                            <div class="img-row img-statement">
+                                <div class="img-row1"></div>  
+                            </div>
+                            <div class="img-bg img-statement-bg"> </div>
+                            <div class="title-row">报表汇出</div>
+                        </div>
+                    </a>
+
+
+                    <a href="game_manage.html" class="blue-text" img-switch="img-Switch">
+                        <div class="option-row">
+                            <div class="img-row img-game">
+                                <div class="img-row1"></div>
+                            </div>
+                            <div class="img-bg img-game-bg"> </div>
+                            <div class="title-row">游戏管理</div>
+                        </div>
+                    </a>
+
+                    <a href="authority_manage.html" class="blue-text" img-switch="img-Switch">
+                        <div class="option-row">
+                            <div class="img-row img-backstage">
+                                <div class="img-row1"></div>
+                            </div>
+                            <div class="img-bg img-backstage-bg"> </div>
+                            <div class="title-row">后台管理</div>
+                        </div>
+                    </a>
+                
+                </div>
+                <div class="right-title blue-text" header-nav="header-nav">
+            
+                        <div class="dis-con blue-bor-right">
+                            <div class="dis-con-a ">优惠上传</div>
+                            
+                        </div>
+                        <div class="dis-con blue-bor-right">
+                                <div class="dis-con-a ">在线客服</div>
+                        </div>
+                        <div class="dis-con-min blue-bor-right">
+                                <div class="dis-con-a ">公告</div>
+                        </div>
+                        <div class="dis-con blue-bor-right">
+                                <div class="dis-con-a ">数据分析</div>
+                        </div>
+                        <div class="dis-con blue-bor-right">
+                                <div data-style="data-style" class="dis-con-a ">风格切换</div>
+                        </div>
+                        <div class="dis-con-max blue-bor-right">
+                            <div class="message-count">12</div>
+                            <div class="dis-con-a ">GT NEWS+</div>
+                        </div>
+                        <div class="dis-state blue-bor-right">
+                        
+                            <div class="symbol">
+                                <div left-icon="left-icon" class="left-icon-blue"></div>
+                            </div>
+                            <div class="china-ves">
+                                <img src="../style/img/china-2x.png" class="china-logo" alt="">
+                            </div>
+                        </div>
+                        <div class="dis-greet">
+                                <div class="btn-swicth blue-btn" switch-old="switch-old">切回旧版</div>
+                                <div class="call-con">Hi，YUI</div>
+                                <div class="arrows">
+                                    <div bottom-icon="bottom-icon" class="bottom-icon-blue"></div>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+    </div>
 <div class="nav-btn nav-active">系统公告</div>
 <br>
 <div class="nav-btn">站内公告</div>
 
 <hr>
+<div class="date-vel-new">
+        <input data-datetime="data-datetime" class="date-con" type="datetime-local" step="01" value="2019-10-12T19:30:10" 
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}"/>
+</div>
 
 <div class="navigation_bar">
     <div class="bar-btn">
@@ -510,11 +633,28 @@
     </tbody>
 </table>
 
-<!-- 
-<div class="date-vel">
-    <input type="text" class="date-input" value="2019-03-04">
-    <img src="../style/img/date-2x.png" class="date-icon" alt="">
-</div> -->
+<div class="connect-vel">
+    <div class="content-vel">
+        <a href="javascript:void(0)" class="module-a">批次更新所的项目为交易失败</a>
+    </div>
+    <div class="content-vel">
+        <a href="javascript:void(0)" class="module-a">批次更新所选的项目为交易成功</a>
+    </div>
+    <div class="content-vel">
+        <a href="javascript:void(0)" class="module-a">批次更新所选的项目为交易成功</a>
+    </div>
+    <div class="content-vel">
+        <a href="javascript:void(0)" class="module-a">全选</a>
+        <span class="span-module">|</span>
+        <a href="javascript:void(0)" class="module-a">反选</a>
+    </div>
+</div>
+
+
+<div class="search-vel">
+     <a href="javascript:void(0)" class="search-title green-text">进阶搜寻</a>
+    <div class="green-top-a"></div>
+</div>
 
 
 <div >
@@ -522,10 +662,22 @@
         <input class="date-con" type="date" value="2019-02-03">
     </div>
     
+    <div class="date-vel date-vel-wid">
+        <input class="date-con date-con-wid" type="date" value="2019-02-03">
+    </div>
 </div>
 
 <div style="height: 300px">
-
+  
+    <div class="date-scope-vel">
+        <!-- <input type="text" class="date-input" id="date-input" placeholder="2018-09-24~2018-09-26" /> -->
+        <!-- <img src="../style/img/date-2x.png"  class="date-icon"/> -->
+        <!-- <div class="date-icon" ></div> -->
+    </div>
 </div>
+
+<!-- <script src="../js/date/demo.js"></script> -->
 </body>
+
+
 </html>

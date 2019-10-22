@@ -1,66 +1,11 @@
 @charset "UTF-8";
 
 
-//select{
-//  appearance: none;
-//  -moz-appearance: none;
-//  -webkit-appearance: none;
-//}
-///*清除ie的默认选择框样式清除，隐藏下拉箭头*/
-//select::-ms-expand {
-//  display: none;
-//}
 html body{
   font-family: $font-family !important;
 
-  // a{
-  //   display: block !important;
-  // }
 }
 
-  /*----------日期选择的箭头----------*/
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    color: transparent;
-}
-
-/*----------用来移除上下箭头----------*/
-input[type="date"]::-webkit-inner-spin-button {
-    display: none;
-}
-
-/*----------用来移除叉叉按钮----------*/
-input[type="date"]::-webkit-clear-button{
-    display:none;
-}
-
-input[type="date"] {
-    width: 137px;
-    height: 30px;
-    border: none;
-    line-height: 1;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    z-index: 3;
-    padding-left: 0px;
-    color: #525C66;
-    outline: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        padding-right:0px; 
-        background:url($Image-url+"date-2x.png") no-repeat scroll right center transparent; 
-        background-size: 18px 20px;
-    }
-
-
-// @media (min-width:1281px) and(max-width:1919px){
-//   body::-webkit-scrollbar{
-//      display: none;
-    
-//   }
-// }
 
 @media (width:1920px){
   //去除底部和右侧的滚动条
@@ -106,31 +51,31 @@ input[type="date"] {
 .green-bg{
   background-color: #66c7a5 !important;
   color: #ffffff;
-  div:first-child{
-    color: #ffffff !important;
-  }
+  // div:first-child{
+  //   color: #ffffff !important;
+  // }
 }
 
 .green-header-bg{
   background-image: linear-gradient(to bottom, #66c7a5, #35a17b);
   color: #ffffff;
-  div:first-child{
-    color: #ffffff !important;
-  }
+  // div:first-child{
+  //   color: #ffffff !important;
+  // }
 }
 .blue-header-bg{
   background-image: linear-gradient(to bottom, #3f89ff, #1b65db);
   color: #ffffff;
-  div:first-child{
-    color: #ffffff !important;
-  }
+  // div:first-child{
+  //   color: #ffffff !important;
+  // }
 }
 .orange-header-bg{
   background-image: linear-gradient(to bottom, #ff872a, #ff6a3b);
   color: #ffffff;
-  div:first-child{
-    color: #ffffff !important;
-  }
+  // div:first-child{
+  //   color: #ffffff !important;
+  // }
 }
 
 
@@ -223,9 +168,9 @@ input[type="date"] {
 .orange-bg{
   background-color: #ff872a !important;
   color: #ffffff;
-  div:first-child{
-    color: #ffffff !important;
-  }
+  // div:first-child{
+  //   color: #ffffff !important;
+  // }
 }
 .orange-open{
   background-image: linear-gradient(to top, #ff872a, #ff4714) !important;
@@ -249,9 +194,9 @@ input[type="date"] {
 .blue-bg{
   background-color: #3f89ff !important;
   color: #ffffff;
-  div:first-child{
-    color: #ffffff !important;
-  }
+  // div:first-child{
+  //   color: #ffffff !important;
+  // }
 }
 
 .blue-btn{
@@ -753,7 +698,7 @@ input[type="date"] {
         width: 40px;
         height: 40px;
         margin-right: 25px;
-        border-radius: 20px;
+        border-radius: 50px;
         z-index: 1;
       }
     }
@@ -937,8 +882,9 @@ input[type="date"] {
   .select-module{
       margin-left: 21px;
       font-family: $font-family;
-      font-size: 16px;
+      font-size: 18px;
       display: flex;
+      height: 42px;
       align-items: center;
       text-align: left;
       color: #b4b4b4;
@@ -991,59 +937,8 @@ input[type="date"] {
   border-right:1px solid #3f89ff !important; 
 }
 
-// .date-vel{
-//   width: 160px;
-//   height: 30px;
-//   border-radius: 5px;
- 
-//   background-color: #ffffff;
-//   position: relative;
-//   .date-input{
-  
-//     height: 100%;
-//     width: 144px;
-//     height: 28px;
-//     border-radius: 5px;
-//     border: solid 1px #d8d8d8;
-//     font-family: Microsoft JhengHei;
-//     font-size: 16px;
-//     padding-left: 14px;
-//     text-align: left;
-//     color: #666666;
-//     z-index:1;
-//   }
-//   .date-icon{
-//     position: absolute;
-//     right: 9px;
-//     margin-top: 5px;
-//     width: 18px;
-//     height: 20px;
-//     top: 0px;
-//     z-index: 3;
-//   }
-// }
 
-.date-vel{
-  width: 158px;
-  height: 28px;
-  border-radius: 5px;
-  border: solid 1px #d8d8d8;
-  background-color: #ffffff;
-  font-family: Microsoft JhengHei;
-  color: #666666;
-  position: relative;
-  .date-con{
-    // height: 100%;
-    // width: 137px;
-    height: 28px;
-   
-    font-size: 16px;
-    padding-left: 14px;
-    text-align: left;
-   
-    z-index:1;
-  }
-}
+
 
 .green-bor-bottom{
     border-bottom: 1px solid #308769 !important;
@@ -1053,4 +948,106 @@ input[type="date"] {
 }
 .orange-bor-bottom{
   border-bottom: 1px solid #ff6a3b  !important;
+}
+
+//底部链接
+.connect-vel{
+  height: 20px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  a{
+    color: #0099ff;
+  }
+  .content-vel{
+    margin-right: 30px;
+    display: flex;
+    .module-a{
+      font-size: 14px;
+      font-weight: normal;
+      
+    }
+    .span-module{
+      width: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 15px;
+    }
+  }
+ 
+}
+
+//搜寻
+.search-vel{
+    // margin-top: 6px;
+    height: 20px;
+    width: 80px;
+    display: flex;
+    position: relative;
+    .search-title{
+      font-weight: normal;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+    .green-top-icon{
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      background-image:url($Image-url +"symbol-top-green.png");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 12px;
+    }
+    .green-bottom-icon{
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      background-image:url($Image-url +"symbol-bottom-green.png");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 12px;
+    }
+    .blue-top-icon{
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      background-image:url($Image-url +"symbol-top-blue.png");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 12px;
+    }
+    .blue-bottom-icon{
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      background-image:url($Image-url +"symbol-bottom-blue.png");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 12px;
+    }
+    .orange-top-icon{
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      background-image:url($Image-url +"symbol-top-orange.png");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 12px;
+    }
+    .orange-bottom-icon{
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      background-image:url($Image-url +"symbol-bottom-orange.png");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 12px;
+    }
 }
