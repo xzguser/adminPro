@@ -423,7 +423,7 @@
                             background-repeat: no-repeat;
                             display: flex;
                             align-items: center;
-                            background-image: url("../../style/img/ic_file.png");
+                            background-image: url($Image-url + "ic_file.png");
                             background-size: 15px;
                             margin-top: 7.5px;
                             margin-left: -25px;

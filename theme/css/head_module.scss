@@ -77,62 +77,55 @@
           to{top:0px; }
         }
         .img-agent{
-          background-image: url("../../style/img/agent-2x.png");
+           background-image: url($Image-url + "agent-2x.png");
+   
         }
-        // .img-agent:hover + div{
-        //   display: block;
-        //   animation:TopMove 0.2s;
-        //   animation-fill-mode:forwards;
-        //   // animation-delay:backwards;
-        //   background-image: url("../../style/img/agent-2x-bg.png");
-        // }
-       
         .img-system{
-          background-image: url("../../style/img/system-2x.png");
+          background-image: url($Image-url + "system-2x.png");
         }
         .img-discounts{
-          background-image: url("../../style/img/discounts-2x.png");
+          background-image: url($Image-url + "discounts-2x.png");
         }
      
         .img-financial{
-          background-image: url("../../style/img/financial-2x.png");
+          background-image: url($Image-url + "financial-2x.png");
         }
      
         .img-statement{
-          background-image: url("../../style/img/statement-2x.png");
+          background-image: url($Image-url + "statement-2x.png");
         }
        
 
         .img-game{
-          background-image: url("../../style/img/game-2x.png");
+          background-image: url($Image-url + "game-2x.png");
         }
         
      
         .img-backstage{
-          background-image: url("../../style/img/backstage-2x.png");
+          background-image: url($Image-url + "backstage-2x.png");
         }
       
     
         .img-agent .sel-img{
-          background-image: url("../../style/img/agent-2x-bg.png");
+          background-image: url($Image-url + "agent-2x-bg.png");
         }
         .img-system .sel-img{
-          background-image: url("../../style/img/system-2x-bg.png");
+          background-image: url($Image-url + "system-2x-bg.png");
         }
         .img-discounts .sel-img{
-          background-image: url("../../style/img/discounts-2x-bg.png");
+          background-image: url($Image-url + "discounts-2x-bg.png");
         }
         .img-financial .sel-img{
-          background-image: url("../../style/img/financial-2x-bg.png");
+          background-image: url($Image-url + "financial-2x-bg.png");
         }
         .img-statement .sel-img{
-          background-image: url("../../style/img/statement-2x-bg.png");
+          background-image: url($Image-url + "statement-2x-bg.png");
         }
         .img-game .sel-img{
-          background-image: url("../../style/img/game-2x-bg.png");
+          background-image: url($Image-url + "game-2x-bg.png");
         }
         .img-backstage .sel-img{
-          background-image: url("../../style/img/backstage-2x-bg.png");
+          background-image: url($Image-url + "backstage-2x-bg.png");
         }
         .img-bg{
           // margin-top: 8px;
@@ -143,28 +136,28 @@
           height: 44px;
           margin-top: -50px;
           // display: none;
-          // background-image: url("../../style/img/backstage-2x-bg.png");
+          // background-image: url($Image-url + "backstage-2x-bg.png");
         }
         .img-agent-bg{
-           background-image: url("../../style/img/agent-2x-bg.png");
+           background-image: url($Image-url + "agent-2x-bg.png");
         }
         .img-system-bg {
-          background-image: url("../../style/img/system-2x-bg.png");
+          background-image: url($Image-url + "system-2x-bg.png");
         }
         .img-discounts-bg{
-          background-image: url("../../style/img/discounts-2x-bg.png");
+          background-image: url($Image-url + "discounts-2x-bg.png");
         }
         .img-financial-bg{
-          background-image: url("../../style/img/financial-2x-bg.png");
+          background-image: url($Image-url + "financial-2x-bg.png");
         }
         .img-statement-bg{
-          background-image: url("../../style/img/statement-2x-bg.png");
+          background-image: url($Image-url + "statement-2x-bg.png");
         }
         .img-game-bg{
-          background-image: url("../../style/img/game-2x-bg.png");
+          background-image: url($Image-url + "game-2x-bg.png");
         }
         .img-backstage-bg{
-          background-image: url("../../style/img/backstage-2x-bg.png");
+          background-image: url($Image-url + "backstage-2x-bg.png");
         }
         .title-row{
           position: absolute;
@@ -287,21 +280,21 @@
           .left-icon-green{
             width: 10px;
             height: 10px;
-            background: url("../../style/img/symbol-left-green.png");
+            background: url($Image-url + "symbol-left-green.png");
             background-repeat:no-repeat;
             background-size: 10px 10px;
           }
           .left-icon-blue{
             width: 10px;
             height: 10px;
-            background: url("../../style/img/symbol-left-blue.png");
+            background: url($Image-url + "symbol-left-blue.png");
             background-repeat:no-repeat;
             background-size: 10px 10px;
           }
           .left-icon-orange{
             width: 10px;
             height: 10px;
-            background: url("../../style/img/symbol-left-orange.png");
+            background: url($Image-url + "symbol-left-orange.png");
             background-repeat:no-repeat;
             background-size: 10px 10px;
           }
@@ -372,21 +365,21 @@
           .bottom-icon-green{
             width: 10px;
             height: 10px;
-            background:url("../../style/img/symbol-bottom-green.png");
+            background:url($Image-url + "symbol-bottom-green.png");
             background-repeat: no-repeat;
             background-size: 10px 10px;
           }
           .bottom-icon-blue{
             width: 10px;
             height: 10px;
-            background:url("../../style/img/symbol-bottom-blue.png");
+            background:url($Image-url + "symbol-bottom-blue.png");
             background-repeat: no-repeat;
             background-size: 10px 10px;
           }
           .bottom-icon-orange{
             width: 10px;
             height: 10px;
-            background:url("../../style/img/symbol-bottom-orange.png");
+            background:url($Image-url + "symbol-bottom-orange.png");
             background-repeat: no-repeat;
             background-size: 10px 10px;
           }

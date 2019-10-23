@@ -36,17 +36,16 @@
             
             .basic-con{
                 width: 100px;
-                height: 40px;
+                height: 39px;
                 margin-top: 10px;
 
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
 
                 display: flex;
-                // box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.16) inset, 3px 0 6px 0 rgba(0, 0, 0, 0.16);
-               // box-shadow: -3px -1px 6px rgba(0, 0, 0, 0.16), -3px 1px 3px -3px rgba(0, 0, 0, 0.16) inset;
-                // box-shadow: 0px 1px 6px 0 rgba(0, 0, 0, 0.16), 0px 0px 6px 0 rgba(0, 0, 0, 0.16);
-                box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.16) inset, 0px 0px 6px 0 rgba(0, 0, 0, 0.16);
+             
+                box-shadow: -1px 1px 1px 0 rgba(0, 0, 0, 0.16) inset,
+                             0px 0px 6px 0 rgba(0, 0, 0, 0.16);
                 background-color: #ffffff;
                 color: #aeaeae;
                 z-index: 1;
