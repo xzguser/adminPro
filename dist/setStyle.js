@@ -3,6 +3,7 @@
 var $ = require("jquery");
 var setStyle = /** @class */ (function () {
     function setStyle() {
+        //换肤窗体内容
         this.data_btnAll = '[data-btnAll="data-btnAll"]';
         this.data_style = '[data-style="data-style"]';
         this.pop_content = '[data-cashap-id="pop-content"]';
@@ -37,8 +38,8 @@ var setStyle = /** @class */ (function () {
         this.data_move = '[data-move="data-move"]'; //进阶搜寻的点击事件
         this.move_module = '[move-module="move-module"]'; //搜寻要显示的内容
         this.icon_switch = '[icon-switch="icon-switch"]'; //搜寻切换的图标
-        this.check_select = '[check-select="check-select"]'; //select
-        this.check_hide = '[check-hide="check-hide"]'; //checkbox的容器
+        this.check_select = '[check-select="check-select"]'; //input框的选择事件
+        this.check_hide = '[check-hide="check-hide"]'; //checkbox的外层容器- 控制显示与隐藏
         this.data_check = '[data-check="data-check"]'; //  显示出来的checkbox
         this.defaultColor = "green";
         this.init();
@@ -117,7 +118,6 @@ var setStyle = /** @class */ (function () {
                 moduleChe.each(function (index, item) {
                     $($(item)[0].children[0]).attr("checked", false);
                     for (var i = 0; i < arr_1.length; i++) {
-                        // console.log(arr[i])
                         if (arr_1[i] == $($(item)[0].children[0]).val()) {
                             $($(item)[0].children[0]).attr("checked", true);
                         }
@@ -133,6 +133,8 @@ var setStyle = /** @class */ (function () {
         $('[main-con="main-con"]').click(function (e) {
             var _con = $('[check-hide="check-hide"]'); // 设置目标区域
             var _input = $('[check-select="check-select"]');
+            console.log(e.target);
+            console.log(_con.has(e.target).length);
             if (!_con.is(e.target) && !_input.is(e.target) && _con.has(e.target).length === 0 && _input.has(e.target).length === 0) {
                 that.inputHide();
             }
@@ -142,55 +144,44 @@ var setStyle = /** @class */ (function () {
             $(that.pop_content).addClass('hide');
         });
     };
+    //头部图片获得焦点事件
     setStyle.prototype.hoverImg = function () {
         var that = this;
         var html = ".html";
-        var tiem = "5s";
         var speed = 150;
         var arr = [];
         var imgHeader = $(that.header_img + ">a");
         for (var i = 0; i < imgHeader.length; i++) {
             var imgW = $(imgHeader)[i];
             arr.push($(imgW)[0].attributes[0].value);
+            var one;
+            var two;
             $(imgW).hover(function (e) {
-                var one = $($(e)[0].delegateTarget)[0].children[0].children[0];
-                var two = $($(e)[0].delegateTarget)[0].children[0].children[1];
+                one = $($(e)[0].delegateTarget)[0].children[0].children[0];
+                two = $($(e)[0].delegateTarget)[0].children[0].children[1];
                 $(one).animate({
                     "top": "40px",
                     "opacity": 0,
-                    "animation-duration": tiem,
-                    "-webkit-animation-duration": tiem,
                 }, speed);
                 $(two).animate({
                     "margin-top": "8px",
-                    "animation-duration": tiem,
-                    "-webkit-animation-duration": tiem,
                 }, speed);
             }, function (e) {
-                var one = $($(e)[0].delegateTarget)[0].children[0].children[0];
-                var two = $($(e)[0].delegateTarget)[0].children[0].children[1];
                 $(one).animate({
-                    "animation-duration": tiem,
-                    "-webkit-animation-duration": tiem,
                     "top": "0px",
                     "opacity": 1,
                 }, speed);
                 $(two).animate({
                     "margin-top": "-50px",
-                    "animation-duration": "",
-                    "-webkit-animation-duration": tiem,
                 }, speed);
             });
         }
         var href = (window.location.href).split(html);
         var dataHref = href[href.length - href.length].split("/");
         var urlname = dataHref.pop() + html;
-        // console.log(arr)
         arr.forEach(function (item, index) {
             if (item == urlname) {
-                // console.log(item)
-                // console.log(urlname);
-                // console.log($(`[href^="${urlname}"]`))
+                // console.log($(`[href^="${urlname}"]`)[0])
                 $("[href^=\"" + urlname + "\"]").off('mouseenter').unbind('mouseleave');
             }
         });
@@ -219,7 +210,6 @@ var setStyle = /** @class */ (function () {
     setStyle.prototype.saveCon = function (tpl) {
         var that = this;
         $(that.data_save).click(function () {
-            // console.log(tpl)
             var swit = tpl.classList[1];
             if (swit == "green-btn") {
                 that.swicthTheme("green");
@@ -240,7 +230,6 @@ var setStyle = /** @class */ (function () {
                 e.preventDefault();
             var index = 0;
             for (var i = 0; i < $(that.header_img)[0].children.length; i++) {
-                // console.log($($(that.header_img)[0].children[i].children[0].children[0].children[0]));
                 if ($($(that.header_img)[0].children[i].children[0].children[0].children[0]).hasClass("sel-img")) {
                     $($(that.header_img)[0].children[i].children[0].children[0].children[0]).addClass("sel-img1");
                     index = i;
@@ -250,7 +239,6 @@ var setStyle = /** @class */ (function () {
                 $($(that.header_img)[0].children[index].children[0].children[0].children[0]).removeClass("sel-img1");
                 window.location.href = $(e.currentTarget)[0].attributes[0].value;
             }, 300);
-            // window.location.href = $(e.currentTarget)[0].attributes[0].value;
         });
     };
     //二级选项栏切换
@@ -263,7 +251,6 @@ var setStyle = /** @class */ (function () {
                 var getThemeList = localStorage.getItem("ThemeList");
                 $(head_elements).removeClass(getThemeList + "-bar-btn");
                 $($(head_elements)[index]).addClass(getThemeList + "-bar-btn");
-                console.log(getThemeList + "-bar-btn");
                 //把选项栏选中的值赋予下面的标题
                 $(that.title_con)[0].innerText = $($(head_elements)[index])[0].innerText;
                 //控制显示的对应内容
@@ -277,14 +264,12 @@ var setStyle = /** @class */ (function () {
     setStyle.prototype.threeSwitchBtn = function () {
         var that = this;
         var _loop_1 = function () {
-            // console.log($(that.top_module)[i]);
             var switch_top_module = $($(that.top_module)[i].children);
             switch_top_module.each(function (index, item) {
                 $(item).click(function () {
                     var getThemeList = localStorage.getItem("ThemeList");
                     $(switch_top_module).removeClass(getThemeList + "-tar");
                     $($(switch_top_module)[index]).addClass(getThemeList + "-tar");
-                    // console.log(index)
                     //显示出对应的html结构
                     for (var k = 0; k < $(that.form_control)[0].children.length; k++) {
                         if (!$($(that.form_control)[0].children[k]).hasClass("hide")) {
@@ -361,7 +346,7 @@ var setStyle = /** @class */ (function () {
             that.forSwitch(that.top_module, "-tar", color);
         }
         //四级选项栏
-        that.oneSwitch(that.datum_bar, "-btn-bar", color);
+        // that.oneSwitch(that.datum_bar, "-btn-bar", color);
         if ($(that.datum_bar).length != 0) {
             that.forSwitch(that.datum_bar, "-btn-active", color);
         }
@@ -432,7 +417,6 @@ var setStyle = /** @class */ (function () {
         });
         var str = arr.join("、");
         $(that.check_select).val(str);
-        // console.log(str);
         $(that.check_hide).addClass("hide");
     };
     return setStyle;

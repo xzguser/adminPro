@@ -61,7 +61,8 @@
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
   },
   "include": [
-    "js/modules/common.ts"
+    "js/modules/*.ts",
+    "js/components/*.ts"
   ]
   //  "exclude": [
 //    "node_modules"

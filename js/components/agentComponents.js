@@ -1,7 +1,9 @@
 "use strict";
 var $ = require("jquery");
+//代理商模块
 var agentComponents = /** @class */ (function () {
     function agentComponents() {
+        //会员查询内部切换
         this.query_result = '[query-result-id="query-result-id"]'; //查询-查询结果内容
         this.insert_user = '[insert-con-id="insert-con-id"]'; //新增会员内容 
         this.insert_user_href = '[insert-user-href="insert-user-href"]'; //新增用户-btn

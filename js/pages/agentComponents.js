@@ -1,8 +1,10 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 var $ = require("jquery");
+//代理商模块
 var agentComponents = /** @class */ (function () {
     function agentComponents() {
+        //会员查询内部切换
         this.query_result = '[query-result-id="query-result-id"]'; //查询-查询结果内容
         this.insert_user = '[insert-con-id="insert-con-id"]'; //新增会员内容 
         this.insert_user_href = '[insert-user-href="insert-user-href"]'; //新增用户-btn
@@ -18,6 +20,7 @@ var agentComponents = /** @class */ (function () {
     //默认事件
     agentComponents.prototype.defaultFun = function () {
         var that = this;
+        //切换内容模块
         $(that.insert_user_href).click(function () {
             $(that.query_result).addClass("hide");
             $(that.insert_user).removeClass("hide");

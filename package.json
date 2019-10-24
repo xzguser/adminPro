@@ -9,8 +9,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run browserify1": "browserify js/modules/setStyle.js -o dist/setStyle.js",
+    "run browserify1": "browserify ./js/modules/setStyle.js -o dist/setStyle.js",
     "run browserify2": "browserify js/modules/common.js -o dist/common.js",
+    "run agentCom": "browserify ./js/components/agentComponents.js -o js/pages/agentComponents.js",
     "typescript": "tsc"
   },
   "author": "lint",

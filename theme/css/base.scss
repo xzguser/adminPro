@@ -145,10 +145,8 @@ html body{
 }
 
 .green-btn-active {
-  // width: 100px!important;
-  height: 50px!important;
-  background-color: #308769!important;
-  color: #ffffff !important;
+  margin-bottom: 15px !important;
+  color: #66c7a5 !important;
 }
 
 //橘色
@@ -179,10 +177,8 @@ html body{
   background-color: #ff6a3b!important;
 }
 .orange-btn-active {
- 
-  height: 50px!important;
-  background-color: #ff6a3b!important;
-  color: #ffffff !important;
+  margin-bottom: 15px !important;
+  color: #ff6a3b !important;
 }
 .color_02{
   color: #ff6a3b!important;
@@ -216,10 +212,8 @@ html body{
 }
 
 .blue-btn-active {
- 
-  height: 50px!important;
-  background-color: #1b65db !important;
-  color: #ffffff !important;
+  margin-bottom: 15px !important;
+  color: #1b65db !important;
 }
 
 //白色按钮
@@ -373,35 +367,16 @@ html body{
   color: #0099ff;
 }
 
-.green-btn-bar {
-  display: flex;
-  align-items: flex-end;
-  color: #308769;
-  
-}
-.orange-btn-bar {
-  display: flex;
-  align-items: flex-end;
-  color: #ff6a3b;
- 
-}
-.blue-btn-bar {
-  display: flex;
-  align-items: flex-end;
-  color: #1b65db;
- 
-}
+
 .tab-btn {
   display: flex;
-  // width: 100px;
-  padding-left: 17px;
-  padding-right: 17px;
-  height: 45px;
-  background-color: #eeeeee;
-  align-items: center;
+  padding-left: 21px;
+  padding-right: 21px;
+  color: #666666;
   justify-content: center;
+  align-items: flex-end;
   border-radius: 5px 5px 0 0;
-  // color: #ff6a3b;
+  margin-bottom: 10px;
   .tab-btn-text {
     width: 100%;
     height: 21px;
@@ -409,7 +384,6 @@ html body{
     font-size: 16px;
     text-align: center;
     font-weight: bold;
-    // color: #ff6a3b;
   }
 }
 

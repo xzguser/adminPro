@@ -1,9 +1,8 @@
 import $ = require("jquery");
 
 class setStyle {
-
+    //换肤窗体内容
     data_btnAll = '[data-btnAll="data-btnAll"]';
-
     data_style = '[data-style="data-style"]';
     pop_content = '[data-cashap-id="pop-content"]';
     data_colse = '[data-close="data-close"]';
@@ -23,7 +22,6 @@ class setStyle {
     btn_color = '[btn-color="btn-color"]';
     affiche_switch = '[affiche-switch="affiche-switch"]';
     tr_border = '[tr-border="tr-border"]';
-
     scro_con = '[scro-con="scro-con"]';  //外层背景
 
     data_submit = '[data-submit="data-submit"]';
@@ -48,8 +46,8 @@ class setStyle {
     move_module = '[move-module="move-module"]'   //搜寻要显示的内容
     icon_switch = '[icon-switch="icon-switch"]'  //搜寻切换的图标
 
-    check_select = '[check-select="check-select"]';   //select
-    check_hide = '[check-hide="check-hide"]';    //checkbox的容器
+    check_select = '[check-select="check-select"]';   //input框的选择事件
+    check_hide = '[check-hide="check-hide"]';    //checkbox的外层容器- 控制显示与隐藏
     data_check = '[data-check="data-check"]';  //  显示出来的checkbox
 
     defaultColor: string = "green";
@@ -57,7 +55,6 @@ class setStyle {
     constructor() {
         this.init();
     };
-
     init() {
        
         this.hoverImg();
@@ -68,8 +65,6 @@ class setStyle {
         this.threeSwitchBtn();
         this.forSwitchBtn();
       
-     
-        
     };
     //默认事件
     defaultFun() {
@@ -78,6 +73,7 @@ class setStyle {
         if (!localStorage.getItem("ThemeList")) {
             localStorage.setItem("ThemeList", that.defaultColor);
         }
+
         //显示弹出层 加上样式 hide
         $(that.data_style).click(function () {
             $(that.pop_content).removeClass('hide');
@@ -143,11 +139,11 @@ class setStyle {
             if ($(that.check_hide).hasClass("hide")) {
                 let str = $(that.check_select).val();
                 const arr = str.split("、");
-
+                
                 moduleChe.each((index, item) => {
                     $($(item)[0].children[0]).attr("checked", false);
                     for (var i = 0; i < arr.length; i++) {
-                        // console.log(arr[i])
+                     
                         if (arr[i] == $($(item)[0].children[0]).val()) {
                             $($(item)[0].children[0]).attr("checked", true);
                         }
@@ -164,6 +160,8 @@ class setStyle {
 
             var _con = $('[check-hide="check-hide"]'); // 设置目标区域
             var _input = $('[check-select="check-select"]');
+            console.log(e.target)
+            console.log(_con.has(e.target).length)
             if (!_con.is(e.target) && !_input.is(e.target) && _con.has(e.target).length === 0 && _input.has(e.target).length === 0) {
                 that.inputHide();
             }
@@ -176,11 +174,11 @@ class setStyle {
         })
 
     }
-
+    //头部图片获得焦点事件
     hoverImg(){
         var that = this;
         let html=".html";
-        let tiem="5s";
+
         let speed = 150;
         const arr = [];
         const imgHeader = $(that.header_img+">a");
@@ -188,36 +186,29 @@ class setStyle {
 
             const imgW = $(imgHeader)[i];
             arr.push($(imgW)[0].attributes[0].value);
+
+            var one;
+            var two;
             $(imgW).hover(function (e) {
 
-                const one = $($(e)[0].delegateTarget)[0].children[0].children[0];
+                 one = $($(e)[0].delegateTarget)[0].children[0].children[0];
               
-                const two = $($(e)[0].delegateTarget)[0].children[0].children[1];
+                 two = $($(e)[0].delegateTarget)[0].children[0].children[1];
                $(one).animate({
                     "top":"40px",
                     "opacity": 0,
-                    "animation-duration":tiem,
-                    "-webkit-animation-duration":tiem,
                 },speed);
                 $(two).animate({
                    "margin-top":"8px",
-                    "animation-duration":tiem,
-                    "-webkit-animation-duration":tiem,
                 },speed);
             }, function (e) {
-                const one = $($(e)[0].delegateTarget)[0].children[0].children[0];
-              
-                const two = $($(e)[0].delegateTarget)[0].children[0].children[1];
+
                 $(one).animate({
-                    "animation-duration":tiem,
-                    "-webkit-animation-duration":tiem,
                     "top":"0px",
                     "opacity": 1,
                 },speed);
                 $(two).animate({
                     "margin-top":"-50px",
-                   "animation-duration":"",
-                   "-webkit-animation-duration":tiem,
                 },speed);
             })
         }
@@ -226,13 +217,11 @@ class setStyle {
         const dataHref = href[href.length-href.length].split("/");
         
         const urlname = dataHref.pop()+html;
-        // console.log(arr)
+
         arr.forEach((item,index)=>{
             
             if(item == urlname){
-                // console.log(item)
-                // console.log(urlname);
-                // console.log($(`[href^="${urlname}"]`))
+                // console.log($(`[href^="${urlname}"]`)[0])
                 $(`[href^="${urlname}"]`).off('mouseenter').unbind('mouseleave');
             }
             
@@ -268,7 +257,7 @@ class setStyle {
     saveCon(tpl) {
         var that = this;
         $(that.data_save).click(function () {
-            // console.log(tpl)
+           
             var swit = tpl.classList[1];
 
             if (swit == "green-btn") {
@@ -288,7 +277,6 @@ class setStyle {
             if (e) e.preventDefault();
             let index = 0;
             for (var i = 0; i < $(that.header_img)[0].children.length; i++) {
-                // console.log($($(that.header_img)[0].children[i].children[0].children[0].children[0]));
                 if ($($(that.header_img)[0].children[i].children[0].children[0].children[0]).hasClass("sel-img")) {
                    
                     $($(that.header_img)[0].children[i].children[0].children[0].children[0]).addClass("sel-img1");
@@ -299,7 +287,7 @@ class setStyle {
                 $($(that.header_img)[0].children[index].children[0].children[0].children[0]).removeClass("sel-img1");
                 window.location.href = $(e.currentTarget)[0].attributes[0].value;
             }, 300);
-            // window.location.href = $(e.currentTarget)[0].attributes[0].value;
+
         });
 
     }
@@ -318,7 +306,7 @@ class setStyle {
                 $(head_elements).removeClass(getThemeList + "-bar-btn");
 
                 $($(head_elements)[index]).addClass(getThemeList + "-bar-btn");
-                console.log(getThemeList + "-bar-btn");
+              
                 //把选项栏选中的值赋予下面的标题
                 $(that.title_con)[0].innerText = $($(head_elements)[index])[0].innerText;
 
@@ -340,7 +328,7 @@ class setStyle {
         var that = this;
         // const moduleFor = $(doc)[i].children;
         for (var i = 0; i < $(that.top_module).length; i++) {
-            // console.log($(that.top_module)[i]);
+         
 
             const switch_top_module = $($(that.top_module)[i].children);
 
@@ -349,7 +337,7 @@ class setStyle {
                     let getThemeList = localStorage.getItem("ThemeList");
                     $(switch_top_module).removeClass(getThemeList + "-tar");
                     $($(switch_top_module)[index]).addClass(getThemeList + "-tar");
-                    // console.log(index)
+                   
 
                     //显示出对应的html结构
                     for (var k = 0; k < $(that.form_control)[0].children.length; k++) {
@@ -451,7 +439,7 @@ class setStyle {
         }
 
         //四级选项栏
-        that.oneSwitch(that.datum_bar, "-btn-bar", color);
+        // that.oneSwitch(that.datum_bar, "-btn-bar", color);
         if ($(that.datum_bar).length != 0) {
             that.forSwitch(that.datum_bar, "-btn-active", color);
         }
@@ -540,7 +528,7 @@ class setStyle {
 
         var str = arr.join("、");
         $(that.check_select).val(str);
-        // console.log(str);
+     
         $(that.check_hide).addClass("hide");
     }
 
