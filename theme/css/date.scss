@@ -47,7 +47,7 @@ input[type="date"] {
     outline: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         padding-right:0px; 
-        background:url($Image-url+"date-2x.png") no-repeat scroll right center transparent; 
+        background:url($Image-url + "date-2x.png") no-repeat scroll right center transparent;
         background-size: 18px 20px;
 }
 input[type="datetime-local"] {
@@ -64,7 +64,7 @@ input[type="datetime-local"] {
   outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       padding-right:0px; 
-      background:url($Image-url+"date-2x.png") no-repeat scroll right center transparent; 
+      background:url($Image-url + "date-2x.png") no-repeat scroll right center transparent;
       background-size: 18px 20px;
 }
 
