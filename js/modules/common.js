@@ -12,6 +12,8 @@ var Common = /** @class */ (function () {
         console.log(this.ScriptURL);
         $("body").children().each(function (index, item) {
             var dom = $(item).html().toString();
+            // console.log(dom);
+            //替换dom里的所有#ImgURL;--变量形式
             dom = dom.replace(/{{#ImgURL}}/g, _this.ImgURL)
                 .replace(/{{#ScriptURL}}/g, _this.ScriptURL);
             $(item).html(dom);

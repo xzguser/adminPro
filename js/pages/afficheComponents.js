@@ -1,43 +1,53 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-/**
- * @配置文件
- */
-
-module.exports.config={
-    URL:{
-        $ImgURL:"../style/img",
-        $ScriptURL:"../dist"
-    }
-};
-
-},{}],2:[function(require,module,exports){
 "use strict";
 var $ = require("jquery");
-var config = require("../../dist/config");
-var Common = /** @class */ (function () {
-    function Common() {
-        this.ImgURL = config.config.URL.$ImgURL;
-        this.ScriptURL = config.config.URL.$ScriptURL;
+//公告模块
+var afficheComponents = /** @class */ (function () {
+    function afficheComponents() {
+        //切换选择
+        this.affiche_switch = '[affiche-switch="affiche-switch"]';
+        //切换的内容模块
+        this.affiche_module = '[affiche-module="affiche-module"]';
         this.init();
     }
-    Common.prototype.init = function () {
-        var _this = this;
-        console.log(this.ScriptURL);
-        $("body").children().each(function (index, item) {
-            var dom = $(item).html().toString();
-            // console.log(dom);
-            //替换dom里的所有#ImgURL;--变量形式
-            dom = dom.replace(/{{#ImgURL}}/g, _this.ImgURL)
-                .replace(/{{#ScriptURL}}/g, _this.ScriptURL);
-            $(item).html(dom);
+    ;
+    afficheComponents.prototype.init = function () {
+        this.defaultFun();
+        this.afficheSwitch();
+    };
+    ;
+    //默认事件
+    afficheComponents.prototype.defaultFun = function () {
+        //公告页 私有-login_affiche.html
+        if ($('[data-tr="data-tr"]')[0] != undefined) {
+            //公告页 把获取的tr高度赋值给图标的容器高度
+            var tr = $('[data-tr="data-tr"]')[0].children[1].children[0].clientHeight;
+            $('[data-icon="data-icon"]')[0].style.height = tr + "px";
+        }
+    };
+    //公告表格切换
+    afficheComponents.prototype.afficheSwitch = function () {
+        var that = this;
+        // console.log($(that.affiche_switch));
+        var Switch = $(that.affiche_switch + ">div");
+        var Module = $(that.affiche_module + ">div");
+        var color = localStorage.getItem("ThemeList");
+        Switch.each(function (index, item) {
+            $(item).click(function () {
+                $(Switch).removeClass(color + "-check");
+                $(item).addClass(color + "-check");
+                $(Module).addClass("hide");
+                $($(Module)[index]).removeClass("hide");
+                // console.log($(Module)[index])
+            });
         });
     };
-    return Common;
+    return afficheComponents;
 }());
-new Common();
-module.exports = Common;
+new afficheComponents();
+module.exports = afficheComponents;
 
-},{"../../dist/config":1,"jquery":3}],3:[function(require,module,exports){
+},{"jquery":2}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.4.1
  * https://jquery.com/
@@ -10637,4 +10647,4 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}]},{},[2]);
+},{}]},{},[1]);
